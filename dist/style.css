@@ -518,10 +518,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 0;
 }
 
-.z-20 {
-  z-index: 20;
-}
-
 .z-40 {
   z-index: 40;
 }
@@ -531,36 +527,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .mt-3 {
   margin-top: 0.75rem;
 }
 
-.mt-40 {
-  margin-top: 10rem;
-}
-
 .mt-36 {
   margin-top: 9rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .block {
@@ -575,20 +551,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: grid;
 }
 
-.hidden {
-  display: none;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -603,28 +567,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
-.justify-around {
-  justify-content: space-around;
-}
-
-.self-end {
-  align-self: flex-end;
-}
-
 .self-center {
   align-self: center;
-}
-
-.justify-self-end {
-  justify-self: end;
-}
-
-.justify-self-center {
-  justify-self: center;
-}
-
-.justify-self-stretch {
-  justify-self: stretch;
 }
 
 .border-x {
@@ -641,57 +585,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
-}
-
-.border-opacity-60 {
-  --tw-border-opacity: 0.6;
-}
-
 .border-opacity-40 {
   --tw-border-opacity: 0.4;
-}
-
-.border-opacity-0 {
-  --tw-border-opacity: 0;
-}
-
-.border-opacity-10 {
-  --tw-border-opacity: 0.1;
-}
-
-.border-opacity-30 {
-  --tw-border-opacity: 0.3;
 }
 
 .p-10 {
   padding: 2.5rem;
 }
 
-.p-7 {
-  padding: 1.75rem;
-}
-
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-16 {
-  padding: 4rem;
-}
-
-.pb-48 {
-  padding-bottom: 12rem;
-}
-
-.pb-5 {
-  padding-bottom: 1.25rem;
-}
-
-.pb-10 {
-  padding-bottom: 2.5rem;
 }
 
 .pl-0 {
@@ -700,6 +603,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pl-6 {
   padding-left: 1.5rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .pt-10 {
@@ -712,10 +619,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-center {
   text-align: center;
-}
-
-.font-semibold {
-  font-weight: 600;
 }
 
 .text-white {
