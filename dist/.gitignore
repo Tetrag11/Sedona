@@ -7,7 +7,6 @@ node_modules
 .vscode
 .DS_Store
 tailwind.config.js
-index.html
 yarn.lock
 yarn-error.log
 
