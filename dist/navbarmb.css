@@ -19,9 +19,9 @@
 
 
 @media only screen and (max-height: 715px){
-    .header,.header-back-image,.navbar-lines{
-       min-height: 800px;
-    }
+.main-content{
+    grid-template-rows: auto 2fr 1fr;
+}
 }
 
 
