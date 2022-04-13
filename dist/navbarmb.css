@@ -1,0 +1,18 @@
+@media only screen and (max-width:860px){
+
+    .navbar-link{
+        font-size: 80px !important;
+    }
+}
+
+
+@media only screen and (max-width: 639px){
+    .nav-responsive{
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .navbar-link{
+        font-size: 60px !important;
+    }
+}
+

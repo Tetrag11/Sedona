@@ -1,54 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Federo&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
-      defer
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"
-      defer
-    ></script>
-    <script src="script.js" defer></script>
-    <title>Lifestyle</title>
-  </head>
 
-  <body class="body overflow-x-hidden" style="background-color: #006b6b; overflow-y: hidden;">
-    <!-- loader -->
-    <div
-      class="loader w-screen h-screen bg-red-400 text-white text-2xl flex justify-center items-center "
-    >
-      <div class="justify-self-center self-center">Loading</div>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="navbarmb.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+  <title>Lifestyle</title>
+</head>
 
-    <!-- navbar lines -->
-    <div class="navbar-lines absolute grid grid-cols-1 z-30" style="width: 100%; height: 100%">
-      <!-- Navbar -->
-      <div
-        class="absolute z-50 grid grid-rows-5 text-white"
-        style="width: 100%; height: 75%; transform: translateY(25%)"
-      >
-        <div
-          class="navbar border-y border-white border-opacity-40 border-b-0"
-          style="transform: translateX(-100%)"
-        >
-          <div
-            class="mx-auto"
-            style="
+<body class="body overflow-x-hidden" style="background-color: #006b6b; overflow-y: hidden">
+  <!-- loader -->
+  <div class="loader w-screen h-screen bg-red-400 text-white text-2xl flex justify-center items-center">
+    <div class="justify-self-center self-center">Loading</div>
+  </div>
+
+  <!-- navbar lines -->
+  <div class="navbar-lines absolute grid grid-cols-1 z-30" style="width: 100%; height: 100%">
+    <!-- Navbar -->
+    <div class="absolute z-50 grid grid-rows-5 text-white" style="width: 100%; height: 75%; transform: translateY(25%)">
+      <div class="navbar border-y border-white border-opacity-40 border-b-0" style="transform: translateX(-100%)">
+        <div class="mx-auto" style="
               max-width: 90%;
               height: 100%;
               font-family: Federo;
@@ -58,18 +38,12 @@
               line-height: 130px;
               letter-spacing: 0em;
               text-align: left;
-            "
-          >
-            <span class="py-5"><a class="navbar-link" style="opacity: 0;" href="index.html">PROJECT</a></span>
-          </div>
+            ">
+          <span class="py-5"><a class="navbar-link" style="opacity: 0" href="index.html">PROJECT</a></span>
         </div>
-        <div
-          class="navbar border-y border-white border-opacity-40 border-b-0"
-          style="transform: translateX(-100%)"
-        >
-          <div
-            class="mx-auto"
-            style="
+      </div>
+      <div class="navbar border-y border-white border-opacity-40 border-b-0" style="transform: translateX(-100%)">
+        <div class="mx-auto" style="
               max-width: 90%;
               height: 100%;
               font-family: Federo;
@@ -79,20 +53,12 @@
               line-height: 130px;
               letter-spacing: 0em;
               text-align: left;
-            "
-          >
-            <span class="py-5"
-              ><a class="navbar-link" style="opacity: 0;" href="architecture.html">ARCHITECTURE</a></span
-            >
-          </div>
+            ">
+          <span class="py-5"><a class="navbar-link" style="opacity: 0" href="architecture.html">ARCHITECTURE</a></span>
         </div>
-        <div
-          class="navbar border-y border-white border-opacity-40 border-b-0"
-          style="transform: translateX(-100%)"
-        >
-          <div
-            class="mx-auto"
-            style="
+      </div>
+      <div class="navbar border-y border-white border-opacity-40 border-b-0" style="transform: translateX(-100%)">
+        <div class="mx-auto" style="
               max-width: 90%;
               height: 100%;
               font-family: Federo;
@@ -104,222 +70,220 @@
               text-align: left;
               display: flex;
               justify-content: space-between;
-            "
-          >
-            <span class=""><a class="navbar-link" style="opacity: 0;" href="lifestyle.html">LIFESTYLE</a></span>
-            <a href="javascript:void(0)" onclick="closeNav()"
-              ><img
-                style="width: 100%; height: 100%"
-                src="images/Group 17.png"
-                alt=""
-            /></a>
-          </div>
-        </div>
-        <div
-          class="navbar border-y border-white border-opacity-40"
-          style="transform: translateX(-100%)"
-        >
-          <div
-            class="mx-auto"
-            style="
-              max-width: 90%;
-              height: 100%;
-              font-family: Federo;
-              font-size: 100px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 130px;
-              letter-spacing: 0em;
-              text-align: left;
-            "
-          >
-            <span class="py-5"><a class="navbar-link" style="opacity: 0;" href="production.html">PRODUCTION</a></span>
-          </div>
-        </div>
-        <div
-          class="navbar border-y border-white border-opacity-40"
-          style="transform: translateX(-100%)"
-        >
-          <div
-            class="mx-auto"
-            style="
-              max-width: 90%;
-              height: 100%;
-              font-family: Federo;
-              font-size: 100px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 130px;
-              letter-spacing: 0em;
-              text-align: left;
-            "
-          >
-            <span class="py-5"><a class="navbar-link" style="opacity: 0;" href="contact.html">CONTACT</a></span>
-          </div>
+            ">
+          <span class=""><a class="navbar-link" style="opacity: 0" href="lifestyle.html">LIFESTYLE</a></span>
+          <a href="javascript:void(0)" onclick="closeNav()"><img style="width: 100%; height: 100%"
+              src="images/Group 17.png" alt="" /></a>
         </div>
       </div>
-      <div
-        class="container mx-auto z-30 grid overflow-x-hidden"
-        style="max-width: 90%; height: 100%; grid-template-columns: 1fr 2fr 1fr"
-      >
-        <div
-          class="nav-line-left"
-          style="background-color: #006b6b; transform: translateX(-100%)"
-        ></div>
-        <div></div>
-        <div
-          class="nav-line-right"
-          style="background-color: #006b6b; transform: translateX(100%)"
-        ></div>
+      <div class="navbar border-y border-white border-opacity-40" style="transform: translateX(-100%)">
+        <div class="mx-auto" style="
+              max-width: 90%;
+              height: 100%;
+              font-family: Federo;
+              font-size: 100px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 130px;
+              letter-spacing: 0em;
+              text-align: left;
+            ">
+          <span class="py-5"><a class="navbar-link" style="opacity: 0" href="production.html">PRODUCTION</a></span>
+        </div>
+      </div>
+      <div class="navbar border-y border-white border-opacity-40" style="transform: translateX(-100%)">
+        <div class="mx-auto" style="
+              max-width: 90%;
+              height: 100%;
+              font-family: Federo;
+              font-size: 100px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 130px;
+              letter-spacing: 0em;
+              text-align: left;
+            ">
+          <span class="py-5"><a class="navbar-link" style="opacity: 0" href="contact.html">CONTACT</a></span>
+        </div>
       </div>
     </div>
+    <div class="nav-responsive container mx-auto z-30 grid overflow-x-hidden"
+      style="max-width: 90%; height: 100%; grid-template-columns: 1fr 2fr 1fr">
+      <div class="nav-line-left" style="background-color: #006b6b; transform: translateX(-100%)"></div>
+      <div class="hidden sm:block"></div>
+      <div class="nav-line-right" style="background-color: #006b6b; transform: translateX(100%)"></div>
+    </div>
+  </div>
 
-    <!-- body content -->
-    <div class="body-content" style="display: none">
-      <!-- Header -->
-      <div
-        class="header container mx-auto relative"
-        style="max-width: 90%; height: 100vh"
-      >
-        <!-- lines -->
-        <div
-          class="absolute z-30 grid grid-cols-4"
-          style="width: 100%; height: 100%"
-        >
-          <div
-            class="lines border-x border-white border-opacity-40 border-r-0"
-          ></div>
-          <div
-            class="lines border-x border-white border-opacity-40 border-r-0"
-          ></div>
-          <div
-            class="lines border-x border-white border-opacity-40 border-r-0"
-          ></div>
-          <div class="lines border-x border-white border-opacity-40"></div>
-        </div>
-        <!-- Background Image -->
-        <div
-          class="header-back-image absolute z-0"
-          style="
+  <!-- body content -->
+  <div class="body-content" style="display: none">
+    <!-- Header -->
+    <div class="header container mx-auto relative" style="max-width: 90%; height: 100vh">
+      <!-- lines -->
+      <!-- web -->
+      <div class="absolute z-30 hidden sm:grid grid-cols-4" style="width: 100%; height: 100%">
+        <div class="lines border-x border-white border-opacity-40 border-r-0"></div>
+        <div class="lines border-x border-white border-opacity-40 border-r-0"></div>
+        <div class="lines border-x border-white border-opacity-40 border-r-0"></div>
+        <div class="lines border-x border-white border-opacity-40"></div>
+      </div>
+      <!-- mobile -->
+      <div class="absolute z-30 grid grid-cols-2 sm:hidden" style="width: 100%; height: 100%">
+        <div class="lines border-x border-white border-opacity-40 border-r-0"></div>
+        <div class="lines border-x border-white border-opacity-40"></div>
+      </div>
+      <!-- Background Image -->
+      <div class="header-back-image absolute z-0" style="
             height: 100vh;
             width: 100%;
             background-image: url(images/lifestyle.jpg);
             background-size: cover;
             background-position: center center;
-          "
-        ></div>
-        <!-- Content -->
-        <div class="absolute z-40" style="width: 100%; height: 100vh">
-          <div
-            class="grid w-full h-full"
-            style="grid-template-rows: 1fr 2fr 1fr"
-          >
+          "></div>
+      <!-- Content -->
+      <div class="absolute z-40" style="width: 100%; height: 100vh">
+        <div class="grid w-full h-full" style="grid-template-rows: 1fr 2fr 1fr">
+          <!-- first section -->
+
+          <div>
             <!-- Navbar section -->
-            <div>
-              <!-- first section -->
-              <div
-                class="grid"
-                style="
+            <!-- web -->
+            <div class="hidden sm:grid" style="
                   width: 100%;
                   height: auto;
                   grid-template-columns: 1fr 2fr 1fr;
-                "
-              >
-                <div class="nav-rel mt-3 p-10">
-                  <span
-                    class="animate-1 block text-center text-white"
-                    style="font-family: 'Roboto', sans-serif; font-size: 20px"
-                    ><a href="#">Contact Us</a></span
-                  >
-                </div>
-                <div class="mt-3 p-6 pl-0 flex flex-col">
-                  <div class="animate-1 flex justify-center pl-6">
-                    <a href="index.html"
-                      ><img src="images/image 5.png" alt=""
-                    /></a>
-                  </div>
-                </div>
-                <div class="nav-rel mt-3">
-                  <a class="ham-btn" style="pointer-events: none;" href="javascript:void(0)" onclick="openNav()">
-                    <div
-                      class="animate-1 flex text-white justify-center"
-                      style="font-family: 'Roboto', sans-serif; font-size: 20px"
-                    >
-                      <span class="pt-10 pb-10 pr-5">Open Menu</span>
-                      <img
-                        class="self-center"
-                        style="height: 30%; width: 30%; object-fit: contain"
-                        src="images/Group 16(2).png"
-                        alt=""
-                      />
-                    </div>
-                  </a>
+                ">
+              <div class="nav-rel mt-3 p-10">
+                <span class="animate-1 block text-center text-white"
+                  style="font-family: 'Roboto', sans-serif; font-size: 20px"><a href="#">Contact Us</a></span>
+              </div>
+              <div class="mt-3 p-6 pl-0 flex flex-col">
+                <div class="animate-1 flex justify-center pl-6">
+                  <a href="index.html"><img src="images/image 5.png" alt="" /></a>
                 </div>
               </div>
+              <div class="nav-rel mt-3">
+                <a class="ham-btn" style="pointer-events: none" href="javascript:void(0)" onclick="openNav()">
+                  <div class="animate-1 flex text-white justify-center"
+                    style="font-family: 'Roboto', sans-serif; font-size: 20px">
+                    <span class="pt-10 pb-10 pr-5">Open Menu</span>
+                    <img class="self-center" style="height: 30%; width: 30%; object-fit: contain"
+                      src="images/Group 16(2).png" alt="" />
+                  </div>
+                </a>
+              </div>
             </div>
+            <!-- mobile -->
+            <div class="sm:hidden grid" style="
+                  width: 100%;
+                  height: auto;
+                  grid-template-columns: 1fr 1fr;
+                ">
+              <div class="mt-3 flex flex-col">
+                <div class="animate-1 flex justify-start pl-6">
+                  <a href="index.html"><img src="images/sedonalogo2.png" style="width: 168px; height: 91px"
+                      alt="" /></a>
+                </div>
+              </div>
+              <div class="nav-rel mt-3">
+                <a class="ham-btn" style="pointer-events: none" href="javascript:void(0)" onclick="openNav()">
+                  <div class="animate-1 flex text-white justify-end"
+                    style="font-family: 'Roboto', sans-serif; font-size: 20px">
+                    <img class="self-center" style="height: 30%; width: 30%; object-fit: contain"
+                      src="images/Group 16(2).png" alt="" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
 
-            <!-- Heading -->
-            <div class="self-center">
-              <!-- second section -->
-              <div
-                class="nav-rel grid"
-                style="
+          <!-- Heading -->
+          <div class="self-center">
+            <!-- second section -->
+            <!-- web -->
+            <div class="nav-rel hidden sm:grid" style="
                   width: 100%;
                   height: auto;
                   grid-template-columns: 1fr 2fr 1fr;
-                "
-              >
-                <div></div>
-                <div>
-                  <div
-                    class="pb-10 pt-10 animate-2 text-white"
-                    style="
+                ">
+              <div></div>
+              <div>
+                <div class="pb-10 pt-10 animate-2 text-white" style="
                       font-family: 'Federo', sans-serif;
                       font-size: 80px;
                       line-height: 117.82px;
-                    "
-                  >
-                    <div>LIVING</div>
-                    <div>OUTSIDE,</div>
-                    <div>INSIDE</div>
-                  </div>
+                    ">
+                  <div>LIVING</div>
+                  <div>OUTSIDE,</div>
+                  <div>INSIDE</div>
                 </div>
-                <div></div>
               </div>
+              <div></div>
             </div>
+            <!-- mobile -->
+            <div class="nav-rel sm:hidden grid" style="
+                  width: 100%;
+                  height: auto;
+                  grid-template-columns: 2fr 1fr 1fr;
+                ">
+              <div>
+                <div class="pb-10 pt-10 animate-2 text-white" style="
+                      font-family: 'Federo', sans-serif;
+                      font-size: 80px;
+                      line-height: 117.82px;
+                    ">
+                  <div>LIVING</div>
+                  <div>OUTSIDE,</div>
+                  <div>INSIDE</div>
+                </div>
+              </div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
 
-            <!-- Sub-Heading -->
-            <div>
-              <!-- Third section -->
-              <div
-                class="nav-rel animate-3 grid text-white"
-                style="
+          <!-- Sub-Heading -->
+          <div>
+            <!-- Third section -->
+            <!-- web -->
+            <div class="nav-rel animate-3 hidden sm:grid text-white" style="
                   width: 100%;
                   grid-template-columns: 1fr 1fr 2fr;
                   font-family: 'Roboto', sans-serif;
                   font-size: 20px;
                   line-height: 35px;
-                "
-              >
-                <div>03</div>
-                <div><span>Lifestyle</span></div>
-                <div>
-                  <span class="block"
-                    >The homes draw inspiration from the qualities of a
-                    forest</span
-                  >
-                  <span class="block"
-                    >—a place that protects, nurtures and nourishes,</span
-                  >
-                  <span class="block"
-                    >providing space to discover and flourish.</span
-                  >
-                </div>
+                ">
+              <div>03</div>
+              <div><span>Lifestyle</span></div>
+              <div>
+                <span class="block">The homes draw inspiration from the qualities of a
+                  forest</span>
+                <span class="block">—a place that protects, nurtures and nourishes,</span>
+                <span class="block">providing space to discover and flourish.</span>
               </div>
+            </div>
+            <!-- mobile -->
+            <div class="nav-rel animate-3 sm:hidden grid text-white" style="
+                  width: 100%;
+                  grid-template-columns: 1fr 1fr;
+                  font-family: 'Roboto', sans-serif;
+                  font-size: 20px;
+                  line-height: 35px;
+                ">
+              <div class="pb-10" style="grid-column: 1/3">
+                <span class="inline sm:block">The homes draw inspiration from the qualities of a
+                  forest</span>
+                <span class="inline sm:block">—a place that protects, nurtures and nourishes,</span>
+                <span class="inline sm:block">providing space to discover and flourish.</span>
+              </div>
+              <div>03</div>
+              <div><span>Lifestyle</span></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
