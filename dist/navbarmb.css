@@ -12,7 +12,14 @@
     }
 
     .navbar-link{
-        font-size: 60px !important;
+        font-size: 50px !important;
+    }
+    .nav-img{
+        width: 60% !important;
+        height: 60% !important;
+        position: relative;
+        left: 20%;
+        top: 25%;
     }
 }
 
@@ -23,6 +30,12 @@
     grid-template-rows: auto 2fr 1fr !important;
 }
 }
+
+
+@media only screen and (max-height: 600px){
+    .header,.header-back-image,.navbar-lines{
+        min-height: 800px;
+     }
 
 
 

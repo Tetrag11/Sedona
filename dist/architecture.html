@@ -23,7 +23,7 @@
     <div class="justify-self-center self-center">Loading</div>
   </div>
   <!-- navbar lines -->
-  <div class="navbar-lines absolute grid grid-cols-1 z-30" style="width: 100%; height: 100%">
+  <div class="navbar-lines absolute grid grid-cols-1 z-30" style="width: 100%; height: 100vh">
     <!-- Navbar -->
     <div class="absolute z-50 grid grid-rows-5 text-white" style="width: 100%; height: 75%; transform: translateY(25%)">
       <div class="navbar border-y border-white border-opacity-40 border-b-0" style="transform: translateX(-100%)">
@@ -71,7 +71,7 @@
               justify-content: space-between;
             ">
           <span class=""><a class="navbar-link" style="opacity: 0;" href="lifestyle.html">LIFESTYLE</a></span>
-          <a href="javascript:void(0)" onclick="closeNav()"><img style="width: 100%; height: 100%"
+          <a href="javascript:void(0)" onclick="closeNav()"><img class="nav-img" style="width: 100%; height: 100%"
               src="images/Group 17.png" alt="" /></a>
         </div>
       </div>
@@ -141,7 +141,7 @@
           "></div>
       <!-- Content -->
       <div class="absolute z-40" style="width: 100%; height: 100vh">
-        <div class="grid w-full h-full " style="grid-template-rows: 1fr 2fr 1fr;">
+        <div class="grid w-full h-full main-content " style="grid-template-rows: 1fr 2fr 1fr;">
           <!-- Navbar Section -->
           <div>
             <!-- first section -->
@@ -151,20 +151,21 @@
                   height: auto;
                   grid-template-columns: 1fr 2fr 1fr;
                 ">
-              <div class="mt-3 p-10 nav-rel">
+              <div class="nav-rel mt-3 py-10 px-5">
                 <span class="animate-1 block text-center text-white"
-                  style="font-family: 'Roboto', sans-serif; font-size: 20px"><a href="#">Contact Us</a></span>
+                  style="font-family: 'Roboto', sans-serif; font-size: 15px"><a href="#">Contact Us</a></span>
               </div>
-              <div class="mt-3 p-6 pl-0 flex flex-col justify-between">
+              <div class="mt-3 p-6 pl-0 flex flex-col">
                 <div class="animate-1 flex justify-center pl-6">
-                  <a href="index.html"><img src="images/image 5.png" alt="" /></a>
+                  <a href="index.html"><img src="images/sedonalogo.png" style="width: 276px; height: 91px;"
+                      alt="" /></a>
                 </div>
               </div>
-              <div class="mt-3 nav-rel">
+              <div class="nav-rel mt-3">
                 <a class="ham-btn" style="pointer-events: none" href="javascript:void(0)" onclick="openNav()">
                   <div class="animate-1 flex text-white justify-center"
-                    style="font-family: 'Roboto', sans-serif; font-size: 20px">
-                    <span class="pt-10 pb-10 pr-5">Open Menu</span>
+                    style="font-family: 'Roboto', sans-serif; font-size: 15px">
+                    <span class="pt-10 pb-10 pr-2">Open Menu</span>
                     <img class="self-center" style="height: 30%; width: 30%; object-fit: contain"
                       src="images/Group 16(2).png" alt="" />
                   </div>
@@ -173,22 +174,21 @@
             </div>
             <!-- mobile -->
             <div class="sm:hidden grid" style="
-                width: 100%;
-                height: auto;
-                grid-template-columns: 1fr 1fr;
-              ">
-              <div class="mt-3 flex flex-col">
+                  width: 100%;
+                  height: auto;
+                  grid-template-columns: 1fr 1fr;
+                ">
+              <div class="mt-3 flex flex-col self-center">
                 <div class="animate-1 flex justify-start pl-6">
-                  <a href="index.html"><img src="images/sedonalogo2.png" style="width: 168px; height: 91px"
-                      alt="" /></a>
+                  <a href="index.html"><img src="images/sedonalogo2.png" style="width: 25vw;" alt="" /></a>
                 </div>
               </div>
               <div class="nav-rel mt-3">
                 <a class="ham-btn" style="pointer-events: none" href="javascript:void(0)" onclick="openNav()">
                   <div class="animate-1 flex text-white justify-end"
                     style="font-family: 'Roboto', sans-serif; font-size: 20px">
-                    <img class="self-center" style="height: 30%; width: 30%; object-fit: contain"
-                      src="images/Group 16(2).png" alt="" />
+                    <img class="self-center pr-5" style="width: 15vw; object-fit: contain" src="images/Group 16(2).png"
+                      alt="" />
                   </div>
                 </a>
               </div>
@@ -209,8 +209,8 @@
                 <div class="animate-2 text-white" style="
                   
                       font-family: 'Federo', sans-serif;
-                      font-size: 80px;
-                      line-height: 117.82px;
+                      font-size: 70px;
+                      line-height: 70px;
                     ">
                   <div>A FUTURE</div>
                   <div>TO BUILD</div>
@@ -222,14 +222,14 @@
             <div class="grid sm:hidden nav-rel" style="
                  width: 100%;
                  height: auto;
-                 grid-template-columns: 2fr 1fr 1fr;
+                 grid-template-columns: 2fr 1fr auto;
                ">
               <div>
                 <div class="animate-2 text-white" style="
                     
                         font-family: 'Federo', sans-serif;
-                        font-size: 80px;
-                        line-height: 117.82px;
+                        font-size: 12.7vw;
+                        line-height: 18.5vw;
                       ">
                   <div>A FUTURE</div>
                   <div>TO BUILD</div>
@@ -256,16 +256,9 @@
               <div>02</div>
               <div><span>Architecture</span></div>
               <div>
-                <span class="block">Clean architectural lines. Stunning finishing materials.
-                  Well-defined
-                </span>
-                <span class="block">construction standards. Here, there is no rush to build;
-                  everything is
-                </span>
-                <span class="block">designed to allow you to express your personality in a
-                  harmonious
-                </span>
-                <span class="block">environment when the time is right.</span>
+                Clean architectural lines. Stunning finishing materials. Well-defined construction standards. Here,
+                there is no rush to build; everything is designed to allow you to express your personality in a
+                harmonious environment when the time is right.
               </div>
             </div>
             <!-- mobile -->
@@ -279,16 +272,16 @@
                  line-height: 35px;
                ">
               <div class="pb-10" style="grid-column: 1/3;">
-                <span class="sm:block inline">Clean architectural lines. Stunning finishing materials.
+                <span class="md:block inline">Clean architectural lines. Stunning finishing materials.
                   Well-defined
                 </span>
-                <span class="sm:block inline">construction standards. Here, there is no rush to build;
+                <span class="md:block inline">construction standards. Here, there is no rush to build;
                   everything is
                 </span>
-                <span class="sm:block inline">designed to allow you to express your personality in a
+                <span class="md:block inline">designed to allow you to express your personality in a
                   harmonious
                 </span>
-                <span class="sm:block inline">environment when the time is right.</span>
+                <span class="md:block inline">environment when the time is right.</span>
               </div>
               <div>02</div>
               <div><span>Architecture</span></div>
