@@ -19,7 +19,7 @@
 
 
 @media only screen and (max-height: 715px){
-    .header,.header-back-image{
+    .header,.header-back-image,.navbar-lines{
        min-height: 800px;
     }
 }
@@ -27,7 +27,7 @@
 
 
 @media only screen and (orientation: landscape){
-    .header,.header-back-image{
+    .header,.header-back-image,.navbar-lines{
        min-height: 800px;
     }
 }
