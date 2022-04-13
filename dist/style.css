@@ -671,9 +671,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1.5rem;
 }
 
+.p-7 {
+  padding: 1.75rem;
+}
+
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .pl-0 {
@@ -694,6 +713,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pr-5 {
   padding-right: 1.25rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
 }
 
 .text-center {
@@ -721,5 +744,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:hidden {
     display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:block {
+    display: block;
   }
 }
