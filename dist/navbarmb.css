@@ -20,7 +20,7 @@
 
 @media only screen and (max-height: 715px){
 .main-content{
-    grid-template-rows: auto 2fr 1fr;
+    grid-template-rows: auto 2fr 1fr !important;
 }
 }
 
