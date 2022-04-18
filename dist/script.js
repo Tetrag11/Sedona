@@ -35,10 +35,10 @@ function increment() {
 
     timeline
       .to(".loader-lines", { opacity: 0, duration: 1, stagger: 0.5 })
-      .add(loaderdestroy)
       .from(".animate-1", { opacity: 0 }, "<0.1")
       .from(".animate-2", { opacity: 0 }, "<1")
       .from(".animate-3", { opacity: 0 }, "<1")
+      .add(loaderdestroy)
       .add(hamBtn);
 
     clearInterval(secondscalc);
