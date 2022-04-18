@@ -8,8 +8,8 @@ const timeline_2 = gsap.timeline({
 });
 
 timeline_2
-  .to(".nav-line-left", { x: "0%", duration: 1, ease: Power3.easeIn }, 1)
-  .to(".nav-line-right", { x: "0%", duration: 1, ease: Power3.easeIn }, 1)
+  .to(".nav-line-left", { x: "0%", duration: 2 }, 1)
+  .to(".nav-line-right", { x: "0%", duration: 2 }, 1)
   .to(".navbar-link", { opacity: 1 }, "<2");
 
 const timeline_3 = gsap.timeline();
@@ -23,6 +23,7 @@ loaderpreload.from(".loader-lines", { y: "-150%", duration: 1, stagger: 0.1 });
 let load = false;
 let loadtime = false;
 let seconds = 0;
+let image = document.querySelector(".header-back-image");
 
 window.addEventListener("load", (event) => {
   load = true;
@@ -47,9 +48,8 @@ function increment() {
   }
 }
 let secondscalc = setInterval(increment, 1000);
-
+let hamBtnclass = document.querySelectorAll(".ham-btn");
 function hamBtn() {
-  let hamBtnclass = document.querySelectorAll(".ham-btn");
   hamBtnclass.forEach((hamBtnel) => {
     hamBtnel.style.pointerEvents = "auto";
   });
@@ -63,14 +63,23 @@ function loaderdestroy() {
 // navBar
 
 function openNav() {
-  document.querySelector(".menue").style.display = "block";
+  hamBtnclass.forEach((hamBtnel) => {
+    hamBtnel.style.pointerEvents = "none";
+  });
   timeline_2.play();
+  document.querySelector(".menue").style.display = "block";
 }
 
 function closeNav() {
+  hamBtnclass.forEach((hamBtnel) => {
+    hamBtnel.style.pointerEvents = "none";
+  });
   timeline_2.reverse();
 }
 
 function crashMenue() {
   document.querySelector(".menue").style.display = "none";
+  hamBtnclass.forEach((hamBtnel) => {
+    hamBtnel.style.pointerEvents = "auto";
+  });
 }
