@@ -3,6 +3,9 @@
     .navbar-link{
         font-size: 80px !important;
     }
+    .navbar-lines div:first-of-type{
+        grid-template-rows: repeat(5, minmax(auto, 50px)) !important;
+    }
 }
 
 
@@ -31,15 +34,15 @@
 
 
 @media only screen and (max-height: 600px){
-    .header,.header-back-image,.navbar-lines{
+    .header,.header-back-image,.navbar-lines,.nav-responsive{
         min-height: 800px;
      }
 
 
 
 @media only screen and (orientation: landscape){
-    .header,.header-back-image,.navbar-lines{
+    .header,.header-back-image,.navbar-lines,.nav-responsive{
        min-height: 800px;
     }
 }
-
+}
