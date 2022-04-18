@@ -30,7 +30,7 @@ function increment() {
   seconds += 1;
   if (seconds > 2 && load == true) {
     // document.querySelector(".loader").style.display = "none";
-    document.querySelector(".body").style.overflowY = "visible";
+
     document.querySelector(".body-content").style.display = "block";
 
     timeline
@@ -55,16 +55,19 @@ function hamBtn() {
 
 function loaderdestroy() {
   document.querySelector(".loader").style.display = "none";
+  document.querySelector(".body").style.overflowY = "visible";
 }
 
 // navBar
 
 function openNav() {
   document.querySelector(".navbar-lines").style.zIndex = "100";
+  document.querySelector(".body").style.overflowY = "hidden";
   timeline_2.play();
 }
 
 function closeNav() {
   document.querySelector(".navbar-lines").style.zIndex = "30";
+  document.querySelector(".body").style.overflowY = "visible";
   timeline_2.reverse();
 }

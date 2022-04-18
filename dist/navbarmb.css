@@ -4,8 +4,9 @@
         font-size: 80px !important;
     }
     .navbar-lines div:first-of-type{
-        grid-template-rows: repeat(5, minmax(auto, 50px)) !important;
+        grid-template-rows: repeat(5, minmax(auto, 100px)) !important;
     }
+  
 }
 
 
@@ -16,6 +17,9 @@
 
     .navbar-link{
         font-size: 40px !important;
+    }
+    .navbar-lines div:first-of-type{
+        grid-template-rows: repeat(5, minmax(auto, 50px)) !important;
     }
     .nav-img{
       
