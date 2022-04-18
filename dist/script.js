@@ -2,10 +2,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 const timeline = gsap.timeline({ defaults: { duration: 1 } });
 
-const timeline_2 = gsap.timeline({ paused: true });
+const timeline_2 = gsap.timeline({
+  paused: true,
+  onReverseComplete: crashMenue,
+});
 
 timeline_2
-  .to(".nav-rel", { opacity: 0 })
   .to(".nav-line-left", { x: "0%", duration: 1, ease: Power3.easeIn }, 1)
   .to(".nav-line-right", { x: "0%", duration: 1, ease: Power3.easeIn }, 1)
   .to(".navbar-link", { opacity: 1 }, "<2");
@@ -61,13 +63,14 @@ function loaderdestroy() {
 // navBar
 
 function openNav() {
-  document.querySelector(".navbar-lines").style.zIndex = "100";
-  document.querySelector(".body").style.overflowY = "hidden";
+  document.querySelector(".menue").style.display = "block";
   timeline_2.play();
 }
 
 function closeNav() {
-  document.querySelector(".navbar-lines").style.zIndex = "30";
-  document.querySelector(".body").style.overflowY = "visible";
   timeline_2.reverse();
+}
+
+function crashMenue() {
+  document.querySelector(".menue").style.display = "none";
 }
