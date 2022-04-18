@@ -28,7 +28,7 @@ window.addEventListener("load", (event) => {
 
 function increment() {
   seconds += 1;
-  if (seconds > 0.1 && load == true) {
+  if (seconds > 2 && load == true) {
     // document.querySelector(".loader").style.display = "none";
     document.querySelector(".body").style.overflowY = "visible";
     document.querySelector(".body-content").style.display = "block";
