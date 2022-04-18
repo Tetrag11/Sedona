@@ -8,12 +8,16 @@ timeline_2
   .to(".nav-rel", { opacity: 0 })
   .to(".nav-line-left", { x: "0%", duration: 1, ease: Power3.easeIn }, 1)
   .to(".nav-line-right", { x: "0%", duration: 1, ease: Power3.easeIn }, 1)
-  .to(".navbar", { x: "0%", duration: 2, stagger: 0.1 })
-  .to(".navbar-link", { opacity: 1 });
+  .to(".navbar-link", { opacity: 1 }, "<2");
 
 const timeline_3 = gsap.timeline();
 
 // loader related
+
+// loader first animation
+const loaderpreload = gsap.timeline();
+loaderpreload.from(".loader-lines", { y: "-150%", duration: 1, stagger: 0.1 });
+
 let load = false;
 let loadtime = false;
 let seconds = 0;
@@ -24,15 +28,15 @@ window.addEventListener("load", (event) => {
 
 function increment() {
   seconds += 1;
-  if (seconds > 1 && load == true) {
-    document.querySelector(".loader").style.display = "none";
+  if (seconds > 0.1 && load == true) {
+    // document.querySelector(".loader").style.display = "none";
     document.querySelector(".body").style.overflowY = "visible";
     document.querySelector(".body-content").style.display = "block";
 
     timeline
-      .from(".lines", { y: "-150%", stagger: 0.1 })
-      .from(".header-back-image", { y: "-150%" })
-      .from(".animate-1", { opacity: 0 }, "<2")
+      .to(".loader-lines", { opacity: 0, duration: 1, stagger: 0.5 })
+      .add(loaderdestroy)
+      .from(".animate-1", { opacity: 0 }, "<0.1")
       .from(".animate-2", { opacity: 0 }, "<1")
       .from(".animate-3", { opacity: 0 }, "<1")
       .add(hamBtn);
@@ -47,6 +51,10 @@ function hamBtn() {
   hamBtnclass.forEach((hamBtnel) => {
     hamBtnel.style.pointerEvents = "auto";
   });
+}
+
+function loaderdestroy() {
+  document.querySelector(".loader").style.display = "none";
 }
 
 // navBar

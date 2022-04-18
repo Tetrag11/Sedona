@@ -19,100 +19,114 @@
 
 <body class="body overflow-x-hidden" style="background-color: black; overflow-y: hidden">
    <!-- loader -->
-   <div class="loader w-screen h-screen bg-red-400 text-white text-2xl flex justify-center items-center">
-      <div class="justify-self-center self-center">Loading</div>
-   </div>
+   <div class="loader container mx-auto absolute z-50" style="max-width: 90%; height: 100vh; left: 5%;">
 
+      <!-- web -->
+      <div class="absolute z-50 hidden sm:grid grid-cols-4" style="width: 100%; height: 100%; ">
+         <div class="loader-lines border-x border-white border-opacity-40 border-r-0" style="background-color: black;">
+         </div>
+         <div class="loader-lines border-x border-white border-opacity-40 border-r-0" style="background-color: black;">
+         </div>
+         <div class="loader-lines border-x border-white border-opacity-40 border-r-0"
+            style="background-color: black; opacity: 1;">
+         </div>
+         <div class="loader-lines border-x border-white border-opacity-40" style="background-color: black;"></div>
+      </div>
+      <!-- mobile -->
+      <div class="absolute z-50 grid grid-cols-2 sm:hidden" style="width: 100%; height: 100%">
+         <div class="loader-lines border-x border-white border-opacity-40 border-r-0" style="background-color: black;">
+         </div>
+         <div class="loader-lines border-x border-white border-opacity-40" style="background-color: black;"></div>
+      </div>
+   </div>
    <!-- navbar lines -->
-   <div class="navbar-lines absolute grid grid-cols-1 z-30" style="width: 100%; height: 100vh">
+   <div class="navbar-lines absolute grid grid-cols-1 z-30" style="width: 100%; height: 100vh;">
+      <a href="javascript:void(0)" onclick="closeNav()"><img class="navbar-link nav-img absolute"
+            style=" opacity: 0; width: 86px; height: 88px; left: 80%; top: 5%; z-index: 100;" src="images/Group 17.png"
+            alt="" /></a>
       <!-- Navbar -->
       <div class="absolute z-50 grid grid-rows-5 text-white"
          style="width: 100%; height: 75%; transform: translateY(25%)">
-         <div class="navbar border-y border-white border-opacity-40 border-b-0" style="transform: translateX(-100%)">
+         <div class="navbar">
             <div class="mx-auto" style="
-              max-width: 90%;
-              height: 100%;
-              font-family: Federo;
-              font-size: 100px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 130px;
-              letter-spacing: 0em;
-              text-align: left;
-            ">
+                max-width: 90%;
+                height: 100%;
+                font-family: Federo;
+                font-size: 100px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130px;
+                letter-spacing: 0em;
+                text-align: center;
+              ">
                <span class="py-5"><a class="navbar-link" style="opacity: 0" href="index.html">PROJECT</a></span>
             </div>
          </div>
-         <div class="navbar border-y border-white border-opacity-40 border-b-0" style="transform: translateX(-100%)">
+         <div class="navbar">
             <div class="mx-auto" style="
-              max-width: 90%;
-              height: 100%;
-              font-family: Federo;
-              font-size: 100px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 130px;
-              letter-spacing: 0em;
-              text-align: left;
-            ">
+                max-width: 90%;
+                height: 100%;
+                font-family: Federo;
+                font-size: 100px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130px;
+                letter-spacing: 0em;
+                text-align: center;
+              ">
                <span class="py-5"><a class="navbar-link" style="opacity: 0"
                      href="architecture.html">ARCHITECTURE</a></span>
             </div>
          </div>
-         <div class="navbar border-y border-white border-opacity-40 border-b-0" style="transform: translateX(-100%)">
+         <div class="navbar">
             <div class="mx-auto" style="
-              max-width: 90%;
-              height: 100%;
-              font-family: Federo;
-              font-size: 100px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 130px;
-              letter-spacing: 0em;
-              text-align: left;
-              display: flex;
-              justify-content: space-between;
-            ">
+                max-width: 90%;
+                height: 100%;
+                font-family: Federo;
+                font-size: 100px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130px;
+                letter-spacing: 0em;
+                text-align: center;
+              ">
                <span class=""><a class="navbar-link" style="opacity: 0" href="lifestyle.html">LIFESTYLE</a></span>
-               <a href="javascript:void(0)" onclick="closeNav()"><img class="nav-img" style="width: 100%; height: 100%"
-                     src="images/Group 17.png" alt="" /></a>
             </div>
          </div>
-         <div class="navbar border-y border-white border-opacity-40" style="transform: translateX(-100%)">
+         <div class="navbar">
             <div class="mx-auto" style="
-              max-width: 90%;
-              height: 100%;
-              font-family: Federo;
-              font-size: 100px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 130px;
-              letter-spacing: 0em;
-              text-align: left;
-            ">
+                max-width: 90%;
+                height: 100%;
+                font-family: Federo;
+                font-size: 100px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130px;
+                letter-spacing: 0em;
+                text-align: center;
+              ">
                <span class="py-5"><a class="navbar-link" style="opacity: 0" href="production.html">PRODUCTION</a></span>
             </div>
          </div>
-         <div class="navbar border-y border-white border-opacity-40" style="transform: translateX(-100%)">
+         <div class="navbar">
             <div class="mx-auto" style="
-              max-width: 90%;
-              height: 100%;
-              font-family: Federo;
-              font-size: 100px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 130px;
-              letter-spacing: 0em;
-              text-align: left;
-            ">
+                max-width: 90%;
+                height: 100%;
+                font-family: Federo;
+                font-size: 100px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130px;
+                letter-spacing: 0em;
+                text-align: center;
+              ">
                <span class="py-5"><a class="navbar-link" style="opacity: 0" href="contact.html">CONTACT</a></span>
             </div>
          </div>
       </div>
-      <div class="nav-responsive  container mx-auto z-30 grid overflow-x-hidden"
-         style="max-width: 90%; height: 100%; grid-template-columns: 1fr 2fr 1fr">
+      <div class="nav-responsive container mx-auto z-30 grid overflow-x-hidden"
+         style="max-width: 90%; height: 100vh; grid-template-columns: 1fr 1fr">
          <div class="nav-line-left" style="background-color: black; transform: translateX(-100%)"></div>
-         <div class="sm:block hidden"></div>
          <div class="nav-line-right" style="background-color: black; transform: translateX(100%)"></div>
       </div>
    </div>
@@ -222,18 +236,19 @@
                   <div class="grid sm:hidden nav-rel" style="
                         width: 100%;
                         height: auto;
-                        grid-template-columns: 2fr 1fr 1fr;
+                        grid-template-columns: 1fr 2fr 1fr;
                       ">
+                     <div></div>
                      <div>
                         <div class="animate-2 text-white" style="
-                            font-family: 'Federo', sans-serif;
-                            font-size: 12.7vw;
-                            line-height: 18.5vw;
-                          ">
+                        font-family: 'Federo', sans-serif;
+                        font-size: 12.7vw;
+                        line-height: 18.5vw;
+                        text-align: center;
+                      ">
                            <div>PRODUCTION</div>
                         </div>
                      </div>
-                     <div></div>
                      <div></div>
                   </div>
                </div>
@@ -271,27 +286,21 @@
                   <div class="animate-3 nav-rel grid sm:hidden text-white" style="
                        opacity: 1;
                        width: 100%;
-                       grid-template-columns: 1fr 1fr;
                        font-family: 'Roboto', sans-serif;
                        font-size: 20px;
                        line-height: 35px;
                      ">
-                     <div class="pb-10" style="grid-column: 1/3;">
-                        <span class="inline sm:block">A group of passionate people specializing in Design &
-                           Project
-                        </span>
-                        <span class="inline sm:block">Management, Building & Construction and implementation
-                           of</span>
-                        <span class="inline sm:block">Real Estate Projects. This strong collaboration includes an
-                        </span>
-                        <span class="inline sm:block">extraordinary and multidisciplinary team of professional,
-                           linked
-                        </span>
-                        <span class="inline sm:block">to the area of residential development and best
-                           practices</span>
+                     <div class="p-10 text-center">
+                        A group of passionate people specializing in Design &
+                        Project
+                        Management, Building & Construction and implementation
+                        of
+                        Real Estate Projects. This strong collaboration includes
+                        extraordinary and multidisciplinary team of professional,
+                        linked
+                        to the area of residential development and best
+                        practices
                      </div>
-                     <div>06</div>
-                     <div><span>Production</span></div>
                   </div>
                </div>
             </div>

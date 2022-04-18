@@ -15,11 +15,9 @@
         font-size: 40px !important;
     }
     .nav-img{
-        width: 60% !important;
-        height: 60% !important;
-        position: relative;
-        left: 20%;
-        top: 25%;
+      
+       width: 46px !important;
+       height: 48px !important;
     }
 }
 
