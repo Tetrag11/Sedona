@@ -26,6 +26,7 @@
        width: 46px !important;
        height: 48px !important;
     }
+
 }
 
 
@@ -37,15 +38,16 @@
 }
 
 
-@media only screen and (max-height: 600px){
-    .header,.header-back-image,.navbar-lines,.nav-responsive{
+@media only screen and (max-height: 650px){
+    .header,.header-back-image,.navbar-lines,.nav-responsive,.main-content{
         min-height: 800px;
      }
+     
 
 
 
 @media only screen and (orientation: landscape){
-    .header,.header-back-image,.navbar-lines,.nav-responsive{
+    .header,.header-back-image,.navbar-lines,.nav-responsive, .main-content{
        min-height: 800px;
     }
 }
