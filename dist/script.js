@@ -1,17 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
 const timeline = gsap.timeline();
-
-const timeline_2 = gsap.timeline({
-  paused: true,
-  onReverseComplete: crashMenue,
-});
-
-timeline_2
-  .to(".nav-line-left", { x: "0%", duration: 2 }, 1)
-  .to(".nav-line-right", { x: "0%", duration: 2 }, 1)
-  .to(".navbar-link", { opacity: 1 }, "<2");
-
 const timeline_3 = gsap.timeline();
 
 // loader related
@@ -62,24 +51,41 @@ function loaderdestroy() {
 
 // navBar
 
+const timeline_2 = gsap.timeline({
+  paused: true,
+});
+
 function openNav() {
+  document.querySelector(".close-btn").style.pointerEvents = "none";
+  document.querySelector(".menue").style.display = "block";
   hamBtnclass.forEach((hamBtnel) => {
     hamBtnel.style.pointerEvents = "none";
   });
-  timeline_2.play();
-  document.querySelector(".menue").style.display = "block";
+
+  gsap.to(".nav-line-left", { x: "0%", duration: 2 });
+  gsap.to(".nav-line-right", { x: "0%", duration: 2 });
+  gsap.to(".navbar-link", {
+    opacity: 1,
+    delay: 3,
+    onComplete: () => {
+      document.querySelector(".close-btn").style.pointerEvents = "auto";
+    },
+  });
 }
 
 function closeNav() {
-  hamBtnclass.forEach((hamBtnel) => {
-    hamBtnel.style.pointerEvents = "none";
+  document.querySelector(".close-btn").style.pointerEvents = "none";
+  gsap.to(".nav-line-left", { x: "-100%", duration: 2, delay: 1 });
+  gsap.to(".nav-line-right", {
+    x: "100%",
+    duration: 2,
+    delay: 1,
+    onComplete: () => {
+      document.querySelector(".menue").style.display = "none";
+      hamBtnclass.forEach((hamBtnel) => {
+        hamBtnel.style.pointerEvents = "auto";
+      });
+    },
   });
-  timeline_2.reverse();
-}
-
-function crashMenue() {
-  document.querySelector(".menue").style.display = "none";
-  hamBtnclass.forEach((hamBtnel) => {
-    hamBtnel.style.pointerEvents = "auto";
-  });
+  gsap.to(".navbar-link", { opacity: 0 });
 }
