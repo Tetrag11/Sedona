@@ -1,54 +1,53 @@
-@media only screen and (max-width:860px){
-
-    .navbar-link{
-        font-size: 40px !important;
-    }
-    .navbar-lines div:first-of-type{
-        grid-template-rows: repeat(5, minmax(auto, 50px)) !important;
-    }
-  
+@media only screen and (max-width: 860px) {
+  .navbar-link {
+    font-size: 40px !important;
+  }
+  .navbar-lines div:first-of-type {
+    grid-template-rows: repeat(5, minmax(auto, 50px)) !important;
+  }
 }
 
+@media only screen and (max-width: 639px) {
+  .nav-responsive {
+    grid-template-columns: 1fr 1fr !important;
+  }
 
-@media only screen and (max-width: 639px){
-    .nav-responsive{
-        grid-template-columns: 1fr 1fr !important;
-    }
-
-    .navbar-link{
-        font-size: 40px !important;
-    }
-    .navbar-lines div:first-of-type{
-        grid-template-rows: repeat(5, minmax(auto, 50px)) !important;
-    }
-    .nav-img{
-      
-       width: 46px !important;
-       height: 48px !important;
-    }
-
+  .navbar-link {
+    font-size: 40px !important;
+  }
+  .navbar-lines div:first-of-type {
+    grid-template-rows: repeat(5, minmax(auto, 50px)) !important;
+  }
+  .nav-img {
+    width: 46px !important;
+    height: 48px !important;
+  }
 }
 
-
-
-@media only screen and (max-height: 715px){
-.main-content{
+@media only screen and (max-height: 715px) {
+  .main-content {
     grid-template-rows: auto 2fr 1fr !important;
+  }
 }
-}
 
+@media only screen and (max-height: 650px) {
+  .header,
+  .header-back-image,
+  .navbar-lines,
+  .nav-responsive,
+  .main-content {
+    min-height: 800px;
+  }
 
-@media only screen and (max-height: 650px){
-    .header,.header-back-image,.navbar-lines,.nav-responsive,.main-content{
-        min-height: 800px;
-     }
-     
-
-
-
-@media only screen and (orientation: landscape){
-    .header,.header-back-image,.navbar-lines,.nav-responsive, .main-content{
-       min-height: 800px;
+  @media only screen and (orientation: landscape) {
+    .header,
+    .header-back-image,
+    .navbar-lines,
+    .nav-responsive,
+    .main-content,
+    .main,
+    .mobile-div {
+      min-height: 800px;
     }
-}
+  }
 }
