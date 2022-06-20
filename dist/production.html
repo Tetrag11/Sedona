@@ -6,6 +6,8 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="./css/all.css">
+   <link rel="stylesheet" href="./css/production.css">
    <link rel="stylesheet" href="navbarmb.css">
    <link rel="preconnect" href="https://fonts.googleapis.com" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,57 +19,54 @@
    <title>Production</title>
 </head>
 
-<body class="body overflow-x-hidden" style="background-color: black; overflow-y: hidden">
+<body class="body overflow-x-hidden">
    <!-- loader -->
-   <div class="loader container mx-auto absolute z-50" style="max-width: 90%; height: 100vh; left: 5%;">
+   <div class="loader container mx-auto absolute z-50">
 
       <!-- web -->
-      <div class="absolute z-50 hidden sm:grid grid-cols-4" style="width: 100%; height: 100%; ">
-         <div class="loader-lines border-x border-white border-opacity-40 border-r-0" style="background-color: black;">
+      <div class="load-web absolute z-50 hidden sm:grid grid-cols-4">
+         <div class="loader-lines border-x border-white border-opacity-40 border-r-0">
          </div>
-         <div class="loader-lines border-x border-white border-opacity-40 border-r-0" style="background-color: black;">
+         <div class="loader-lines border-x border-white border-opacity-40 border-r-0">
          </div>
-         <div class="loader-lines border-x border-white border-opacity-40 border-r-0"
-            style="background-color: black; opacity: 1;">
+         <div class="loader-lines border-x border-white border-opacity-40 border-r-0" style=" opacity: 1;">
          </div>
-         <div class="loader-lines border-x border-white border-opacity-40" style="background-color: black;"></div>
+         <div class="loader-lines border-x border-white border-opacity-40"></div>
       </div>
+      <div class="load-web absolute items-center justify-center z-50 hidden sm:grid ">
+         <img class="load-centered-logo opacity-0" src="./images/sedonalogo.png" alt="">
+      </div>
+
       <!-- mobile -->
-      <div class="absolute z-50 grid grid-cols-2 sm:hidden" style="width: 100%; height: 100%">
-         <div class="loader-lines border-x border-white border-opacity-40 border-r-0" style="background-color: black;">
+      <div class="load-mobile absolute z-50 grid grid-cols-2 sm:hidden">
+         <div class="loader-lines border-x border-white border-opacity-40 border-r-0">
          </div>
-         <div class="loader-lines border-x border-white border-opacity-40" style="background-color: black;"></div>
+         <div class="loader-lines border-x border-white border-opacity-40"></div>
+      </div>
+      <div class="load-mobile z-50 absolute items-center justify-center grid sm:hidden">
+         <img class="load-centered-logo opacity-0" src="./images/sedonalogo.png" alt="">
       </div>
    </div>
+
    <!-- menue -->
-   <div class="menue" style="height: 100vh; width: 100vw; position: fixed; z-index: 1000; display: none;">
+   <div class="menue">
 
       <!-- the two sides -->
-      <div class="absolute w-full h-full grid grid-cols-2" style=" z-index: 1001;">
-         <div class="nav-line-left" style="transform: translateX(-100%); background-color: black;"></div>
-         <div class="nav-line-right" style="transform: translateX(100%); background-color: black;"></div>
+      <div class="the-two-sides-parent absolute w-full h-full grid grid-cols-2">
+         <div class="nav-line-left"></div>
+         <div class="nav-line-right"></div>
       </div>
+
       <!-- close and logo -->
-      <a class="absolute close-btn" href="javascript:void(0)" onclick="closeNav()"
-         style=" left: 80%; top: 5%; z-index: 1003;"><img class="navbar-link nav-img "
-            style="z-index: 1002; opacity: 0; width: 86px; height: 88px;" src="images/Group 17.png" alt="" /></a>
+      <a class="absolute close-btn" href="javascript:void(0)" onclick="closeNav()"><img class="navbar-link nav-img "
+            src="images/Group 17.png" alt="" /></a>
 
 
       <!-- web-->
-      <a href="index.html" class="absolute" style="top: 5%; left: 10%; z-index: 1003;"><img
-            class="navbar-link menu-logo" src="images/sedonalogo2.png" style="width: 150px; height: 75px; opacity: 0;"
-            alt="" /></a>
+      <a href="index.html" class="absolute menu-logo-wrapper"><img class="navbar-link menu-logo"
+            src="images/sedonalogo2.png" alt="" /></a>
 
-
-      <div class="menue-content flex flex-col w-full h-full justify-center items-center relative" style="
-   font-family: Federo;
-   font-size: 60px;
-   font-style: normal;
-   font-weight: 400;
-   letter-spacing: 0em;
-   text-align: center;
-   color: white;
-   z-index:1002;">
+      <div class="menue-content flex flex-col w-full h-full justify-center items-center relative">
          <a class="navbar-link" style="opacity: 0" href="index.html">PROJECT</a>
          <a class="navbar-link" style="opacity: 0" href="architecture.html">ARCHITECTURE</a>
          <a class="navbar-link" style="opacity: 0" href="lifestyle.html">LIFESTYLE</a>
@@ -75,6 +74,8 @@
          <a class="navbar-link" style="opacity: 0" href="contact.html">CONTACT</a>
       </div>
    </div>
+
+
    <!-- body content -->
    <div class="body-content" style="display: none">
       <!-- Header -->

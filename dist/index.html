@@ -1,24 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homepage</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbarmb.css" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" defer></script>
+    <script src="scriptindex.js" defer></script>
+    <title>Home</title>
 </head>
-<body>
-    <h1>Home page</h1>
 
-<br><br>
+<body class="body overflow-x-hidden">
+    <!-- loader -->
+    <div class="loader container mx-auto absolute z-50">
+        <!-- web -->
+        <div class="load-web batman-web absolute z-50 hidden lg:grid">
+            <div class="loader-lines border-x border-white border-opacity-20 border-r-0 border-l-0"></div>
+            <div class="loader-lines border-x border-white border-opacity-20 border-r-0"></div>
+            <div class="loader-lines border-x border-white border-opacity-20 border-r-0"></div>
+            <div class="loader-lines border-x border-white border-opacity-20 border-r-0" style="opacity: 1"></div>
+            <div class="loader-lines border-x border-white border-opacity-20 border-r-0" style="opacity: 1"></div>
+            <div class="loader-lines border-x border-white border-opacity-20 border-r-0"></div>
+        </div>
+        <div class="load-web absolute items-center justify-center z-50 hidden lg:grid">
+            <img class="load-centered-logo opacity-0" src="./images/sedonalogo.png" alt="" />
+        </div>
 
-<p>under construction</p>
+        <!-- tab -->
+        <div class="load-tab batman-tab w-full h-full absolute z-50 hidden sm:grid lg:hidden">
+            <div class="loader-lines border-x border-white border-opacity-20 border-r-0 border-l-0"></div>
+            <div class="loader-lines border-x border-white border-opacity-20 border-r-0"></div>
+            <div class="loader-lines border-x border-white border-opacity-20 border-r-0"></div>
+            <div class="loader-lines border-x border-white border-opacity-20 border-r-0" style="opacity: 1"></div>
+
+        </div>
+        <div class="load-web absolute items-center justify-center z-50 hidden sm:grid lg:hidden">
+            <img class="load-centered-logo opacity-0" src="./images/sedonalogo.png" alt="" />
+        </div>
+
+        <!-- mobile -->
+        <div class="load-mobile batman-mobile absolute z-50 grid grid-cols-2 sm:hidden">
+            <div class="loader-lines border-x border-white border-opacity-20 border-r-0 border-l-0"></div>
+            <div class="loader-lines border-x border-white border-opacity-20 border-r-0"></div>
+            <div class="loader-lines border-x border-white border-opacity-20"></div>
+
+        </div>
+        <div class="load-mobile z-50 absolute items-center justify-center grid sm:hidden">
+            <img class="load-centered-logo opacity-0" src="./images/sedonalogo.png" alt="" />
+        </div>
+    </div>
 
 
-<h1>links</h1>
+    <!-- body content -->
+    <div class="second-loading-screen absolute">
+        <div class="second-loading-screen-parent relative">
+            <div class="second-loading-screen-image absolute">
+                <img src="./images/index-image-loader-min.jpg" alt="" />
+            </div>
+            <div class="second-loading-screen-content z-10 absolute">
+                <!-- mobile -->
+                <div
+                    class="second-loading-screen-content-variations sm:hidden grid grid-cols-1 items-end border-x border-white border-opacity-40">
+                    <div class="flex w-full justify-between mb-7">
+                        <h1 class="slscv-content-heading-mobile sls-animation opacity-0">
+                            SEDONA CANYON ESTATE
+                        </h1>
+                        <img class="slscv-img-mobile sls-animation opacity-0" src="./images/Ellipse 3.png" alt="" />
+                    </div>
+                </div>
 
-<a href="lifestyle.html">Lifestyle</a><br>
-<a href="architecture.html">Architecture</a><br>
-<a href="production.html">Production</a><br>
-<a href="contact.html">Contact</a><br>
+                <!-- Tab -->
+                <div class="second-loading-screen-content-variations hidden sm:grid lg:hidden grid-cols-2">
+                    <div class="border-x border-white border-opacity-40">
+                        <div class="w-full h-full flex items-end">
+                            <h1 class="slscv-content-heading-tab sls-animation opacity-0 mb-7">
+                                SEDONA CANYON ESTATE
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="border-r border-white border-opacity-40">
+                        <div class="w-full h-full flex items-end justify-end">
+                            <img class="slscv-img-tab sls-animation opacity-0 mb-7" src="./images/Ellipse 3.png"
+                                alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web -->
+                <div class="second-loading-screen-content-variations hidden lg:grid grid-cols-4">
+                    <div class="border-x border-white border-opacity-40">
+                        <div class="w-full h-full flex items-end">
+                            <h1 class="slscv-content-heading-web sls-animation opacity-0 mb-7">
+                                SEDONA CANYON ESTATE
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="border-r border-white border-opacity-40"></div>
+                    <div class="border-r border-white border-opacity-40"></div>
+                    <div class="border-r border-white border-opacity-40">
+                        <div class="w-full h-full flex items-end justify-end">
+                            <span class="slscv-span-web sls-animation opacity-0 mb-7">Loading</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body-content absolute" style="display: none">
+        <div class="relative w-full h-full">
+            <!-- main-content -->
+            <div class="main w-full h-full">
+                <!-- Mobile -->
+                <div class="mobile-main w-full h-full relative sm:hidden block">
+                    <!-- mobile-background -->
+                    <div class="mobile-background w-full h-full absolute z-0 fade-in opacity-0"></div>
+
+                    <!-- mobile-green-layer -->
+                    <div class="mobile-green-layer w-full h-full absolute z-10 grid">
+                        <div
+                            class="fade-in-green opacity-0 border-x border-white border-opacity-20 border-r-0 border-l-0">
+                        </div>
+                    </div>
+
+                    <!-- mobile-vid -->
+                    <div class="main-vid w-full h-full absolute z-20 opacity-0">
+                        <video autoplay loop muted class="vid ">
+                            <source class="source" src="./images/birds.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <!-- mobile-content -->
+                    <section
+                        class="mobile-main-content animation-content  z-30 absolute grid grid-cols-1 items-end border-x border-white border-opacity-20">
+                        <!-- make opacity 0-->
+                        <div
+                            class="mobile-div border-x border-white border-opacity-20 w-full h-screen grid grid-cols-1 justify-center">
+                            <div class="flex w-full h-fit justify-between mt-5 animation-content-1 opacity-0">
+                                <a class="h-fit" href="index.html"><img class="logo-mobile"
+                                        src="./images/sedonalogo2.png" alt="" /></a>
+                                <a class="h-fit self-center" href="#"><img class="menu-icon-mobile"
+                                        src="./images/Group 21.png" alt="" /></a>
+                            </div>
+
+                            <div class="mobile-paragraph w-full h-fit self-end animation-content-2 opacity-0">
+                                <h1 class="mb-5">A HAVEN Of EXCLUSIVE LIVING</h1>
+                                <p class="mb-5">
+                                    Get your hands on a prestigious mountain plot of land with
+                                    365-degree views of the misty mountains located just 30
+                                    minutes from the vibrant town of Galle. Reinvent the art of
+                                    living a balanced life at home
+                                </p>
+                                <span class="flex mb-5">
+                                    <p class="self-center">Explore remaining land plots</p>
+                                    <img src="images/Group 22.png" alt="" class="erlp ml-3" />
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- tab -->
+                <div class="tab-main relative w-full h-full hidden sm:block lg:hidden">
+                    <!-- tab-background -->
+                    <div class="tab-background w-full h-full absolute z-0 grid">
+                        <div class="fade-in opacity-0 border-x border-white border-opacity-20 border-r-0 border-l-0">
+                        </div>
+                        <div class="fade-in opacity-0 border-x border-white border-opacity-20 border-r-0"></div>
+                        <div class="fade-in opacity-0 border-x border-white border-opacity-20 border-r-0"></div>
+                        <div class="fade-in opacity-0 border-x border-white border-opacity-20 border-r-0"></div>
+                    </div>
+
+                    <!-- tab-green-layer -->
+                    <div class="tab-green-layer w-full h-full absolute z-10 grid">
+                        <div
+                            class="fade-in-green opacity-0 border-x border-white border-opacity-20 border-r-0 border-l-0">
+                        </div>
+                        <div class="fade-in-green opacity-0 border-x border-white border-opacity-20 border-r-0">
+                        </div>
+                        <div class="fade-in-green opacity-0 border-x border-white border-opacity-20 border-r-0">
+                        </div>
+                        <div class="fade-in-green opacity-0 border-x border-white border-opacity-20 border-r-0">
+                        </div>
+
+                    </div>
+
+                    <!-- tab-vid -->
+                    <div class="main-vid w-full h-full absolute z-20 opacity-0">
+                        <video autoplay loop muted class="vid ">
+                            <source class="source" src="./images/birds.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <!-- tab-content -->
+                    <div class="tab-content animation-content absolute z-30 w-full h-full ">
+                        <!-- tab-content-wrapper -->
+                        <div class="tab-content-wrapper relative w-full h-full">
+
+
+                            <!-- tab lines -->
+                            <div class="tab-lines absolute z-10 w-full h-full grid grid-cols-2">
+                                <div class="border-x border-white border-opacity-20 border-r-0"></div>
+                                <div class="border-x border-white border-opacity-20"></div>
+                            </div>
+
+                            <!-- tab-text -->
+                            <div class="tab-text w-full h-full absolute z-20 grid grid-cols-1">
+
+                                <!-- tab-header -->
+                                <div
+                                    class="w-full h-fit grid grid-cols-3 justify-between mt-5 animation-content-1 opacity-0">
+                                    <a class="h-fit" href="index.html"><img class="logo-tab"
+                                            src="./images/sedonalogo2.png" alt="" /></a>
+                                    <a href="contact.html" class="tab-contact">Lets Talk</a>
+                                    <a class="h-fit self-center justify-self-end" href="#"><img class="menu-icon-tab"
+                                            src="./images/Group 21.png" alt="" /></a>
+
+                                </div>
+
+                                <!-- Tab-paragraph -->
+                                <div class="tab-paragraph w-full grid self-end">
+                                    <div class="animation-content-2 opacity-0">
+                                        <h1 class="mb-5">A HAVEN Of EXCLUSIVE LIVING</h1>
+                                        <p class="mb-5">
+                                            Get your hands on a prestigious mountain plot of land with
+                                            365-degree views of the misty mountains located just 30
+                                            minutes from the vibrant town of Galle. Reinvent the art of
+                                            living a balanced life at home
+                                        </p>
+                                        <span class="flex mb-5">
+                                            <p class="self-center">Explore remaining land plots</p>
+                                            <img src="images/Group 22.png" alt="" class="erlp ml-3" />
+                                        </span>
+                                    </div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- web -->
+                <div class="web-main relative w-full h-full hidden lg:grid grid-cols-4">
+
+
+                    <!-- web-background -->
+                    <div class="web-background w-full h-full absolute z-0 grid">
+                        <div class="fade-in opacity-0 border-x border-white border-opacity-20 border-r-0 border-l-0">
+                        </div>
+                        <div class="fade-in opacity-0 border-x border-white border-opacity-20 border-r-0"></div>
+                        <div class="fade-in opacity-0 border-x border-white border-opacity-20 border-r-0"></div>
+                        <div class="fade-in opacity-0 border-x border-white border-opacity-20 border-r-0"></div>
+                        <div class="fade-in opacity-0 border-x border-white border-opacity-20 border-r-0"></div>
+                        <div class="fade-in opacity-0 border-x border-white border-opacity-20 border-r-0"></div>
+
+                    </div>
+                    <!-- web-green-layer -->
+                    <div class="web-green-layer w-full h-full absolute z-10 grid">
+                        <div
+                            class="fade-in-green opacity-0 border-x border-white border-opacity-20 border-r-0 border-l-0">
+                        </div>
+                        <div class="fade-in-green opacity-0 border-x border-white border-opacity-20 border-r-0"></div>
+                        <div class="fade-in-green opacity-0 border-x border-white border-opacity-20 border-r-0"></div>
+                        <div class="fade-in-green opacity-0 border-x border-white border-opacity-20 border-r-0"></div>
+                    </div>
+
+                    <!-- web-vid -->
+                    <div class="main-vid web-vid w-full h-full absolute z-20 opacity-0 grid">
+                        <video autoplay loop muted class="vid ">
+                            <source class="source" src="./images/birds.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="web-content animation-content absolute z-30 w-full h-full">
+
+                        <!-- web-content-wrappper -->
+                        <div class="web-content-wrapper relative w-full h-full">
+
+
+                            <!-- web lines -->
+                            <div class="web-lines absolute z-10 w-full h-full grid grid-cols-4">
+                                <div class="border-x border-white border-opacity-20 border-r-0"></div>
+                                <div class="border-x border-white border-opacity-20 border-r-0"></div>
+                                <div class="border-x border-white border-opacity-20 border-r-0"></div>
+                                <div class="border-x border-white border-opacity-20"></div>
+                            </div>
+
+
+                            <!-- web-text -->
+                            <div class="web-text animation-content  w-full h-full absolute z-20 grid grid-cols-1">
+
+                                <!-- web-header -->
+                                <div
+                                    class="w-full h-fit grid grid-cols-3 justify-between mt-5 animation-content-1 opacity-0">
+                                    <a href="contact.html" class="web-contact">Lets Talk</a>
+                                    <a class="h-fit" href="index.html"><img class="logo-web"
+                                            src="./images/sedonalogo.png" alt="" /></a>
+                                    <a class="h-fit menu-icon-web-link self-center justify-self-end flex" href="#">Open
+                                        Menu<img class="menu-icon-web self-center ml-3" src="./images/Group 25.png"
+                                            alt="" /></a>
+
+                                </div>
+
+                                <!-- web-paragraph -->
+                                <div class="web-paragraph w-full grid self-end">
+                                    <div class="web-max-width mb-5 animation-content-2 opacity-0">
+                                        <h1 class="mb-5">A HAVEN Of EXCLUSIVE LIVING</h1>
+                                        <p class="mb-5">
+                                            Get your hands on a prestigious mountain plot of land with
+                                            365-degree views of the misty mountains located just 30
+                                            minutes from the vibrant town of Galle. Reinvent the art of
+                                            living a balanced life at home
+                                        </p>
+                                        <span class="flex mb-5">
+                                            <p class="self-center">Explore remaining land plots</p>
+                                            <img src="images/Group 22.png" alt="" class="erlp ml-3" />
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="self-center web-navigation w-full flex flex-col  items-end animation-content-3 opacity-0">
+                                        <a class="" href="index.html">PROJECT</a>
+                                        <a class="" href="architecture.html">ARCHITECTURE</a>
+                                        <a class="" href="lifestyle.html">LIFESTYLE</a>
+                                        <a class="" href="production.html">PRODUCTION</a>
+                                        <a class="" href="contact.html">CONTACT</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- navcontent -->
+            <div class="navigation relative w-full h-fit ">
+                <!-- mobile -->
+                <div class="mobile-nav sm:hidden relative w-full h-full border-x border-white border-opacity-20 pb-10">
+                    <div class="mobile-nav-inner grid grid-cols-1   py-10">
+                        <a class="" href="index.html">PROJECT</a>
+                        <a class="" href="architecture.html">ARCHITECTURE</a>
+                        <a class="" href="lifestyle.html">LIFESTYLE</a>
+                        <a class="" href="production.html">PRODUCTION</a>
+                        <a class="" href="contact.html">CONTACT</a>
+                    </div>
+                    <span class="copyright py-10">© Sedona Canyon Estate 2021</span>
+                </div>
+
+
+                <!-- tab -->
+                <div class="tab-nav hidden sm:block lg:hidden relative w-full h-full pb-10">
+                    <!-- tablines -->
+                    <div class="tab-lines absolute grid grid-cols-2">
+                        <div class="border-x border-white border-opacity-20"></div>
+                        <div class="border-x border-white border-l-0 border-opacity-20"></div>
+                    </div>
+                    <div class="tab-nav-inner grid grid-cols-2   py-10">
+                        <div class=""></div>
+                        <div class="flex flex-col justify-end ">
+                            <a class="" href="index.html">PROJECT</a>
+                            <a class="" href="architecture.html">ARCHITECTURE</a>
+                            <a class="" href="lifestyle.html">LIFESTYLE</a>
+                            <a class="" href="production.html">PRODUCTION</a>
+                            <a class="" href="contact.html">CONTACT</a>
+                        </div>
+                    </div>
+                    <span class="copyright py-10">© Sedona Canyon Estate 2021</span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
 </body>
+
 </html>

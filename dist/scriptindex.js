@@ -30,12 +30,15 @@ function increment() {
 
     timeline
       .to(".load-centered-logo", { opacity: 0 })
-      .to(".loader-lines", { opacity: 0, duration: 1, stagger: 0.5 })
-      .from(".animate-1", { opacity: 0 }, "<2")
-      .from(".animate-2", { opacity: 0 })
-      .from(".animate-3", { opacity: 0 })
-      .add(loaderdestroy)
-      .add(hamBtn);
+      .to(".loader-lines", { opacity: 0, duration: 0.5, stagger: 0.5 })
+      .to(".sls-animation", { opacity: 1 })
+      .to(".fade-in", { opacity: 1, stagger: 0.5 })
+      .to(".fade-in-green", { opacity: 1, stagger: 0.5 })
+      .to(".main-vid", { opacity: 1 })
+      .to(".animation-content-1", { opacity: 1 })
+      .to(".animation-content-2", { opacity: 1 })
+      .to(".animation-content-3", { opacity: 1 })
+      .add(secondloadscreenDestroy);
 
     clearInterval(secondscalc);
   }
@@ -46,6 +49,11 @@ function hamBtn() {
   hamBtnclass.forEach((hamBtnel) => {
     hamBtnel.style.pointerEvents = "auto";
   });
+}
+
+function secondloadscreenDestroy() {
+  document.querySelector(".loader").style.display = "none";
+  document.querySelector(".body").style.overflowY = "visible";
 }
 
 function loaderdestroy() {
