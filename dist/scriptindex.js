@@ -30,7 +30,7 @@ function increment() {
     document.querySelector(".body-content").style.display = "block";
 
     timeline
-      .to(".load-centered-logo", { opacity: 0 })
+      .to(".load-centered-logo", { opacity: 0, duration: 0.5 })
       .to(".loader-lines", { opacity: 0, duration: 0.5, stagger: 0.2 })
       .to(".sls-animation", { opacity: 1, duration: 2 })
       .to(".fade-in", { opacity: 1, stagger: 0.2 })

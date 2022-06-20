@@ -123,9 +123,9 @@ body,
   height: 100%;
   object-fit: cover;
   object-position: center center;
-  filter: brightness(39%);
-  -webkit-filter: brightness(39%);
-  -moz-filter: brightness(39%);
+  filter: brightness(60%);
+  -webkit-filter: brightness(60%);
+  -moz-filter: brightness(60%);
 }
 
 .fade-in {
