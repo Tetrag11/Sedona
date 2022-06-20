@@ -3,6 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 const timeline = gsap.timeline();
 const timeline_3 = gsap.timeline();
 
+TweenLite.lagSmoothing(1000, 16);
 // loader related
 
 // loader first animation
