@@ -30,11 +30,11 @@ function increment() {
 
     timeline
       .to(".load-centered-logo", { opacity: 0 })
-      .to(".loader-lines", { opacity: 0, duration: 0.5, stagger: 0.5 })
-      .to(".sls-animation", { opacity: 1 })
-      .to(".fade-in", { opacity: 1, stagger: 0.5 })
-      .to(".fade-in-green", { opacity: 1, stagger: 0.5 })
-      .to(".main-vid", { opacity: 1 })
+      .to(".loader-lines", { opacity: 0, duration: 0.5, stagger: 0.2 })
+      .to(".sls-animation", { opacity: 1, duration: 2 })
+      .to(".fade-in", { opacity: 1, stagger: 0.2 })
+      .to(".fade-in-green", { opacity: 1, stagger: 0.2 })
+      .to(".main-vid", { opacity: 1, duration: 0.8 })
       .to(".animation-content-1", { opacity: 1 })
       .to(".animation-content-2", { opacity: 1 })
       .to(".animation-content-3", { opacity: 1 })
