@@ -157,6 +157,7 @@ body,
 
 .erlp {
   width: 10vw;
+  object-fit: contain;
 }
 
 /* tab */
