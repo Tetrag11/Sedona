@@ -147,11 +147,12 @@ body,
 .mobile-paragraph h1 {
   font-size: 8.7vw;
   font-family: "Federo";
+  line-height: 13vw;
 }
 
 .mobile-paragraph p {
-  font-size: 3.8vw;
-  line-height: 30px;
+  font-size: 3.6vw;
+  line-height: 6.55vw;
 }
 
 .erlp {
@@ -188,17 +189,18 @@ body,
 }
 
 .tab-paragraph {
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2.5fr 1fr;
 }
 
 .tab-paragraph h1 {
   font-size: 6.7vw;
+  line-height: 10vw;
   font-family: "Federo";
 }
 
 .tab-paragraph p {
   font-size: 2.6vw;
-  line-height: 30px;
+  line-height: 4.6vw;
 }
 
 .tab-paragraph .erlp {
@@ -254,12 +256,13 @@ body,
 
 .web-paragraph h1 {
   font-size: 4.2vw;
+  line-height: 5.8vw;
   font-family: "Federo";
 }
 
 .web-paragraph p {
   font-size: 1.3vw;
-  line-height: 30px;
+  line-height: 2.45vw;
 }
 
 .web-paragraph .erlp {
