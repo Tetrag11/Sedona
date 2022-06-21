@@ -29,20 +29,34 @@ function increment() {
 
     document.querySelector(".body-content").style.display = "block";
 
-    timeline
-      .to(".load-centered-logo", { opacity: 0, duration: 0.5 })
-      .to(".loader-lines", { opacity: 0, duration: 0.5, stagger: 0.2 })
-      .to(".sls-animation", { opacity: 1, duration: 1.8 })
-      .to(".sls-animation", { opacity: 0, duration: 1.8 })
-      .to(".fade-in", { opacity: 1, stagger: 0.2 })
-      .to(".fade-in-green", { opacity: 1, stagger: 0.2 })
-      .to(".main-vid", { opacity: 1, duration: 0.8 })
-      .to(".animation-content-1", { opacity: 1 })
-      .to(".animation-content-2", { opacity: 1 })
-      .to(".animation-content-3", { opacity: 1 })
-      .add(secondloadscreenDestroy);
+    if (window.innerWidth < 1024) {
+      timeline
+        .to(".load-centered-logo", { opacity: 0, duration: 0.5 })
+        .to(".loader-lines", { opacity: 0, duration: 0.5, stagger: 0.2 })
+        .to(".fade-in-green", { opacity: 1, stagger: 0.2 })
+        .to(".main-vid", { opacity: 1, duration: 0.8 })
+        .to(".animation-content-1", { opacity: 1 })
+        .to(".animation-content-2", { opacity: 1 })
+        .to(".animation-content-3", { opacity: 1 })
+        .add(secondloadscreenDestroy);
 
-    clearInterval(secondscalc);
+      clearInterval(secondscalc);
+    } else {
+      timeline
+        .to(".load-centered-logo", { opacity: 0, duration: 0.5 })
+        .to(".loader-lines", { opacity: 0, duration: 0.5, stagger: 0.2 })
+        .to(".sls-animation", { opacity: 1, duration: 1.8 })
+        .to(".sls-animation", { opacity: 0, duration: 1.8 })
+        .to(".fade-in", { opacity: 1, stagger: 0.2 })
+        .to(".fade-in-green", { opacity: 1, stagger: 0.2 })
+        .to(".main-vid", { opacity: 1, duration: 0.8 })
+        .to(".animation-content-1", { opacity: 1 })
+        .to(".animation-content-2", { opacity: 1 })
+        .to(".animation-content-3", { opacity: 1 })
+        .add(secondloadscreenDestroy);
+
+      clearInterval(secondscalc);
+    }
   }
 }
 let secondscalc = setInterval(increment, 1000);
