@@ -32,8 +32,8 @@ function increment() {
     timeline
       .to(".load-centered-logo", { opacity: 0, duration: 0.5 })
       .to(".loader-lines", { opacity: 0, duration: 0.5, stagger: 0.2 })
-      .to(".sls-animation", { opacity: 1, duration: 1.5 })
-      .to(".sls-animation", { opacity: 0, duration: 1.5 })
+      .to(".sls-animation", { opacity: 1, duration: 1.8 })
+      .to(".sls-animation", { opacity: 0, duration: 1.8 })
       .to(".fade-in", { opacity: 1, stagger: 0.2 })
       .to(".fade-in-green", { opacity: 1, stagger: 0.2 })
       .to(".main-vid", { opacity: 1, duration: 0.8 })
