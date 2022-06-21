@@ -68,6 +68,7 @@ body,
 
 .slscv-content-heading-mobile {
   font-size: 4vw;
+  font-family: "Federo";
 }
 
 .slscv-img-tab {
@@ -76,7 +77,8 @@ body,
 }
 
 .slscv-content-heading-tab {
-  font-size: 3vw;
+  font-size: 2.3vw;
+  font-family: "Federo";
 }
 
 .slscv-span-web {
@@ -84,7 +86,8 @@ body,
 }
 
 .slscv-content-heading-web {
-  font-size: 1.7vw;
+  font-size: 1.2vw;
+  font-family: "Federo";
 }
 
 /* header */
@@ -123,9 +126,9 @@ body,
   height: 100%;
   object-fit: cover;
   object-position: center center;
-  filter: brightness(60%);
-  -webkit-filter: brightness(60%);
-  -moz-filter: brightness(60%);
+  filter: brightness(80%);
+  -webkit-filter: brightness(80%);
+  -moz-filter: brightness(80%);
 }
 
 .fade-in {
@@ -181,7 +184,8 @@ body,
 
 .tab-contact {
   font-size: 2.6vw;
-  justify-self: center;
+  /* justify-self: center; */
+  margin-left: 50%;
   align-self: center;
 }
 
@@ -290,8 +294,9 @@ body,
 /* layer */
 
 .web-green-layer {
-  max-width: 72.5%;
-  grid-template-columns: 6.9% 1fr 1fr 1fr;
+  /* max-width: 72.5%; */
+  /* grid-template-columns: 6.9% 1fr 1fr 1fr; */
+  grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
 }
 
 .tab-green-layer {

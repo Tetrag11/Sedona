@@ -107,6 +107,7 @@ body {
 
 @media (max-width: 640px) {
   .load-centered-logo {
-    width: 50vw;
+    width: 33.55vw;
+    object-fit: contain;
   }
 }

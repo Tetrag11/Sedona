@@ -9,7 +9,7 @@ gsap.ticker.lagSmoothing(1000, 16);
 // loader first animation
 const loaderpreload = gsap.timeline();
 loaderpreload
-  .from(".loader-lines", { y: "-150%", duration: 1, stagger: 0.1 })
+  .from(".loader-lines", { y: "-150%", duration: 0.5, stagger: 0.1 })
   .to(".load-centered-logo", { opacity: 1 })
   .to(".loader", { backgroundColor: "transparent" });
 
@@ -32,7 +32,8 @@ function increment() {
     timeline
       .to(".load-centered-logo", { opacity: 0, duration: 0.5 })
       .to(".loader-lines", { opacity: 0, duration: 0.5, stagger: 0.2 })
-      .to(".sls-animation", { opacity: 1, duration: 2 })
+      .to(".sls-animation", { opacity: 1, duration: 1.5 })
+      .to(".sls-animation", { opacity: 0, duration: 1.5 })
       .to(".fade-in", { opacity: 1, stagger: 0.2 })
       .to(".fade-in-green", { opacity: 1, stagger: 0.2 })
       .to(".main-vid", { opacity: 1, duration: 0.8 })
@@ -55,6 +56,9 @@ function hamBtn() {
 function secondloadscreenDestroy() {
   document.querySelector(".loader").style.display = "none";
   document.querySelector(".body").style.overflowY = "visible";
+  gsap.to(".fade-in-green", { opacity: 0 });
+  document.querySelector(".web-green-layer").style.background =
+    "linear-gradient(180.3deg, #2B3C1F 0.26%, #6A7736 99.74%)";
 }
 
 function loaderdestroy() {
