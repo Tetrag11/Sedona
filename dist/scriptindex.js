@@ -58,7 +58,7 @@ function secondloadscreenDestroy() {
   document.querySelector(".body").style.overflowY = "visible";
   gsap.to(".fade-in-green", { opacity: 0 });
   document.querySelector(".web-green-layer").style.background =
-    "linear-gradient(180.3deg, #2B3C1F 0.26%, #6A7736 99.74%)";
+    "linear-gradient(243.18deg, #2B3C1F 0%, #6A7736 100%)";
 }
 
 function loaderdestroy() {
