@@ -551,16 +551,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.25rem;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .ml-3 {
   margin-left: 0.75rem;
 }
 
 .mt-3 {
   margin-top: 0.75rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
 }
 
 .block {
@@ -679,20 +679,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.border-opacity-5 {
-  --tw-border-opacity: 0.05;
-}
-
-.border-opacity-20 {
-  --tw-border-opacity: 0.2;
+.border-opacity-10 {
+  --tw-border-opacity: 0.1;
 }
 
 .border-opacity-40 {
   --tw-border-opacity: 0.4;
-}
-
-.border-opacity-10 {
-  --tw-border-opacity: 0.1;
 }
 
 .p-6 {
