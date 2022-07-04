@@ -65,12 +65,137 @@
         </div>
 
         <!-- menu -->
+        <div class="menu w-full h-screen z-50 opacity-0 hidden">
+            <div class="menu-wrapper relative w-full h-full">
 
+
+                <!-- menu-web -->
+                <div class="web-menu hidden lg:grid">
+                    <!-- web-menu lines -->
+                    <div class="web-lines absolute z-30 w-full h-full grid grid-cols-4">
+                        <div class="border-x border-white border-opacity-10 border-r-0"></div>
+                        <div class="border-x border-white border-opacity-10 border-r-0"></div>
+                        <div class="border-x border-white border-opacity-10 border-r-0"></div>
+                        <div class="border-x border-white border-opacity-10"></div>
+                    </div>
+                    <!-- web-menu-nav -->
+                    <div
+                        class="web-menu-inner  web-text animation-content  w-full h-full absolute z-30 grid grid-cols-1">
+                        <div class="nintypercent">
+                            <div class="grid grid-cols-1 h-full">
+                                <!-- web-header -->
+                                <div class="w-full h-fit grid grid-cols-3 justify-between mt-5 animation-content-1 ">
+                                    <a href="contact.html" class="web-contact">Lets Talk</a>
+                                    <a class="h-fit" href="index.html"><img class="logo-web"
+                                            src="./images/sedonalogo.png" alt="" /></a>
+                                    <a class="h-fit menu-icon-web-link self-center justify-self-end flex"
+                                        href="javascript:void(0)" onclick="closeMenu()">Close
+                                        Menu<img class="menu-icon-web self-center ml-3" src="./images/Group 253.png"
+                                            alt="" /></a>
+                                </div>
+
+                                <!-- weblinks -->
+                                <div class="menu-links-web grid grid-cols-1 w-full  self-end">
+                                    <div class="flex flex-col">
+                                        <a class="py-3" href="#">PROJECT</a>
+                                        <a class="py-3" href="#">ARCHITECTURE</a>
+                                        <a class="py-3" href="#">LIFESTYLE</a>
+                                        <a class="py-3" href="#">PRODUCTION</a>
+                                        <a class="py-3" href="#">CONTACT</a>
+                                    </div>
+                                    <span class="copyright py-10 opacity-50">© Sedona Canyon Estate 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- menu tab -->
+                <div class="tab-menu hidden sm:grid lg:hidden">
+                    <!-- tab-menu lines -->
+                    <div class="tab-lines absolute z-30 w-full h-full grid grid-cols-2">
+                        <div class="border-x border-white border-opacity-10 border-r-0"></div>
+                        <div class="border-x border-white border-opacity-10"></div>
+                    </div>
+                    <!-- tab-menu-nav -->
+                    <div class="web-menu-inner  web-text  w-full h-full absolute z-30 grid grid-cols-1">
+                        <div class="nintypercent">
+                            <div class="grid grid-cols-1 h-full">
+                                <!-- tab-header -->
+                                <div class="w-full h-fit grid grid-cols-3 justify-between mt-5 ">
+                                    <a class="h-fit" href="index.html"><img class="logo-tab"
+                                            src="./images/sedonalogo2.png" alt="" /></a>
+                                    <a href="contact.html" class="tab-contact">Lets Talk</a>
+                                    <a class="h-fit self-center justify-self-end flex" href="javascript:void(0)"
+                                        onclick="closeMenu()">Close
+                                        Menu<img class="menu-icon-tab pl-2 self-center" src="./images/Group 253.png"
+                                            alt="" /></a>
+
+                                </div>
+
+                                <!-- tablinks -->
+                                <div class="menu-links-tab grid grid-cols-1 w-full  self-end">
+                                    <div class="flex flex-col">
+                                        <a class="py-3" href="#">PROJECT</a>
+                                        <a class="py-3" href="#">ARCHITECTURE</a>
+                                        <a class="py-3" href="#">LIFESTYLE</a>
+                                        <a class="py-3" href="#">PRODUCTION</a>
+                                        <a class="py-3" href="#">CONTACT</a>
+                                    </div>
+                                    <span class="copyright-tab py-10 opacity-50">© Sedona Canyon Estate 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- menu mobile-->
+                <div class="tab-menu  grid sm:hidden">
+                    <!-- mobile-menu lines -->
+                    <div class="mobile-lines absolute z-30 w-full h-full grid grid-cols-1">
+                        <div class="border-x border-white border-opacity-10"></div>
+                    </div>
+                    <!-- mobile-menu-nav -->
+                    <div class="web-menu-inner  web-text  w-full h-full absolute z-30 grid grid-cols-1">
+                        <div class="nintypercent">
+                            <div class="grid grid-cols-1 h-full">
+                                <!-- mobile-header -->
+                                <div class="flex w-full h-fit justify-between mt-5 ">
+                                    <a class="h-fit" href="index.html"><img class="logo-mobile"
+                                            src="./images/sedonalogo2.png" alt="" /></a>
+                                    <a class="h-fit self-center justify-self-end flex" href="javascript:void(0)"
+                                        onclick="closeMenu()">Close
+                                        Menu<img class="menu-icon-mobile pl-2 self-center" src="./images/Group 253.png"
+                                            alt="" /></a>
+                                </div>
+
+                                <!-- mobilelinks -->
+                                <div class="menu-links-mobile grid grid-cols-1 w-full  self-end">
+                                    <div class="flex flex-col">
+                                        <a class="py-3" href="#">PROJECT</a>
+                                        <a class="py-3" href="#">ARCHITECTURE</a>
+                                        <a class="py-3" href="#">LIFESTYLE</a>
+                                        <a class="py-3" href="#">PRODUCTION</a>
+                                        <a class="py-3" href="#">CONTACT</a>
+                                    </div>
+                                    <span class="copyright-mobile py-10 opacity-50">© Sedona Canyon Estate 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
 
 
 
         <!-- content -->
-        <div class="content absolute w-full  z-50">
+        <div class="content absolute w-full  z-20">
 
             <!-- Content-wrapper -->
             <div class="content-wrapper relative w-full h-full">
@@ -79,12 +204,21 @@
                 <!-- web -->
                 <div class="web-content relative w-full h-full  lg:grid grid-cols-1 hidden overflow-y-hidden">
 
-                    <div class="card self-end justify-self-end z-50 opacity-0">
-                        <div class="card-text">
-                            <div class="flex w-full justify-around">
-                                <h1>Lot 06</h1>
-                                <span>close</span>
+                    <!-- card -->
+                    <div class="card self-end justify-self-end z-50 absolute ">
+                        <div class="card-text flex flex-col h-full justify-center">
+                            <div class="card-header flex w-full pb-5">
+                                <h1 class="card-heading opacity-0">LOT 06</h1>
+                                <a class="opacity-0 card-close" onclick="closeCard()"
+                                    href="javascript:void(0)"><span>close</span></a>
                             </div>
+                            <p class="card-p opacity-0">This site, which is just under an acre has views over the
+                                forests<br>
+                                and the Nakiyadeniya mountain ranges. Anyone purchasing<br>
+                                this beautiful property can collaborate and design<br>
+                                their home with Shakticola.
+                            </p>
+                            <a class="card-inquire opacity-0 justify-self-end" href="#">Inquire now</a>
                         </div>
                     </div>
 
@@ -97,9 +231,10 @@
                     </div>
 
 
+
+
                     <!-- web-text -->
-                    <div onmousemove="moveMap(event)"
-                        class=" web-text animation-content  w-full h-full absolute z-30 grid grid-cols-1">
+                    <div class=" web-text animation-content  w-full h-full absolute z-30 grid grid-cols-1">
 
                         <div class="nintypercent">
                             <div class="web-text-first-half grid grid-cols-1 gap-0">
@@ -108,24 +243,26 @@
                                     <a href="contact.html" class="web-contact">Lets Talk</a>
                                     <a class="h-fit" href="index.html"><img class="logo-web"
                                             src="./images/sedonalogo.png" alt="" /></a>
-                                    <a class="h-fit menu-icon-web-link self-center justify-self-end flex" href="#">Open
+                                    <a onclick="openMenu()"
+                                        class="h-fit menu-icon-web-link self-center justify-self-end flex"
+                                        href="javascript:void(0)">Open
                                         Menu<img class="menu-icon-web self-center ml-3" src="./images/Group 25.png"
                                             alt="" /></a>
                                 </div>
 
                                 <!-- lots -->
                                 <div class="lots-web w-full h-full grid grid-cols-4 ">
-                                    <a onmouseover="changeMap1()"
-                                        class="w-full h-full flex flex-col items-center justify-center"
+                                    <a onclick="openCard(1)" onmouseover="changeMap1()"
+                                        class="lot-link w-full h-full flex flex-col items-center justify-center"
                                         href="javascript:void(0)">LoT 02 <img src="images/Group 30.png" alt=""></a>
-                                    <a onmouseover="changeMap2()"
-                                        class="w-full h-full flex flex-col items-center justify-center"
+                                    <a onclick="openCard(2)" onmouseover="changeMap2()"
+                                        class="lot-link w-full h-full flex flex-col items-center justify-center"
                                         href="javascript:void(0)">LoT 06 <img src="images/Group 30.png" alt=""></a>
-                                    <a onmouseover="changeMap3()"
-                                        class="w-full h-full flex flex-col items-center justify-center"
+                                    <a onclick="openCard(3)" onmouseover="changeMap3()"
+                                        class="lot-link w-full h-full flex flex-col items-center justify-center"
                                         href="javascript:void(0)">LoT 07 <img src="images/Group 30.png" alt=""></a>
-                                    <a onmouseover="changeMap4()"
-                                        class="w-full h-full flex flex-col items-center justify-center"
+                                    <a onclick="openCard(4)" onmouseover="changeMap4()"
+                                        class="lot-link w-full h-full flex flex-col items-center justify-center"
                                         href="javascript:void(0)">LoT 08 <img src="images/Group 30.png" alt=""></a>
                                 </div>
 
@@ -137,23 +274,27 @@
 
                     </div>
 
+                    <!-- map -->
                     <div class="map absolute w-full h-full z-20  ">
                         <div class="relative w-full h-full">
-                            <div class="relative  w-full h-full flex items-end">
-                                <img class="lot0 movemap absolute  z-40" src="images/Map Final 1.png" alt="">
-                                <img class="lot1 movemap absolute opacity-0 z-30" src="images/Map Final lot 2 1.png"
+                            <div class="relative  w-full h-full flex ">
+                                <img class="lot0 movemap absolute  z-40" src="./images/IMG-20220704-WA0008.jpg" alt="">
+                                <img class="lot1 movemap absolute opacity-0 z-30" src="./images/IMG-20220704-WA0008.jpg"
                                     alt="">
-                                <img class="lot2 movemap absolute opacity-0 z-20" src="images/Map Final lot 6 1.png"
+                                <img class="lot2 movemap absolute opacity-0 z-20" src="./images/IMG-20220704-WA0008.jpg"
                                     alt="">
-                                <img class="lot3 movemap absolute opacity-0 z-10" src="images/Map Final lot 7 1.png"
+                                <img class="lot3 movemap absolute opacity-0 z-10" src="./images/IMG-20220704-WA0008.jpg"
                                     alt="">
-                                <img class="lot4 movemap absolute opacity-0 z-0" src="images/Map Final lot 8 1.png"
+                                <img class="lot4 movemap absolute opacity-0 z-0" src="./images/IMG-20220704-WA0008.jpg"
                                     alt="">
+
                             </div>
 
                         </div>
 
                     </div>
+                    <!-- map-zoomout -->
+                    <div onmouseover="zoomOut()" class="mapzoomout absolute"></div>
 
 
 
