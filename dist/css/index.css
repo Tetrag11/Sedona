@@ -1,12 +1,6 @@
-body,
-.loader-lines,
-.nav-line-left,
-.nav-line-right {
-  background-color: black !important;
-}
-
 .loader-lines {
-  border-color: #171717 !important;
+  /* border-color: #171717 !important; */
+  background-color: transparent;
 }
 
 /* dev */
@@ -16,7 +10,7 @@ body,
 .loader {
   max-width: 100vw !important;
   left: 0;
-  background-color: black;
+  background: linear-gradient(243.18deg, #2b3c1f 0%, #6a7736 100%) !important;
 }
 
 .batman-web {
@@ -37,7 +31,6 @@ body,
   height: 100vh;
   z-index: 41;
   color: white;
-  /* clip-path: inset(0 0 0 25%); */
 }
 
 .second-loading-screen-image {
@@ -103,7 +96,7 @@ body,
 .body-content {
   width: 100vw;
   height: 100%;
-
+  /* background: linear-gradient(243.18deg, #2b3c1f 0%, #6a7736 100%); */
   z-index: 42;
 }
 
@@ -141,7 +134,7 @@ body,
 }
 
 .fade-in {
-  background-color: black;
+  /* background-color: black; */
 }
 
 .logo-mobile {
@@ -232,7 +225,7 @@ body,
 }
 
 .web-background {
-  grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .web-content-wrapper {
@@ -293,8 +286,68 @@ body,
   color: white;
   font-size: 1.8vw;
   margin-bottom: 1.2rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: right;
 }
 
+.bar-text {
+  transition: left 0.5s ease-out;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.bars:hover .bar-text {
+  left: -17%;
+}
+
+.bars:hover .bar {
+  opacity: 1;
+}
+
+.bar {
+  transition: opacity 0.8s;
+  position: absolute;
+  left: 85%;
+  top: 50%;
+  width: 3vw;
+  height: 2px;
+  border: 1px white solid;
+  opacity: 0;
+}
+
+.exp {
+  left: 0;
+  top: 51%;
+}
+.exp-text {
+  position: relative;
+  transition: left 0.8s ease-out;
+  left: 0;
+}
+
+.map-link:hover .exp-text {
+  transform: translateX(100px);
+  left: 20%;
+}
+.map-link:hover .bar {
+  opacity: 1;
+}
+
+/* .arc {
+  left: 74%;
+}
+.life {
+  left: 60%;
+}
+.pro {
+  left: 75%;
+}
+.con {
+  left: 68%;
+} */
 /* .web-background .fade-in:last-child {
   grid-column: 5/7;
   background: linear-gradient(243.18deg, #2b3c1f 0%, #6a7736 100%) !important;
@@ -303,9 +356,10 @@ body,
 /* layer */
 
 .web-green-layer {
-  /* max-width: 72.5%; */
-  /* grid-template-columns: 6.9% 1fr 1fr 1fr; */
-  grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
+  max-width: 72.5%;
+  grid-template-columns: 6.9% 1fr 1fr 1fr;
+
+  /* grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%; */
 }
 
 .tab-green-layer {
@@ -316,7 +370,7 @@ body,
 }
 
 .fade-in-green {
-  background-color: #415127;
+  background-color: black;
 }
 
 /* Navigation */
@@ -338,6 +392,96 @@ body,
   font-size: 4.8vw;
   margin-bottom: 1.2rem;
   font-family: "Federo";
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: right;
+}
+
+.bars:hover .bar-text-m {
+  left: -10%;
+}
+
+.bars:hover .bar-m {
+  opacity: 1;
+}
+
+.bar-text-m {
+  transition: left 0.5s ease-out;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.bar-m {
+  transition: opacity 0.8s;
+  position: absolute;
+  left: 94%;
+  top: 50%;
+  width: 5vw;
+  height: 2px;
+  border: 1px white solid;
+  opacity: 0;
+}
+
+.exp-m {
+  left: 0;
+  top: 51%;
+}
+.exp-text-m {
+  position: relative;
+  transition: left 0.8s ease-out;
+  left: 0;
+}
+
+.map-link-m:hover .exp-text-m {
+  left: 15%;
+}
+.map-link-m:hover .bar-m {
+  opacity: 1;
+}
+
+.bars:hover .bar-text-t {
+  left: -10%;
+}
+
+.bars:hover .bar-t {
+  opacity: 1;
+}
+
+.bar-text-t {
+  transition: left 0.5s ease-out;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.bar-t {
+  transition: opacity 0.8s;
+  position: absolute;
+  left: 91%;
+  top: 51%;
+  width: 4vw;
+  height: 2px;
+  border: 1px white solid;
+  opacity: 0;
+}
+
+.exp-t {
+  left: 0;
+  top: 51%;
+}
+.exp-text-t {
+  position: relative;
+  transition: left 0.8s ease-out;
+  left: 0;
+}
+
+.map-link-t:hover .exp-text-t {
+  left: 15%;
+}
+.map-link-t:hover .bar-t {
+  opacity: 1;
 }
 
 .copyright {
@@ -350,12 +494,19 @@ body,
   max-width: 90%;
   margin: 0 auto;
 }
+.tab-nav-inner {
+  background-color: transparent;
+}
 .tab-nav-inner a {
   width: fit-content;
   align-self: end;
   font-size: 3.5vw;
   margin-bottom: 1.2rem;
   font-family: "Federo";
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: right;
 }
 
 .copyright {

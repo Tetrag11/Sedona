@@ -1,0 +1,91 @@
+/* loader */
+.loader {
+  max-width: 100vw !important;
+  left: 0;
+  background: linear-gradient(243.18deg, #2b3c1f 0%, #6a7736 100%) !important;
+}
+
+.batman-web {
+  grid-template-columns: 5% 1fr 1fr 1fr 1fr 5% !important;
+}
+.batman-tab {
+  grid-template-columns: 5% 1fr 1fr 5% !important;
+}
+
+.batman-mobile {
+  grid-template-columns: 5% 1fr 5% !important;
+}
+
+/* content */
+.content {
+  background: linear-gradient(243.18deg, #2b3c1f 0%, #6a7736 100%) !important;
+  height: 100vh;
+}
+
+.web-lines {
+  max-width: 90%;
+  left: 5%;
+}
+
+.web-text {
+  color: white;
+}
+
+.logo-web {
+  width: 15.3vw;
+  margin: 0 auto;
+}
+
+.web-contact {
+  font-size: 1.3vw;
+  justify-self: start;
+  align-self: center;
+}
+
+.menu-icon-web {
+  width: 2.5vw;
+  height: 100%;
+}
+
+.web-text {
+  grid-template-rows: 1fr 1.2fr;
+}
+
+.web-text-first-half {
+  height: 100%;
+  grid-template-rows: auto 1fr;
+}
+
+.lots-web a {
+  font-size: 30px;
+  line-height: 70px;
+  font-weight: 400;
+  font-family: Federo;
+}
+
+.nintypercent {
+  /* max-height: 700px; */
+}
+
+.lots-web img {
+  height: 51px;
+  width: 51px;
+}
+
+.map {
+}
+
+.map img {
+  /* width: 90%;
+  left: 5%; */
+  object-fit: contain;
+  transform: translateY(200px);
+  transition: transform 1.5s ease-out;
+}
+
+.card {
+  position: fixed;
+  width: 50%;
+  background-color: black;
+  color: white;
+}

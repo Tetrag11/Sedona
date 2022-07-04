@@ -8,11 +8,7 @@ gsap.ticker.lagSmoothing(1000, 16);
 
 // loader first animation
 const loaderpreload = gsap.timeline();
-loaderpreload
-  .from(".loader-lines", { y: "-150%", duration: 0.5, stagger: 0.1 })
-  .to(".load-centered-logo", { opacity: 1 })
-  .to(".loader", { backgroundColor: "transparent" });
-
+loaderpreload.to(".load-centered-logo", { opacity: 1 });
 let load = false;
 let loadtime = false;
 let seconds = 0;
@@ -27,36 +23,18 @@ function increment() {
   if (seconds > 2 && load == true) {
     // document.querySelector(".loader").style.display = "none";
 
-    document.querySelector(".body-content").style.display = "block";
+    // document.querySelector(".body-content").style.display = "block";
 
-    if (window.innerWidth < 1024) {
-      timeline
-        .to(".load-centered-logo", { opacity: 0, duration: 0.5 })
-        .to(".loader-lines", { opacity: 0, duration: 0.5, stagger: 0.2 })
-        .to(".fade-in-green", { opacity: 1, stagger: 0.2 })
-        .to(".main-vid", { opacity: 1, duration: 0.8 })
-        .to(".animation-content-1", { opacity: 1 })
-        .to(".animation-content-2", { opacity: 1 })
-        .to(".animation-content-3", { opacity: 1 })
-        .add(secondloadscreenDestroy);
+    timeline
+      .to(".load-centered-logo", { opacity: 0, duration: 0.5 })
+      .to(".fade-in-green", { opacity: 1, stagger: 0.2 })
+      .to(".main-vid", { opacity: 1, duration: 0.8 })
+      .to(".animation-content-1", { opacity: 1 })
+      .to(".animation-content-2", { opacity: 1 })
+      .to(".animation-content-3", { opacity: 1 })
+      .add(secondloadscreenDestroy);
 
-      clearInterval(secondscalc);
-    } else {
-      timeline
-        .to(".load-centered-logo", { opacity: 0, duration: 0.5 })
-        .to(".loader-lines", { opacity: 0, duration: 0.5, stagger: 0.2 })
-        .to(".sls-animation", { opacity: 1, duration: 1.8 })
-        .to(".sls-animation", { opacity: 0, duration: 1.8 })
-        .to(".fade-in", { opacity: 1, stagger: 0.2 })
-        .to(".fade-in-green", { opacity: 1, stagger: 0.2 })
-        .to(".main-vid", { opacity: 1, duration: 0.8 })
-        .to(".animation-content-1", { opacity: 1 })
-        .to(".animation-content-2", { opacity: 1 })
-        .to(".animation-content-3", { opacity: 1 })
-        .add(secondloadscreenDestroy);
-
-      clearInterval(secondscalc);
-    }
+    clearInterval(secondscalc);
   }
 }
 let secondscalc = setInterval(increment, 1000);
@@ -68,15 +46,13 @@ function hamBtn() {
 }
 
 function secondloadscreenDestroy() {
-  document.querySelector(".loader").style.display = "none";
   document.querySelector(".body").style.overflowY = "visible";
-  gsap.to(".fade-in-green", { opacity: 0 });
+
   document.querySelector(".web-green-layer").style.background =
     "linear-gradient(243.18deg, #2B3C1F 0%, #6A7736 100%)";
 }
 
 function loaderdestroy() {
-  document.querySelector(".loader").style.display = "none";
   document.querySelector(".body").style.overflowY = "visible";
 }
 
@@ -119,4 +95,20 @@ function closeNav() {
     },
   });
   gsap.to(".navbar-link", { opacity: 0 });
+}
+
+function exitAnimation() {
+  timeline_3
+    .to(".animation-content-3", { opacity: 0 })
+    .to(".animation-content-2", { opacity: 0 })
+    .to(".animation-content-1", { opacity: 0 })
+    .to(".main-vid", { opacity: 0, duration: 0.8 })
+    .to(".fade-in-green", { opacity: 0, stagger: -0.2 })
+    .to(".main", { opacity: 0 })
+    .to(".load-centered-logo", { opacity: 1, duration: 0.5 })
+    .add(redirect);
+}
+
+function redirect() {
+  location.replace("./map.html");
 }

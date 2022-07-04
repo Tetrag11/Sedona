@@ -19,17 +19,18 @@
     <title>Home</title>
 </head>
 
-<body class="body overflow-x-hidden">
+<body class="body overflow-x-hidden" onbeforeunload="">
+
     <!-- loader -->
-    <div class="loader container mx-auto absolute z-50">
+    <div class="loader container mx-auto absolute z-40">
         <!-- web -->
         <div class="load-web batman-web absolute z-50 hidden lg:grid">
-            <div class="loader-lines border-x  border-opacity-10 border-r-0 border-l-0"></div>
-            <div class="loader-lines border-x  border-opacity-10 border-r-0"></div>
-            <div class="loader-lines border-x  border-opacity-10 border-r-0"></div>
-            <div class="loader-lines border-x  border-opacity-10 border-r-0" style="opacity: 1"></div>
-            <div class="loader-lines border-x  border-opacity-10 border-r-0" style="opacity: 1"></div>
-            <div class="loader-lines border-x  border-opacity-10 border-r-0"></div>
+            <div class="loader-lines border-x border-white  border-opacity-10 border-r-0 border-l-0"></div>
+            <div class="loader-lines border-x border-white  border-opacity-10 border-r-0"></div>
+            <div class="loader-lines border-x border-white  border-opacity-10 border-r-0"></div>
+            <div class="loader-lines border-x border-white  border-opacity-10 border-r-0" style="opacity: 1"></div>
+            <div class="loader-lines border-x border-white  border-opacity-10 border-r-0" style="opacity: 1"></div>
+            <div class="loader-lines border-x border-white  border-opacity-10 border-r-0"></div>
         </div>
         <div class="load-web absolute items-center justify-center z-50 hidden lg:grid">
             <img class="load-centered-logo opacity-0" src="./images/sedonalogo.png" alt="" />
@@ -60,62 +61,9 @@
     </div>
 
 
-    <!-- body content -->
-    <div class="second-loading-screen absolute hidden lg:block">
-        <div class="second-loading-screen-parent relative">
-            <div class="second-loading-screen-image absolute">
-                <img src="./images/index-image-loader-min.jpg" alt="" />
-            </div>
-            <div class="second-loading-screen-content z-10 absolute">
-                <!-- mobile -->
-                <div
-                    class="second-loading-screen-content-variations sm:hidden grid grid-cols-1 items-start justify-end border-x border-white border-opacity-10">
-                    <div class="flex w-full justify-end mb-14">
-                        <h1 class="slscv-content-heading-mobile sls-animation opacity-0 mt-10">
-                            WELCOME <br> TO SEDONA <br> CANYON <br> ESTATE
-                        </h1>
 
-                    </div>
-                </div>
 
-                <!-- Tab -->
-                <div class="second-loading-screen-content-variations hidden sm:grid lg:hidden grid-cols-2">
-                    <div class="border-x border-white border-opacity-10">
-
-                    </div>
-                    <div class="border-r border-white border-opacity-10">
-                        <div class="w-full h-full flex items-start justify-end">
-                            <div class="w-full h-full flex items-start mt-10">
-                                <h1 class="slscv-content-heading-tab sls-animation opacity-0 mb-14">
-                                    WELCOME <br> TO SEDONA <br> CANYON ESTATE
-                                </h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Web -->
-                <div class="second-loading-screen-content-variations hidden lg:grid grid-cols-4">
-                    <div class="border-x border-white border-opacity-10">
-                        <div class="w-full h-full flex items-end">
-                            <h1 class="slscv-content-heading-web sls-animation opacity-0 mb-7">
-
-                            </h1>
-                        </div>
-                    </div>
-                    <div class="border-r border-white border-opacity-10"></div>
-                    <div class="border-r border-white border-opacity-10"></div>
-                    <div class="border-r border-white border-opacity-10">
-                        <div class="w-full h-full flex items-end justify-end">
-                            <span class="slscv-span-web sls-animation opacity-0 mb-7"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="body-content absolute" style="display: none">
+    <div class="body-content absolute z-50 ">
         <div class="relative w-full h-full">
             <!-- main-content -->
             <div class="main w-full h-full">
@@ -159,10 +107,13 @@
                                     minutes from the vibrant town of Galle. Reinvent the art of
                                     living a balanced life at home
                                 </p>
-                                <span class="flex mb-20">
-                                    <p class="self-center">Explore remaining land plots</p>
-                                    <img src="images/Group 22.png" alt="" class="erlp ml-3" />
-                                </span>
+                                <a class="map-link-m" href="javascript:void(0)" onclick="exitAnimation()">
+                                    <span class=" flex mb-20">
+                                        <p class="self-center relative"><span class="bar-m exp-m absolute"></span><span
+                                                class="exp-text-m">Explore
+                                                remaining land plots</span></p>
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </section>
@@ -236,10 +187,15 @@
                                             minutes from the vibrant town of Galle. Reinvent the art of
                                             living a balanced life at home
                                         </p>
-                                        <span class="flex mb-5">
-                                            <p class="self-center">Explore remaining land plots</p>
-                                            <img src="images/Group 22.png" alt="" class="erlp ml-3" />
-                                        </span>
+                                        <a href="javascript:void(0)" onclick="exitAnimation()" class="map-link-t">
+                                            <span class="flex mb-5">
+                                                <p class="self-center relative"><span
+                                                        class="bar-t exp-t absolute"></span><span
+                                                        class="exp-text-t">Explore
+                                                        remaining land plots</span></p>
+
+                                            </span>
+                                        </a>
                                     </div>
                                     <div></div>
                                 </div>
@@ -254,17 +210,7 @@
 
 
 
-                    <!-- web-background -->
-                    <div class="web-background w-full h-full absolute z-0 grid">
-                        <div class="fade-in opacity-0 border-x border-white border-opacity-10 border-r-0 border-l-0">
-                        </div>
-                        <div class="fade-in opacity-0 border-x border-white border-opacity-10 border-r-0"></div>
-                        <div class="fade-in opacity-0 border-x border-white border-opacity-10 border-r-0"></div>
-                        <div class="fade-in opacity-0 border-x border-white border-opacity-10 border-r-0"></div>
-                        <div class="fade-in opacity-0 border-x border-white border-opacity-10 border-r-0"></div>
-                        <div class="fade-in opacity-0 border-x border-white border-opacity-10 border-r-0"></div>
 
-                    </div>
                     <!-- web-green-layer -->
                     <div class="web-green-layer w-full h-full absolute z-10 grid">
                         <div
@@ -273,8 +219,7 @@
                         <div class="fade-in-green opacity-0 border-x border-white border-opacity-10 border-r-0"></div>
                         <div class="fade-in-green opacity-0 border-x border-white border-opacity-10 border-r-0"></div>
                         <div class="fade-in-green opacity-0 border-x border-white border-opacity-10 border-r-0"></div>
-                        <div class="fade-in-green opacity-0 border-x border-white border-opacity-10 border-r-0"></div>
-                        <div class="fade-in-green opacity-0 border-x border-white border-opacity-10 border-r-0"></div>
+
                     </div>
 
                     <!-- web-vid -->
@@ -324,18 +269,27 @@
                                             minutes from the vibrant town of Galle. Reinvent the art of
                                             living a balanced life at home
                                         </p>
-                                        <span class="flex mb-5">
-                                            <p class="self-center">Explore remaining land plots</p>
-                                            <img src="images/Group 22.png" alt="" class="erlp ml-3" />
-                                        </span>
+                                        <a class="map-link" href="javascript:void(0)" onclick="exitAnimation()">
+                                            <span class="flex mb-5">
+                                                <p class="self-center relative"><span
+                                                        class="bar exp absolute"></span><span class="exp-text">Explore
+                                                        remaining land plots</span></p>
+
+                                            </span>
+                                        </a>
                                     </div>
                                     <div
                                         class="self-center web-navigation w-full flex flex-col  items-end animation-content-3 opacity-0">
-                                        <a class="" href="#">PROJECT</a>
-                                        <a class="" href="#">ARCHITECTURE</a>
-                                        <a class="" href="#">LIFESTYLE</a>
-                                        <a class="" href="#">PRODUCTION</a>
-                                        <a class="" href="#">CONTACT</a>
+                                        <a class="bars" href="#"><span class="bar-text">PROJECT</span><span
+                                                class="bar absolute"></span></a>
+                                        <a class="bars" href="#"><span class="bar-text">ARCHITECTURE</span><span
+                                                class="bar arc absolute"></span></a>
+                                        <a class="bars" href="#"><span class="bar-text">LIFESTYLE</span><span
+                                                class="bar life absolute"></span></a>
+                                        <a class="bars" href="#"><span class="bar-text">PRODUCTION</span><span
+                                                class="bar pro absolute"></span></a>
+                                        <a class="bars" href="#"><span class="bar-text">CONTACT</span><span
+                                                class="bar con absolute"></span></a>
                                     </div>
                                 </div>
 
@@ -354,11 +308,16 @@
                 <!-- mobile -->
                 <div class="mobile-nav sm:hidden relative w-full h-full border-x border-white border-opacity-10 pb-10">
                     <div class="mobile-nav-inner grid grid-cols-1   py-10">
-                        <a class="" href="#">PROJECT</a>
-                        <a class="" href="#">ARCHITECTURE</a>
-                        <a class="" href="#">LIFESTYLE</a>
-                        <a class="" href="#">PRODUCTION</a>
-                        <a class="" href="#">CONTACT</a>
+                        <a class="bars" href="#"><span class="bar-text-m">PROJECT</span><span
+                                class="bar-m absolute"></span></a>
+                        <a class="bars" href="#"><span class="bar-text-m">ARCHITECTURE</span><span
+                                class="bar-m arc absolute"></span></a>
+                        <a class="bars" href="#"><span class="bar-text-m">LIFESTYLE</span><span
+                                class="bar-m life absolute"></span></a>
+                        <a class="bars" href="#"><span class="bar-text-m">PRODUCTION</span><span
+                                class="bar-m pro absolute"></span></a>
+                        <a class="bars" href="#"><span class="bar-text-m">CONTACT</span><span
+                                class="bar-m con absolute"></span></a>
                     </div>
                     <span class="copyright py-10">© Sedona Canyon Estate 2022</span>
                 </div>
@@ -367,18 +326,23 @@
                 <!-- tab -->
                 <div class="tab-nav hidden sm:block lg:hidden relative w-full h-full pb-10">
                     <!-- tablines -->
-                    <div class="tab-lines absolute grid grid-cols-2">
+                    <div class="tab-lines absolute z-0 grid grid-cols-2">
                         <div class="border-x border-white border-opacity-10"></div>
                         <div class="border-x border-white border-l-0 border-opacity-10"></div>
                     </div>
-                    <div class="tab-nav-inner grid grid-cols-2   py-10">
+                    <div class="tab-nav-inner relative   grid grid-cols-2 z-20   py-10">
                         <div class=""></div>
                         <div class="flex flex-col justify-end ">
-                            <a class="" href="#">PROJECT</a>
-                            <a class="" href="#">ARCHITECTURE</a>
-                            <a class="" href="#">LIFESTYLE</a>
-                            <a class="" href="#">PRODUCTION</a>
-                            <a class="" href="#">CONTACT</a>
+                            <a class="bars" href="#"><span class="bar-text-t">PROJECT</span><span
+                                    class="bar-t absolute"></span></a>
+                            <a class="bars" href="#"><span class="bar-text-t">ARCHITECTURE</span><span
+                                    class="bar-t arc absolute"></span></a>
+                            <a class="bars" href="#"><span class="bar-text-t">LIFESTYLE</span><span
+                                    class="bar-t life absolute"></span></a>
+                            <a class="bars" href="#"><span class="bar-text-t">PRODUCTION</span><span
+                                    class="bar-t pro absolute"></span></a>
+                            <a class="bars" href="#"><span class="bar-text-t">CONTACT</span><span
+                                    class="bar-t con absolute"></span></a>
                         </div>
                     </div>
                     <span class="copyright py-10">© Sedona Canyon Estate 2022</span>
