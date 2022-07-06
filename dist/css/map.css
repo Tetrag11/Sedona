@@ -32,6 +32,12 @@
 }
 
 /* mobile */
+.mobile-div {
+  width: 90%;
+  left: 5%;
+  grid-template-rows: auto 1fr;
+}
+
 .logo-mobile {
   width: 25.5vw;
 }
@@ -68,7 +74,86 @@
   text-align: right;
 }
 
+.mobile-content-row-grid {
+  grid-template-rows: 2fr 1fr;
+  color: white;
+}
+
+.mobile-content-row-grid h1 {
+  font-family: "Federo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 70px;
+}
+
+.mobile-content-row-grid a,
+.card-links a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.mobile-content-row-grid p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.mobile-card {
+  background-color: black;
+  color: white;
+  transform: translateY(90%);
+}
+
+.mobile-card-wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 /* tab */
+.tab-content {
+  color: white;
+}
+
+.tab-div {
+  grid-template-rows: auto 1fr;
+}
+
+.tab-content-row-grid {
+  grid-template-rows: 1fr 1fr 0.5fr;
+}
+
+.tab-content-row-grid h1 {
+  font-family: "Federo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 70px;
+}
+
+.tab-content-row-grid a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+.tab-content-row-grid p {
+  max-width: 75%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 25px;
+}
+
 .tab-text {
   color: white;
 }

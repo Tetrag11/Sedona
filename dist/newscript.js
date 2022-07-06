@@ -8,6 +8,7 @@ const timeline = gsap.timeline();
 const loaderpreload = gsap.timeline();
 const cardanimation = gsap.timeline();
 const menu = gsap.timeline();
+const mobiletabcard = gsap.timeline();
 
 // variables
 let load = false;
@@ -356,4 +357,35 @@ function openMenu() {
 
 function closeMenu() {
   menu.to(".menu", { opacity: 0 }).add(menudisappear);
+}
+
+// mobile and tab cards
+
+function mobileOpencard() {
+  mobiletabcard
+    .to(".lotbtn", { opacity: 0, pointerEvents: "none" })
+    .to(".appear-w-c", { display: "none" })
+    .to(".appear-w-e", { display: "flex" }, "<")
+    .to(".mobile-card", { y: 0 })
+    .to(".mobile-content-p", { opacity: 1 })
+    .to(".appear-w-e", { opacity: 1 });
+}
+
+function mobileClosecard() {
+  mobiletabcard
+    .to(".mobile-content-p", { opacity: 0 })
+    .to(".appear-w-e", { opacity: 0 })
+    .to(".appear-w-e", { display: "none" })
+    .to(".appear-w-c", { display: "flex" }, "<")
+    .to(".mobile-card", { y: "90%" })
+    .to(".lotbtn", { opacity: 1, pointerEvents: "auto" });
+}
+
+// map lot slider management
+
+let slide = 1;
+
+function nextLot() {
+  slide++;
+  console.log(slide);
 }

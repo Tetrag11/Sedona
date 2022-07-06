@@ -223,7 +223,7 @@
                     </div>
 
                     <!-- web lines -->
-                    <div class="web-lines absolute z-10 w-full h-full grid grid-cols-4">
+                    <div class="web-lines absolute z-30 w-full h-full grid grid-cols-4">
                         <div class="lot-b-1 border-x border-white border-opacity-10 border-r-0"></div>
                         <div class="lot-b-2 border-x border-white border-opacity-10 border-r-0"></div>
                         <div class="lot-b-3 border-x border-white border-opacity-10 border-r-0"></div>
@@ -295,10 +295,171 @@
                     </div>
                     <!-- map-zoomout -->
                     <div onmouseover="zoomOut()" class="mapzoomout absolute"></div>
+                </div>
+
+                <!-- Mobile -->
+                <div class="mobile-content relative w-full h-full  grid grid-cols-1 sm:hidden overflow-y-hidden">
+
+                    <!-- mobile-lines and Navbar -->
+                    <div
+                        class="mobile-div border-x border-white border-opacity-10 w-full h-screen grid grid-cols-1 justify-center absolute z-40">
+
+                        <div class="flex w-full h-fit justify-between mt-5 ">
+                            <a class="h-fit" href="index.html"><img class="logo-mobile" src="./images/sedonalogo2.png"
+                                    alt="" /></a>
+                            <a onclick="openMenu()" class="h-fit self-center" href="#"><img class="menu-icon-mobile"
+                                    src="./images/Group 21.png" alt="" /></a>
+                        </div>
+
+                        <div class="mobile-content-row-grid w-full  grid ">
+                            <div class="flex flex-col  items-center">
+                                <div class="mt-32 mb-20">
+                                    <h1 class="mobile-content-h1 mb-3">LOT 02</h1>
+                                    <a onclick="mobileOpencard()" class="veiw-details-mobile lotbtn "
+                                        href="javascript:void(0)">View details</a>
+                                </div>
+                                <p class="mobile-content-p opacity-0">This 1-acre site offers a tranquil and authentic
+                                    life immersed in nature. With the
+                                    heritage forest reserve
+                                    in the back and blessed with a free-flowing stream
+                                    to the right, this property is a hidden gem for a nature lover. Anyone purchasing
+                                    this beautiful property can collaborate and design their home with Shakticola.</p>
+                            </div>
+                            <div class="flex items-end ">
+                                <div class="hidden appear-w-e opacity-0 justify-between w-full h-fit mb-5">
+                                    <a class="mobile-inquire" href="javascript:void(0)">Inquire now</a>
+                                    <a class="closebtn" onclick="mobileClosecard()" href="javascript:void(0)">Close</a>
+                                </div>
+                                <div class="flex appear-w-c justify-between w-full h-fit mb-5">
+                                    <a class="lotbtn" onclick="previousLot()" href="javascript:void(0)">Previous
+                                        Lot</a>
+                                    <a class="lotbtn" onclick="nextLot()" href="javascript:void(0)">Next Lot</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                    <!-- card -->
+                    <div class="mobile-card w-full h-full absolute z-30">
+                    </div>
+
+                    <!-- map -->
+                    <div class="map absolute w-full h-full z-20  ">
+                        <div class="relative w-full h-full">
+                            <div class="relative  w-full h-full flex ">
+                                <img class="lot0 movemap absolute  z-40" src="./images/IMG-20220704-WA0008.jpg" alt="">
+                                <img class="lot1 movemap absolute opacity-0 z-30" src="./images/IMG-20220704-WA0008.jpg"
+                                    alt="">
+                                <img class="lot2 movemap absolute opacity-0 z-20" src="./images/IMG-20220704-WA0008.jpg"
+                                    alt="">
+                                <img class="lot3 movemap absolute opacity-0 z-10" src="./images/IMG-20220704-WA0008.jpg"
+                                    alt="">
+                                <img class="lot4 movemap absolute opacity-0 z-0" src="./images/IMG-20220704-WA0008.jpg"
+                                    alt="">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <!-- tab -->
+                <div class="tab-content relative w-full h-full hidden sm:block lg:hidden overflow-y-hidden">
+
+                    <!-- tab lines -->
+                    <div class="tab-lines absolute z-40 w-full h-full grid grid-cols-2">
+                        <div class="border-x border-white border-opacity-10 border-r-0"></div>
+                        <div class="border-x border-white border-opacity-10"></div>
+                    </div>
+
+
+                    <!-- tab-content -->
+                    <div class="tab-lines tab-div grid w-full h-full absolute  z-50">
+                        <!-- tab-header -->
+                        <div class="w-full h-fit grid grid-cols-3 justify-between mt-5 ">
+                            <a class="h-fit" href="index.html"><img class="logo-tab" src="./images/sedonalogo2.png"
+                                    alt="" /></a>
+                            <a href="contact.html" class="tab-contact">Lets Talk</a>
+                            <a class="h-fit self-center justify-self-end" href="#"><img class="menu-icon-tab"
+                                    src="./images/Group 21.png" alt="" /></a>
+                        </div>
+
+                        <!-- tab-body -->
+                        <div class="w-full h-full grid tab-content-row-grid">
+                            <div class="flex items-center">
+                                <div>
+                                    <h1 class="mobile-content-h1 mb-3">LOT 02</h1>
+                                    <a onclick="mobileOpencard()" class="veiw-details-tab lotbtn "
+                                        href="javascript:void(0)">View details</a>
+                                </div>
+                            </div>
+                            <div class="flex items-end">
+                                <p class="mobile-content-p opacity-0">This 1-acre site offers a tranquil and authentic
+                                    life immersed in nature.<br> With the
+                                    heritage forest reserve
+                                    in the back and blessed with a free-flowing<br> stream
+                                    to the right, this property is a hidden gem for a nature lover.<br> Anyone
+                                    purchasing
+                                    this beautiful property can collaborate<br> and design their home with Shakticola.
+                                </p>
+                            </div>
+                            <div class="flex items-end ">
+                                <div class="hidden appear-w-e opacity-0 justify-between w-full h-fit mb-5">
+                                    <a class="mobile-inquire" href="javascript:void(0)">Inquire now</a>
+                                    <a class="closebtn" onclick="mobileClosecard()" href="javascript:void(0)">Close</a>
+                                </div>
+                                <div class="flex appear-w-c justify-between w-full h-fit mb-5">
+                                    <a class="lotbtn" onclick="previousLot()" href="javascript:void(0)">Previous
+                                        Lot</a>
+                                    <a class="lotbtn" onclick="nextLot()" href="javascript:void(0)">Next Lot</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- card -->
+                    <div class="mobile-card w-full h-full absolute z-30">
+                    </div>
+
+                    <!-- map -->
+                    <div class="map absolute w-full h-full z-20  ">
+                        <div class="relative w-full h-full">
+                            <div class="relative  w-full h-full flex ">
+                                <img class="lot0 movemap absolute  z-40" src="./images/IMG-20220704-WA0008.jpg" alt="">
+                                <img class="lot1 movemap absolute opacity-0 z-30" src="./images/IMG-20220704-WA0008.jpg"
+                                    alt="">
+                                <img class="lot2 movemap absolute opacity-0 z-20" src="./images/IMG-20220704-WA0008.jpg"
+                                    alt="">
+                                <img class="lot3 movemap absolute opacity-0 z-10" src="./images/IMG-20220704-WA0008.jpg"
+                                    alt="">
+                                <img class="lot4 movemap absolute opacity-0 z-0" src="./images/IMG-20220704-WA0008.jpg"
+                                    alt="">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
 
 
 
                 </div>
+
+
 
 
 
