@@ -383,23 +383,27 @@
 @keyframes map-animationleft {
   100% {
     object-position: left center;
+    -webkit-object-position: left center;
   }
 }
 
 @keyframes map-animationcenter {
   100% {
     object-position: 45% center;
+    -webkit-object-position: 45% center;
   }
 }
 @keyframes map-animationcenter2 {
   100% {
     object-position: 70% center;
+    -webkit-object-position: 70% center;
   }
 }
 
 @keyframes map-animationright {
   100% {
     object-position: 90% 50%;
+    -webkit-object-position: 90% 50%;
   }
 }
 
