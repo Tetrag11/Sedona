@@ -496,13 +496,6 @@
   line-height: 25px;
 }
 
-@media (max-width: 1600px) and (min-width: 1300px) {
-  .card p {
-    font-size: 14px;
-    line-height: 30px;
-  }
-}
-
 @media only screen and (max-height: 816px) {
   .tab-content-row-grid {
     grid-template-rows: auto 1fr auto;

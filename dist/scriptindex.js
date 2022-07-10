@@ -2,6 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const timeline = gsap.timeline();
 const timeline_3 = gsap.timeline();
+const menu = gsap.timeline();
 
 gsap.ticker.lagSmoothing(1000, 16);
 // loader related
@@ -27,8 +28,8 @@ function increment() {
 
     timeline
       .to(".load-centered-logo", { opacity: 0, duration: 0.5 })
-      .to(".fade-in-green", { opacity: 1, stagger: 0.2 })
-      .to(".main-vid", { opacity: 1, duration: 0.8 })
+      .to(".loader-lines", { opacity: 0, stagger: 0.2 })
+      .to(".loader", { display: "none" })
       .to(".animation-content-1", { opacity: 1 })
       .to(".animation-content-2", { opacity: 1 })
       .to(".animation-content-3", { opacity: 1 })
@@ -47,9 +48,6 @@ function hamBtn() {
 
 function secondloadscreenDestroy() {
   document.querySelector(".body").style.overflowY = "visible";
-
-  document.querySelector(".web-green-layer").style.background =
-    "linear-gradient(243.18deg, #2B3C1F 0%, #6A7736 100%)";
 }
 
 function loaderdestroy() {
@@ -111,4 +109,41 @@ function exitAnimation() {
 
 function redirect() {
   location.replace("./map.html");
+}
+
+// menu
+
+function menuappear() {
+  document.querySelector(".menu").style.display = "block";
+}
+
+function menudisappear() {
+  document.querySelector(".menu").style.display = "none";
+}
+
+function openMenu() {
+  menu
+    .to(".openMenu", { pointerEvents: "none" })
+    .to(".closeMenu", { pointerEvents: "none" }, "<")
+    .to(".animation-content-2", { opacity: 0 }, "<")
+    .to(".openMenu", { opacity: 0 })
+    .to(".closeMenu", { opacity: 0 }, "<")
+    .add(menuappear)
+    .to(".menu-line-items", { opacity: 1, stagger: -0.2 })
+    .to(".closeMenu", { opacity: 1 })
+    .to(".menu-tab-mob-appear", { opacity: 1 }, "< 0.2")
+    .to(".openMenu", { pointerEvents: "auto" })
+    .to(".closeMenu", { pointerEvents: "auto" }, "<");
+}
+
+function closeMenu() {
+  menu
+    .to(".openMenu", { pointerEvents: "none" })
+    .to(".closeMenu", { pointerEvents: "none", opacity: 0 }, "<")
+    .to(".menu-tab-mob-appear", { opacity: 0 }, "<")
+    .to(".menu-line-items", { opacity: 0, stagger: 0.2 }, "<")
+    .add(menudisappear)
+    .to(".animation-content-2", { opacity: 1 })
+    .to(".openMenu", { pointerEvents: "auto", opacity: 1 })
+    .to(".closeMenu", { pointerEvents: "auto" }, "<");
 }

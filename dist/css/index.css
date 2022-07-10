@@ -2,6 +2,9 @@
   /* border-color: #171717 !important; */
   background-color: transparent;
 }
+.body {
+  background: #485b29 !important;
+}
 
 /* dev */
 
@@ -10,7 +13,11 @@
 .loader {
   max-width: 100vw !important;
   left: 0;
-  background: linear-gradient(243.18deg, #2b3c1f 0%, #6a7736 100%) !important;
+  /* background: linear-gradient(243.18deg, #2b3c1f 0%, #6a7736 100%) !important; */
+}
+
+.loader-lines {
+  background-color: #5a6351;
 }
 
 .batman-web {
@@ -29,7 +36,7 @@
 .second-loading-screen {
   width: 100vw;
   height: 100vh;
-  z-index: 41;
+  /* z-index: 41; */
   color: white;
 }
 
@@ -97,7 +104,7 @@
   width: 100vw;
   height: 100%;
   /* background: linear-gradient(243.18deg, #2b3c1f 0%, #6a7736 100%); */
-  z-index: 42;
+  /* z-index: 42; */
 }
 
 .body-content section {
@@ -136,13 +143,18 @@
 .fade-in {
   /* background-color: black; */
 }
-
 .logo-mobile {
-  width: 25.5vw;
+  width: 109px;
+  height: 53px;
+}
+.menu-icon-mobile {
+  width: 33px;
+  height: 10px;
 }
 
-.menu-icon-mobile {
-  width: 7.9vw;
+.menu-icon-mobile-close {
+  width: 33px;
+  height: 1px;
 }
 
 .mobile-paragraph {
@@ -181,18 +193,23 @@
 }
 
 .logo-tab {
-  width: 20.2vw;
+  width: 90px;
+  height: 45px;
 }
 
 .tab-contact {
-  font-size: 2.6vw;
+  font-size: 13px;
   /* justify-self: center; */
   margin-left: 50%;
   align-self: center;
 }
-
 .menu-icon-tab {
-  width: 7.9vw;
+  width: 33px;
+  height: 9px;
+}
+.menu-icon-tab-close {
+  width: 33px;
+  height: 2px;
 }
 
 .tab-paragraph {
@@ -238,23 +255,28 @@
 }
 
 .logo-web {
-  width: 15.3vw;
+  width: 222px;
+  height: 68px;
   margin: 0 auto;
 }
-
 .menu-icon-web-link {
   font-size: 1.3vw;
 }
 
 .web-contact {
-  font-size: 1.3vw;
+  font-size: 18px;
   justify-self: start;
   align-self: center;
 }
 
 .menu-icon-web {
-  width: 2.5vw;
-  height: 100%;
+  width: 35px;
+  height: 9px;
+}
+
+.menu-icon-web-close {
+  width: 35px;
+  height: 2px;
 }
 
 .web-paragraph {
@@ -284,8 +306,8 @@
 .web-navigation a {
   font-family: "Federo";
   color: white;
-  font-size: 1.8vw;
-  margin-bottom: 1.2rem;
+  font-size: 25px;
+  line-height: 30px;
   position: relative;
   display: block;
   width: 100%;
@@ -518,24 +540,3 @@
   width: 100%;
   height: 100%;
 }
-
-
-
-
-
-
-
-
-
-<div class="card-header flex w-full pb-5">
-<h1 class="card-heading opacity-0">LOT 06</h1>
-<a class="card-inquire opacity-0 justify-self-end" href="#">Inquire now</a>
-<a class="opacity-0 card-close" onclick="closeCard()"
-    href="javascript:void(0)"><span>close</span></a>
-</div>
-<p class="card-p opacity-0">This site, which is just under an acre has views over the
-forests<br>
-and the Nakiyadeniya mountain ranges. Anyone purchasing<br>
-this beautiful property can collaborate and design<br>
-their home with Shakticola.
-</p>

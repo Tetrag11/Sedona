@@ -111,6 +111,106 @@ body {
   z-index: 1002;
 }
 
+/* menu opened with button */
+
+.menu {
+  position: fixed;
+}
+
+/* .web-menu-lines,
+.tab-menu-lines,
+.mobile-menu-lines {
+  max-width: 90%;
+  left: 5%;
+} */
+
+.web-menu-lines {
+  width: 100%;
+  grid-template-columns: 5% 1fr 1fr 1fr 1fr 5% !important;
+}
+
+.tab-menu-lines {
+  width: 100%;
+  grid-template-columns: 5% 1fr 1fr 5% !important;
+}
+
+.mobile-menu-lines {
+  width: 100%;
+  grid-template-columns: 5% 1fr 5% !important;
+}
+
+.menu-line-items {
+  background-color: #5a6351;
+}
+
+.menu-icon-web {
+  width: 35px;
+  height: 9px;
+}
+.menu-icon-web-close {
+  width: 35px;
+  height: 2px;
+}
+
+.menu-icon-mobile {
+  width: 33px;
+  height: 10px;
+}
+
+.menu-icon-mobile-close {
+  width: 33px;
+  height: 1px;
+}
+
+.menu-links-web a {
+  font-family: "Federo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: right;
+}
+
+.menu-links-mobile a {
+  font-family: "Federo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: right;
+}
+
+.menu-links-tab a {
+  font-family: "Federo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+}
+
+.menu-icon-tab {
+  width: 33px;
+  height: 9px;
+}
+.menu-icon-tab-close {
+  width: 33px;
+  height: 2px;
+}
+
+.copyright {
+  text-align: right;
+  font-size: 15px !important;
+}
+
+.copyright-tab {
+  text-align: right;
+}
+
+.copyright-mobile {
+  text-align: right;
+}
+
 /* sm(size) */
 
 @media (max-width: 640px) {
