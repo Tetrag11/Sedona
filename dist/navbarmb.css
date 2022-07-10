@@ -45,8 +45,7 @@
     .navbar-lines,
     .nav-responsive,
     .main-content,
-    .main,
-    .mobile-div {
+    .main {
       min-height: 800px;
     }
   }

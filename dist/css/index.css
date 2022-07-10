@@ -518,3 +518,24 @@
   width: 100%;
   height: 100%;
 }
+
+
+
+
+
+
+
+
+
+<div class="card-header flex w-full pb-5">
+<h1 class="card-heading opacity-0">LOT 06</h1>
+<a class="card-inquire opacity-0 justify-self-end" href="#">Inquire now</a>
+<a class="opacity-0 card-close" onclick="closeCard()"
+    href="javascript:void(0)"><span>close</span></a>
+</div>
+<p class="card-p opacity-0">This site, which is just under an acre has views over the
+forests<br>
+and the Nakiyadeniya mountain ranges. Anyone purchasing<br>
+this beautiful property can collaborate and design<br>
+their home with Shakticola.
+</p>

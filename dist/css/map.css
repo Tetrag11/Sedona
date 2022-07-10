@@ -31,19 +31,36 @@
   position: fixed;
 }
 
+.width-90-mx-auto {
+  width: 90%;
+  margin: 1.25rem auto;
+}
+
+.padding-x-5 {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 /* mobile */
 .mobile-div {
-  width: 90%;
-  left: 5%;
+  width: 100%;
+
   grid-template-rows: auto 1fr;
 }
 
 .logo-mobile {
-  width: 25.5vw;
+  width: 109px;
+  height: 53px;
 }
 
 .menu-icon-mobile {
-  width: 7.9vw;
+  width: 33px;
+  height: 10px;
+}
+
+.menu-icon-mobile-close {
+  width: 33px;
+  height: 1px;
 }
 
 .mobile-paragraph {
@@ -75,7 +92,7 @@
 }
 
 .mobile-content-row-grid {
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 5fr 1fr;
   color: white;
 }
 
@@ -102,13 +119,20 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
-  text-align: center;
+  text-align: left;
 }
 
 .mobile-card {
   background-color: black;
   color: white;
   transform: translateY(90%);
+  transition: transform 0.5s ease-out;
+}
+.tab-card {
+  background-color: black;
+  color: white;
+  transform: translateY(90%);
+  transition: transform 0.5s ease-out;
 }
 
 .mobile-card-wrapper {
@@ -159,18 +183,24 @@
 }
 
 .logo-tab {
-  width: 20.2vw;
+  width: 90px;
+  height: 45px;
 }
 
 .tab-contact {
-  font-size: 2.6vw;
+  font-size: 13px;
   /* justify-self: center; */
   margin-left: 50%;
   align-self: center;
 }
 
 .menu-icon-tab {
-  width: 5vw;
+  width: 33px;
+  height: 9px;
+}
+.menu-icon-tab-close {
+  width: 33px;
+  height: 2px;
 }
 
 .tab-paragraph {
@@ -241,19 +271,24 @@
 }
 
 .logo-web {
-  width: 15.3vw;
+  width: 222px;
+  height: 68px;
   margin: 0 auto;
 }
 
 .web-contact {
-  font-size: 1.3vw;
+  font-size: 18px;
   justify-self: start;
   align-self: center;
 }
 
 .menu-icon-web {
-  width: 2.5vw;
-  height: 100%;
+  width: 35px;
+  height: 9px;
+}
+.menu-icon-web-close {
+  width: 35px;
+  height: 2px;
 }
 
 .web-text {
@@ -281,9 +316,19 @@
   width: 51px;
 }
 
-.map {
+.map,
+.map-tab,
+.map-mobile {
   overflow-x: hidden;
   overflow-y: hidden;
+}
+
+.map-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.58) 0%,
+    rgba(0, 0, 0, 0) 90.82%
+  );
 }
 
 .map img {
@@ -295,9 +340,63 @@
   height: 100%;
   object-fit: cover;
   /* transform: scale(160%) translateX(15%) translateY(-5%); */
-  transform: scale(110%) translateX(0);
+  transform: scale(100%) translateX(0);
+  transition: transform 1.5s ease-out;
+  /* filter: brightness(70%); */
+}
+
+.map-tab img {
+  /* width: 90%;
+  left: 5%; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(120%) translateY(-14%) translateX(5%);
+  /* transform: scale(120%) translateY(0%) translateX(0%); */
+  object-position: left center;
+  /* animation: map-animation 2s ease-out forwards; */
   transition: transform 1.5s ease-out;
   filter: brightness(70%);
+}
+
+.map-mobile img {
+  /* width: 90%;
+  left: 5%; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+  transform: scale(120%) translateY(-14%) translateX(5%);
+  animation: map-animation 2s ease-out forwards;
+  transition: transform 1.5s ease-out;
+  filter: brightness(70%);
+}
+
+@keyframes map-animationleft {
+  100% {
+    object-position: left center;
+  }
+}
+
+@keyframes map-animationcenter {
+  100% {
+    object-position: 45% center;
+  }
+}
+@keyframes map-animationcenter2 {
+  100% {
+    object-position: 70% center;
+  }
+}
+
+@keyframes map-animationright {
+  100% {
+    object-position: 90% 50%;
+  }
 }
 
 .mapzoomout {
@@ -310,12 +409,16 @@
 
 .card {
   position: fixed;
-  width: 45%;
+  width: 50%;
   height: 400px;
   background-color: black;
   color: white;
 
   transform: translateY(100%);
+}
+
+.card-lines {
+  grid-template-columns: 10% 1fr 1fr;
 }
 
 .card-expand {
@@ -327,8 +430,22 @@
 }
 
 .card-text {
-  padding: 4rem;
-  padding-bottom: 2rem;
+  grid-template-columns: 10% 1fr;
+}
+
+.card-close {
+  width: 53px;
+  height: 53px;
+}
+
+.card-close-mobile {
+  width: 42px;
+  height: 42px;
+}
+
+.card-close-tab {
+  width: 42px;
+  height: 42px;
 }
 
 .card-header {
@@ -375,5 +492,26 @@
   .card p {
     font-size: 14px;
     line-height: 30px;
+  }
+}
+
+@media only screen and (max-height: 816px) {
+  .tab-content-row-grid {
+    grid-template-rows: auto 1fr auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .mobile-content-row-grid {
+    grid-template-rows: 1fr auto;
+  }
+  .appear-w-e {
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (max-height: 465px) {
+  .mobile-content-row-grid {
+    grid-template-rows: auto 1fr !important;
   }
 }
