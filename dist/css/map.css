@@ -372,6 +372,10 @@
   object-position: left center;
   transform: scale(120%) translateY(-14%) translateX(5%);
   animation: map-animation 2s ease-out forwards;
+  -webkit-animation: map-animation 2s ease-out forwards;
+  -moz-animation: map-animation 2s ease-out forwards;
+  -ms-animation: map-animation 2s ease-out forwards;
+  -o-animation: map-animation 2s ease-out forwards;
   transition: transform 1.5s ease-out;
   filter: brightness(70%);
 }
