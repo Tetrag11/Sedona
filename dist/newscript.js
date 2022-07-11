@@ -633,151 +633,66 @@ function nextMap(tabcount, direction) {
     case 1:
       mobiletabmapmove
         .to(".prev", { opacity: 0, pointerEvents: "none" })
-        .to(".next", { opacity: 1, pointerEvents: "auto" })
-        .add(changetexttabto1)
-        .to(".lot1-tab", { y: "-14%", x: "5%", y: "-14%" }, "<")
-        .to(".lot2-tab", { y: "-14%", x: "5%", y: "-14%" }, "<")
-        .to(".lot3-tab", { y: "-14%", x: "5%", y: "-14%" }, "<")
-        .to(".lot4-tab", { y: "-14%", x: "5%", y: "-14%" }, "<");
+        .to(".next", { opacity: 1, pointerEvents: "auto" }, "<")
+        .to(".lot1-tab", { y: "-14%", x: "5%" }, "<")
+        .to(".lot2-tab", { y: "-14%", x: "5%" }, "<")
+        .to(".lot3-tab", { y: "-14%", x: "5%" }, "<")
+        .to(".lot4-tab", { y: "-14%", x: "5%" }, "<")
+        .to(".lot1-tab", { objectPosition: "0% 50%", duration: 1 }, "<")
+        .to(".lot2-tab", { objectPosition: "0% 50%", duration: 1 }, "<")
+        .to(".lot3-tab", { objectPosition: "0% 50%", duration: 1 }, "<")
+        .to(".lot4-tab", { objectPosition: "0% 50%", duration: 1 }, "<")
+        .add(changetexttabto1);
       document.querySelector(".lot1-tab").style.opacity = 1;
       document.querySelector(".lot2-tab").style.opacity = 0;
       document.querySelector(".lot3-tab").style.opacity = 0;
       document.querySelector(".lot4-tab").style.opacity = 0;
 
-      document.querySelector(".lot1-tab").style.objectPosition = "45% center";
-      document.querySelector(".lot2-tab").style.objectPosition = "45% center";
-      document.querySelector(".lot3-tab").style.objectPosition = "45% center";
-      document.querySelector(".lot4-tab").style.objectPosition = "45% center";
-
-      document.querySelector(".lot1-tab").style.animation =
-        "map-animationleft 1s ease-out forwards";
-      document.querySelector(".lot2-tab").style.animation =
-        "map-animationleft 1s ease-out forwards";
-      document.querySelector(".lot3-tab").style.animation =
-        "map-animationleft 1s ease-out forwards";
-      document.querySelector(".lot4-tab").style.animation =
-        "map-animationleft 1s ease-out forwards";
-
       break;
     case 2:
       mobiletabmapmove
         .to(".prev", { opacity: 1, pointerEvents: "auto" })
-        .to(".next", { opacity: 1, pointerEvents: "auto" })
+        .to(".next", { opacity: 1, pointerEvents: "auto" }, "<")
+        .to(".lot1-tab", { objectPosition: "45% 50%", duration: 1 }, "<")
+        .to(".lot2-tab", { objectPosition: "45% 50%", duration: 1 }, "<")
+        .to(".lot3-tab", { objectPosition: "45% 50%", duration: 1 }, "<")
+        .to(".lot4-tab", { objectPosition: "45% 50%", duration: 1 }, "<")
         .add(changetexttabto2);
       document.querySelector(".lot2-tab").style.opacity = 1;
       document.querySelector(".lot1-tab").style.opacity = 0;
       document.querySelector(".lot3-tab").style.opacity = 0;
       document.querySelector(".lot4-tab").style.opacity = 0;
-
-      if (direction === "forwards") {
-        document.querySelector(".lot1-tab").style.objectPosition =
-          "left center";
-        document.querySelector(".lot2-tab").style.objectPosition =
-          "left center";
-        document.querySelector(".lot3-tab").style.objectPosition =
-          "left center";
-        document.querySelector(".lot4-tab").style.objectPosition =
-          "left center";
-      }
-      if (direction === "backwards") {
-        document.querySelector(".lot1-tab").style.objectPosition = "70% center";
-        document.querySelector(".lot2-tab").style.objectPosition = "70% center";
-        document.querySelector(".lot3-tab").style.objectPosition = "70% center";
-        document.querySelector(".lot4-tab").style.objectPosition = "70% center";
-      }
-
-      document.querySelector(".lot1-tab").style.animation =
-        "map-animationcenter 1s ease-out forwards";
-      document.querySelector(".lot2-tab").style.animation =
-        "map-animationcenter 1s ease-out forwards";
-      document.querySelector(".lot3-tab").style.animation =
-        "map-animationcenter 1s ease-out forwards";
-      document.querySelector(".lot4-tab").style.animation =
-        "map-animationcenter 1s ease-out forwards";
-
-      document.querySelector(".lot1-tab").style.transform =
-        "scale(120%) translateY(0%) translateX(0%);";
-      document.querySelector(".lot2-tab").style.transform =
-        "scale(120%) translateY(0%) translateX(0%);";
-      document.querySelector(".lot3-tab").style.transform =
-        "scale(120%) translateY(0%) translateX(0%);";
-      document.querySelector(".lot4-tab").style.transform =
-        "scale(120%) translateY(0%) translateX(0%);";
       break;
     case 3:
       mobiletabmapmove
         .to(".prev", { opacity: 1, pointerEvents: "auto" })
-        .to(".next", { opacity: 1, pointerEvents: "auto" })
-        .add(changetexttabto3)
-        .to(".lot1-tab", { y: "-5%", x: "5%" }, "<")
-        .to(".lot2-tab", { y: "-5%", x: "5%" }, "<")
-        .to(".lot3-tab", { y: "-5%", x: "5%" }, "<")
-        .to(".lot4-tab", { y: "-5%", x: "5%" }, "<");
+        .to(".next", { opacity: 1, pointerEvents: "auto" }, "<")
+        .to(".lot1-tab", { objectPosition: "70% 50%", duration: 1 }, "<")
+        .to(".lot2-tab", { objectPosition: "70% 50%", duration: 1 }, "<")
+        .to(".lot3-tab", { objectPosition: "70% 50%", duration: 1 }, "<")
+        .to(".lot4-tab", { objectPosition: "70% 50%", duration: 1 }, "<")
+        .add(changetexttabto3);
 
       document.querySelector(".lot3-tab").style.opacity = 1;
       document.querySelector(".lot1-tab").style.opacity = 0;
       document.querySelector(".lot2-tab").style.opacity = 0;
       document.querySelector(".lot4-tab").style.opacity = 0;
 
-      if (direction === "forwards") {
-        document.querySelector(".lot1-tab").style.objectPosition =
-          " 45% center";
-        document.querySelector(".lot2-tab").style.objectPosition =
-          " 45% center";
-        document.querySelector(".lot3-tab").style.objectPosition =
-          " 45% center";
-        document.querySelector(".lot4-tab").style.objectPosition =
-          " 45% center";
-      }
-      if (direction === "backwards") {
-        document.querySelector(".lot1-tab").style.objectPosition = "90% 50%";
-        document.querySelector(".lot2-tab").style.objectPosition = "90% 50%";
-        document.querySelector(".lot3-tab").style.objectPosition = "90% 50%";
-        document.querySelector(".lot4-tab").style.objectPosition = "90% 50%";
-      }
-
-      document.querySelector(".lot1-tab").style.animation =
-        "map-animationcenter2 1s ease-out forwards";
-      document.querySelector(".lot2-tab").style.animation =
-        "map-animationcenter2 1s ease-out forwards";
-      document.querySelector(".lot3-tab").style.animation =
-        "map-animationcenter2 1s ease-out forwards";
-      document.querySelector(".lot4-tab").style.animation =
-        "map-animationcenter2 1s ease-out forwards";
-
       break;
     case 4:
       mobiletabmapmove
         .to(".prev", { opacity: 1, pointerEvents: "auto" })
-        .to(".next", { opacity: 0, pointerEvents: "none" })
+        .to(".next", { opacity: 0, pointerEvents: "none" }, "<")
+        .to(".lot1-tab", { objectPosition: "90% 30%", duration: 1 }, "<")
+        .to(".lot2-tab", { objectPosition: "90% 30%", duration: 1 }, "<")
+        .to(".lot3-tab", { objectPosition: "90% 30%", duration: 1 }, "<")
+        .to(".lot4-tab", { objectPosition: "90% 30%", duration: 1 }, "<")
         .add(changetexttabto4);
       document.querySelector(".lot4-tab").style.opacity = 1;
       document.querySelector(".lot1-tab").style.opacity = 0;
       document.querySelector(".lot2-tab").style.opacity = 0;
       document.querySelector(".lot3-tab").style.opacity = 0;
 
-      document.querySelector(".lot1-tab").style.objectPosition = "70% center";
-      document.querySelector(".lot2-tab").style.objectPosition = "70% center";
-      document.querySelector(".lot3-tab").style.objectPosition = "70% center";
-      document.querySelector(".lot4-tab").style.objectPosition = "70% center";
-
-      document.querySelector(".lot1-tab").style.animation =
-        "map-animationright 1s ease-out forwards";
-      document.querySelector(".lot2-tab").style.animation =
-        "map-animationright 1s ease-out forwards";
-      document.querySelector(".lot3-tab").style.animation =
-        "map-animationright 1s ease-out forwards";
-      document.querySelector(".lot4-tab").style.animation =
-        "map-animationright 1s ease-out forwards";
-
-      // document.querySelector(".lot1-mobile").style.transform =
-      //   "scale(120%) translateY(0%) translateX(-10%);";
-      // document.querySelector(".lot2-mobile").style.transform =
-      //   "scale(120%) translateY(0%) translateX(-10%);";
-      // document.querySelector(".lot3-mobile").style.transform =
-      //   "scale(120%) translateY(0%) translateX(-10%);";
-      // document.querySelector(".lot4-mobile").style.transform =
-      //   "scale(120%) translateY(0%) translateX(-10%);";
       break;
   }
 }
@@ -807,200 +722,71 @@ function nextMapMob(mobilecount, mobiledirection) {
     case 1:
       mobiletabmapmove
         .to(".prev-mob", { opacity: 0, pointerEvents: "none" })
-        .to(".next-mob", { opacity: 1, pointerEvents: "auto" })
-        .add(changetextmobileto1)
-        .to(".lot1-mobile", { y: "-14%", x: "5%", y: "-14%" }, "<")
-        .to(".lot2-mobile", { y: "-14%", x: "5%", y: "-14%" }, "<")
-        .to(".lot3-mobile", { y: "-14%", x: "5%", y: "-14%" }, "<")
-        .to(".lot4-mobile", { y: "-14%", x: "5%", y: "-14%" }, "<");
+        .to(".next-mob", { opacity: 1, pointerEvents: "auto" }, "<")
+        .to(".lot1-mobile", { y: "-14%", x: "5%" }, "<")
+        .to(".lot2-mobile", { y: "-14%", x: "5%" }, "<")
+        .to(".lot3-mobile", { y: "-14%", x: "5%" }, "<")
+        .to(".lot4-mobile", { y: "-14%", x: "5%" }, "<")
+        .to(".lot1-mobile", { objectPosition: "0% 50%", duration: 1 }, "<")
+        .to(".lot2-mobile", { objectPosition: "0% 50%", duration: 1 }, "<")
+        .to(".lot3-mobile", { objectPosition: "0% 50%", duration: 1 }, "<")
+        .to(".lot4-mobile", { objectPosition: "0% 50%", duration: 1 }, "<")
+        .add(changetextmobileto1);
       document.querySelector(".lot1-mobile").style.opacity = 1;
       document.querySelector(".lot2-mobile").style.opacity = 0;
       document.querySelector(".lot3-mobile").style.opacity = 0;
       document.querySelector(".lot4-mobile").style.opacity = 0;
 
-      document.querySelector(".lot1-mobile").style.objectPosition =
-        "45% center";
-      document.querySelector(".lot2-mobile").style.objectPosition =
-        "45% center";
-      document.querySelector(".lot3-mobile").style.objectPosition =
-        "45% center";
-      document.querySelector(".lot4-mobile").style.objectPosition =
-        "45% center";
-
-      // document.querySelector(".lot1-mobile").style.animation =
-      //   "map-animationleft 1s ease-out forwards";
-      // document.querySelector(".lot2-mobile").style.animation =
-      //   "map-animationleft 1s ease-out forwards";
-      // document.querySelector(".lot3-mobile").style.animation =
-      //   "map-animationleft 1s ease-out forwards";
-      // document.querySelector(".lot4-mobile").style.animation =
-      //   "map-animationleft 1s ease-out forwards";
-
-      document.querySelector(".lot1-mobile").style.webkitAnimation =
-        "map-animationleft 1s ease-out forwards";
-      document.querySelector(".lot2-mobile").style.webkitAnimation =
-        "map-animationleft 1s ease-out forwards";
-      document.querySelector(".lot3-mobile").style.webkitAnimation =
-        "map-animationleft 1s ease-out forwards";
-      document.querySelector(".lot4-mobile").style.webkitAnimation =
-        "map-animationleft 1s ease-out forwards";
-
-      // document.querySelector(".lot1-mobile").style.webkitAnimationName =
-      //   "map-animationleft";
-      // document.querySelector(".lot1-mobile").style.webkitAnimationDuration =
-      //   "1s";
-      // document.querySelector(".lot1-mobile").style.webkitAnimationFillMode =
-      //   "forwards";
-
-      // document.querySelector(".lot2-mobile").style.webkitAnimationName =
-      //   "map-animationleft";
-      // document.querySelector(".lot2-mobile").style.webkitAnimationDuration =
-      //   "1s";
-      // document.querySelector(".lot2-mobile").style.webkitAnimationFillMode =
-      //   "forwards";
-
-      // document.querySelector(".lot3-mobile").style.webkitAnimationName =
-      //   "map-animationleft";
-      // document.querySelector(".lot3-mobile").style.webkitAnimationDuration =
-      //   "1s";
-      // document.querySelector(".lot3-mobile").style.webkitAnimationFillMode =
-      //   "forwards";
-
-      // document.querySelector(".lot4-mobile").style.webkitAnimationName =
-      //   "map-animationleft";
-      // document.querySelector(".lot4-mobile").style.webkitAnimationDuration =
-      //   "1s";
-      // document.querySelector(".lot4-mobile").style.webkitAnimationFillMode =
-      //   "forwards";
-
       break;
     case 2:
       mobiletabmapmove
         .to(".prev-mob", { opacity: 1, pointerEvents: "auto" })
-        .to(".next-mob", { opacity: 1, pointerEvents: "auto" })
+        .to(".next-mob", { opacity: 1, pointerEvents: "auto" }, "<")
+        .to(".lot1-mobile", { objectPosition: "45% 50%", duration: 1 }, "<")
+        .to(".lot2-mobile", { objectPosition: "45% 50%", duration: 1 }, "<")
+        .to(".lot3-mobile", { objectPosition: "45% 50%", duration: 1 }, "<")
+        .to(".lot4-mobile", { objectPosition: "45% 50%", duration: 1 }, "<")
         .add(changetextmobileto2);
       document.querySelector(".lot2-mobile").style.opacity = 1;
       document.querySelector(".lot1-mobile").style.opacity = 0;
       document.querySelector(".lot3-mobile").style.opacity = 0;
       document.querySelector(".lot4-mobile").style.opacity = 0;
 
-      if (mobiledirection === "forwards") {
-        document.querySelector(".lot1-mobile").style.objectPosition =
-          "left center";
-        document.querySelector(".lot2-mobile").style.objectPosition =
-          "left center";
-        document.querySelector(".lot3-mobile").style.objectPosition =
-          "left center";
-        document.querySelector(".lot4-mobile").style.objectPosition =
-          "left center";
-      }
-      if (mobiledirection === "backwards") {
-        document.querySelector(".lot1-mobile").style.objectPosition =
-          "70% center";
-        document.querySelector(".lot2-mobile").style.objectPosition =
-          "70% center";
-        document.querySelector(".lot3-mobile").style.objectPosition =
-          "70% center";
-        document.querySelector(".lot4-mobile").style.objectPosition =
-          "70% center";
-      }
-
-      document.querySelector(".lot1-mobile").style.webkitAnimation =
-        "map-animationcenter 1s ease-out forwards";
-      document.querySelector(".lot2-mobile").style.webkitAnimation =
-        "map-animationcenter 1s ease-out forwards";
-      document.querySelector(".lot3-mobile").style.webkitAnimation =
-        "map-animationcenter 1s ease-out forwards";
-      document.querySelector(".lot4-mobile").style.webkitAnimation =
-        "map-animationcenter 1s ease-out forwards";
-
-      document.querySelector(".lot1-mobile").style.transform =
-        "scale(120%) translateY(0%) translateX(0%);";
-      document.querySelector(".lot2-mobile").style.transform =
-        "scale(120%) translateY(0%) translateX(0%);";
-      document.querySelector(".lot3-mobile").style.transform =
-        "scale(120%) translateY(0%) translateX(0%);";
-      document.querySelector(".lot4-mobile").style.transform =
-        "scale(120%) translateY(0%) translateX(0%);";
       break;
     case 3:
       mobiletabmapmove
         .to(".prev-mob", { opacity: 1, pointerEvents: "auto" })
-        .to(".next-mob", { opacity: 1, pointerEvents: "auto" })
-        .add(changetextmobileto3)
-        .to(".lot1-mobile", { y: "-5%", x: "5%" }, "<")
-        .to(".lot2-mobile", { y: "-5%", x: "5%" }, "<")
-        .to(".lot3-mobile", { y: "-5%", x: "5%" }, "<")
-        .to(".lot4-mobile", { y: "-5%", x: "5%" }, "<");
+        .to(".next-mob", { opacity: 1, pointerEvents: "auto" }, "<")
+        .to(".lot1-mobile", { objectPosition: "70% 50%", duration: 1 }, "<")
+        .to(".lot2-mobile", { objectPosition: "70% 50%", duration: 1 }, "<")
+        .to(".lot3-mobile", { objectPosition: "70% 50%", duration: 1 }, "<")
+        .to(".lot4-mobile", { objectPosition: "70% 50%", duration: 1 }, "<")
+        .add(changetextmobileto3);
 
       document.querySelector(".lot3-mobile").style.opacity = 1;
       document.querySelector(".lot1-mobile").style.opacity = 0;
       document.querySelector(".lot2-mobile").style.opacity = 0;
       document.querySelector(".lot4-mobile").style.opacity = 0;
 
-      if (mobiledirection === "forwards") {
-        document.querySelector(".lot1-mobile").style.objectPosition =
-          " 45% center";
-        document.querySelector(".lot2-mobile").style.objectPosition =
-          " 45% center";
-        document.querySelector(".lot3-mobile").style.objectPosition =
-          " 45% center";
-        document.querySelector(".lot4-mobile").style.objectPosition =
-          " 45% center";
-      }
-      if (mobiledirection === "backwards") {
-        document.querySelector(".lot1-mobile").style.objectPosition = "90% 50%";
-        document.querySelector(".lot2-mobile").style.objectPosition = "90% 50%";
-        document.querySelector(".lot3-mobile").style.objectPosition = "90% 50%";
-        document.querySelector(".lot4-mobile").style.objectPosition = "90% 50%";
-      }
-
-      document.querySelector(".lot1-mobile").style.webkitAnimation =
-        "map-animationcenter2 1s ease-out forwards";
-      document.querySelector(".lot2-mobile").style.webkitAnimation =
-        "map-animationcenter2 1s ease-out forwards";
-      document.querySelector(".lot3-mobile").style.webkitAnimation =
-        "map-animationcenter2 1s ease-out forwards";
-      document.querySelector(".lot4-mobile").style.webkitAnimation =
-        "map-animationcenter2 1s ease-out forwards";
-
       break;
     case 4:
       mobiletabmapmove
         .to(".prev-mob", { opacity: 1, pointerEvents: "auto" })
-        .to(".next-mob", { opacity: 0, pointerEvents: "none" })
+        .to(".next-mob", { opacity: 0, pointerEvents: "none" }, "<")
+        .to(".lot1-mobile", { objectPosition: "90% 30%", duration: 1 }, "<")
+        .to(".lot2-mobile", { objectPosition: "90% 30%", duration: 1 }, "<")
+        .to(".lot3-mobile", { objectPosition: "90% 30%", duration: 1 }, "<")
+        .to(".lot4-mobile", { objectPosition: "90% 30%", duration: 1 }, "<")
+        .to(".lot1-mobile", { x: 0, y: "-5%" }, "<")
+        .to(".lot2-mobile", { x: 0, y: "-5%" }, "<")
+        .to(".lot3-mobile", { x: 0, y: "-5%" }, "<")
+        .to(".lot4-mobile", { x: 0, y: "-5%" }, "<")
         .add(changetextmobileto4);
       document.querySelector(".lot4-mobile").style.opacity = 1;
       document.querySelector(".lot1-mobile").style.opacity = 0;
       document.querySelector(".lot2-mobile").style.opacity = 0;
       document.querySelector(".lot3-mobile").style.opacity = 0;
 
-      document.querySelector(".lot1-mobile").style.objectPosition =
-        "70% center";
-      document.querySelector(".lot2-mobile").style.objectPosition =
-        "70% center";
-      document.querySelector(".lot3-mobile").style.objectPosition =
-        "70% center";
-      document.querySelector(".lot4-mobile").style.objectPosition =
-        "70% center";
-
-      document.querySelector(".lot1-mobile").style.webkitAnimation =
-        "map-animationright 1s ease-out forwards";
-      document.querySelector(".lot2-mobile").style.webkitAnimation =
-        "map-animationright 1s ease-out forwards";
-      document.querySelector(".lot3-mobile").style.webkitAnimation =
-        "map-animationright 1s ease-out forwards";
-      document.querySelector(".lot4-mobile").style.webkitAnimation =
-        "map-animationright 1s ease-out forwards";
-
-      // document.querySelector(".lot1-mobile").style.transform =
-      //   "scale(120%) translateY(0%) translateX(-10%);";
-      // document.querySelector(".lot2-mobile").style.transform =
-      //   "scale(120%) translateY(0%) translateX(-10%);";
-      // document.querySelector(".lot3-mobile").style.transform =
-      //   "scale(120%) translateY(0%) translateX(-10%);";
-      // document.querySelector(".lot4-mobile").style.transform =
-      //   "scale(120%) translateY(0%) translateX(-10%);";
       break;
   }
 }
