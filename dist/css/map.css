@@ -428,10 +428,9 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  /* font-size: 18px;
-  line-height: 35px; */
-  font-size: 1.25vw;
-  line-height: 2.430555555555556vw;
+  font-size: 18px;
+  line-height: 35px;
+
   /* padding-right: 5rem; */
 
   padding-bottom: 2rem;
