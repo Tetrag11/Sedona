@@ -472,7 +472,7 @@ function mobileClosecard() {
     .to(".appear-w-e", { opacity: 0 })
     .to(".appear-w-e", { display: "none" })
     .to(".appear-w-c", { display: "flex" }, "<")
-    .to(".mobile-card", { y: "90%" })
+    .to(".mobile-card", { y: "84%" })
     .to(".lotbtn", { opacity: 1, pointerEvents: "auto" });
 }
 
@@ -492,7 +492,7 @@ function tabClosecard() {
     .to(".appear-w-e-tab", { opacity: 0 })
     .to(".appear-w-e-tab", { display: "none" })
     .to(".appear-w-c-tab", { display: "flex" }, "<")
-    .to(".tab-card", { y: "90%" })
+    .to(".tab-card", { y: "84%" })
     .to(".lotbtn-tab", { opacity: 1, pointerEvents: "auto" });
 }
 
@@ -532,7 +532,7 @@ function mobilecardHeightChecker() {
 
   //-->
 
-  if (viewportheight <= 655) {
+  if (viewportheight <= 750) {
     gsap.to(".mobile-card", { y: "0" });
   } else {
     mobilecards.forEach((card) => {
