@@ -66,13 +66,13 @@ function changeMap1() {
   document.querySelector(".lot-b-4").style.background = "transparent";
 
   document.querySelector(".lot1").style.transform =
-    " scale(100%) translateX(0)";
+    " scale(110%) translateX(0) ";
   document.querySelector(".lot2").style.transform =
-    " scale(100%) translateX(0)";
+    " scale(110%) translateX(0) ";
   document.querySelector(".lot3").style.transform =
-    " scale(100%) translateX(0)";
+    " scale(110%) translateX(0) ";
   document.querySelector(".lot4").style.transform =
-    " scale(100%) translateX(0)";
+    " scale(110%) translateX(0) ";
 }
 
 function changeMap2() {
@@ -88,13 +88,13 @@ function changeMap2() {
   document.querySelector(".lot-b-4").style.background = "transparent";
 
   document.querySelector(".lot2").style.transform =
-    "scale(105%) translateX(0%)";
+    "scale(110%) translateX(0%)";
   document.querySelector(".lot1").style.transform =
-    "scale(105%) translateX(0%)";
+    "scale(110%) translateX(0%)";
   document.querySelector(".lot3").style.transform =
-    "scale(105%) translateX(0%)";
+    "scale(110%) translateX(0%)";
   document.querySelector(".lot4").style.transform =
-    "scale(105%) translateX(0%)";
+    "scale(110%) translateX(0%)";
 }
 
 function changeMap3() {
@@ -110,13 +110,13 @@ function changeMap3() {
   document.querySelector(".lot-b-4").style.background = "transparent";
 
   document.querySelector(".lot3").style.transform =
-    "scale(105%) translateX(-1%)";
+    "scale(110%) translateX(-1%) translateY(5%)";
   document.querySelector(".lot1").style.transform =
-    "scale(105%) translateX(-1%)";
+    "scale(110%) translateX(-1%) translateY(5%)";
   document.querySelector(".lot2").style.transform =
-    "scale(105%) translateX(-1%)";
+    "scale(110%) translateX(-1%) translateY(5%)";
   document.querySelector(".lot4").style.transform =
-    "scale(105%) translateX(-1%)";
+    "scale(110%) translateX(-1%) translateY(5%)";
 }
 
 function changeMap4() {
@@ -132,13 +132,13 @@ function changeMap4() {
   document.querySelector(".lot-b-3").style.background = "transparent";
 
   document.querySelector(".lot3").style.transform =
-    " scale(110%) translateX(-1%)";
+    " scale(110%) translateX(-1%) translateY(10%)";
   document.querySelector(".lot1").style.transform =
-    " scale(110%) translateX(-1%)";
+    " scale(110%) translateX(-1%) translateY(10%)";
   document.querySelector(".lot2").style.transform =
-    " scale(110%) translateX(-1%)";
+    " scale(110%) translateX(-1%) translateY(10%)";
   document.querySelector(".lot4").style.transform =
-    " scale(110%) translateX(-1%)";
+    " scale(110%) translateX(-1%) translateY(10%)";
 }
 
 function zoomOut() {
@@ -406,7 +406,7 @@ function changetextto1() {
   document.querySelector(".card-heading").innerHTML =
     "<h1 class='ml-10'>LOT 02</h1>";
   document.querySelector(".card-p").innerHTML =
-    "<p class= 'ml-10'>This 1-acre site offers a tranquil and authentic life immersed in nature.<br>With the heritage forest reserve in the back and blessed with a free-flowing<br> stream to the right, this property is a hidden gem for a nature lover.<br> Anyone purchasing this beautiful property can collaborate<br> and design their home with Shakticola.<br><br></p>";
+    "<p class= 'ml-10'>This 1-acre site offers a tranquil and authentic life immersed in nature.<br>With the heritage forest reserve in the back and blessed with a free-flowing<br> stream to the right, this property is a hidden gem for a nature lover.<br> Anyone purchasing this beautiful property can collaborate<br> and design their home with Shakticola.<br></p>";
 }
 
 function changetextto2() {
@@ -414,21 +414,21 @@ function changetextto2() {
   document.querySelector(".card-heading").innerHTML =
     "<h1 class='ml-10'>LOT 06</h1>";
   document.querySelector(".card-p").innerHTML =
-    "<p class= 'ml-10'>This site, which is just under an acre has views over the forests<br> and the Nakiyadeniya mountain ranges. Anyone purchasing<br> this beautiful property can collaborate and design<br>their home with Shakticola.<br><br></p>";
+    "<p class= 'ml-10'>This site, which is just under an acre has views over the forests<br> and the Nakiyadeniya mountain ranges. Anyone purchasing<br> this beautiful property can collaborate and design<br>their home with Shakticola.<br></p>";
 }
 
 function changetextto3() {
   document.querySelector(".card-close").classList.add("mr-5");
   document.querySelector(".card-heading").innerHTML = "<h1>LOT 07</h1>";
   document.querySelector(".card-p").innerHTML =
-    "<p>Considered the best site on the estate, this lush 1-acre property sits<br> at the top-centre of the estate on a dramatic site with 20- kilometer views<br> overlooking lush green tea estates and the Nakiyadeniya mountain ranges.<br> Anyone purchasing this beautiful property can collaborate<br> and design their home with Shakticola.<br><br></p>";
+    "<p>Considered the best site on the estate, this lush 1-acre property sits<br> at the top-centre of the estate on a dramatic site with 20- kilometer views<br> overlooking lush green tea estates and the Nakiyadeniya mountain ranges.<br> Anyone purchasing this beautiful property can collaborate<br> and design their home with Shakticola.<br></p>";
 }
 
 function changetextto4() {
   document.querySelector(".card-close").classList.add("mr-5");
   document.querySelector(".card-heading").innerHTML = "<h1>LOT 08</h1>";
   document.querySelector(".card-p").innerHTML =
-    "<p>Phoenix Residence. With a completion date of June, 2022,<br> this private contemporary home showcases floor to ceiling glass doors<br> and windows and comes with a generous outdoor deck which spills<br> right into a seamless eternity pool. Designed and project managed<br> by Shakticola and build by Crystal Construction.<br><br></p>";
+    "<p>Phoenix Residence. With a completion date of June, 2022,<br> this private contemporary home showcases floor to ceiling glass doors<br> and windows and comes with a generous outdoor deck which spills<br> right into a seamless eternity pool. Designed and project managed<br> by Shakticola and build by Crystal Construction.<br></p>";
 }
 
 function closeCard() {

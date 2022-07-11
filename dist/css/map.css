@@ -125,7 +125,7 @@
 .mobile-card {
   background-color: black;
   color: white;
-  transform: translateY(90%);
+  transform: translateY(84%);
   transition: transform 0.5s ease-out;
 }
 .tab-card {
@@ -325,9 +325,10 @@
 
 .map-overlay {
   background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.58) 0%,
-    rgba(0, 0, 0, 0) 90.82%
+    178.48deg,
+    #292e17 12.66%,
+    #292e17 12.67%,
+    rgba(37, 42, 20, 0.03) 77.73%
   );
 }
 
