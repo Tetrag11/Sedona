@@ -35,8 +35,9 @@
   .header-back-image,
   .navbar-lines,
   .nav-responsive,
-  .main-content {
-    min-height: 800px;
+  .main-content,
+  .menu {
+    min-height: 800px !important;
   }
 
   @media only screen and (orientation: landscape) {
@@ -45,8 +46,9 @@
     .navbar-lines,
     .nav-responsive,
     .main-content,
-    .main {
-      min-height: 800px;
+    .main,
+    .menu {
+      min-height: 800px !important;
     }
   }
 }

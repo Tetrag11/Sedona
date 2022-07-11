@@ -24,13 +24,6 @@
   grid-template-columns: 5% 1fr 5% !important;
 }
 
-/* menu */
-
-.menu {
-  background: #5a6351;
-  position: fixed;
-}
-
 .width-90-mx-auto {
   width: 90%;
   margin: 1.25rem auto;
@@ -52,16 +45,6 @@
   height: 53px;
 }
 
-.menu-icon-mobile {
-  width: 33px;
-  height: 10px;
-}
-
-.menu-icon-mobile-close {
-  width: 33px;
-  height: 1px;
-}
-
 .mobile-paragraph {
   color: white;
 }
@@ -75,15 +58,6 @@
 .mobile-paragraph p {
   font-size: 3.6vw;
   line-height: 6.55vw;
-}
-
-.menu-links-mobile a {
-  font-family: "Federo";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: right;
 }
 
 .copyright-mobile {
@@ -196,15 +170,6 @@
   align-self: center;
 }
 
-.menu-icon-tab {
-  width: 33px;
-  height: 9px;
-}
-.menu-icon-tab-close {
-  width: 33px;
-  height: 2px;
-}
-
 .tab-paragraph {
   grid-template-columns: 2.5fr 1fr;
 }
@@ -224,35 +189,9 @@
   width: 7vw;
 }
 
-.menu-links-tab a {
-  font-family: "Federo";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: right;
-}
-
-.copyright-tab {
-  text-align: right;
-}
-
 /* web */
-.web-menu-inner .nintypercent {
+.nintypercent {
   height: 100vh !important;
-}
-
-.menu-links-web a {
-  font-family: "Federo";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 29px;
-  text-align: right;
-}
-
-.copyright {
-  text-align: right;
 }
 
 /* content */
@@ -282,15 +221,6 @@
   font-size: 18px;
   justify-self: start;
   align-self: center;
-}
-
-.menu-icon-web {
-  width: 35px;
-  height: 9px;
-}
-.menu-icon-web-close {
-  width: 35px;
-  height: 2px;
 }
 
 .web-text {
@@ -411,11 +341,25 @@
 }
 
 .mapzoomout {
-  width: 100%;
+  width: 100vw;
   height: 40%;
-
-  z-index: 30;
+  /* background-color: #6a7736; */
+  z-index: 20;
   top: 60%;
+}
+
+.mapzoomout .zoomout-inner {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.banner {
+  width: 90vw !important;
+  height: 100px;
+  background-color: black;
+  grid-template-columns: 1fr 2fr;
+  color: white;
+  transition: opacity 3s ease;
 }
 
 .card {
@@ -484,8 +428,10 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 35px;
+  /* font-size: 18px;
+  line-height: 35px; */
+  font-size: 1.25vw;
+  line-height: 2.430555555555556vw;
   /* padding-right: 5rem; */
 
   padding-bottom: 2rem;

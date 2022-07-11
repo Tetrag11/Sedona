@@ -114,7 +114,7 @@ body {
 /* menu opened with button */
 
 .menu {
-  position: fixed;
+  position: absolute;
 }
 
 /* .web-menu-lines,
@@ -141,6 +141,17 @@ body {
 
 .menu-line-items {
   background-color: #5a6351;
+}
+
+.web-navigation a {
+  font-family: "Federo";
+  color: white;
+  font-size: 25px;
+  line-height: 30px;
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: right;
 }
 
 .menu-icon-web {
@@ -218,4 +229,21 @@ body {
     width: 33.55vw;
     object-fit: contain;
   }
+}
+
+/* text sizes */
+.heading {
+  font-family: "Federo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.083333333333333vw;
+  line-height: 4.861111111111112vw;
+}
+
+.text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25vw;
+  line-height: 1.7361111111111112vw;
 }

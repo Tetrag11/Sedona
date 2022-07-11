@@ -54,6 +54,8 @@ function loaderdestroy() {
 }
 
 function changeMap1() {
+  document.querySelector(".banner").style.opacity = 0;
+
   document.querySelector(".lot1").style.opacity = 1;
   document.querySelector(".lot0").style.opacity = 0;
   document.querySelector(".lot2").style.opacity = 0;
@@ -76,6 +78,8 @@ function changeMap1() {
 }
 
 function changeMap2() {
+  document.querySelector(".banner").style.opacity = 0;
+
   document.querySelector(".lot2").style.opacity = 1;
   document.querySelector(".lot0").style.opacity = 0;
   document.querySelector(".lot1").style.opacity = 0;
@@ -98,6 +102,8 @@ function changeMap2() {
 }
 
 function changeMap3() {
+  document.querySelector(".banner").style.opacity = 0;
+
   document.querySelector(".lot3").style.opacity = 1;
   document.querySelector(".lot0").style.opacity = 0;
   document.querySelector(".lot1").style.opacity = 0;
@@ -120,6 +126,8 @@ function changeMap3() {
 }
 
 function changeMap4() {
+  document.querySelector(".banner").style.opacity = 0;
+
   document.querySelector(".lot4").style.opacity = 1;
   document.querySelector(".lot0").style.opacity = 0;
   document.querySelector(".lot1").style.opacity = 0;
@@ -445,11 +453,30 @@ function menudisappear() {
 }
 
 function openMenu() {
-  menu.add(menuappear).to(".menu", { opacity: 1 });
+  menu
+    .to(".openMenu", { pointerEvents: "none" })
+    .to(".closeMenu", { pointerEvents: "none" }, "<")
+    .to(".animation-content-2", { opacity: 0 }, "<")
+    .to(".openMenu", { opacity: 0 })
+    .to(".closeMenu", { opacity: 0 }, "<")
+    .add(menuappear)
+    .to(".menu-line-items", { opacity: 1, stagger: -0.2 })
+    .to(".closeMenu", { opacity: 1 })
+    .to(".menu-tab-mob-appear", { opacity: 1 }, "< 0.2")
+    .to(".openMenu", { pointerEvents: "auto" })
+    .to(".closeMenu", { pointerEvents: "auto" }, "<");
 }
 
 function closeMenu() {
-  menu.to(".menu", { opacity: 0 }).add(menudisappear);
+  menu
+    .to(".openMenu", { pointerEvents: "none" })
+    .to(".closeMenu", { pointerEvents: "none", opacity: 0 }, "<")
+    .to(".menu-tab-mob-appear", { opacity: 0 }, "<")
+    .to(".menu-line-items", { opacity: 0, stagger: 0.2 }, "<")
+    .add(menudisappear)
+    .to(".animation-content-2", { opacity: 1 })
+    .to(".openMenu", { pointerEvents: "auto", opacity: 1 })
+    .to(".closeMenu", { pointerEvents: "auto" }, "<");
 }
 
 // mobile and tab cards
