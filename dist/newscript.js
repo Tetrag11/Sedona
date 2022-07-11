@@ -827,14 +827,51 @@ function nextMapMob(mobilecount, mobiledirection) {
       document.querySelector(".lot4-mobile").style.objectPosition =
         "45% center";
 
-      document.querySelector(".lot1-mobile").style.animation =
+      // document.querySelector(".lot1-mobile").style.animation =
+      //   "map-animationleft 1s ease-out forwards";
+      // document.querySelector(".lot2-mobile").style.animation =
+      //   "map-animationleft 1s ease-out forwards";
+      // document.querySelector(".lot3-mobile").style.animation =
+      //   "map-animationleft 1s ease-out forwards";
+      // document.querySelector(".lot4-mobile").style.animation =
+      //   "map-animationleft 1s ease-out forwards";
+
+      document.querySelector(".lot1-mobile").style.webkitAnimation =
         "map-animationleft 1s ease-out forwards";
-      document.querySelector(".lot2-mobile").style.animation =
+      document.querySelector(".lot2-mobile").style.webkitAnimation =
         "map-animationleft 1s ease-out forwards";
-      document.querySelector(".lot3-mobile").style.animation =
+      document.querySelector(".lot3-mobile").style.webkitAnimation =
         "map-animationleft 1s ease-out forwards";
-      document.querySelector(".lot4-mobile").style.animation =
+      document.querySelector(".lot4-mobile").style.webkitAnimation =
         "map-animationleft 1s ease-out forwards";
+
+      // document.querySelector(".lot1-mobile").style.webkitAnimationName =
+      //   "map-animationleft";
+      // document.querySelector(".lot1-mobile").style.webkitAnimationDuration =
+      //   "1s";
+      // document.querySelector(".lot1-mobile").style.webkitAnimationFillMode =
+      //   "forwards";
+
+      // document.querySelector(".lot2-mobile").style.webkitAnimationName =
+      //   "map-animationleft";
+      // document.querySelector(".lot2-mobile").style.webkitAnimationDuration =
+      //   "1s";
+      // document.querySelector(".lot2-mobile").style.webkitAnimationFillMode =
+      //   "forwards";
+
+      // document.querySelector(".lot3-mobile").style.webkitAnimationName =
+      //   "map-animationleft";
+      // document.querySelector(".lot3-mobile").style.webkitAnimationDuration =
+      //   "1s";
+      // document.querySelector(".lot3-mobile").style.webkitAnimationFillMode =
+      //   "forwards";
+
+      // document.querySelector(".lot4-mobile").style.webkitAnimationName =
+      //   "map-animationleft";
+      // document.querySelector(".lot4-mobile").style.webkitAnimationDuration =
+      //   "1s";
+      // document.querySelector(".lot4-mobile").style.webkitAnimationFillMode =
+      //   "forwards";
 
       break;
     case 2:
@@ -868,13 +905,13 @@ function nextMapMob(mobilecount, mobiledirection) {
           "70% center";
       }
 
-      document.querySelector(".lot1-mobile").style.animation =
+      document.querySelector(".lot1-mobile").style.webkitAnimation =
         "map-animationcenter 1s ease-out forwards";
-      document.querySelector(".lot2-mobile").style.animation =
+      document.querySelector(".lot2-mobile").style.webkitAnimation =
         "map-animationcenter 1s ease-out forwards";
-      document.querySelector(".lot3-mobile").style.animation =
+      document.querySelector(".lot3-mobile").style.webkitAnimation =
         "map-animationcenter 1s ease-out forwards";
-      document.querySelector(".lot4-mobile").style.animation =
+      document.querySelector(".lot4-mobile").style.webkitAnimation =
         "map-animationcenter 1s ease-out forwards";
 
       document.querySelector(".lot1-mobile").style.transform =
@@ -918,13 +955,13 @@ function nextMapMob(mobilecount, mobiledirection) {
         document.querySelector(".lot4-mobile").style.objectPosition = "90% 50%";
       }
 
-      document.querySelector(".lot1-mobile").style.animation =
+      document.querySelector(".lot1-mobile").style.webkitAnimation =
         "map-animationcenter2 1s ease-out forwards";
-      document.querySelector(".lot2-mobile").style.animation =
+      document.querySelector(".lot2-mobile").style.webkitAnimation =
         "map-animationcenter2 1s ease-out forwards";
-      document.querySelector(".lot3-mobile").style.animation =
+      document.querySelector(".lot3-mobile").style.webkitAnimation =
         "map-animationcenter2 1s ease-out forwards";
-      document.querySelector(".lot4-mobile").style.animation =
+      document.querySelector(".lot4-mobile").style.webkitAnimation =
         "map-animationcenter2 1s ease-out forwards";
 
       break;
@@ -947,13 +984,13 @@ function nextMapMob(mobilecount, mobiledirection) {
       document.querySelector(".lot4-mobile").style.objectPosition =
         "70% center";
 
-      document.querySelector(".lot1-mobile").style.animation =
+      document.querySelector(".lot1-mobile").style.webkitAnimation =
         "map-animationright 1s ease-out forwards";
-      document.querySelector(".lot2-mobile").style.animation =
+      document.querySelector(".lot2-mobile").style.webkitAnimation =
         "map-animationright 1s ease-out forwards";
-      document.querySelector(".lot3-mobile").style.animation =
+      document.querySelector(".lot3-mobile").style.webkitAnimation =
         "map-animationright 1s ease-out forwards";
-      document.querySelector(".lot4-mobile").style.animation =
+      document.querySelector(".lot4-mobile").style.webkitAnimation =
         "map-animationright 1s ease-out forwards";
 
       // document.querySelector(".lot1-mobile").style.transform =

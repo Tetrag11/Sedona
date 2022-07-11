@@ -304,13 +304,34 @@
   object-fit: cover;
   object-position: left center;
   transform: scale(120%) translateY(-14%) translateX(5%);
-  animation: map-animation 2s ease-out forwards;
-  -webkit-animation: map-animation 2s ease-out forwards;
-  -moz-animation: map-animation 2s ease-out forwards;
-  -ms-animation: map-animation 2s ease-out forwards;
-  -o-animation: map-animation 2s ease-out forwards;
-  transition: transform 1.5s ease-out;
   filter: brightness(70%);
+}
+
+@-webkit-keyframes map-animationleft {
+  100% {
+    object-position: left center;
+    -webkit-object-position: left center;
+  }
+}
+
+@-webkit-keyframes map-animationcenter {
+  100% {
+    object-position: 45% center;
+    -webkit-object-position: 45% center;
+  }
+}
+@-webkit-keyframes map-animationcenter2 {
+  100% {
+    object-position: 70% center;
+    -webkit-object-position: 70% center;
+  }
+}
+
+@-webkit-keyframes map-animationright {
+  100% {
+    object-position: 90% 50%;
+    -webkit-object-position: 90% 50%;
+  }
 }
 
 @keyframes map-animationleft {
