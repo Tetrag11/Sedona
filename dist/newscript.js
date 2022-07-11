@@ -634,10 +634,6 @@ function nextMap(tabcount, direction) {
       mobiletabmapmove
         .to(".prev", { opacity: 0, pointerEvents: "none" })
         .to(".next", { opacity: 1, pointerEvents: "auto" }, "<")
-        .to(".lot1-tab", { y: "-14%", x: "5%" }, "<")
-        .to(".lot2-tab", { y: "-14%", x: "5%" }, "<")
-        .to(".lot3-tab", { y: "-14%", x: "5%" }, "<")
-        .to(".lot4-tab", { y: "-14%", x: "5%" }, "<")
         .to(".lot1-tab", { objectPosition: "0% 50%", duration: 1 }, "<")
         .to(".lot2-tab", { objectPosition: "0% 50%", duration: 1 }, "<")
         .to(".lot3-tab", { objectPosition: "0% 50%", duration: 1 }, "<")
@@ -723,10 +719,6 @@ function nextMapMob(mobilecount, mobiledirection) {
       mobiletabmapmove
         .to(".prev-mob", { opacity: 0, pointerEvents: "none" })
         .to(".next-mob", { opacity: 1, pointerEvents: "auto" }, "<")
-        .to(".lot1-mobile", { y: "-14%", x: "5%" }, "<")
-        .to(".lot2-mobile", { y: "-14%", x: "5%" }, "<")
-        .to(".lot3-mobile", { y: "-14%", x: "5%" }, "<")
-        .to(".lot4-mobile", { y: "-14%", x: "5%" }, "<")
         .to(".lot1-mobile", { objectPosition: "0% 50%", duration: 1 }, "<")
         .to(".lot2-mobile", { objectPosition: "0% 50%", duration: 1 }, "<")
         .to(".lot3-mobile", { objectPosition: "0% 50%", duration: 1 }, "<")
@@ -773,14 +765,10 @@ function nextMapMob(mobilecount, mobiledirection) {
       mobiletabmapmove
         .to(".prev-mob", { opacity: 1, pointerEvents: "auto" })
         .to(".next-mob", { opacity: 0, pointerEvents: "none" }, "<")
-        .to(".lot1-mobile", { objectPosition: "90% 30%", duration: 1 }, "<")
-        .to(".lot2-mobile", { objectPosition: "90% 30%", duration: 1 }, "<")
-        .to(".lot3-mobile", { objectPosition: "90% 30%", duration: 1 }, "<")
-        .to(".lot4-mobile", { objectPosition: "90% 30%", duration: 1 }, "<")
-        .to(".lot1-mobile", { x: 0, y: "-5%" }, "<")
-        .to(".lot2-mobile", { x: 0, y: "-5%" }, "<")
-        .to(".lot3-mobile", { x: 0, y: "-5%" }, "<")
-        .to(".lot4-mobile", { x: 0, y: "-5%" }, "<")
+        .to(".lot1-mobile", { objectPosition: "90% 0%", duration: 1 }, "<")
+        .to(".lot2-mobile", { objectPosition: "90% 0%", duration: 1 }, "<")
+        .to(".lot3-mobile", { objectPosition: "90% 0%", duration: 1 }, "<")
+        .to(".lot4-mobile", { objectPosition: "90% 0%", duration: 1 }, "<")
         .add(changetextmobileto4);
       document.querySelector(".lot4-mobile").style.opacity = 1;
       document.querySelector(".lot1-mobile").style.opacity = 0;
