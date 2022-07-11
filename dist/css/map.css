@@ -121,6 +121,9 @@
   line-height: 25px;
   text-align: left;
 }
+.ml-10 {
+  margin-left: 2.5rem !important;
+}
 
 .mobile-card {
   background-color: black;
