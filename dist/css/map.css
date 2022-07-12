@@ -384,7 +384,6 @@
 }
 
 .card {
-  position: fixed;
   width: 50%;
   height: 400px;
   background-color: black;
