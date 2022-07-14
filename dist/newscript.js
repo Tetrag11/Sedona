@@ -834,23 +834,23 @@ function changetexttabto4() {
 function changetextmobileto1() {
   document.querySelector(".card-mobile-heading").innerHTML = "LOT 02";
   document.querySelector(".card-mobile-p").innerHTML =
-    "This 1-acre site offers a tranquil and authentic life immersed in nature.<br>With the heritage forest reserve in the back and blessed with a free-flowing<br> stream to the right, this property is a hidden gem for a nature lover.<br> Anyone purchasing this beautiful property can collaborate<br> and design their home with Shakticola.";
+    "This 1-acre site offers a tranquil and authentic life immersed in nature.With the heritage forest reserve in the back and blessed with a free-flowing stream to the right, this property is a hidden gem for a nature lover. Anyone purchasing this beautiful property can collaborate and design their home with Shakticola.";
 }
 
 function changetextmobileto2() {
   document.querySelector(".card-mobile-heading").innerHTML = "LOT 06";
   document.querySelector(".card-mobile-p").innerHTML =
-    "This site, which is just under an acre has views over the forests<br> and the Nakiyadeniya mountain ranges. Anyone purchasing<br> this beautiful property can collaborate and design<br> their home with Shakticola.<br><br><br><br>";
+    "This site, which is just under an acre has views over the forests and the Nakiyadeniya mountain ranges. Anyone purchasing this beautiful property can collaborate and design their home with Shakticola.<br><br><br><br>";
 }
 
 function changetextmobileto3() {
   document.querySelector(".card-mobile-heading").innerHTML = "LOT 07";
   document.querySelector(".card-mobile-p").innerHTML =
-    "Considered the best site on the estate, this lush 1-acre property sits<br> at the top-centre of the estate on a dramatic site with 20- kilometer views<br> overlooking lush green tea estates and the Nakiyadeniya mountain ranges.<br> Anyone purchasing this beautiful property can collaborate<br> and design their home with Shakticola.";
+    "Considered the best site on the estate, this lush 1-acre property sits at the top-centre of the estate on a dramatic site with 20- kilometer views overlooking lush green tea estates and the Nakiyadeniya mountain ranges. Anyone purchasing this beautiful property can collaborate and design their home with Shakticola.";
 }
 
 function changetextmobileto4() {
   document.querySelector(".card-mobile-heading").innerHTML = "LOT 08";
   document.querySelector(".card-mobile-p").innerHTML =
-    "Phoenix Residence. With a completion date of June, 2022,<br> this private contemporary home showcases floor to ceiling glass doors<br> and windows and comes with a generous outdoor deck which spills<br> right into a seamless eternity pool. Designed and project managed<br> by Shakticola and build by Crystal Construction.";
+    "Phoenix Residence. With a completion date of June, 2022, this private contemporary home showcases floor to ceiling glass doors and windows and comes with a generous outdoor deck which spills right into a seamless eternity pool. Designed and project managed by Shakticola and build by Crystal Construction.";
 }
