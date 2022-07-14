@@ -2,13 +2,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 const timeline = gsap.timeline();
 const timeline_3 = gsap.timeline();
+const menu = gsap.timeline();
 
 // loader related
 
 // loader first animation
 const loaderpreload = gsap.timeline();
 loaderpreload
-  .from(".loader-lines", { y: "-150%", duration: 1, stagger: 0.1 })
   .to(".load-centered-logo", { opacity: 1 })
   .to(".loader", { backgroundColor: "transparent" });
 
@@ -30,7 +30,7 @@ function increment() {
 
     timeline
       .to(".load-centered-logo", { opacity: 0 })
-      .to(".loader-lines", { opacity: 0, duration: 1, stagger: 0.5 })
+      .to(".loader-lines", { opacity: 0, duration: 1, stagger: 0.2 })
       .from(".animate-1", { opacity: 0 }, "<2")
       .from(".animate-2", { opacity: 0 })
       .from(".animate-3", { opacity: 0 })
@@ -53,43 +53,39 @@ function loaderdestroy() {
   document.querySelector(".body").style.overflowY = "visible";
 }
 
-// navBar
+// menu
 
-const timeline_2 = gsap.timeline({
-  paused: true,
-});
-
-function openNav() {
-  document.querySelector(".close-btn").style.pointerEvents = "none";
-  document.querySelector(".menue").style.display = "block";
-  hamBtnclass.forEach((hamBtnel) => {
-    hamBtnel.style.pointerEvents = "none";
-  });
-
-  gsap.to(".nav-line-left", { x: "0%", duration: 2 });
-  gsap.to(".nav-line-right", { x: "0%", duration: 2 });
-  gsap.to(".navbar-link", {
-    opacity: 1,
-    delay: 3,
-    onComplete: () => {
-      document.querySelector(".close-btn").style.pointerEvents = "auto";
-    },
-  });
+function menuappear() {
+  document.querySelector(".menu").style.display = "block";
 }
 
-function closeNav() {
-  document.querySelector(".close-btn").style.pointerEvents = "none";
-  gsap.to(".nav-line-left", { x: "-100%", duration: 2, delay: 1 });
-  gsap.to(".nav-line-right", {
-    x: "100%",
-    duration: 2,
-    delay: 1,
-    onComplete: () => {
-      document.querySelector(".menue").style.display = "none";
-      hamBtnclass.forEach((hamBtnel) => {
-        hamBtnel.style.pointerEvents = "auto";
-      });
-    },
-  });
-  gsap.to(".navbar-link", { opacity: 0 });
+function menudisappear() {
+  document.querySelector(".menu").style.display = "none";
+}
+
+function openMenu() {
+  menu
+    .to(".openMenu", { pointerEvents: "none" })
+    .to(".closeMenu", { pointerEvents: "none" }, "<")
+    .to(".animation-content-2", { opacity: 0 }, "<")
+    .to(".openMenu", { opacity: 0 })
+    .to(".closeMenu", { opacity: 0 }, "<")
+    .add(menuappear)
+    .to(".menu-line-items", { opacity: 1, stagger: -0.2 })
+    .to(".closeMenu", { opacity: 1 })
+    .to(".menu-tab-mob-appear", { opacity: 1 }, "< 0.2")
+    .to(".openMenu", { pointerEvents: "auto" })
+    .to(".closeMenu", { pointerEvents: "auto" }, "<");
+}
+
+function closeMenu() {
+  menu
+    .to(".openMenu", { pointerEvents: "none" })
+    .to(".closeMenu", { pointerEvents: "none", opacity: 0 }, "<")
+    .to(".menu-tab-mob-appear", { opacity: 0 }, "<")
+    .to(".menu-line-items", { opacity: 0, stagger: 0.2 }, "<")
+    .add(menudisappear)
+    .to(".animation-content-2", { opacity: 1 })
+    .to(".openMenu", { pointerEvents: "auto", opacity: 1 })
+    .to(".closeMenu", { pointerEvents: "auto" }, "<");
 }

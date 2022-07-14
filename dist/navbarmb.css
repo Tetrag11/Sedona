@@ -36,7 +36,11 @@
   .navbar-lines,
   .nav-responsive,
   .main-content,
-  .menu {
+  .menu,
+  .mobile-div,
+  .cover-vid,
+  .cover-vid video,
+  .cover-page {
     min-height: 800px !important;
   }
 
@@ -47,7 +51,11 @@
     .nav-responsive,
     .main-content,
     .main,
-    .menu {
+    .menu,
+    .mobile-div,
+    .cover-vid,
+    .cover-vid video,
+    .cover-page {
       min-height: 800px !important;
     }
   }

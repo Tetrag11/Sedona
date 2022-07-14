@@ -1,6 +1,7 @@
 body {
   background-color: #006b6b;
   overflow-y: hidden;
+  color: white;
 }
 
 /* Loading Screen  */
@@ -10,6 +11,17 @@ body {
   max-width: 90%;
   height: 100vh;
   left: 5%;
+}
+
+.batman-web {
+  grid-template-columns: 5% 1fr 1fr 1fr 1fr 5% !important;
+}
+.batman-tab {
+  grid-template-columns: 5% 1fr 1fr 5% !important;
+}
+
+.batman-mobile {
+  grid-template-columns: 5% 1fr 5% !important;
 }
 
 .nintypercent {
@@ -35,6 +47,11 @@ body {
 .load-mobile {
   width: 100%;
   height: 100%;
+}
+
+.logo-tab {
+  width: 90px;
+  height: 45px;
 }
 
 /* The centered logo in load */
@@ -153,6 +170,20 @@ body {
   width: 100%;
   text-align: right;
 }
+.web-contact {
+  font-size: 18px;
+  justify-self: start;
+  align-self: center;
+}
+
+.logo-web {
+  width: 222px;
+  height: 68px;
+  margin: 0 auto;
+}
+.menu-icon-web-link {
+  font-size: 1.3vw;
+}
 
 .menu-icon-web {
   width: 35px;
@@ -200,6 +231,13 @@ body {
   text-align: right;
 }
 
+.tab-contact {
+  font-size: 13px;
+  /* justify-self: center; */
+  margin-left: 50%;
+  align-self: center;
+}
+
 .menu-icon-tab {
   width: 33px;
   height: 9px;
@@ -207,6 +245,11 @@ body {
 .menu-icon-tab-close {
   width: 33px;
   height: 2px;
+}
+
+.logo-mobile {
+  width: 109px;
+  height: 53px;
 }
 
 .copyright {
@@ -246,4 +289,55 @@ body {
   font-weight: 400;
   font-size: 1.25vw;
   line-height: 1.7361111111111112vw;
+}
+
+/* cover-page-vid */
+.cover-vid video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center center;
+  filter: brightness(80%);
+  -webkit-filter: brightness(80%);
+  -moz-filter: brightness(80%);
+}
+
+.tab-paragraph {
+  grid-template-columns: 2.5fr 1fr;
+}
+
+.tab-paragraph h1 {
+  font-size: 6.7vw;
+  line-height: 10vw;
+  font-family: "Federo";
+}
+
+.tab-paragraph p {
+  font-size: 20px;
+  line-height: 35px;
+}
+
+@media (max-width: 863px) {
+  .tab-paragraph p {
+    font-size: 1.97vw;
+    line-height: 4.056vw;
+  }
+}
+
+.tab-paragraph .erlp {
+  width: 7vw;
+}
+.mobile-paragraph {
+  color: white;
+}
+
+.mobile-paragraph h1 {
+  font-size: 8.7vw;
+  font-family: "Federo";
+  line-height: 13vw;
+}
+
+.mobile-paragraph p {
+  font-size: 3.6vw;
+  line-height: 6.55vw;
 }

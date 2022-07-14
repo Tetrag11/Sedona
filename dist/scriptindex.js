@@ -54,47 +54,6 @@ function loaderdestroy() {
   document.querySelector(".body").style.overflowY = "visible";
 }
 
-// navBar
-
-const timeline_2 = gsap.timeline({
-  paused: true,
-});
-
-function openNav() {
-  document.querySelector(".close-btn").style.pointerEvents = "none";
-  document.querySelector(".menue").style.display = "block";
-  hamBtnclass.forEach((hamBtnel) => {
-    hamBtnel.style.pointerEvents = "none";
-  });
-
-  gsap.to(".nav-line-left", { x: "0%", duration: 2 });
-  gsap.to(".nav-line-right", { x: "0%", duration: 2 });
-  gsap.to(".navbar-link", {
-    opacity: 1,
-    delay: 3,
-    onComplete: () => {
-      document.querySelector(".close-btn").style.pointerEvents = "auto";
-    },
-  });
-}
-
-function closeNav() {
-  document.querySelector(".close-btn").style.pointerEvents = "none";
-  gsap.to(".nav-line-left", { x: "-100%", duration: 2, delay: 1 });
-  gsap.to(".nav-line-right", {
-    x: "100%",
-    duration: 2,
-    delay: 1,
-    onComplete: () => {
-      document.querySelector(".menue").style.display = "none";
-      hamBtnclass.forEach((hamBtnel) => {
-        hamBtnel.style.pointerEvents = "auto";
-      });
-    },
-  });
-  gsap.to(".navbar-link", { opacity: 0 });
-}
-
 function exitAnimation() {
   timeline_3
     .to(".animation-content-3", { opacity: 0 })
