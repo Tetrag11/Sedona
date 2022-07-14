@@ -45,7 +45,7 @@ function increment() {
     timeline
       .to(".load-centered-logo", { opacity: 0, duration: 0.5 })
       .to(".loader-lines", { opacity: 0, stagger: 0.2 })
-      .to(".loader", { display: "none" }, "<0.5");
+      .to(".loader", { display: "none" });
 
     clearInterval(secondscalc);
   }
@@ -444,6 +444,7 @@ function menudisappear() {
 }
 
 function openMenu() {
+  document.querySelector(".body").style.overflowY = "hidden";
   menu
     .to(".openMenu", { pointerEvents: "none" })
     .to(".closeMenu", { pointerEvents: "none" }, "<")
@@ -459,6 +460,7 @@ function openMenu() {
 }
 
 function closeMenu() {
+  document.querySelector(".body").style.overflowY = "auto";
   menu
     .to(".openMenu", { pointerEvents: "none" })
     .to(".closeMenu", { pointerEvents: "none", opacity: 0 }, "<")

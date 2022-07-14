@@ -57,7 +57,8 @@ function loaderdestroy() {
 
 function exitAnimation() {
   timeline_3
-    .to(".animation-content-3", { opacity: 0 })
+    .to(".navigation", { display: "none" })
+    .to(".animation-content-3", { opacity: 0 }, "<")
     .to(".animation-content-2", { opacity: 0 })
     .to(".animation-content-1", { opacity: 0 })
     .to(".main-vid", { opacity: 0, duration: 0.8 })
@@ -82,6 +83,7 @@ function menudisappear() {
 }
 
 function openMenu() {
+  document.querySelector(".body").style.overflowY = "hidden";
   menu
     .to(".openMenu", { pointerEvents: "none" })
     .to(".closeMenu", { pointerEvents: "none" }, "<")
@@ -97,6 +99,7 @@ function openMenu() {
 }
 
 function closeMenu() {
+  document.querySelector(".body").style.overflowY = "auto";
   menu
     .to(".openMenu", { pointerEvents: "none" })
     .to(".closeMenu", { pointerEvents: "none", opacity: 0 }, "<")
