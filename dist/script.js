@@ -66,7 +66,6 @@ function menudisappear() {
 }
 
 function openMenu() {
-  document.querySelector(".body").style.overflowY = "hidden";
   menu
     .to(".openMenu", { pointerEvents: "none" })
     .to(".closeMenu", { pointerEvents: "none" }, "<")
@@ -82,7 +81,6 @@ function openMenu() {
 }
 
 function closeMenu() {
-  document.querySelector(".body").style.overflowY = "auto";
   menu
     .to(".openMenu", { pointerEvents: "none" })
     .to(".closeMenu", { pointerEvents: "none", opacity: 0 }, "<")
