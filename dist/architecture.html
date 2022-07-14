@@ -24,40 +24,41 @@
 
 <body class="body overflow-x-hidden">
   <!-- loader -->
-  <div class="loader container mx-auto absolute z-50">
-
+  <div class="loader container mx-auto absolute z-40">
     <!-- web -->
-    <div class="load-web absolute z-50 hidden lg:grid grid-cols-4">
-      <div class="loader-lines border-x border-white border-opacity-10 border-r-0">
-      </div>
-      <div class="loader-lines border-x border-white border-opacity-10 border-r-0">
-      </div>
-      <div class="loader-lines border-x border-white border-opacity-10 border-r-0" style=" opacity: 1;">
-      </div>
-      <div class="loader-lines border-x border-white border-opacity-10"></div>
+    <div class="load-web batman-web absolute z-50 hidden lg:grid">
+      <div class="loader-lines border-x border-white  border-opacity-10 border-r-0 border-l-0"></div>
+      <div class="loader-lines border-x border-white  border-opacity-10 border-r-0"></div>
+      <div class="loader-lines border-x border-white  border-opacity-10 border-r-0"></div>
+      <div class="loader-lines border-x border-white  border-opacity-10 border-r-0" style="opacity: 1"></div>
+      <div class="loader-lines border-x border-white  border-opacity-10 border-r-0" style="opacity: 1"></div>
+      <div class="loader-lines border-x border-white  border-opacity-10 border-r-0"></div>
     </div>
-    <div class="load-web absolute items-center justify-center z-50 hidden lg:grid ">
-      <img class="load-centered-logo opacity-0" src="./images/sedonalogo.png" alt="">
+    <div class="load-web absolute items-center justify-center z-50 hidden lg:grid">
+      <img class="load-centered-logo opacity-0" src="./images/sedonalogo.png" alt="" />
     </div>
 
     <!-- tab -->
-    <div class="load-mobile absolute z-50 hidden sm:grid lg:hidden grid-cols-2 ">
-      <div class="loader-lines border-x border-white border-opacity-10 border-r-0">
-      </div>
-      <div class="loader-lines border-x border-white border-opacity-10"></div>
+    <div class="load-tab batman-tab w-full h-full absolute z-50 hidden sm:grid lg:hidden">
+      <div class="loader-lines border-x border-white border-opacity-10 border-r-0 border-l-0"></div>
+      <div class="loader-lines border-x border-white border-opacity-10 border-r-0"></div>
+      <div class="loader-lines border-x border-white border-opacity-10 border-r-0"></div>
+      <div class="loader-lines border-x border-white border-opacity-10 border-r-0" style="opacity: 1"></div>
+
     </div>
-    <div class="load-mobile z-50 absolute items-center justify-center hidden sm:grid lg:hidden">
-      <img class="load-centered-logo opacity-0" src="./images/sedonalogo.png" alt="">
+    <div class="load-web absolute items-center justify-center z-50 hidden sm:grid lg:hidden">
+      <img class="load-centered-logo logoM opacity-0" src="./images/sedonalogo.png" alt="" />
     </div>
 
     <!-- mobile -->
-    <div class="load-mobile absolute z-50 grid sm:hidden">
-      <div class="loader-lines border-x border-white border-opacity-10 ">
-      </div>
-      <div class="load-mobile z-50 absolute items-center justify-center grid sm:hidden">
-        <img class="load-centered-logo opacity-0" src="./images/sedonalogo.png" alt="">
-      </div>
+    <div class="load-mobile batman-mobile absolute z-50 grid grid-cols-2 sm:hidden">
+      <div class="loader-lines border-x border-white border-opacity-10 border-r-0 border-l-0"></div>
+      <div class="loader-lines border-x border-white border-opacity-10 border-r-0"></div>
+      <div class="loader-lines border-x border-white border-opacity-10  border-r-0"></div>
 
+    </div>
+    <div class="load-mobile z-50 absolute items-center justify-center grid sm:hidden">
+      <img class="load-centered-logo logoM opacity-0" src="./images/sedonalogo2.png" alt="" />
     </div>
   </div>
 
@@ -86,7 +87,7 @@
               <div class="w-full h-fit grid grid-cols-3 justify-between mt-5 animation-content-1 ">
                 <a href="contact.html" class="web-contact">Lets Talk</a>
                 <a class="h-fit" href="index.html"><img class="logo-web" src="./images/sedonalogo.png" alt="" /></a>
-                <a class="h-fit menu-icon-web-link self-center justify-self-end flex closeMenu"
+                <a class="h-fit menu-icon-web-link self-center justify-self-end flex closeMenu opacity-0"
                   href="javascript:void(0)" onclick="closeMenu()">Close
                   Menu<img class="menu-icon-web-close self-center ml-3" src="./images/Group 253.png" alt="" /></a>
               </div>
@@ -114,16 +115,16 @@
                   </a>
                 </div>
                 <div class="self-center web-navigation w-full flex flex-col  items-end menu-tab-mob-appear opacity-0">
-                  <a class="bars py-3" href="#"><span class="bar-text">PROJECT</span><span
-                      class="bar absolute"></span></a>
-                  <a class="bars py-3" href="#"><span class="bar-text">ARCHITECTURE</span><span
-                      class="bar arc absolute"></span></a>
-                  <a class="bars py-3" href="#"><span class="bar-text">LIFESTYLE</span><span
-                      class="bar life absolute"></span></a>
-                  <a class="bars py-3" href="#"><span class="bar-text">PRODUCTION</span><span
-                      class="bar pro absolute"></span></a>
-                  <a class="bars py-3" href="#"><span class="bar-text">CONTACT</span><span
-                      class="bar con absolute"></span></a>
+                  <a onclick="project()" class="bars py-3" href="javascript:void(0)"><span
+                      class="bar-text">PROJECT</span><span class="bar absolute"></span></a>
+                  <a onclick="architecture()" class="bars py-3" href="javascript:void(0)"><span
+                      class="bar-text">ARCHITECTURE</span><span class="bar arc absolute"></span></a>
+                  <a onclick="lifestyle()" class="bars py-3" href="javascript:void(0)"><span
+                      class="bar-text">LIFESTYLE</span><span class="bar life absolute"></span></a>
+                  <a onclick="production()" class="bars py-3" href="javascript:void(0)"><span
+                      class="bar-text">PRODUCTION</span><span class="bar pro absolute"></span></a>
+                  <a onclick="contact()" class="bars py-3" href="javascript:void(0)"><span
+                      class="bar-text">CONTACT</span><span class="bar con absolute"></span></a>
                 </div>
               </div>
             </div>
@@ -142,14 +143,14 @@
           <div class="menu-line-items opacity-0 border-x border-white border-opacity-10"></div>
         </div>
         <!-- tab-menu-nav -->
-        <div class="web-menu-inner  web-text  w-full h-full absolute z-30 grid grid-cols-1">
+        <div class="web-menu-inner animation-content  web-text  w-full h-full absolute z-30 grid grid-cols-1">
           <div class="nintypercent">
             <div class="grid grid-cols-1 h-full">
               <!-- tab-header -->
               <div class="w-full h-fit grid grid-cols-3 justify-between mt-5 ">
                 <a class="h-fit" href="index.html"><img class="logo-tab" src="./images/sedonalogo2.png" alt="" /></a>
                 <a href="contact.html" class="tab-contact">Lets Talk</a>
-                <a class="h-fit self-center justify-self-end flex closeMenu" href="javascript:void(0)"
+                <a class="h-fit self-center justify-self-end flex closeMenu opacity-0" href="javascript:void(0)"
                   onclick="closeMenu()">Close
                   Menu<img class="menu-icon-tab-close pl-2 self-center" src="./images/Group 253.png" alt="" /></a>
 
@@ -158,11 +159,11 @@
               <!-- tablinks -->
               <div class="menu-links-tab grid grid-cols-1 w-full  self-end menu-tab-mob-appear opacity-0">
                 <div class="flex flex-col">
-                  <a class="py-3" href="#">PROJECT</a>
-                  <a class="py-3" href="#">ARCHITECTURE</a>
-                  <a class="py-3" href="#">LIFESTYLE</a>
-                  <a class="py-3" href="#">PRODUCTION</a>
-                  <a class="py-3" href="#">CONTACT</a>
+                  <a onclick="project()" class="py-3" href="javascript:void(0)">PROJECT</a>
+                  <a onclick="architecture()" class="py-3" href="javascript:void(0)">ARCHITECTURE</a>
+                  <a onclick="lifestyle()" class="py-3" href="javascript:void(0)">LIFESTYLE</a>
+                  <a onclick="production()" class="py-3" href="javascript:void(0)">PRODUCTION</a>
+                  <a onclick="contact()" class="py-3" href="javascript:void(0)">CONTACT</a>
                 </div>
                 <span class="copyright-tab py-10 opacity-50">© Sedona Canyon Estate 2022</span>
               </div>
@@ -182,13 +183,13 @@
           <div class="menu-line-items opacity-0 border-x border-white border-opacity-10"></div>
         </div>
         <!-- mobile-menu-nav -->
-        <div class="web-menu-inner  web-text  w-full h-full absolute z-30 grid grid-cols-1">
+        <div class="web-menu-inner  web-text  animation-content w-full h-full absolute z-30 grid grid-cols-1">
           <div class="nintypercent">
             <div class="grid grid-cols-1 h-full">
               <!-- mobile-header -->
               <div class="flex w-full h-fit justify-between mt-5 ">
                 <a class="h-fit" href="index.html"><img class="logo-mobile" src="./images/sedonalogo2.png" alt="" /></a>
-                <a class="h-fit self-center justify-self-end flex closeMenu" href="javascript:void(0)"
+                <a class="h-fit self-center justify-self-end flex closeMenu opacity-0" href="javascript:void(0)"
                   onclick="closeMenu()">Close
                   Menu<img class="menu-icon-mobile-close pl-2 self-center" src="./images/Group 253.png" alt="" /></a>
               </div>
@@ -196,11 +197,11 @@
               <!-- mobilelinks -->
               <div class="menu-links-mobile grid grid-cols-1 w-full  self-end menu-tab-mob-appear opacity-0">
                 <div class="flex flex-col">
-                  <a class="py-3" href="#">PROJECT</a>
-                  <a class="py-3" href="#">ARCHITECTURE</a>
-                  <a class="py-3" href="#">LIFESTYLE</a>
-                  <a class="py-3" href="#">PRODUCTION</a>
-                  <a class="py-3" href="#">CONTACT</a>
+                  <a onclick="project()" class="py-3" href="javascript:void(0)">PROJECT</a>
+                  <a onclick="architecture()" class="py-3" href="javascript:void(0)">ARCHITECTURE</a>
+                  <a onclick="lifestyle()" class="py-3" href="javascript:void(0)">LIFESTYLE</a>
+                  <a onclick="production()" class="py-3" href="javascript:void(0)">PRODUCTION</a>
+                  <a onclick="contact()" class="py-3" href="javascript:void(0)">CONTACT</a>
                 </div>
                 <span class="copyright-mobile py-10 opacity-50">© Sedona Canyon Estate 2022</span>
               </div>
@@ -214,6 +215,7 @@
 
     </div>
   </div>
+
 
 
   <!-- body content -->
@@ -262,7 +264,7 @@
                   height: auto;
                 ">
               <!-- web-header -->
-              <div class="w-full h-fit grid grid-cols-3 justify-between mt-5 animation-content-1 ">
+              <div class="w-full h-fit grid grid-cols-3 justify-between mt-5 animation-content-1 animate-1">
                 <a href="contact.html" class="web-contact">Lets Talk</a>
                 <a class="h-fit" href="index.html"><img class="logo-web" src="./images/sedonalogo.png" alt="" /></a>
                 <a onclick="openMenu()" class="h-fit menu-icon-web-link self-center justify-self-end flex openMenu"
@@ -288,8 +290,8 @@
                 <div class="animate-2 text-white" style="
                   
                       font-family: 'Federo', sans-serif;
-                      font-size: 4.167vw;
-                      line-height: 8.182vw;
+                      font-size: 60px;
+                      line-height: 83px;
                     ">
                   <div>A FUTURE</div>
                   <div>TO BUILD</div>
@@ -310,14 +312,14 @@
                   width: 100%;
                   grid-template-columns: 1fr 1fr 2fr;
                   font-family: 'Roboto', sans-serif;
-                  font-size: 20px;
-                  line-height: 35px;
+                  font-size: 1.250vw;
+                  line-height: 2.431vw;
                 ">
               <div>02</div>
               <div><span>Architecture</span></div>
               <div>
-                Clean architectural lines. Stunning finishing materials. Well-defined construction standards. Here,
-                there is no rush to build; everything is designed to allow you to express your personality in a
+                Clean architectural lines. Stunning finishing materials.<br> Well-defined construction standards. Here,
+                there is no rush to build;<br> everything is designed to allow you to express your personality<br> in a
                 harmonious environment when the time is right.
               </div>
             </div>
@@ -346,17 +348,19 @@
               <!-- Tab-paragraph -->
               <div class="tab-paragraph w-full grid self-end">
                 <div class="animation-content-2 ">
-                  <h1 class="mb-5">A FUTURE<br>TO BUILD</h1>
-                  <p class="mb-5">
+                  <h1 class="mb-5 animate-2">A FUTURE<br>TO BUILD</h1>
+                  <p class="mb-5 animate-3">
 
-                    Clean architectural lines. Stunning finishing materials. Well-defined construction standards. Here,
-                    there is no rush to build; everything is designed to allow you to express your personality in a
+                    Clean architectural lines. Stunning finishing materials.<br> Well-defined construction standards.
+                    Here,
+                    there is no rush to build;<br> everything is designed to allow you to express your personality<br>
+                    in a
                     harmonious environment when the time is right.
                   </p>
                   <a class="map-link-t pointer-events-none">
-                    <span class="flex mb-5">
-                      02
-                    </span>
+                    <p class="flex mb-5 animate-3">
+                      Scroll to Explore
+                    </p>
                   </a>
                 </div>
                 <div></div>
@@ -385,17 +389,17 @@
 
 
             <div class="mobile-paragraph w-full h-fit self-end animation-content-2 ">
-              <h1 class="mb-5">A FUTURE<br>TO BUILD</h1>
-              <p class="mb-5">
+              <h1 class="mb-5 animate-2">A FUTURE<br>TO BUILD</h1>
+              <p class="mb-5 animate-3">
 
                 Clean architectural lines. Stunning finishing materials. Well-defined construction standards. Here,
                 there is no rush to build; everything is designed to allow you to express your personality in a
                 harmonious environment when the time is right.
               </p>
               <a class="map-link-t pointer-events-none">
-                <span class="flex mb-5">
-                  02
-                </span>
+                <p class="flex mb-5 animate-3 ">
+                  Scroll to Explore
+                </p>
               </a>
             </div>
           </div>
@@ -406,7 +410,7 @@
     </div>
 
     <!-- section-1 -->
-    <div class="section-1 w-full h-full relative">
+    <div class="section-1 w-full h-full relative hidden">
 
       <!-- mobile -->
       <div class="sm:hidden grid w-full h-full limit-w border-x border-black border-opacity-10">
@@ -503,7 +507,7 @@
     </div>
 
     <!-- section-2 -->
-    <div class="section-2 w-full h-full relative">
+    <div class="section-2 w-full h-full relative hidden">
 
       <!-- mobile -->
       <div class="sm:hidden grid w-full h-full">
@@ -611,7 +615,7 @@
     </div>
 
     <!-- section-3 -->
-    <div class="section-3 w-full h-full relative">
+    <div class="section-3 w-full h-full relative hidden">
 
       <!-- mobile -->
       <div class="sm:hidden grid w-full h-full limit-w">

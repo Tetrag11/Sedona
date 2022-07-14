@@ -3,7 +3,11 @@
   background-color: transparent;
 }
 .body {
-  background: #485b29 !important;
+  background: #5a6351;
+}
+
+.main {
+  background: #294f3c;
 }
 
 /* dev */

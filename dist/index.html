@@ -87,7 +87,7 @@
                                 <a href="contact.html" class="web-contact">Lets Talk</a>
                                 <a class="h-fit" href="index.html"><img class="logo-web" src="./images/sedonalogo.png"
                                         alt="" /></a>
-                                <a class="h-fit menu-icon-web-link self-center justify-self-end flex closeMenu"
+                                <a class="h-fit menu-icon-web-link self-center justify-self-end flex closeMenu opacity-0"
                                     href="javascript:void(0)" onclick="closeMenu()">Close
                                     Menu<img class="menu-icon-web-close self-center ml-3" src="./images/Group 253.png"
                                         alt="" /></a>
@@ -116,17 +116,18 @@
                                     </a>
                                 </div>
                                 <div
-                                    class="self-center web-navigation w-full flex flex-col  items-end animation-content-3 opacity-0">
-                                    <a class="bars py-3" href="#"><span class="bar-text">PROJECT</span><span
-                                            class="bar absolute"></span></a>
-                                    <a class="bars py-3" href="#"><span class="bar-text">ARCHITECTURE</span><span
+                                    class="self-center web-navigation w-full flex flex-col  items-end menu-tab-mob-appear opacity-0">
+                                    <a onclick="project()" class="bars py-3" href="javascript:void(0)"><span
+                                            class="bar-text">PROJECT</span><span class="bar absolute"></span></a>
+                                    <a onclick="architecture()" class="bars py-3" href="javascript:void(0)"><span
+                                            class="bar-text">ARCHITECTURE</span><span
                                             class="bar arc absolute"></span></a>
-                                    <a class="bars py-3" href="#"><span class="bar-text">LIFESTYLE</span><span
-                                            class="bar life absolute"></span></a>
-                                    <a class="bars py-3" href="#"><span class="bar-text">PRODUCTION</span><span
-                                            class="bar pro absolute"></span></a>
-                                    <a class="bars py-3" href="#"><span class="bar-text">CONTACT</span><span
-                                            class="bar con absolute"></span></a>
+                                    <a onclick="lifestyle()" class="bars py-3" href="javascript:void(0)"><span
+                                            class="bar-text">LIFESTYLE</span><span class="bar life absolute"></span></a>
+                                    <a onclick="production()" class="bars py-3" href="javascript:void(0)"><span
+                                            class="bar-text">PRODUCTION</span><span class="bar pro absolute"></span></a>
+                                    <a onclick="contact()" class="bars py-3" href="javascript:void(0)"><span
+                                            class="bar-text">CONTACT</span><span class="bar con absolute"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -146,7 +147,7 @@
                     <div class="menu-line-items opacity-0 border-x border-white border-opacity-10"></div>
                 </div>
                 <!-- tab-menu-nav -->
-                <div class="web-menu-inner  web-text  w-full h-full absolute z-30 grid grid-cols-1">
+                <div class="web-menu-inner animation-content  web-text  w-full h-full absolute z-30 grid grid-cols-1">
                     <div class="nintypercent">
                         <div class="grid grid-cols-1 h-full">
                             <!-- tab-header -->
@@ -154,8 +155,8 @@
                                 <a class="h-fit" href="index.html"><img class="logo-tab" src="./images/sedonalogo2.png"
                                         alt="" /></a>
                                 <a href="contact.html" class="tab-contact">Lets Talk</a>
-                                <a class="h-fit self-center justify-self-end flex closeMenu" href="javascript:void(0)"
-                                    onclick="closeMenu()">Close
+                                <a class="h-fit self-center justify-self-end flex closeMenu opacity-0"
+                                    href="javascript:void(0)" onclick="closeMenu()">Close
                                     Menu<img class="menu-icon-tab-close pl-2 self-center" src="./images/Group 253.png"
                                         alt="" /></a>
 
@@ -164,11 +165,11 @@
                             <!-- tablinks -->
                             <div class="menu-links-tab grid grid-cols-1 w-full  self-end menu-tab-mob-appear opacity-0">
                                 <div class="flex flex-col">
-                                    <a class="py-3" href="#">PROJECT</a>
-                                    <a class="py-3" href="#">ARCHITECTURE</a>
-                                    <a class="py-3" href="#">LIFESTYLE</a>
-                                    <a class="py-3" href="#">PRODUCTION</a>
-                                    <a class="py-3" href="#">CONTACT</a>
+                                    <a onclick="project()" class="py-3" href="javascript:void(0)">PROJECT</a>
+                                    <a onclick="architecture()" class="py-3" href="javascript:void(0)">ARCHITECTURE</a>
+                                    <a onclick="lifestyle()" class="py-3" href="javascript:void(0)">LIFESTYLE</a>
+                                    <a onclick="production()" class="py-3" href="javascript:void(0)">PRODUCTION</a>
+                                    <a onclick="contact()" class="py-3" href="javascript:void(0)">CONTACT</a>
                                 </div>
                                 <span class="copyright-tab py-10 opacity-50">© Sedona Canyon Estate 2022</span>
                             </div>
@@ -189,15 +190,15 @@
                     <div class="menu-line-items opacity-0 border-x border-white border-opacity-10"></div>
                 </div>
                 <!-- mobile-menu-nav -->
-                <div class="web-menu-inner  web-text  w-full h-full absolute z-30 grid grid-cols-1">
+                <div class="web-menu-inner  web-text  animation-content w-full h-full absolute z-30 grid grid-cols-1">
                     <div class="nintypercent">
                         <div class="grid grid-cols-1 h-full">
                             <!-- mobile-header -->
                             <div class="flex w-full h-fit justify-between mt-5 ">
                                 <a class="h-fit" href="index.html"><img class="logo-mobile"
                                         src="./images/sedonalogo2.png" alt="" /></a>
-                                <a class="h-fit self-center justify-self-end flex closeMenu" href="javascript:void(0)"
-                                    onclick="closeMenu()">Close
+                                <a class="h-fit self-center justify-self-end flex closeMenu opacity-0"
+                                    href="javascript:void(0)" onclick="closeMenu()">Close
                                     Menu<img class="menu-icon-mobile-close pl-2 self-center"
                                         src="./images/Group 253.png" alt="" /></a>
                             </div>
@@ -206,11 +207,11 @@
                             <div
                                 class="menu-links-mobile grid grid-cols-1 w-full  self-end menu-tab-mob-appear opacity-0">
                                 <div class="flex flex-col">
-                                    <a class="py-3" href="#">PROJECT</a>
-                                    <a class="py-3" href="#">ARCHITECTURE</a>
-                                    <a class="py-3" href="#">LIFESTYLE</a>
-                                    <a class="py-3" href="#">PRODUCTION</a>
-                                    <a class="py-3" href="#">CONTACT</a>
+                                    <a onclick="project()" class="py-3" href="javascript:void(0)">PROJECT</a>
+                                    <a onclick="architecture()" class="py-3" href="javascript:void(0)">ARCHITECTURE</a>
+                                    <a onclick="lifestyle()" class="py-3" href="javascript:void(0)">LIFESTYLE</a>
+                                    <a onclick="production()" class="py-3" href="javascript:void(0)">PRODUCTION</a>
+                                    <a onclick="contact()" class="py-3" href="javascript:void(0)">CONTACT</a>
                                 </div>
                                 <span class="copyright-mobile py-10 opacity-50">© Sedona Canyon Estate 2022</span>
                             </div>
@@ -224,6 +225,7 @@
 
         </div>
     </div>
+
 
 
 

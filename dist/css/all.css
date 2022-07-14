@@ -313,15 +313,8 @@ body {
 }
 
 .tab-paragraph p {
-  font-size: 20px;
-  line-height: 35px;
-}
-
-@media (max-width: 863px) {
-  .tab-paragraph p {
-    font-size: 1.97vw;
-    line-height: 4.056vw;
-  }
+  font-size: 1.97vw;
+  line-height: 4.056vw;
 }
 
 .tab-paragraph .erlp {
