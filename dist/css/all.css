@@ -50,8 +50,9 @@ body {
 }
 
 .logo-tab {
-  width: 90px;
-  height: 45px;
+  /* width: 90px;
+  height: 45px; */
+  width: 13.74vw;
 }
 
 /* The centered logo in load */
@@ -163,22 +164,22 @@ body {
 .web-navigation a {
   font-family: "Federo";
   color: white;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 1.736vw;
+  line-height: 2.083vw;
   position: relative;
   display: block;
   width: 100%;
   text-align: right;
 }
 .web-contact {
-  font-size: 18px;
+  font-size: 1.25vw;
   justify-self: start;
   align-self: center;
 }
-
 .logo-web {
-  width: 222px;
-  height: 68px;
+  width: 15.417vw;
+  /* 222px */
+  /* height: 68px; */
   margin: 0 auto;
 }
 .menu-icon-web-link {
@@ -186,30 +187,35 @@ body {
 }
 
 .menu-icon-web {
-  width: 35px;
-  height: 9px;
+  /* width: 35px; */
+  width: 2.431vw;
+  /* height: 9px; */
 }
+
 .menu-icon-web-close {
-  width: 35px;
-  height: 2px;
+  width: 2.431vw;
+  /* width: 35px;
+  height: 2px; */
 }
 
 .menu-icon-mobile {
-  width: 33px;
-  height: 10px;
+  /* width: 33px;
+  height: 10px; */
+  width: 7.692vw;
 }
 
 .menu-icon-mobile-close {
-  width: 33px;
-  height: 1px;
+  /* width: 33px;
+  height: 1px; */
+  width: 7.692vw;
 }
 
 .menu-links-web a {
   font-family: "Federo";
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
-  line-height: 29px;
+  font-size: 1.736vw;
+  line-height: 2.083vw;
   text-align: right;
 }
 
@@ -217,8 +223,8 @@ body {
   font-family: "Federo";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 4.662vw;
+  line-height: 5.594vw;
   text-align: right;
 }
 
@@ -226,43 +232,48 @@ body {
   font-family: "Federo";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 2.748vw;
+  line-height: 3.206vw;
   text-align: right;
 }
 
 .tab-contact {
-  font-size: 13px;
+  font-size: 1.985vw;
   /* justify-self: center; */
   margin-left: 50%;
   align-self: center;
 }
 
 .menu-icon-tab {
-  width: 33px;
-  height: 9px;
+  /* width: 33px;
+  height: 9px; */
+  width: 5.038vw;
 }
 .menu-icon-tab-close {
-  width: 33px;
-  height: 2px;
+  /* width: 33px;
+  height: 9px; */
+  width: 5.038vw;
 }
 
 .logo-mobile {
-  width: 109px;
-  height: 53px;
+  /* width: 109px;
+  height: 53px; */
+  width: 25.408vw;
 }
 
 .copyright {
   text-align: right;
-  font-size: 15px !important;
+  font-size: 1.042vw !important;
 }
 
 .copyright-tab {
   text-align: right;
+  font-size: 2.29vw !important;
 }
 
 .copyright-mobile {
   text-align: right;
+  font-size: 3.497vw !important;
 }
 
 /* sm(size) */

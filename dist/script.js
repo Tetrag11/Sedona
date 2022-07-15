@@ -62,11 +62,20 @@ function menuappear() {
 }
 
 function menudisappear() {
+  document.querySelectorAll(".openmenudisaappear").forEach((element) => {
+    element.style.opacity = 1;
+  });
   document.querySelector(".menu").style.display = "none";
+}
+function hide() {
+  document.querySelectorAll(".openmenudisaappear").forEach((element) => {
+    element.style.opacity = 0;
+  });
 }
 
 function openMenu() {
   menu
+    .add(hide)
     .to(".openMenu", { pointerEvents: "none" })
     .to(".closeMenu", { pointerEvents: "none" }, "<")
     .to(".animation-content-2", { opacity: 0 }, "<")

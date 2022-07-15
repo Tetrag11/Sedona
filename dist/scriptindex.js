@@ -30,10 +30,10 @@ function increment() {
     timeline
       .to(".load-centered-logo", { opacity: 0, duration: 0.5 })
       .to(".loader-lines", { opacity: 0, stagger: 0.2 })
+      .to(".animation-content-1", { opacity: 1 }, "<0.8")
+      .to(".animation-content-2", { opacity: 1 }, "<")
+      .to(".animation-content-3", { opacity: 1 }, "<")
       .to(".loader", { display: "none" })
-      .to(".animation-content-1", { opacity: 1 })
-      .to(".animation-content-2", { opacity: 1 })
-      .to(".animation-content-3", { opacity: 1 })
       .add(secondloadscreenDestroy);
 
     clearInterval(secondscalc);
@@ -101,15 +101,17 @@ function openMenu() {
 
 function closeMenu() {
   document.querySelector(".body").style.overflowY = "auto";
+
   menu
     .to(".animation-content-3", { opacity: 1 })
 
     .to(".closeMenu", { pointerEvents: "none", opacity: 0 }, "<")
     .to(".menu-tab-mob-appear", { opacity: 0 }, "<")
     .to(".menu-line-items", { opacity: 0, stagger: 0.2 }, "<")
+    .to(".animation-content-2", { opacity: 1 }, "<0.8")
+    .to(".web-navigation-menu", { opacity: 0 }, "<")
+    .to(".openMenu", { pointerEvents: "auto", opacity: 1 }, "<")
     .add(menudisappear)
-    .to(".animation-content-2", { opacity: 1 })
-    .to(".openMenu", { pointerEvents: "auto", opacity: 1 })
     .to(".closeMenu", { pointerEvents: "auto" }, "<");
 }
 
