@@ -122,20 +122,16 @@
                                     </div>
                                     <div
                                         class="self-center web-navigation w-full flex flex-col  items-end menu-tab-mob-appear opacity-0">
-                                        <a onclick="project()" class="bars py-3" href="javascript:void(0)"><span
-                                                class="bar-text">PROJECT</span><span class="bar absolute"></span></a>
-                                        <a onclick="architecture()" class="bars py-3" href="javascript:void(0)"><span
-                                                class="bar-text">ARCHITECTURE</span><span
-                                                class="bar arc absolute"></span></a>
-                                        <a onclick="lifestyle()" class="bars py-3" href="javascript:void(0)"><span
-                                                class="bar-text">LIFESTYLE</span><span
-                                                class="bar life absolute"></span></a>
-                                        <a onclick="production()" class="bars py-3" href="javascript:void(0)"><span
-                                                class="bar-text">PRODUCTION</span><span
-                                                class="bar pro absolute"></span></a>
-                                        <a onclick="contact()" class="bars py-3" href="javascript:void(0)"><span
-                                                class="bar-text">CONTACT</span><span
-                                                class="bar con absolute"></span></a>
+                                        <a onclick="project()" class=" py-3" href="javascript:void(0)"><span
+                                                class="pr-2 number">1.</span>PROJECT</a>
+                                        <a onclick="architecture()" class=" py-3" href="javascript:void(0)"><span
+                                                class="pr-2 number">2.</span>ARCHITECTURE</a>
+                                        <a onclick="lifestyle()" class=" py-3" href="javascript:void(0)"><span
+                                                class="pr-2 number">3.</span>LIFESTYLE</span></a>
+                                        <a onclick="production()" class=" py-3" href="javascript:void(0)"><span
+                                                class="pr-2 number">4.</span>PRODUCTION</a>
+                                        <a onclick="contact()" class=" py-3" href="javascript:void(0)"><span
+                                                class="pr-2 number">4.</span>CONTACT</a>
                                     </div>
                                 </div>
                             </div>
@@ -304,7 +300,8 @@
 
 
                     <!-- web-text -->
-                    <div class=" web-text animation-content  w-full h-full absolute z-30 grid grid-cols-1">
+                    <div onmousemove="webmapmoveonmouse(event)"
+                        class=" web-text animation-content  w-full h-full absolute z-30 grid grid-cols-1">
 
                         <div class="nintypercent">
                             <div class="web-text-first-half grid grid-cols-1 gap-0">
@@ -322,18 +319,22 @@
 
                                 <!-- lots -->
                                 <div class="lots-web w-full h-full grid grid-cols-4 animation-content-2">
-                                    <a onclick="openCard(1)" onmouseover="changeMap1()"
+                                    <a onclick="openCard(1)" onmouseover="changeMap1() "
                                         class="lot-link w-full h-full flex flex-col items-center justify-start"
-                                        href="javascript:void(0)"><span class="pt-32">LOT 02</span></a>
+                                        href="javascript:void(0)"><span class="pt-32" onclick="chechpos(event)">LOT
+                                            02</span></a>
                                     <a onclick="openCard(2)" onmouseover="changeMap2()"
                                         class="lot-link w-full h-full flex flex-col items-center justify-start"
-                                        href="javascript:void(0)"><span class="pt-32">LOT 06</span></a>
+                                        href="javascript:void(0)"><span class="pt-32" onclick="chechpos(event)">LOT
+                                            06</span></a>
                                     <a onclick="openCard(3)" onmouseover="changeMap3()"
                                         class="lot-link w-full h-full flex flex-col items-center justify-start"
-                                        href="javascript:void(0)"><span class="pt-32">LOT 07</span></a>
+                                        href="javascript:void(0)"><span class="pt-32" onclick="chechpos(event)">LOT
+                                            07</span></a>
                                     <a onclick="openCard(4)" onmouseover="changeMap4()"
                                         class="lot-link w-full h-full flex flex-col items-center justify-start"
-                                        href="javascript:void(0)"><span class="pt-32">LOT 08</span></a>
+                                        href="javascript:void(0)"><span class="pt-32" onclick="chechpos(event)">LOT
+                                            08</span></a>
                                 </div>
 
 
@@ -413,16 +414,18 @@
                                 to the right, this property is a hidden gem for a nature lover. Anyone purchasing
                                 this beautiful property can collaborate and design their home with Shakticola.
                             </p>
-                            <div class="flex items-start padding-x-5">
+                            <div class="flex items-start padding-x-5 pt-5">
                                 <div class="hidden appear-w-e opacity-0 justify-between w-full h-fit mb-5 items-center">
                                     <a class="mobile-inquire" href="javascript:void(0)">Inquire now</a>
                                     <a class="closebtn card-close-mobile" onclick="mobileClosecard()"
                                         href="javascript:void(0)"><img src="./images/Group 31.png" alt=""></a>
                                 </div>
                                 <div class="flex appear-w-c justify-between w-full h-fit mb-5">
-                                    <a class="lotbtn" onclick="previousLotMob()" href="javascript:void(0)">Previous
+                                    <a class="lotbtn prev-mob opacity-0" onclick="previousLotMob()"
+                                        href="javascript:void(0)">Previous
                                         Lot</a>
-                                    <a class="lotbtn" onclick="nextLotMob()" href="javascript:void(0)">Next Lot</a>
+                                    <a class="lotbtn next-mob" onclick="nextLotMob()" href="javascript:void(0)">Next
+                                        Lot</a>
                                 </div>
                             </div>
                         </div>

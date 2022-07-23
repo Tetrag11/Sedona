@@ -4,6 +4,21 @@ body {
   color: white;
 }
 
+.number {
+  font-family: "Roboto";
+  transition: opacity 1s ease;
+  opacity: 0;
+}
+
+.web-navigation a:hover .number {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
 /* Loading Screen  */
 
 /* load parent */

@@ -10,6 +10,7 @@ const cardanimation = gsap.timeline();
 const menu = gsap.timeline();
 const menuLink = gsap.timeline();
 const mobiletabcard = gsap.timeline();
+const webmapmove = gsap.timeline();
 const mobiletabmapmove = gsap.timeline();
 
 // variables
@@ -56,7 +57,70 @@ function loaderdestroy() {
   document.querySelector(".body").style.overflowY = "visible";
 }
 
+function chechpos(event) {
+  var viewportwidth;
+  var viewportheight;
+
+  // the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+
+  if (typeof window.innerWidth != "undefined") {
+    (viewportwidth = window.innerWidth), (viewportheight = window.innerHeight);
+  }
+
+  // IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+  else if (
+    typeof document.documentElement != "undefined" &&
+    typeof document.documentElement.clientWidth != "undefined" &&
+    document.documentElement.clientWidth != 0
+  ) {
+    (viewportwidth = document.documentElement.clientWidth),
+      (viewportheight = document.documentElement.clientHeight);
+  }
+
+  // older versions of IE
+  else {
+    (viewportwidth = document.getElementsByTagName("body")[0].clientWidth),
+      (viewportheight = document.getElementsByTagName("body")[0].clientHeight);
+  }
+
+  var x = event.clientX;
+  var y = event.clientY;
+  var coords = (x / viewportwidth) * 100;
+  console.log(coords);
+}
+let enable = true;
+function webmapmoveonmouse(event) {
+  var x = -((event.pageX * -0.1) / 15);
+  var y = -((event.pageY * -0.1) / 15);
+
+  webmapmoveonmouseinner(x, enable);
+}
+
+function webmapmoveonmouseinner(x, enable) {
+  if (enable == true) {
+    if (x * 14.7 >= 100) {
+      x = 100;
+      gsap.to(".lot1", { duration: 2, objectPosition: x });
+      gsap.to(".lot2", { duration: 2, objectPosition: x });
+      gsap.to(".lot3", { duration: 2, objectPosition: x });
+      gsap.to(".lot4", { duration: 2, objectPosition: x });
+    } else {
+      x = x * 14.7;
+      gsap.to(".lot1", { duration: 2, objectPosition: x });
+      gsap.to(".lot2", { duration: 2, objectPosition: x });
+      gsap.to(".lot3", { duration: 2, objectPosition: x });
+      gsap.to(".lot4", { duration: 2, objectPosition: x });
+    }
+  }
+}
+
 function changeMap1() {
+  // webmapmove
+  //   .to(".lot1", { duration: 1, objectPosition: "0% 50%" })
+  //   .to(".lot2", { duration: 1, objectPosition: "0% 50%" }, "<")
+  //   .to(".lot3", { duration: 1, objectPosition: "0% 50%" }, "<")
+  //   .to(".lot4", { duration: 1, objectPosition: "0% 50%" }, "<");
+
   document.querySelector(".lot1").style.opacity = 1;
   document.querySelector(".lot0").style.opacity = 0;
   document.querySelector(".lot2").style.opacity = 0;
@@ -67,18 +131,15 @@ function changeMap1() {
   document.querySelector(".lot-b-2").style.background = "transparent";
   document.querySelector(".lot-b-3").style.background = "transparent";
   document.querySelector(".lot-b-4").style.background = "transparent";
-
-  document.querySelector(".lot1").style.transform =
-    " scale(110%) translateX(0) ";
-  document.querySelector(".lot2").style.transform =
-    " scale(110%) translateX(0) ";
-  document.querySelector(".lot3").style.transform =
-    " scale(110%) translateX(0) ";
-  document.querySelector(".lot4").style.transform =
-    " scale(110%) translateX(0) ";
 }
 
 function changeMap2() {
+  // webmapmove
+  //   .to(".lot1", { duration: 1, objectPosition: "45% 50%" })
+  //   .to(".lot2", { duration: 1, objectPosition: "45% 50%" }, "<")
+  //   .to(".lot3", { duration: 1, objectPosition: "45% 50%" }, "<")
+  //   .to(".lot4", { duration: 1, objectPosition: "45% 50%" }, "<");
+
   document.querySelector(".lot2").style.opacity = 1;
   document.querySelector(".lot0").style.opacity = 0;
   document.querySelector(".lot1").style.opacity = 0;
@@ -89,18 +150,15 @@ function changeMap2() {
   document.querySelector(".lot-b-1").style.background = "transparent";
   document.querySelector(".lot-b-3").style.background = "transparent";
   document.querySelector(".lot-b-4").style.background = "transparent";
-
-  document.querySelector(".lot2").style.transform =
-    "scale(110%) translateX(0%)";
-  document.querySelector(".lot1").style.transform =
-    "scale(110%) translateX(0%)";
-  document.querySelector(".lot3").style.transform =
-    "scale(110%) translateX(0%)";
-  document.querySelector(".lot4").style.transform =
-    "scale(110%) translateX(0%)";
 }
 
 function changeMap3() {
+  // webmapmove
+  //   .to(".lot1", { duration: 1, objectPosition: "75% 50%" })
+  //   .to(".lot2", { duration: 1, objectPosition: "75% 50%" }, "<")
+  //   .to(".lot3", { duration: 1, objectPosition: "75% 50%" }, "<")
+  //   .to(".lot4", { duration: 1, objectPosition: "75% 50%" }, "<");
+
   document.querySelector(".lot3").style.opacity = 1;
   document.querySelector(".lot0").style.opacity = 0;
   document.querySelector(".lot1").style.opacity = 0;
@@ -111,18 +169,15 @@ function changeMap3() {
   document.querySelector(".lot-b-1").style.background = "transparent";
   document.querySelector(".lot-b-2").style.background = "transparent";
   document.querySelector(".lot-b-4").style.background = "transparent";
-
-  document.querySelector(".lot3").style.transform =
-    "scale(110%) translateX(-1%) translateY(5%)";
-  document.querySelector(".lot1").style.transform =
-    "scale(110%) translateX(-1%) translateY(5%)";
-  document.querySelector(".lot2").style.transform =
-    "scale(110%) translateX(-1%) translateY(5%)";
-  document.querySelector(".lot4").style.transform =
-    "scale(110%) translateX(-1%) translateY(5%)";
 }
 
 function changeMap4() {
+  // webmapmove
+  //   .to(".lot1", { duration: 1, objectPosition: "90% 30%" })
+  //   .to(".lot2", { duration: 1, objectPosition: "90% 30%" }, "<")
+  //   .to(".lot3", { duration: 1, objectPosition: "90% 30%" }, "<")
+  //   .to(".lot4", { duration: 1, objectPosition: "90% 30%" }, "<");
+
   document.querySelector(".lot4").style.opacity = 1;
   document.querySelector(".lot0").style.opacity = 0;
   document.querySelector(".lot1").style.opacity = 0;
@@ -133,27 +188,18 @@ function changeMap4() {
   document.querySelector(".lot-b-1").style.background = "transparent";
   document.querySelector(".lot-b-2").style.background = "transparent";
   document.querySelector(".lot-b-3").style.background = "transparent";
-
-  document.querySelector(".lot3").style.transform =
-    " scale(110%) translateX(-1%) translateY(10%)";
-  document.querySelector(".lot1").style.transform =
-    " scale(110%) translateX(-1%) translateY(10%)";
-  document.querySelector(".lot2").style.transform =
-    " scale(110%) translateX(-1%) translateY(10%)";
-  document.querySelector(".lot4").style.transform =
-    " scale(110%) translateX(-1%) translateY(10%)";
 }
 
-function zoomOut() {
-  document.querySelector(".lot1").style.transform =
-    " scale(100%) translateX(0)";
-  document.querySelector(".lot2").style.transform =
-    " scale(100%) translateX(0)";
-  document.querySelector(".lot3").style.transform =
-    " scale(100%) translateX(0)";
-  document.querySelector(".lot4").style.transform =
-    " scale(100%) translateX(0)";
-}
+// function zoomOut() {
+//   document.querySelector(".lot1").style.transform =
+//     " scale(100%) translateX(0)";
+//   document.querySelector(".lot2").style.transform =
+//     " scale(100%) translateX(0)";
+//   document.querySelector(".lot3").style.transform =
+//     " scale(100%) translateX(0)";
+//   document.querySelector(".lot4").style.transform =
+//     " scale(100%) translateX(0)";
+// }
 
 let lotLinks = document.querySelectorAll(".lot-link");
 
@@ -164,6 +210,7 @@ function enableClick() {
 }
 
 function openCard(x) {
+  enable = false;
   document.querySelector(".banner").style.opacity = 0;
   lotLinks.forEach((lotLink) => {
     lotLink.style.pointerEvents = "none";
@@ -195,6 +242,23 @@ function openCard(x) {
         .to(".card-close", { opacity: 1, delay: 1 }, "end")
         .to(".card-inquire", { opacity: 1, delay: 1 }, "end")
         .add(enableClick);
+
+      gsap.to(".lot1", {
+        duration: 2,
+        objectPosition: "16.080729166666664% 50%",
+      });
+      gsap.to(".lot2", {
+        duration: 2,
+        objectPosition: "16.080729166666664% 50%",
+      });
+      gsap.to(".lot3", {
+        duration: 2,
+        objectPosition: "16.080729166666664% 50%",
+      });
+      gsap.to(".lot4", {
+        duration: 2,
+        objectPosition: "16.080729166666664% 50%",
+      });
     }
 
     if (x == 2) {
@@ -220,6 +284,23 @@ function openCard(x) {
         .to(".card-close", { opacity: 1, delay: 1 }, "end")
         .to(".card-inquire", { opacity: 1, delay: 1 }, "end")
         .add(enableClick);
+
+      gsap.to(".lot1", {
+        duration: 2,
+        objectPosition: "70% 50%",
+      });
+      gsap.to(".lot2", {
+        duration: 2,
+        objectPosition: "70% 50%",
+      });
+      gsap.to(".lot3", {
+        duration: 2,
+        objectPosition: "70% 50%",
+      });
+      gsap.to(".lot4", {
+        duration: 2,
+        objectPosition: "70% 50%",
+      });
     }
 
     if (x == 3) {
@@ -245,6 +326,23 @@ function openCard(x) {
         .to(".card-close", { opacity: 1, delay: 1 }, "end")
         .to(".card-inquire", { opacity: 1, delay: 1 }, "end")
         .add(enableClick);
+
+      gsap.to(".lot1", {
+        duration: 2,
+        objectPosition: "60% 50%",
+      });
+      gsap.to(".lot2", {
+        duration: 2,
+        objectPosition: "60% 50%",
+      });
+      gsap.to(".lot3", {
+        duration: 2,
+        objectPosition: "60% 50%",
+      });
+      gsap.to(".lot4", {
+        duration: 2,
+        objectPosition: "60% 50%",
+      });
     }
 
     if (x == 4) {
@@ -269,6 +367,23 @@ function openCard(x) {
         .to(".card-close", { opacity: 1, delay: 1 }, "end")
         .to(".card-inquire", { opacity: 1, delay: 1 }, "end")
         .add(enableClick);
+
+      gsap.to(".lot1", {
+        duration: 2,
+        objectPosition: "65% 50%",
+      });
+      gsap.to(".lot2", {
+        duration: 2,
+        objectPosition: "65% 50%",
+      });
+      gsap.to(".lot3", {
+        duration: 2,
+        objectPosition: "65% 50%",
+      });
+      gsap.to(".lot4", {
+        duration: 2,
+        objectPosition: "65% 50%",
+      });
     }
   } else {
     if (x == 1) {
@@ -295,6 +410,22 @@ function openCard(x) {
         .to(".card-close", { opacity: 1 }, "<")
         .to(".card-inquire", { opacity: 1 }, "<")
         .add(enableClick);
+      gsap.to(".lot1", {
+        duration: 2,
+        objectPosition: "16.080729166666664% 50%",
+      });
+      gsap.to(".lot2", {
+        duration: 2,
+        objectPosition: "16.080729166666664% 50%",
+      });
+      gsap.to(".lot3", {
+        duration: 2,
+        objectPosition: "16.080729166666664% 50%",
+      });
+      gsap.to(".lot4", {
+        duration: 2,
+        objectPosition: "16.080729166666664% 50%",
+      });
     }
 
     if (x == 2) {
@@ -321,6 +452,23 @@ function openCard(x) {
         .to(".card-close", { opacity: 1 }, "<")
         .to(".card-inquire", { opacity: 1 }, "<")
         .add(enableClick);
+
+      gsap.to(".lot1", {
+        duration: 2,
+        objectPosition: "70% 50%",
+      });
+      gsap.to(".lot2", {
+        duration: 2,
+        objectPosition: "70% 50%",
+      });
+      gsap.to(".lot3", {
+        duration: 2,
+        objectPosition: "70% 50%",
+      });
+      gsap.to(".lot4", {
+        duration: 2,
+        objectPosition: "70% 50%",
+      });
     }
 
     if (x == 3) {
@@ -347,6 +495,23 @@ function openCard(x) {
         .to(".card-close", { opacity: 1 }, "<")
         .to(".card-inquire", { opacity: 1 }, "<")
         .add(enableClick);
+
+      gsap.to(".lot1", {
+        duration: 2,
+        objectPosition: "60% 50%",
+      });
+      gsap.to(".lot2", {
+        duration: 2,
+        objectPosition: "60% 50%",
+      });
+      gsap.to(".lot3", {
+        duration: 2,
+        objectPosition: "60% 50%",
+      });
+      gsap.to(".lot4", {
+        duration: 2,
+        objectPosition: "60% 50%",
+      });
     }
 
     if (x == 4) {
@@ -373,6 +538,23 @@ function openCard(x) {
         .to(".card-close", { opacity: 1 }, "<")
         .to(".card-inquire", { opacity: 1 }, "<")
         .add(enableClick);
+
+      gsap.to(".lot1", {
+        duration: 2,
+        objectPosition: "65% 50%",
+      });
+      gsap.to(".lot2", {
+        duration: 2,
+        objectPosition: "65% 50%",
+      });
+      gsap.to(".lot3", {
+        duration: 2,
+        objectPosition: "65% 50%",
+      });
+      gsap.to(".lot4", {
+        duration: 2,
+        objectPosition: "65% 50%",
+      });
     }
   }
 }
@@ -430,6 +612,8 @@ function changetextto4() {
 }
 
 function closeCard() {
+  enable = true;
+
   gsap.to(".card", { y: "100%" });
   gsap.to(".animation-content-2", { opacity: 1 }, "<");
 }
@@ -840,7 +1024,7 @@ function changetextmobileto1() {
 function changetextmobileto2() {
   document.querySelector(".card-mobile-heading").innerHTML = "LOT 06";
   document.querySelector(".card-mobile-p").innerHTML =
-    "This site, which is just under an acre has views over the forests and the Nakiyadeniya mountain ranges. Anyone purchasing this beautiful property can collaborate and design their home with Shakticola.<br><br><br><br>";
+    "This site, which is just under an acre has views over the forests and the Nakiyadeniya mountain ranges. Anyone purchasing this beautiful property can collaborate and design their home with Shakticola.<span class ='hide'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex consectetur quasi velit, voluptatum inventore obcaecati molestiae ipsam </span>";
 }
 
 function changetextmobileto3() {
