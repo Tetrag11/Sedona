@@ -126,11 +126,6 @@ function changeMap1() {
   document.querySelector(".lot2").style.opacity = 0;
   document.querySelector(".lot3").style.opacity = 0;
   document.querySelector(".lot4").style.opacity = 0;
-
-  document.querySelector(".lot-b-1").style.background = "rgba(31, 47, 22, 0.1)";
-  document.querySelector(".lot-b-2").style.background = "transparent";
-  document.querySelector(".lot-b-3").style.background = "transparent";
-  document.querySelector(".lot-b-4").style.background = "transparent";
 }
 
 function changeMap2() {
@@ -145,11 +140,6 @@ function changeMap2() {
   document.querySelector(".lot1").style.opacity = 0;
   document.querySelector(".lot3").style.opacity = 0;
   document.querySelector(".lot4").style.opacity = 0;
-
-  document.querySelector(".lot-b-2").style.background = "rgba(31, 47, 22, 0.1)";
-  document.querySelector(".lot-b-1").style.background = "transparent";
-  document.querySelector(".lot-b-3").style.background = "transparent";
-  document.querySelector(".lot-b-4").style.background = "transparent";
 }
 
 function changeMap3() {
@@ -164,11 +154,6 @@ function changeMap3() {
   document.querySelector(".lot1").style.opacity = 0;
   document.querySelector(".lot2").style.opacity = 0;
   document.querySelector(".lot4").style.opacity = 0;
-
-  document.querySelector(".lot-b-3").style.background = "rgba(31, 47, 22, 0.1)";
-  document.querySelector(".lot-b-1").style.background = "transparent";
-  document.querySelector(".lot-b-2").style.background = "transparent";
-  document.querySelector(".lot-b-4").style.background = "transparent";
 }
 
 function changeMap4() {
@@ -183,11 +168,6 @@ function changeMap4() {
   document.querySelector(".lot1").style.opacity = 0;
   document.querySelector(".lot2").style.opacity = 0;
   document.querySelector(".lot3").style.opacity = 0;
-
-  document.querySelector(".lot-b-4").style.background = "rgba(31, 47, 22, 0.1)";
-  document.querySelector(".lot-b-1").style.background = "transparent";
-  document.querySelector(".lot-b-2").style.background = "transparent";
-  document.querySelector(".lot-b-3").style.background = "transparent";
 }
 
 // function zoomOut() {

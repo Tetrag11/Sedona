@@ -194,6 +194,10 @@
   height: 100vh !important;
 }
 
+.web-map-text .nintypercent {
+  height: fit-content !important;
+}
+
 /* content */
 .content {
   background: linear-gradient(243.18deg, #2b3c1f 0%, #6a7736 100%) !important;
@@ -264,13 +268,18 @@
   );
 }
 
+map {
+  width: 120vw;
+  height: 120vh;
+}
+
 .map img {
   /* width: 90%;
   left: 5%; */
   top: 0;
   left: 0;
-  width: 150vw;
-  height: 150vh;
+  width: 120vw;
+  height: 120vh;
   object-fit: cover;
   /* transform: scale(100%); */
   /* transform: scale(120%) translateY(0%) translateX(0%); */

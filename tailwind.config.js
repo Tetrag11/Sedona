@@ -6,6 +6,7 @@ module.exports = {
     "./dist/production.html",
     "./dist/contact.html",
     "./dist/lifestyle.html",
+    "./dist/testmap.html",
   ],
   theme: {
     extend: {},
