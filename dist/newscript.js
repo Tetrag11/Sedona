@@ -751,7 +751,7 @@ function mobilecardHeightChecker() {
 
   //-->
 
-  if (viewportheight <= 750) {
+  if (viewportheight <= 1080) {
     gsap.to(".mobile-card", { y: "0" });
   } else {
     mobilecards.forEach((card) => {
@@ -911,10 +911,10 @@ function nextMapMob(mobilecount, mobiledirection) {
       mobiletabmapmove
         .to(".prev-mob", { opacity: 0, pointerEvents: "none" })
         .to(".next-mob", { opacity: 1, pointerEvents: "auto" }, "<")
-        .to(".lot1-mobile", { objectPosition: "0% 50%", duration: 1 }, "<")
-        .to(".lot2-mobile", { objectPosition: "0% 50%", duration: 1 }, "<")
-        .to(".lot3-mobile", { objectPosition: "0% 50%", duration: 1 }, "<")
-        .to(".lot4-mobile", { objectPosition: "0% 50%", duration: 1 }, "<")
+        .to(".lot1-mobile", { objectPosition: "5% 50%", duration: 1 }, "<")
+        .to(".lot2-mobile", { objectPosition: "5% 50%", duration: 1 }, "<")
+        .to(".lot3-mobile", { objectPosition: "5% 50%", duration: 1 }, "<")
+        .to(".lot4-mobile", { objectPosition: "5% 50%", duration: 1 }, "<")
         .add(changetextmobileto1);
       document.querySelector(".lot1-mobile").style.opacity = 1;
       document.querySelector(".lot2-mobile").style.opacity = 0;

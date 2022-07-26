@@ -68,7 +68,7 @@
   color: white;
 }
 
-.mobile-content-row-grid h1 {
+.mb-content h1 {
   font-family: "Federo";
   font-style: normal;
   font-weight: 400;
@@ -76,7 +76,7 @@
   line-height: 16.317vw;
 }
 
-.mobile-content-row-grid a,
+.mb-content a,
 .card-links a {
   font-family: "Roboto";
   font-style: normal;
@@ -85,7 +85,7 @@
   line-height: 25px;
 }
 
-.mobile-content-row-grid p {
+.mb-content p {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -96,6 +96,10 @@
 
 .ml-10 {
   margin-left: 2.5rem !important;
+}
+
+.mb-content {
+  grid-template-rows: auto 1fr 16%;
 }
 
 .mobile-card {
@@ -313,7 +317,7 @@ map {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: left center;
+  object-position: 5% 50%;
   /* transform: scale(120%) translateY(-14%) translateX(5%); */
   filter: brightness(70%);
 }
@@ -377,7 +381,7 @@ map {
   height: 40%;
   /* background-color: #6a7736; */
   z-index: 20;
-  top: 60%;
+  top: 70%;
 }
 
 .mapzoomout .zoomout-inner {
@@ -464,8 +468,13 @@ map {
 
   padding-bottom: 2rem;
 }
+@media (max-width: 1410px) {
+  .card p {
+    font-size: 1.15vw;
+  }
+}
 
-@media (min-width: 1300px) {
+@media (min-width: 1410px) {
   .card p {
     font-size: 18px;
     line-height: 35px;

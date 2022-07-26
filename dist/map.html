@@ -340,8 +340,7 @@
 
                         <map name="image-map">
                             <area onclick="openCard(1)" onmouseover="changeMap1()" target="" alt="" title=""
-                                href="javascript:void(0)"
-                                coords="216,442,440,391,528,528,348,678,162,733,152,556,137,490" shape="poly">
+                                href="javascript:void(0)" coords="192,466,400,419,504,563,192,699" shape="poly">
                             <area onclick="openCard(2)" onmouseover="changeMap2()" target="" alt="" title=""
                                 href="javascript:void(0)" coords="667,378,977,319,1050,443,789,529" shape="poly">
                             <area onclick="openCard(3)" onmouseover="changeMap3()" target="" alt="" title=""
@@ -361,7 +360,7 @@
 
 
                     <!-- map-zoomout -->
-                    <div class="mapzoomout absolute">
+                    <div class="mapzoomout z-20 absolute">
                         <div class="zoomout-inner w-full h-full grid justify-center items-center">
                             <div class="banner grid">
                                 <div class="grid items-center">
@@ -386,7 +385,7 @@
                     </div>
                     <!-- Navbar -->
                     <div
-                        class=" border-x border-white border-opacity-10 w-full h-screen grid grid-cols-1 justify-center absolute z-40">
+                        class="mb-content  border-x border-white border-opacity-10 w-full h-screen grid grid-cols-1 justify-center absolute z-40">
 
                         <div class="width-90-mx-auto  flex w-full h-fit justify-between mt-5 ">
                             <a class="h-fit" href="index.html"><img class="logo-mobile" src="./images/sedonalogo2.png"
@@ -394,40 +393,45 @@
                             <a onclick="openMenu()" class="h-fit self-center" href="#"><img class="menu-icon-mobile"
                                     src="./images/Group 21.png" alt="" /></a>
                         </div>
-                        <div class="hidden-600"></div>
 
-                        <div class="mobile-content-row-grid w-full  grid  animation-content-2">
 
-                            <div class="padding-x-5">
-                                <h1 class="mobile-content-h1 mb-3 card-mobile-heading">LOT 02</h1>
-                                <a onclick="mobileOpencard()" class="veiw-details-mobile lotbtn "
-                                    href="javascript:void(0)">View details</a>
-                            </div>
-                            <p
-                                class="mobile-content-p p-5 opacity-0 padding-x-5 border-y border-white border-opacity-10 card-mobile-p">
-                                This 1-acre site offers a tranquil and
-                                authentic
-                                life immersed in nature. With the
-                                heritage forest reserve
-                                in the back and blessed with a free-flowing stream
-                                to the right, this property is a hidden gem for a nature lover. Anyone purchasing
-                                this beautiful property can collaborate and design their home with Shakticola.
-                            </p>
-                            <div class="flex items-start padding-x-5 pt-5">
-                                <div class="hidden appear-w-e opacity-0 justify-between w-full h-fit mb-5 items-center">
-                                    <a class="mobile-inquire" href="javascript:void(0)">Inquire now</a>
-                                    <a class="closebtn card-close-mobile" onclick="mobileClosecard()"
-                                        href="javascript:void(0)"><img src="./images/Group 31.png" alt=""></a>
+                        <div class="grid items-end">
+                            <div>
+                                <div class="padding-x-5">
+                                    <h1 class="mobile-content-h1 mb-3 card-mobile-heading">LOT 02</h1>
+                                    <a onclick="mobileOpencard()" class="veiw-details-mobile lotbtn "
+                                        href="javascript:void(0)">View details</a>
                                 </div>
-                                <div class="flex appear-w-c justify-between w-full h-fit mb-5">
-                                    <a class="lotbtn prev-mob opacity-0" onclick="previousLotMob()"
-                                        href="javascript:void(0)">Previous
-                                        Lot</a>
-                                    <a class="lotbtn next-mob" onclick="nextLotMob()" href="javascript:void(0)">Next
-                                        Lot</a>
-                                </div>
+                                <p
+                                    class="mobile-content-p p-5 opacity-0 padding-x-5 border-y border-white border-opacity-10 card-mobile-p">
+                                    This 1-acre site offers a tranquil and
+                                    authentic
+                                    life immersed in nature. With the
+                                    heritage forest reserve
+                                    in the back and blessed with a free-flowing stream
+                                    to the right, this property is a hidden gem for a nature lover. Anyone purchasing
+                                    this beautiful property can collaborate and design their home with Shakticola.
+                                </p>
                             </div>
                         </div>
+
+
+
+                        <div class="flex items-start padding-x-5 pt-5">
+                            <div class="hidden appear-w-e opacity-0 justify-between w-full h-fit mb-5 items-center">
+                                <a class="mobile-inquire" href="javascript:void(0)">Inquire now</a>
+                                <a class="closebtn card-close-mobile" onclick="mobileClosecard()"
+                                    href="javascript:void(0)"><img src="./images/Group 31.png" alt=""></a>
+                            </div>
+                            <div class="flex appear-w-c justify-between w-full h-fit mb-5">
+                                <a class="lotbtn prev-mob opacity-0" onclick="previousLotMob()"
+                                    href="javascript:void(0)">Previous
+                                    Lot</a>
+                                <a class="lotbtn next-mob" onclick="nextLotMob()" href="javascript:void(0)">Next
+                                    Lot</a>
+                            </div>
+                        </div>
+
 
 
                     </div>
