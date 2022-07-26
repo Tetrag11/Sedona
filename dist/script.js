@@ -103,7 +103,7 @@ function closeMenu() {
 
 function project() {
   function projectL() {
-    location.replace("./index.html");
+    location.replace("./map.html");
   }
   menuLink.to(".animation-content", { opacity: 0, duration: 1 }).add(projectL);
 }
