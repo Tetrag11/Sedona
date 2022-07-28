@@ -220,6 +220,16 @@
 
   <!-- body content -->
   <div class="body-content" style="display: none">
+    <!-- Background Image -->
+    <div class="cover-vid absolute z-0" style="
+     height: 100vh;
+     width: 100%;
+     filter: brightness(70%);
+   ">
+      <video autoplay loop muted playsinline>
+        <source src="./images/architecture-video (1).mp4" type="video/mp4">
+      </video>
+    </div>
     <!-- Header -->
     <div class="header container mx-auto relative" style="max-width: 90%; height: 100vh">
       <!-- lines -->
@@ -241,7 +251,7 @@
       </div>
 
       <!-- Background Image -->
-      <div class="cover-vid absolute z-0" style="
+      <!-- <div class="cover-vid absolute z-0" style="
             height: 100vh;
             width: 100%;
             filter: brightness(70%);
@@ -249,7 +259,7 @@
         <video autoplay loop muted playsinline>
           <source src="./images/architecture-video (1).mp4" type="video/mp4">
         </video>
-      </div>
+      </div> -->
       <!-- Content -->
       <div class="absolute z-40" style="width: 100%; height: 100vh">
 
@@ -414,8 +424,9 @@
     <div class="section-1 w-full h-full relative ">
 
       <!-- mobile -->
-      <div class="sm:hidden grid w-full h-full limit-w border-x border-black border-opacity-10">
-        <div class="grid grid-rows-4 my-20">
+      <div
+        class="sm:hidden grid w-full h-screen items-center section-height-control limit-w border-x border-black border-opacity-10">
+        <div class="grid grid-rows-4 ">
           <div>
             <h1 class="section-heading pb-20">AN EXEPTIONAL PARTNERSHIP</h1>
           </div>
@@ -441,16 +452,16 @@
       </div>
 
       <!-- tab -->
-      <div class="hidden sm:grid lg:hidden w-full h-full relative limit-w">
+      <div class="hidden sm:grid lg:hidden w-full h-screen items-center section-height-control relative limit-w">
         <!-- lines -->
         <div class="absolute w-full h-full grid grid-cols-2">
           <div class="border-x border-black border-opacity-10 border-r-0"></div>
           <div class="border-x border-black border-opacity-10"></div>
         </div>
         <!-- content -->
-        <div class="grid grid-rows-4 my-20">
+        <div class="grid grid-rows-4 ">
           <div>
-            <h1 class="section-heading-tab pb-20">AN EXEPTIONAL PARTNERSHIP</h1>
+            <h1 class="section-heading-tab pb-12">AN EXEPTIONAL PARTNERSHIP</h1>
           </div>
           <div class="grid grid-cols-2 w-full items-center border-y border-b-0 border-black border-opacity-40 ">
             <p class=" section-p-tab">Owner/Investor</p>
@@ -468,7 +479,7 @@
       </div>
 
       <!-- web -->
-      <div class="hidden lg:grid w-full h-full relative limit-w">
+      <div class="hidden lg:grid w-full h-screen items-center section-height-control relative limit-w">
         <!-- lines -->
         <div class="absolute w-full h-full grid grid-cols-4">
           <div class="border-x border-black border-opacity-10 border-r-0"></div>
@@ -480,9 +491,9 @@
         <div class="grid w-full grid-cols-4">
           <div></div>
           <div class="col-span-3">
-            <div class="grid w-full  grid-rows-4 my-32">
+            <div class="grid w-full  grid-rows-4 ">
               <div>
-                <h1 class="section-heading-web pb-20">AN EXEPTIONAL PARTNERSHIP</h1>
+                <h1 class="section-heading-web pb-12">AN EXEPTIONAL PARTNERSHIP</h1>
               </div>
               <div class="grid grid-cols-3 w-full items-center border-y border-b-0 border-black border-opacity-40 ">
                 <p class=" section-p-web">Owner/Investor</p>
@@ -544,16 +555,21 @@
       </div>
 
       <!-- tab -->
-      <div class="hidden sm:grid lg:hidden w-full h-full relative">
+      <div class="hidden sm:grid lg:hidden w-full h-full  relative">
+        <!-- lines -->
+        <div class="absolute w-full h-full grid grid-cols-2 m-5-percent">
+          <div class="border-x border-white border-opacity-10 border-r-0"></div>
+          <div class="border-x border-white border-l-0 border-opacity-10"></div>
+        </div>
         <!-- lay-out -->
-        <div class="w-full grid grid-cols-2">
+        <div class="w-full h-screen section-height-control grid grid-cols-2">
           <div></div>
           <div class="w-full  section-2-img">
             <img src="images/morgan-sessions-k5zv-Hv4Kpc-unsplash 1-tab.png" alt="">
           </div>
         </div>
         <!-- content -->
-        <div class="w-full h-full  absolute ">
+        <div class="w-full h-screen section-height-control absolute ">
           <div class="w-full h-full grid section-2-content-tab m-5-percent">
             <div class="grid">
               <p class="section-p-tab mt-5">Turnkey Options</p>
@@ -562,7 +578,7 @@
           </div>
         </div>
         <!-- content-2 -->
-        <div class="w-full h-full  absolute ">
+        <div class="w-full h-screen section-height-control  absolute ">
           <div class="w-full h-full grid section-2-content-tab m-5-percent">
             <div class="grid">
               <h1 class="section-heading-tab-alternate self-center ">BUILD YOUR DREAM<br> WITH YOUR MIND AT PEACE
@@ -571,10 +587,28 @@
             <div></div>
           </div>
         </div>
+
+        <!-- content-3 -->
+        <div class="w-full h-full bg-white">
+          <!-- lines -->
+          <div class="absolute w-full h-full grid grid-cols-2 m-5-percent">
+            <div class="border-x border-black border-opacity-10 border-r-0"></div>
+            <div class="border-x border-black  border-opacity-10"></div>
+          </div>
+
+          <div class="my-40 m-5-percent">
+            <p class="section-p-tab-alternate">
+              You have a busy life, and we understand this, especially,<br>
+              if you are an overseas investor. That is why we offer to take charge<br>
+              of the Project Management of your new home, from 0 to 100%<br>
+              via our privileged partner, Shakticola Sri Lanka.<br>
+            </p>
+          </div>
+        </div>
       </div>
 
       <!-- web -->
-      <div class="hidden lg:grid  w-full h-full relative limit-w ">
+      <div class="hidden lg:grid  w-full h-screen section-height-control relative limit-w ">
         <!-- lay-out -->
         <div class="w-full section-2-web-layout grid grid-cols-4">
           <div class="border-x border-white border-opacity-10 border-r-0"></div>
@@ -615,22 +649,97 @@
 
     </div>
 
+
+    <!-- section-2-1/2 -->
+    <div class="section-2-half w-full h-full relative">
+
+      <!-- mobile -->
+      <div
+        class="sm:hidden grid w-full h-screen items-center section-height-control limit-w border-x border-black border-opacity-10">
+        <div class="grid">
+          <div>
+            <h1 class="section-heading-alternate">
+              Homes can be built for<br>
+              private use, or as a luxury boutique accommodation,<br>
+              or it is just perfect for a yoga<br>
+              or spa retreat.
+            </h1>
+
+            <p class="section-p-alternate pt-20">The Estate will have a entrance gate, which will lead <br>
+              up to your own private driveway up to your property. </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- tab -->
+      <div class="hidden sm:grid lg:hidden w-full h-screen items-center section-height-control relative limit-w">
+        <!-- lines -->
+        <div class="absolute w-full h-full grid grid-cols-2">
+          <div class="border-x border-black border-opacity-10 border-r-0"></div>
+          <div class="border-x border-black border-opacity-10"></div>
+        </div>
+        <!-- content -->
+        <div class="grid">
+          <div>
+            <h1 class="section-heading-tab-alternate ">
+              Homes can be built for private use, or <br>
+              as a luxury boutique accommodation, <br>
+              or it is just perfect for a yoga <br>
+              or spa retreat.
+            </h1>
+
+            <p class="section-p-tab-alternate pt-20">The Estate will have a entrance gate, which will lead <br>
+              up to your own private driveway up to your property. </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- web -->
+      <div class="hidden lg:grid w-full h-screen items-center section-height-control relative limit-w">
+        <!-- lines -->
+        <div class="absolute w-full h-full grid grid-cols-4">
+          <div class="border-x border-black border-opacity-10 border-r-0"></div>
+          <div class="border-x border-black border-opacity-10 border-r-0"></div>
+          <div class="border-x border-black border-opacity-10 border-r-0"></div>
+          <div class="border-x border-black border-opacity-10"></div>
+        </div>
+        <!-- content -->
+        <div class="grid w-full grid-cols-4">
+          <div></div>
+          <div class="col-span-3">
+            <h1 class="section-heading-web ">
+              Homes can be built for private use, or <br>
+              as a luxury boutique accommodation, or <br>
+              it is just perfect for a yoga or spa retreat.<br>
+            </h1>
+          </div>
+          <div class="col-span-2"></div>
+          <div class="col-span-2">
+            <p class="section-p-web pt-40">The Estate will have a entrance gate, which will lead <br>
+              up to your own private driveway up to your property. </p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
     <!-- section-3 -->
     <div class="section-3 w-full h-full relative ">
 
       <!-- mobile -->
-      <div class="sm:hidden grid w-full h-full limit-w">
+      <div class="sm:hidden grid w-full h-screen items-center section-height-control limit-w">
         <div class="grid grid-rows-3 my-20 pb-10">
           <div>
             <h1 class="section-heading pb-20">YOUR LAND IS WAITING FOR YOU</h1>
           </div>
-          <div class="grid items-center border-y border-b-0 border-black border-opacity-40 ">
+          <div class="grid items-center border-y border-b-0 border-white border-opacity-40 ">
             <div class="flex justify-between">
               <a href="map.html" class=" section-p">Explore remaining land plots</a>
               <i class="fa-solid fa-angle-right self-center text-black"></i>
             </div>
           </div>
-          <div class="grid items-center border-y  border-black border-opacity-40 ">
+          <div class="grid items-center border-y  border-white border-opacity-40 ">
             <div class="flex justify-between">
               <a href="contact.html" class=" section-p">Make a reservation now</a>
               <i class="fa-solid fa-angle-right self-center text-black"></i>
@@ -640,25 +749,25 @@
       </div>
 
       <!-- tab -->
-      <div class="hidden sm:grid lg:hidden w-full h-full relative limit-w">
+      <div class="hidden sm:grid lg:hidden w-full h-screen items-center section-height-control relative limit-w">
         <!-- lines -->
-        <div class="absolute w-full h-full grid grid-cols-2 -z-10">
-          <div class="border-x border-black border-opacity-10 border-r-0"></div>
-          <div class="border-x border-black border-opacity-10"></div>
+        <div class="absolute w-full h-full grid grid-cols-2 ">
+          <div class="border-x border-white border-opacity-10 border-r-0"></div>
+          <div class="border-x border-white border-opacity-10"></div>
         </div>
         <!-- content -->
-        <div class="relative w-full h-full z-10">
-          <div class="grid grid-rows-3 my-20">
+        <div class="relative w-full  z-10">
+          <div class="grid grid-rows-3 ">
             <div>
               <h1 class="section-heading-tab pb-20">YOUR LAND IS WAITING FOR YOU</h1>
             </div>
-            <div class="grid w-full items-center border-y border-b-0 border-black border-opacity-40 ">
+            <div class="grid w-full items-center border-y border-b-0 border-white border-opacity-40 ">
               <div class="flex justify-between">
                 <a href="map.html" class=" section-p-tab">Explore remaining land plots</a>
                 <i class="fa-solid fa-angle-right self-center text-black"></i>
               </div>
             </div>
-            <div class="grid w-full items-center border-y border-black border-opacity-40 ">
+            <div class="grid w-full items-center border-y border-white border-opacity-40 ">
               <div class="flex justify-between">
                 <a href="contact.html" class=" section-p-tab">Make a reservation now</a>
                 <i class="fa-solid fa-angle-right self-center text-black"></i>
@@ -669,43 +778,156 @@
       </div>
 
       <!-- web -->
-      <div class="hidden lg:grid w-full h-full relative limit-w">
+      <div class="hidden lg:grid w-full h-screen items-center section-height-control relative limit-w">
         <!-- lines -->
         <div class="absolute w-full h-full grid grid-cols-4 z-0">
+          <div class="border-x border-white border-opacity-10 border-r-0"></div>
+          <div class="border-x border-white border-opacity-10 border-r-0"></div>
+          <div class="border-x border-white border-opacity-10 border-r-0"></div>
+          <div class="border-x border-white border-opacity-10"></div>
+        </div>
+        <!-- content -->
+        <div class="grid w-full grid-cols-4 relative z-10">
+          <div class="col-span-3">
+            <div class="grid w-full  grid-rows-3">
+              <div>
+                <h1 class="section-heading-web pb-20 text-right">YOUR LAND IS WAITING FOR YOU</h1>
+              </div>
+              <div class="grid w-full items-center border-y border-b-0 border-white border-opacity-40 ">
+                <div class="flex justify-between">
+                  <a href="map.html" class=" section-p-web">Explore remaining land plots</a>
+                  <i class="fa-solid fa-angle-right self-center text-black"></i>
+                </div>
+              </div>
+              <div class="grid w-full items-center border-y  border-white border-opacity-40 ">
+                <div class="flex justify-between">
+                  <a href="contact.html" class=" section-p-web">Make a reservation now</a>
+                  <i class="fa-solid fa-angle-right self-center text-black"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- footer -->
+    <div class="footer w-full h-full relative">
+
+      <!-- mobile -->
+      <div
+        class="sm:hidden grid w-full h-screen items-center footer-height-control limit-w border-x border-black border-opacity-10">
+        <div class="grid grid-cols-2 footer-inner">
+          <div class="col-span-2 grid items-center">
+            <img class="logo-black-mobile " src="./images/logo-black.png" alt="">
+          </div>
+          <!-- mb-20 -->
+          <div class="flex flex-col justify-center">
+            <a class="section-p " href="map.html">Project</a>
+            <a class="section-p " href="architecture.html">Architecture</a>
+            <a class="section-p " href="lifestyle.html">Lifestyle</a>
+            <a class="section-p " href="production.html">Production</a>
+            <a class="section-p " href="contact.html">Contact</a>
+          </div>
+          <div class="flex flex-col justify-center">
+            <p class="section-p">Contact & Social</p>
+            <p class="section-p"> +94 71 090 3630 </p>
+            <p class="section-p"> info@sedonasrilanka.com</p>
+            <a class="section-p " href="#">Facebook</a>
+            <a class="section-p " href="#">Instagram</a>
+          </div>
+          <!-- mt-20 -->
+          <div class="col-span-2 grid items-end ">
+            <div class="">
+              <p class="section-p credentials">© Sedona Canyon Estate 2021</p>
+              <p class="mt-2 section-p credentials">Website by ZETKYA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- tab -->
+      <div class="hidden sm:grid lg:hidden w-full h-screen items-center section-height-control relative limit-w">
+        <!-- lines -->
+        <div class="absolute w-full h-full grid grid-cols-2 z-0">
+          <div class="border-x border-black border-opacity-10 border-r-0"></div>
+          <div class="border-x border-black border-opacity-10"></div>
+        </div>
+        <!-- content -->
+        <div class="grid grid-cols-2 footer-inner relative z-10">
+          <div class="col-span-2 grid items-center">
+            <img class="logo-black-tab " src="./images/logo-black.png" alt="">
+          </div>
+          <!-- mb-20 -->
+          <div class="flex flex-col justify-center">
+            <a class="section-p-tab pb-2" href="map.html">Project</a>
+            <a class="section-p-tab pb-2" href="architecture.html">Architecture</a>
+            <a class="section-p-tab pb-2" href="lifestyle.html">Lifestyle</a>
+            <a class="section-p-tab pb-2" href="production.html">Production</a>
+            <a class="section-p-tab pb-2" href="contact.html">Contact</a>
+          </div>
+          <div class="flex flex-col justify-center">
+            <p class="section-p-tab pb-2">Contact & Social</p>
+            <p class="section-p-tab pb-2"> +94 71 090 3630 </p>
+            <p class="section-p-tab pb-2"> info@sedonasrilanka.com</p>
+            <a class="section-p-tab pb-2 " href="#">Facebook</a>
+            <a class="section-p-tab pb-2 " href="#">Instagram</a>
+          </div>
+          <!-- mt-20 -->
+          <div class="col-span-2 grid items-end ">
+            <div class="">
+              <p class="section-p-tab credentials">© Sedona Canyon Estate 2021</p>
+              <p class="mt-2 section-p-tab credentials">Website by ZETKYA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- web -->
+      <div class="hidden lg:grid w-full h-full items-center section-height-control relative limit-w">
+        <!-- lines -->
+        <div class="absolute w-full h-full grid grid-cols-4">
           <div class="border-x border-black border-opacity-10 border-r-0"></div>
           <div class="border-x border-black border-opacity-10 border-r-0"></div>
           <div class="border-x border-black border-opacity-10 border-r-0"></div>
           <div class="border-x border-black border-opacity-10"></div>
         </div>
         <!-- content -->
-        <div class="grid w-full grid-cols-4 relative z-10">
-          <div></div>
-          <div class="col-span-3">
-            <div class="grid w-full  grid-rows-4 my-32">
-              <div>
-                <h1 class="section-heading-web pb-20">YOUR LAND IS WAITING FOR YOU</h1>
-              </div>
-              <div class="grid w-full items-center border-y border-b-0 border-black border-opacity-40 ">
-                <div class="flex justify-between">
-                  <a href="map.html" class=" section-p-web">Explore remaining land plots</a>
-                  <i class="fa-solid fa-angle-right self-center text-black"></i>
-                </div>
-              </div>
-              <div class="grid w-full items-center border-y  border-black border-opacity-40 ">
-                <div class="flex justify-between">
-                  <a href="map.html" class=" section-p-web">Explore remaining land plots</a>
-                  <i class="fa-solid fa-angle-right self-center text-black"></i>
-                </div>
-              </div>
+        <div class="grid w-full grid-cols-4 my-20">
+          <div>
+            <img class="logo-black-web " src="./images/logo-black.png" alt="">
+          </div>
+          <div class="flex flex-col justify-center">
+            <a class="section-p-web pb-2" href="map.html">Project</a>
+            <a class="section-p-web pb-2" href="architecture.html">Architecture</a>
+            <a class="section-p-web pb-2" href="lifestyle.html">Lifestyle</a>
+            <a class="section-p-web pb-2" href="production.html">Production</a>
+            <a class="section-p-web " href="contact.html">Contact</a>
+          </div>
+          <div class="flex flex-col justify-center">
+            <p class="section-p-web pb-2">Contact & Social</p>
+            <p class="section-p-web pb-2"> +94 71 090 3630 </p>
+            <p class="section-p-web pb-2"> info@sedonasrilanka.com</p>
+            <a class="section-p-web pb-2 " href="#">Facebook</a>
+            <a class="section-p-web  " href="#">Instagram</a>
+          </div>
+          <div>
+            <div class="">
+              <p class="section-p-web credentials">© Sedona Canyon Estate 2021</p>
+              <p class="mt-2 section-p-web credentials">Website by ZETKYA</p>
             </div>
           </div>
         </div>
       </div>
 
+
     </div>
 
 
-  </div>
+
+
 </body>
 
 </html>

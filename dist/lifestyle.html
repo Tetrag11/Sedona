@@ -13,6 +13,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" defer></script>
   <script src="script.js" defer></script>
@@ -220,6 +223,15 @@
 
   <!-- body content -->
   <div class="body-content absolute w-full z-20" style="display: none">
+    <div class="cover-vid absolute z-0" style="
+    height: 100vh;
+    width: 100%;
+    filter: brightness(70%);
+  ">
+      <video autoplay loop muted playsinline>
+        <source src="./images/lifestyle-video.mp4" type="video/mp4">
+      </video>
+    </div>
     <!-- Header -->
     <div class="header container mx-auto relative" style="max-width: 90%; height: 100vh">
       <!-- lines -->
@@ -241,7 +253,7 @@
       </div>
 
       <!-- Background video -->
-      <div class="cover-vid absolute z-0" style="
+      <!-- <div class="cover-vid absolute z-0" style="
             height: 100vh;
             width: 100%;
             filter: brightness(70%);
@@ -249,7 +261,7 @@
         <video autoplay loop muted playsinline>
           <source src="./images/lifestyle-video.mp4" type="video/mp4">
         </video>
-      </div>
+      </div> -->
       <!-- Content -->
       <div class="absolute z-40" style="width: 100%; height: 100vh">
 
@@ -405,6 +417,628 @@
 
       </div>
     </div>
+
+    <!-- section-1 -->
+    <div class="section-1 w-full h-full relative">
+
+      <!-- mobile -->
+      <div
+        class="sm:hidden grid w-full h-screen items-center section-height-control limit-w border-x border-black border-opacity-10">
+        <div class="grid">
+          <div>
+            <h1 class="section-heading-alternate">
+              Nestled between a national <br>
+              forest and organic tea estates, <br>
+              Sedona brings the outdoors <br>
+              into your soul<br>
+            </h1>
+
+            <p class="section-p-alternate pt-20">The homes draw inspiration from the qualities of <br>
+              a forest, a place that protects, nurtures and nourishes,<br>
+              providing space to discover and flourish.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- tab -->
+      <div class="hidden sm:grid lg:hidden w-full h-screen items-center section-height-control relative limit-w">
+        <!-- lines -->
+        <div class="absolute w-full h-full grid grid-cols-2">
+          <div class="border-x border-black border-opacity-10 border-r-0"></div>
+          <div class="border-x border-black border-opacity-10"></div>
+        </div>
+        <!-- content -->
+        <div class="grid">
+          <div class="grid grid-cols-4">
+            <h1 class="section-heading-tab-alternate col-span-4 ">
+              Homes can be built for private use, or <br>
+              as a luxury boutique accommodation, <br>
+              or it is just perfect for a yoga <br>
+              or spa retreat.
+            </h1>
+            <div></div>
+            <p class="section-p-tab-alternate pt-20 col-span-3">The homes draw inspiration from the qualities of a
+              forest, <br>
+              a place that protects, nurtures and nourishes, <br>
+              providing space to discover and flourish.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- web -->
+      <div class="hidden lg:grid w-full h-screen items-center section-height-control relative limit-w">
+        <!-- lines -->
+        <div class="absolute w-full h-full grid grid-cols-4">
+          <div class="border-x border-black border-opacity-10 border-r-0"></div>
+          <div class="border-x border-black border-opacity-10 border-r-0"></div>
+          <div class="border-x border-black border-opacity-10 border-r-0"></div>
+          <div class="border-x border-black border-opacity-10"></div>
+        </div>
+        <!-- content -->
+        <div class="grid w-full grid-cols-4">
+          <div></div>
+          <div class="col-span-3">
+            <h1 class="section-heading-web ">
+              Nestled between a national forest <br>
+              and organic tea estates, Sedona brings<br>
+              the outdoors into your soul<br>
+            </h1>
+          </div>
+          <div class="col-span-2"></div>
+          <div class="col-span-2">
+            <p class="section-p-web pt-40"> The homes draw inspiration from the qualities of a <br>
+              forest, a place that protects, nurtures and nourishes, <br>
+              providing space to discover and flourish.<br></p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- section-2 -->
+    <div class="section-2 w-full h-full relative ">
+
+      <!-- mobile -->
+      <div class="sm:hidden grid w-full h-screen section-height-control relative">
+        <!-- image -->
+        <div class="section-2-img w-full h-full absolute z-0 ">
+          <img src="./images/morgan-sessions-k5zv-Hv4Kpc-unsplash 1.png" alt="">
+        </div>
+        <!-- content -->
+        <div class="absolute z-10 w-full h-full m-5-percent border-x border-white border-opacity-10">
+          <div class="w-full h-full grid items-center">
+            <h1 class="section-heading-alternate">
+              The Natural <br>
+              Effervescence <br>
+              of the Mountain<br>
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- tab -->
+      <div class="hidden sm:grid lg:hidden w-full h-full  relative">
+        <!-- lines -->
+        <div class="absolute w-full h-full grid grid-cols-2 m-5-percent">
+          <div class="border-x border-white border-opacity-10 border-r-0"></div>
+          <div class="border-x border-white border-l-0 border-opacity-10"></div>
+        </div>
+        <!-- lay-out -->
+        <div class="w-full h-screen section-height-control grid grid-cols-2">
+          <div></div>
+          <div class="w-full  section-2-img">
+            <img src="images/morgan-sessions-k5zv-Hv4Kpc-unsplash 1-tab.png" alt="">
+          </div>
+        </div>
+        <!-- content -->
+        <div class="w-full h-screen section-height-control absolute ">
+          <div class="w-full h-full grid items-center section-2-content-tab m-5-percent">
+            <p class="section-heading-tab-alternate">The Natural <br>
+              Effervescence <br>
+              of the Mountain</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- web -->
+      <div class="hidden lg:grid  w-full h-screen section-height-control relative limit-w ">
+        <!-- lay-out -->
+        <div class="w-full h-full section-2-web-layout grid grid-cols-4">
+          <div class="border-x border-white border-opacity-10 border-r-0"></div>
+          <div class="border-x border-white border-opacity-10 border-r-0"></div>
+          <div class="w-full h-screen section-height-control  section-2-img">
+            <img class="section-2-img-web" src="images/morgan-sessions-k5zv-Hv4Kpc-unsplash 1-web.png" alt="">
+          </div>
+          <div class="border-x border-white border-opacity-10 border-l-0"></div>
+        </div>
+        <!-- content -->
+        <div class="w-full h-full  absolute ">
+          <div class="w-full h-full grid section-2-content-web">
+            <div class="grid">
+              <p class="section-heading-web mt-10">The Natural <br>
+                Effervescence <br>
+                of the Mountain</p>
+              <p class="section-p-web mb-10  self-end">Each home guarantees panoramic views of forests, <br>
+                tea estates, paddy fields and distant hills. The backend <br>
+                of the property borders part of the Kanneliya forest with <br>
+                its magnificent trees and ancients rocks. </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- section-3 -->
+    <div class="section-3 w-full h-full relative">
+
+      <!-- mobile -->
+      <div
+        class="sm:hidden grid w-full h-screen items-center section-height-control limit-w border-x border-black border-opacity-10">
+        <div class="grid">
+          <div>
+            <p class="section-p-alternate pb-10">Between rivers and mountains</p>
+            <h1 class="section-heading-alternate">
+              YOUR LIFE IN <br>
+              VACATION MODE. <br>
+              YEAR ROUND.<br>
+            </h1>
+
+            <p class="section-p-alternate pt-10">Close your eyes.Imagine a house with so many windows that you feel
+              like you are living outside. You have your morning cup of tea gazing out over the horizons and
+              misty mountains. You embark on an afternoon jog and a restful afternoon nap. You end your days on
+              the deck overlooking a magnificent red sunset or a quiet swim in your eternity sky pool. Open your
+              eyes. You are home.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- tab -->
+      <div class="hidden sm:grid lg:hidden w-full h-screen items-center section-height-control relative limit-w">
+        <!-- lines -->
+        <div class="absolute w-full h-full grid grid-cols-2">
+          <div class="border-x border-black border-opacity-10 border-r-0"></div>
+          <div class="border-x border-black border-opacity-10"></div>
+        </div>
+        <!-- content -->
+        <div class="grid">
+          <div>
+            <p class="section-p-tab-alternate pb-10">Between rivers and mountains</p>
+            <h1 class="section-heading-tab-alternate col-span-4 ">
+              YOUR LIFE IN <br>
+              VACATION MODE. <br>
+              YEAR ROUND.<br>
+            </h1>
+            <p class="section-p-tab-alternate pt-10">Close your eyes.Imagine a house with so many windows that you feel
+              like <br>
+              you are living outside. You have your morning cup of tea gazing out over the <br>
+              horizons and misty mountains. You embark on an afternoon jog and a restful afternoon nap. You end your
+              days on the deck overlooking a magnificent <br>
+              red sunset or a quiet swim in your eternity sky pool. <br>
+              Open you eyes. You are home.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- web -->
+      <div class="hidden lg:grid w-full h-screen items-center section-height-control relative limit-w">
+        <!-- lines -->
+        <div class="absolute w-full h-full grid grid-cols-4">
+          <div class="border-x border-black border-opacity-10 border-r-0"></div>
+          <div class="border-x border-black border-opacity-10 border-r-0"></div>
+          <div class="border-x border-black border-opacity-10 border-r-0"></div>
+          <div class="border-x border-black border-opacity-10"></div>
+        </div>
+        <!-- content -->
+        <div class="grid w-full grid-cols-4">
+          <div class="col-span-2"></div>
+          <div class="col-span-2">
+            <p class="section-p-web pb-10">Between rivers and mountains</p>
+            <h1 class="section-heading-web ">
+              YOUR LIFE IN <br>
+              VACATION MODE. <br>
+              YEAR ROUND.<br>
+            </h1>
+            <p class="section-p-web pt-10">Close your eyes.Imagine a house with so many windows that you feel
+              like <br>
+              you are living outside. You have your morning cup of tea gazing out over the <br>
+              horizons and misty mountains. You embark on an afternoon jog and a restful afternoon nap. You end your
+              days on the deck overlooking a magnificent <br>
+              red sunset or a quiet swim in your eternity sky pool. <br>
+              Open you eyes. You are home.</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- section-4 -->
+    <div class="section-4 w-full h-full relative ">
+
+      <!-- mobile -->
+      <div class="sm:hidden grid w-full h-screen section-height-control relative">
+        <div class="absolute w-full h-full -z-10 border-x border-white border-opacity-10 m-5-percent">
+        </div>
+        <!-- content parent -->
+        <div class="w-full h-full grid section-4-mobile-grid">
+
+          <!-- blue-section -->
+          <div class="w-full h-full grid items-center">
+            <div>
+              <h1 class="section-heading-alternate p-5-percent">AN EXCESS OF TREATS <br>
+                AWAITS YOU CLOSE BY</h1>
+            </div>
+          </div>
+
+          <!-- img -->
+          <div class="relative">
+            <div class="section-2-img w-full h-full absolute z-0">
+              <img src="./images/morgan-sessions-k5zv-Hv4Kpc-unsplash 1.png" alt="">
+            </div>
+            <div
+              class="w-full h-full grid m-5-percent items-end absolute z-10 border-x border-white border-opacity-10 ">
+              <p class="section-p-alternate pb-10">30 minutes to Heritage Galle Fort, an eclectic fusion <br>
+                of history and modern life with a hint of nostalgia <br>
+                of an era gone by.</p>
+            </div>
+          </div>
+
+          <!-- explore more -->
+          <a href="map.html" class="section-p-alternate py-5 p-5-percent text-right">Explore more</a>
+        </div>
+      </div>
+
+      <!-- tab -->
+      <div class="hidden sm:grid lg:hidden w-full h-full  relative">
+        <!-- lines -->
+        <div class="absolute w-full h-full grid grid-cols-2 m-5-percent">
+          <div class="border-x border-white border-opacity-10 border-r-0"></div>
+          <div class="border-x border-white border-l-0 border-opacity-10"></div>
+        </div>
+        <!-- lay-out -->
+        <div class="w-full h-screen section-height-control grid grid-cols-2">
+          <div></div>
+          <div class="w-full relative section-2-img">
+            <img class="absolute" src="images/morgan-sessions-k5zv-Hv4Kpc-unsplash 1-tab.png" alt="">
+            <div class="w-full h-full grid m-5-percent items-center justify-center absolute z-10 ">
+              <a href="map.html" class="section-p-tab-alternate">Explore More</a>
+            </div>
+          </div>
+        </div>
+        <!-- content -->
+        <div class="w-full h-screen section-height-control absolute ">
+          <div class="w-full h-full grid section-2-content-tab m-5-percent">
+
+            <h1 class="section-heading-tab-alternate mt-10 ">BUILD YOUR DREAM<br> WITH YOUR MIND AT PEACE
+            </h1>
+            <p class="section-p-tab-alternate mb-10 self-end">30 minutes to Heritage Galle Fort, an eclectic fusion <br>
+              of history and modern life with a hint of nostalgia<br>
+              of an era gone by. </p>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- web -->
+      <div class="hidden lg:grid  w-full h-screen section-height-control relative limit-w ">
+        <!-- lay-out -->
+        <div class="w-full h-full section-2-web-layout grid grid-cols-4">
+          <div class="border-x border-white border-opacity-10 border-r-0"></div>
+          <div class="border-x border-white border-opacity-10 border-r-0"></div>
+          <div class="w-full h-screen section-height-control  section-2-img">
+            <img class="section-2-img-web" src="images/morgan-sessions-k5zv-Hv4Kpc-unsplash 1-web.png" alt="">
+          </div>
+          <div class="border-x border-white border-opacity-10 border-l-0"></div>
+        </div>
+        <!-- content -->
+        <div class="w-full h-full  absolute ">
+          <div class="w-full h-full grid section-2-content-web">
+            <div class="grid">
+              <p class="section-heading-web mt-10">AN EXCESS OF TREATS <br>
+                AWAITS YOU CLOSE BY
+              </p>
+              <div class="w-full grid grid-cols-4 self-center">
+                <div class="col-span-3"></div>
+                <div class="text-center">
+                  <a href="map.html" class="section-p-web ">Explore More</a>
+                </div>
+              </div>
+              <p class="section-p-web mb-10  self-end">30 minutes to Heritage Galle Fort, an eclectic fusion <br>
+                of history and modern life with a hint of nostalgia <br>
+                of an era gone by. </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- section-5 -->
+    <div class="section-5 w-full h-full relative">
+
+      <!-- mobile -->
+      <div
+        class="sm:hidden grid w-full h-screen items-center section-height-control limit-w border-x border-black border-opacity-10">
+        <div class="grid">
+          <div>
+            <h1 class="section-heading-alternate">
+              A Perfect Vortex for <br>
+              a Yoga Retreat or Spa<br>
+            </h1>
+
+            <p class="section-p-alternate pt-20">With access to a natural playground of large <br>
+              ancient rocks, soaring eagles and a forest reserve <br>
+              as the backdrop, the dramatic site will showcase <br>
+              20 kilometer views overlooking lush green tea estates <br>
+              and lemon green paddy fields. Pure bliss for yoga <br>
+              and meditation</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- tab -->
+      <div class="hidden sm:grid lg:hidden w-full h-screen items-center section-height-control relative limit-w">
+        <!-- lines -->
+        <div class="absolute w-full h-full grid grid-cols-2">
+          <div class="border-x border-black border-opacity-10 border-r-0"></div>
+          <div class="border-x border-black border-opacity-10"></div>
+        </div>
+        <!-- content -->
+        <div class="grid">
+          <div class="grid grid-cols-4">
+            <h1 class="section-heading-tab-alternate col-span-4 ">
+              A Perfect Vortex for <br>
+              a Yoga Retreat or Spa<br>
+            </h1>
+            <div></div>
+            <p class="section-p-tab-alternate tab-p-adjust pt-20 col-span-3">With access to a natural playground of
+              large ancient
+              rocks, <br>
+              soaring eagles and a forest reserve as the backdrop, the dramatic site <br>
+              will showcase 20-kilometer views overlooking lush green tea estates <br>
+              and lemon green paddy fields. Pure bliss for yoga and meditation</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- web -->
+      <div class="hidden lg:grid w-full h-screen items-center section-height-control relative limit-w">
+        <!-- lines -->
+        <div class="absolute w-full h-full grid grid-cols-4">
+          <div class="border-x border-black border-opacity-10 border-r-0"></div>
+          <div class="border-x border-black border-opacity-10 border-r-0"></div>
+          <div class="border-x border-black border-opacity-10 border-r-0"></div>
+          <div class="border-x border-black border-opacity-10"></div>
+        </div>
+        <!-- content -->
+        <div class="grid w-full grid-cols-4">
+          <div></div>
+          <div class="col-span-3">
+            <h1 class="section-heading-web ">
+              A Perfect Vortex for <br>
+              a Yoga Retreat or Spa<br>
+            </h1>
+          </div>
+          <div class="col-span-2"></div>
+          <div class="col-span-2">
+            <p class="section-p-web pt-40"> With access to a natural playground of large ancient rocks, <br>
+              soaring eagles and a forest reserve as the backdrop, the dramatic site <br>
+              will showcase 20-kilometer views overlooking lush green tea estates <br>
+              and lemon green paddy fields. Pure bliss for yoga and meditation</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- section-6 -->
+    <div class="section-6 w-full h-full relative ">
+
+      <!-- mobile -->
+      <div class="sm:hidden grid w-full h-screen items-center section-height-control limit-w">
+        <div class="grid grid-rows-3 my-20 pb-10">
+          <div>
+            <h1 class="section-heading pb-20">YOUR LAND IS WAITING FOR YOU</h1>
+          </div>
+          <div class="grid items-center border-y border-b-0 border-white border-opacity-40 ">
+            <div class="flex justify-between">
+              <a href="map.html" class=" section-p">Explore remaining land plots</a>
+              <i class="fa-solid fa-angle-right self-center text-white"></i>
+            </div>
+          </div>
+          <div class="grid items-center border-y  border-white border-opacity-40 ">
+            <div class="flex justify-between">
+              <a href="contact.html" class=" section-p">Make a reservation now</a>
+              <i class="fa-solid fa-angle-right self-center text-white"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- tab -->
+      <div class="hidden sm:grid lg:hidden w-full h-screen items-center section-height-control relative limit-w">
+        <!-- lines -->
+        <div class="absolute w-full h-full grid grid-cols-2 ">
+          <div class="border-x border-white border-opacity-10 border-r-0"></div>
+          <div class="border-x border-white border-opacity-10"></div>
+        </div>
+        <!-- content -->
+        <div class="relative w-full  z-10">
+          <div class="grid grid-rows-3 ">
+            <div>
+              <h1 class="section-heading-tab pb-20">YOUR LAND IS WAITING FOR YOU</h1>
+            </div>
+            <div class="grid w-full items-center border-y border-b-0 border-white border-opacity-40 ">
+              <div class="flex justify-between">
+                <a href="map.html" class=" section-p-tab">Explore remaining land plots</a>
+                <i class="fa-solid fa-angle-right self-center text-black"></i>
+              </div>
+            </div>
+            <div class="grid w-full items-center border-y border-white border-opacity-40 ">
+              <div class="flex justify-between">
+                <a href="contact.html" class=" section-p-tab">Make a reservation now</a>
+                <i class="fa-solid fa-angle-right self-center text-black"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- web -->
+      <div class="hidden lg:grid w-full h-screen items-center section-height-control relative limit-w">
+        <!-- lines -->
+        <div class="absolute w-full h-full grid grid-cols-4 z-0">
+          <div class="border-x border-white border-opacity-10 border-r-0"></div>
+          <div class="border-x border-white border-opacity-10 border-r-0"></div>
+          <div class="border-x border-white border-opacity-10 border-r-0"></div>
+          <div class="border-x border-white border-opacity-10"></div>
+        </div>
+        <!-- content -->
+        <div class="grid w-full grid-cols-4 relative z-10">
+          <div class="col-span-3">
+            <div class="grid w-full  grid-rows-3">
+              <div>
+                <h1 class="section-heading-web pb-20 text-right">YOUR LAND IS WAITING FOR YOU</h1>
+              </div>
+              <div class="grid w-full items-center border-y border-b-0 border-white border-opacity-40 ">
+                <div class="flex justify-between">
+                  <a href="map.html" class=" section-p-web">Explore remaining land plots</a>
+                  <i class="fa-solid fa-angle-right self-center text-black"></i>
+                </div>
+              </div>
+              <div class="grid w-full items-center border-y  border-white border-opacity-40 ">
+                <div class="flex justify-between">
+                  <a href="contact.html" class=" section-p-web">Make a reservation now</a>
+                  <i class="fa-solid fa-angle-right self-center text-black"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- footer -->
+    <div class="footer w-full h-full relative">
+
+      <!-- mobile -->
+      <div
+        class="sm:hidden grid w-full h-screen items-center footer-height-control limit-w border-x border-black border-opacity-10">
+        <div class="grid grid-cols-2 footer-inner">
+          <div class="col-span-2 grid items-center">
+            <img class="logo-black-mobile " src="./images/logo-black.png" alt="">
+          </div>
+          <!-- mb-20 -->
+          <div class="flex flex-col justify-center">
+            <a class="section-p " href="map.html">Project</a>
+            <a class="section-p " href="architecture.html">Architecture</a>
+            <a class="section-p " href="lifestyle.html">Lifestyle</a>
+            <a class="section-p " href="production.html">Production</a>
+            <a class="section-p " href="contact.html">Contact</a>
+          </div>
+          <div class="flex flex-col justify-center">
+            <p class="section-p">Contact & Social</p>
+            <p class="section-p"> +94 71 090 3630 </p>
+            <p class="section-p"> info@sedonasrilanka.com</p>
+            <a class="section-p " href="#">Facebook</a>
+            <a class="section-p " href="#">Instagram</a>
+          </div>
+          <!-- mt-20 -->
+          <div class="col-span-2 grid items-end ">
+            <div class="">
+              <p class="section-p credentials">© Sedona Canyon Estate 2021</p>
+              <p class="mt-2 section-p credentials">Website by ZETKYA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- tab -->
+      <div class="hidden sm:grid lg:hidden w-full h-screen items-center section-height-control relative limit-w">
+        <!-- lines -->
+        <div class="absolute w-full h-full grid grid-cols-2 z-0">
+          <div class="border-x border-black border-opacity-10 border-r-0"></div>
+          <div class="border-x border-black border-opacity-10"></div>
+        </div>
+        <!-- content -->
+        <div class="grid grid-cols-2 footer-inner relative z-10">
+          <div class="col-span-2 grid items-center">
+            <img class="logo-black-tab " src="./images/logo-black.png" alt="">
+          </div>
+          <!-- mb-20 -->
+          <div class="flex flex-col justify-center">
+            <a class="section-p-tab pb-2" href="map.html">Project</a>
+            <a class="section-p-tab pb-2" href="architecture.html">Architecture</a>
+            <a class="section-p-tab pb-2" href="lifestyle.html">Lifestyle</a>
+            <a class="section-p-tab pb-2" href="production.html">Production</a>
+            <a class="section-p-tab pb-2" href="contact.html">Contact</a>
+          </div>
+          <div class="flex flex-col justify-center">
+            <p class="section-p-tab pb-2">Contact & Social</p>
+            <p class="section-p-tab pb-2"> +94 71 090 3630 </p>
+            <p class="section-p-tab pb-2"> info@sedonasrilanka.com</p>
+            <a class="section-p-tab pb-2 " href="#">Facebook</a>
+            <a class="section-p-tab pb-2 " href="#">Instagram</a>
+          </div>
+          <!-- mt-20 -->
+          <div class="col-span-2 grid items-end ">
+            <div class="">
+              <p class="section-p-tab credentials">© Sedona Canyon Estate 2021</p>
+              <p class="mt-2 section-p-tab credentials">Website by ZETKYA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- web -->
+      <div class="hidden lg:grid w-full h-full items-center section-height-control relative limit-w">
+        <!-- lines -->
+        <div class="absolute w-full h-full grid grid-cols-4">
+          <div class="border-x border-black border-opacity-10 border-r-0"></div>
+          <div class="border-x border-black border-opacity-10 border-r-0"></div>
+          <div class="border-x border-black border-opacity-10 border-r-0"></div>
+          <div class="border-x border-black border-opacity-10"></div>
+        </div>
+        <!-- content -->
+        <div class="grid w-full grid-cols-4 my-20">
+          <div>
+            <img class="logo-black-web " src="./images/logo-black.png" alt="">
+          </div>
+          <div class="flex flex-col justify-center">
+            <a class="section-p-web pb-2" href="map.html">Project</a>
+            <a class="section-p-web pb-2" href="architecture.html">Architecture</a>
+            <a class="section-p-web pb-2" href="lifestyle.html">Lifestyle</a>
+            <a class="section-p-web pb-2" href="production.html">Production</a>
+            <a class="section-p-web " href="contact.html">Contact</a>
+          </div>
+          <div class="flex flex-col justify-center">
+            <p class="section-p-web pb-2">Contact & Social</p>
+            <p class="section-p-web pb-2"> +94 71 090 3630 </p>
+            <p class="section-p-web pb-2"> info@sedonasrilanka.com</p>
+            <a class="section-p-web pb-2 " href="#">Facebook</a>
+            <a class="section-p-web  " href="#">Instagram</a>
+          </div>
+          <div>
+            <div class="">
+              <p class="section-p-web credentials">© Sedona Canyon Estate 2021</p>
+              <p class="mt-2 section-p-web credentials">Website by ZETKYA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
 
 
   </div>

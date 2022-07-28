@@ -40,7 +40,8 @@
   .mobile-div,
   .cover-vid,
   .cover-vid video,
-  .cover-page {
+  .cover-page,
+  .section-height-control {
     min-height: 800px !important;
   }
 

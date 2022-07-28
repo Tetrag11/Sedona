@@ -12,3 +12,46 @@ body,
 .loader-lines {
   background: #5a6351;
 }
+
+.section-heading,
+.section-sub-heading,
+.section-heading-tab,
+.section-sub-heading-tab,
+.section-heading-alternate,
+.section-heading-tab-alternate,
+.section-heading-web {
+  color: #000000 !important;
+}
+
+.bio-img-mobile {
+  width: 48.252vw;
+}
+
+.bio-img-tab {
+  width: 43.664vw;
+}
+
+.bio-img-web {
+  width: 22.639vw;
+}
+
+.section-2 {
+  background-color: #000000;
+}
+
+.section-2 p,
+.section-2 h1,
+.section-2 a {
+  color: white !important;
+}
+
+.section-3 {
+  background-color: white;
+}
+
+.section-4 {
+  background-color: #000000;
+}
+.section-4 * {
+  color: white !important;
+}

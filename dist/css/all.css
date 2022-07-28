@@ -360,3 +360,192 @@ body {
   font-size: 3.6vw;
   line-height: 6.55vw;
 }
+
+.logo-black-mobile {
+  width: 20.979vw;
+  /* 90px */
+}
+
+.logo-black-tab {
+  width: 13.74vw;
+  /* 90px */
+}
+
+.logo-black-web {
+  width: 10.208vw;
+  /* 90px */
+}
+
+.credentials {
+  color: #a5a5a5 !important;
+}
+
+.footer {
+  background-color: #ededed !important;
+}
+
+.footer-inner {
+  height: 90%;
+}
+
+@media only screen and (max-height: 525px) {
+  .footer-height-control {
+    min-height: 525px !important;
+  }
+}
+
+.p-5-percent {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.m-5-percent {
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 90%;
+}
+
+.limit-w {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.section-1 {
+  background-color: white;
+  color: black;
+}
+/* mobile */
+
+.section-heading {
+  font-family: "Federo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.662vw;
+  line-height: 5.594vw;
+  text-align: right;
+  color: #423119;
+}
+
+.section-heading-alternate {
+  font-family: "Federo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.662vw;
+  line-height: 7.459vw;
+  /* or 160% */
+
+  text-transform: uppercase;
+}
+
+.section-sub-heading {
+  font-family: "Federo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.196vw;
+  line-height: 4.895vw;
+  text-transform: uppercase;
+  color: #423119;
+}
+
+.section-p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.497vw;
+  line-height: 8.159vw;
+  color: #2f2f2f;
+}
+
+.section-p-alternate {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.497vw;
+  line-height: 6.061vw;
+  color: #2f2f2f;
+}
+
+/* tab */
+.section-heading-tab {
+  font-family: "Federo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px; /*3.817vw*/
+  line-height: 29px; /*4.427vw*/
+
+  text-transform: uppercase;
+  color: #423119;
+}
+.section-heading-tab-alternate {
+  font-family: "Federo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.817vw;
+  line-height: 5.802vw;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.section-sub-heading-tab {
+  font-family: "Federo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px; /*2.748vw*/
+  line-height: 21px; /*3.206vw*/
+  text-align: right;
+  text-transform: uppercase;
+  color: #423119;
+}
+
+.section-p-tab {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px; /*2.290vw*/
+  line-height: 35px; /*3.817vw*/
+  color: #2f2f2f;
+}
+.section-p-tab-alternate {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.29vw;
+  line-height: 3.969vw;
+  color: #2f2f2f;
+}
+
+.tab-p-adjust {
+  font-size: 2.137vw !important;
+  line-height: 3.969vw;
+}
+
+/* web */
+.section-heading-web {
+  font-family: "Federo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.778vw;
+  line-height: 4.167vw;
+  text-transform: uppercase;
+  color: #2f2f2f;
+}
+
+.section-sub-heading-web {
+  font-family: "Federo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.736vw;
+  line-height: 4.167vw;
+
+  text-transform: uppercase;
+  color: #2f2f2f;
+}
+
+.section-p-web {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25vw;
+  line-height: 2.431vw;
+  color: #2f2f2f;
+}

@@ -12,3 +12,76 @@ body,
 .loader-lines {
   background: #5a6351 !important;
 }
+
+.section-heading,
+.section-sub-heading,
+.section-heading-tab,
+.section-sub-heading-tab,
+.section-heading-alternate,
+.section-heading-tab-alternate,
+.section-heading-web {
+  color: #055c62 !important;
+}
+
+.section-2 .section-heading,
+.section-2 .section-sub-heading,
+.section-2 .section-heading-tab,
+.section-2 .section-sub-heading-tab,
+.section-2 .section-heading-alternate,
+.section-2 .section-heading-tab-alternate,
+.section-2 .section-heading-web,
+.section-2 .section-p-web {
+  color: white !important;
+}
+.section-4 .section-heading,
+.section-4 .section-sub-heading,
+.section-4 .section-heading-tab,
+.section-4 .section-sub-heading-tab,
+.section-4 .section-heading-alternate,
+.section-4 .section-heading-tab-alternate,
+.section-4 .section-heading-web,
+.section-4 .section-p-web,
+.section-4 .section-p-alternate,
+.section-4 .section-p-tab-alternate {
+  color: white !important;
+}
+
+.section-6 .section-heading,
+.section-6 .section-sub-heading,
+.section-6 .section-heading-tab,
+.section-6 .section-sub-heading-tab,
+.section-6 .section-heading-alternate,
+.section-6 .section-heading-tab-alternate,
+.section-6 .section-heading-web,
+.section-6 .section-p-web,
+.section-6 .section-p-alternate,
+.section-6 .section-p-tab-alternate,
+.section-6 i,
+.section-6 .section-p-tab,
+.section-6 .section-p {
+  color: white !important;
+}
+
+.section-2-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  box-shadow: none;
+}
+
+.section-3 {
+  background-color: white;
+}
+
+.section-4-mobile-grid {
+  grid-template-rows: 1fr 1.5fr auto;
+}
+
+.section-5 {
+  background-color: white;
+}
+
+.section-6 {
+  background-color: #055c62;
+}
