@@ -12,3 +12,165 @@ body,
 .loader-lines {
   background: #5a6351;
 }
+
+.mobile-div,
+.tab-text {
+  grid-template-rows: auto 1fr;
+}
+
+.contact-heading {
+  font-family: "Federo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5.344vw;
+  line-height: 12.672vw;
+  /* identical to box height, or 237% */
+  color: #ffffff;
+}
+
+.contact-body {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.985vw;
+  line-height: 3.206vw;
+  /* identical to box height, or 162% */
+
+  color: #ffffff;
+}
+
+.contact-heading-tab {
+  font-family: "Federo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5.344vw;
+  line-height: 12.672vw;
+  /* identical to box height, or 237% */
+
+  color: #ffffff;
+}
+
+.contact-heading-web {
+  font-family: "Federo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.167vw;
+  line-height: 5.764vw;
+  /* identical to box height, or 138% */
+
+  color: #ffffff;
+}
+
+.contact-body-tab {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.985vw;
+  line-height: 3.206vw;
+  /* identical to box height, or 162% */
+
+  color: #ffffff;
+}
+
+.contact-body-web {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25vw;
+  line-height: 1.736vw;
+  /* identical to box height, or 139% */
+
+  color: #ffffff;
+}
+
+input {
+  width: 100%;
+  background-color: unset;
+  opacity: 1;
+}
+
+select,
+option {
+  background-color: transparent;
+}
+
+select option {
+  margin: 40px;
+  background: transparent;
+  color: black;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  border-radius: unset;
+}
+
+input::placeholder {
+  color: #ffffff;
+}
+
+input:focus {
+  outline: none;
+}
+
+.check-mobile {
+  width: 8.256vw;
+}
+
+.check-tab {
+  width: 5.615vw;
+}
+
+.check-web {
+  width: 2.917vw;
+}
+
+.contact-footer-mobile {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.03vw;
+  line-height: 5.828vw;
+  /* identical to box height, or 192% */
+
+  color: #ffffff;
+}
+
+.contact-footer-tab {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.985vw;
+  line-height: 3.817vw;
+  /* identical to box height, or 192% */
+
+  color: #ffffff;
+}
+
+.contact-footer-web {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25vw;
+  line-height: 1.736vw;
+  /* identical to box height, or 139% */
+
+  color: #ffffff;
+}
+
+.section-1 {
+  background-color: transparent !important;
+}
+
+@media (min-width: 500px) and (max-width: 790px) {
+  .header,
+  .header-back-image,
+  .navbar-lines,
+  .nav-responsive,
+  .main-content,
+  .menu,
+  .mobile-div,
+  .cover-vid,
+  .cover-vid video,
+  .cover-page,
+  .section-height-control {
+    min-height: 800px !important;
+  }
+}

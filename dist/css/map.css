@@ -199,7 +199,7 @@
 }
 
 .web-map-text .nintypercent {
-  height: fit-content !important;
+  height: 100vh !important;
 }
 
 /* content */
@@ -273,8 +273,8 @@
 }
 
 map {
-  width: 120vw;
-  height: 120vh;
+  width: 110vw;
+  height: 110vh;
 }
 
 .map img {

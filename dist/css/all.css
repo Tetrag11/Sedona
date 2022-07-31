@@ -549,3 +549,14 @@ body {
   line-height: 2.431vw;
   color: #2f2f2f;
 }
+
+.tab-max-width {
+  max-width: 655px !important;
+  margin: 0 auto !important;
+}
+.tab-max-width-absolute {
+  max-width: 655px !important;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
