@@ -77,6 +77,7 @@ function openMenu() {
   menu
     .add(hide)
     .to(".openMenu", { pointerEvents: "none" })
+    .to(".menu-kill", { display: "none" }, "<")
     .to(".closeMenu", { pointerEvents: "none" }, "<")
     .to(".animation-content-2", { opacity: 0 }, "<")
     .to(".openMenu", { opacity: 0 }, "<")
@@ -98,6 +99,7 @@ function closeMenu() {
     .add(menudisappear)
     .to(".animation-content-2", { opacity: 1 })
     .to(".openMenu", { pointerEvents: "auto", opacity: 1 })
+    .to(".menu-kill", { display: "block" }, "<")
     .to(".closeMenu", { pointerEvents: "auto" }, "<");
 }
 

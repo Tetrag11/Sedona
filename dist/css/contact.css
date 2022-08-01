@@ -159,6 +159,10 @@ input:focus {
   background-color: transparent !important;
 }
 
+.web-contact-grid {
+  grid-template-rows: 1fr auto;
+}
+
 @media (min-width: 500px) and (max-width: 790px) {
   .header,
   .header-back-image,

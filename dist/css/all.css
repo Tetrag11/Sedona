@@ -367,7 +367,8 @@ body {
 }
 
 .logo-black-tab {
-  width: 13.74vw;
+  width: 90px;
+  height: 45px;
   /* 90px */
 }
 
@@ -480,8 +481,8 @@ body {
   font-family: "Federo";
   font-style: normal;
   font-weight: 400;
-  font-size: 3.817vw;
-  line-height: 5.802vw;
+  font-size: 25px;
+  line-height: 38px;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -509,8 +510,8 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 2.29vw;
-  line-height: 3.969vw;
+  font-size: 15px;
+  line-height: 26px;
   color: #2f2f2f;
 }
 
@@ -552,11 +553,36 @@ body {
 
 .tab-max-width {
   max-width: 655px !important;
-  margin: 0 auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 .tab-max-width-absolute {
   max-width: 655px !important;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+}
+
+@media (min-width: 700px) {
+  .tab-paragraph h1 {
+    font-size: 35px;
+    line-height: 60px;
+  }
+
+  .tab-paragraph p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .tab-contact {
+    font-size: 13px;
+    line-height: 25px;
+  }
+  .logo-tab {
+    width: 90px;
+    height: 45px;
+  }
+  .menu-icon-tab {
+    width: 33px;
+    height: 9px;
+  }
 }

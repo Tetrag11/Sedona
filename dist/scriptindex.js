@@ -57,13 +57,19 @@ function loaderdestroy() {
 
 function exitAnimation() {
   timeline_3
-    .to(".navigation", { display: "none" })
+    // .to(".navigation", { display: "none" })
+    // .to(".animation-content-3", { opacity: 0 }, "<")
+    // .to(".animation-content-2", { opacity: 0 })
+    // .to(".animation-content-1", { opacity: 0 })
+    // .to(".main-vid", { opacity: 0, duration: 0.8 })
+    // .to(".fade-in-green", { opacity: 0, stagger: -0.2 })
+    // .to(".main", { opacity: 0 })
+    // .to(".load-centered-logo", { opacity: 1, duration: 0.5 })
+    .to(".loader", { display: "block" })
     .to(".animation-content-3", { opacity: 0 }, "<")
-    .to(".animation-content-2", { opacity: 0 })
-    .to(".animation-content-1", { opacity: 0 })
-    .to(".main-vid", { opacity: 0, duration: 0.8 })
-    .to(".fade-in-green", { opacity: 0, stagger: -0.2 })
-    .to(".main", { opacity: 0 })
+    .to(".animation-content-2", { opacity: 0 }, "<")
+    .to(".animation-content-1", { opacity: 0 }, "<0.8")
+    .to(".loader-lines", { opacity: 1, stagger: -0.2 })
     .to(".load-centered-logo", { opacity: 1, duration: 0.5 })
     .add(redirect);
 }
@@ -83,8 +89,6 @@ function menudisappear() {
 }
 
 function openMenu() {
-  document.querySelector(".body").style.overflowY = "hidden";
-
   menu
     .to(".openMenu", { pointerEvents: "none" })
     .to(".closeMenu", { pointerEvents: "none" }, "<")
@@ -100,8 +104,6 @@ function openMenu() {
 }
 
 function closeMenu() {
-  document.querySelector(".body").style.overflowY = "auto";
-
   menu
     .to(".animation-content-3", { opacity: 1 })
 
@@ -119,33 +121,68 @@ function project() {
   function projectL() {
     location.replace("./map.html");
   }
-  menuLink.to(".animation-content", { opacity: 0, duration: 1 }).add(projectL);
+  timeline_3
+    .to(".loader", { display: "block" })
+    .to(".animation-content-3", { opacity: 0 }, "<")
+    .to(".animation-content-2", { opacity: 0 }, "<")
+    .to(".animation-content-1", { opacity: 0 }, "<0.8")
+    .to(".loader-lines", { opacity: 1, stagger: -0.2 })
+    .to(".load-centered-logo", { opacity: 1, duration: 0.5 })
+    .add(projectL);
 }
 
 function architecture() {
   function projectL() {
     location.replace("./architecture.html");
   }
-  menuLink.to(".animation-content", { opacity: 0, duration: 1 }).add(projectL);
+  timeline_3
+    .to(".loader", { display: "block" })
+    .to(".animation-content-3", { opacity: 0 }, "<")
+    .to(".animation-content-2", { opacity: 0 }, "<")
+    .to(".animation-content-1", { opacity: 0 }, "<0.8")
+    .to(".loader-lines", { opacity: 1, stagger: -0.2 })
+    .to(".load-centered-logo", { opacity: 1, duration: 0.5 })
+    .add(projectL);
 }
 
 function lifestyle() {
   function projectL() {
     location.replace("./lifestyle.html");
   }
-  menuLink.to(".animation-content", { opacity: 0, duration: 1 }).add(projectL);
+  timeline_3
+    .to(".loader", { display: "block" })
+    .to(".animation-content-3", { opacity: 0 }, "<")
+    .to(".animation-content-2", { opacity: 0 }, "<")
+    .to(".animation-content-1", { opacity: 0 }, "<0.8")
+    .to(".loader-lines", { opacity: 1, stagger: -0.2 })
+    .to(".load-centered-logo", { opacity: 1, duration: 0.5 })
+    .add(projectL);
 }
 
 function production() {
   function projectL() {
     location.replace("./production.html");
   }
-  menuLink.to(".animation-content", { opacity: 0, duration: 1 }).add(projectL);
+  timeline_3
+    .to(".loader", { display: "block" })
+    .to(".animation-content-3", { opacity: 0 }, "<")
+    .to(".animation-content-2", { opacity: 0 }, "<")
+    .to(".animation-content-1", { opacity: 0 }, "<0.8")
+    .to(".loader-lines", { opacity: 1, stagger: -0.2 })
+    .to(".load-centered-logo", { opacity: 1, duration: 0.5 })
+    .add(projectL);
 }
 
 function contact() {
   function projectL() {
     location.replace("./contact.html");
   }
-  menuLink.to(".animation-content", { opacity: 0, duration: 1 }).add(projectL);
+  timeline_3
+    .to(".loader", { display: "block" })
+    .to(".animation-content-3", { opacity: 0 }, "<")
+    .to(".animation-content-2", { opacity: 0 }, "<")
+    .to(".animation-content-1", { opacity: 0 }, "<0.8")
+    .to(".loader-lines", { opacity: 1, stagger: -0.2 })
+    .to(".load-centered-logo", { opacity: 1, duration: 0.5 })
+    .add(projectL);
 }
