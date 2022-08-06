@@ -91,6 +91,7 @@ function menudisappear() {
 function openMenu() {
   menu
     .to(".openMenu", { pointerEvents: "none" })
+    .to(".menu-kill", { display: "none" }, "<")
     .to(".closeMenu", { pointerEvents: "none" }, "<")
     .to(".animation-content-2", { opacity: 0 }, "<")
     .to(".openMenu", { opacity: 0 }, "<")
@@ -114,6 +115,7 @@ function closeMenu() {
     .to(".web-navigation-menu", { opacity: 0 }, "<")
     .to(".openMenu", { pointerEvents: "auto", opacity: 1 }, "<")
     .add(menudisappear)
+    .to(".menu-kill", { display: "block" }, "<")
     .to(".closeMenu", { pointerEvents: "auto" }, "<");
 }
 

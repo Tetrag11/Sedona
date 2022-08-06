@@ -1,9 +1,8 @@
-gsap.registerPlugin(ScrollTrigger);
-
 const timeline = gsap.timeline();
 const timeline_3 = gsap.timeline();
 const menu = gsap.timeline();
 const menuLink = gsap.timeline();
+const sectionscroll = gsap.timeline();
 
 // loader related
 
@@ -53,6 +52,20 @@ function hamBtn() {
 function loaderdestroy() {
   document.querySelector(".loader").style.display = "none";
   document.querySelector(".body").style.overflowY = "visible";
+
+  const scrolls = document.querySelectorAll(".c");
+  gsap.registerPlugin(ScrollTrigger);
+
+  scrolls.forEach((scroll) => {
+    gsap.from(scroll, {
+      scrollTrigger: {
+        trigger: scroll,
+      },
+      opacity: 0,
+
+      duration: 2,
+    });
+  });
 }
 
 // menu
@@ -137,3 +150,10 @@ function contact() {
   }
   menuLink.to(".animation-content", { opacity: 0, duration: 1 }).add(projectL);
 }
+
+// gsap.to(".scroll-2", {
+//   opacity: 1,
+//   y: "10%",
+//   duration: 1,
+//   de
+// });

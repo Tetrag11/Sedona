@@ -249,54 +249,83 @@
                 <div class="web-content relative w-full h-full  lg:grid grid-cols-1 hidden overflow-y-hidden">
 
                     <!-- card -->
-                    <div class="card self-end justify-self-end z-50 absolute ">
+                    <div class="card self-end justify-self-end z-50 absolute hidden">
                         <!-- card-lines -->
                         <div class="card-lines absolute w-full h-full grid -z-10">
-                            <div class="border-x border-white border-opacity-10 border-r-0"></div>
-                            <div class="border-x border-white border-opacity-10 border-r-0"></div>
-                            <div class="border-x border-white border-opacity-10"></div>
+                            <div
+                                class="border-x bg-black card-lines opacity-0 border-white border-opacity-10 border-r-0">
+                            </div>
+                            <div
+                                class="border-x bg-black card-lines opacity-0 border-white border-opacity-10 border-r-0">
+                            </div>
+                            <div class="border-x bg-black card-lines opacity-0 border-white border-opacity-10"></div>
                         </div>
                         <!-- card-left -->
                         <div class="card-text grid w-full h-full ">
                             <div class="card-col-switch-first "></div>
                             <div>
-                                <!-- card-header -->
-                                <div class="grid w-full h-full grid-cols-2 mt-10 ">
-                                    <div class="card-header flex w-full ">
-                                        <div class="card-heading opacity-0 ">LOT 06</div>
-                                    </div>
-                                    <div>
+                                <div class="grid w-full h-full">
 
+                                    <div class="self-end">
+                                        <div class=" card-header card-heading opacity-0 pb-5">LOT 06</div>
+                                        <div class="card-p  opacity-0 col-span-3 self-center pb-5">This site, which is
+                                            just
+                                            under an
+                                            acre has
+                                            views over the
+                                            forests<br>
+                                            and the Nakiyadeniya mountain ranges. Anyone purchasing<br>
+                                            this beautiful property can collaborate and design<br>
+                                            their home with Shakticola.
+                                        </div>
                                         <div class="justify-between items-center flex w-full h-full pb-5">
-                                            <a class="card-inquire opacity-0 justify-self-end" href="#">Inquire now</a>
-                                            <a class="opacity-0 card-close mr-5" onclick="closeCard()"
-                                                href="javascript:void(0)"><img src="./images/Group 31.png" alt=""></a>
+                                            <a class="card-inquire opacity-0 justify-self-end"
+                                                href="contact.html">Inquire now</a>
+
                                         </div>
                                     </div>
-                                    <div class="card-p  opacity-0 col-span-3 self-center pb-5">This site, which is just
-                                        under an
-                                        acre has
-                                        views over the
-                                        forests<br>
-                                        and the Nakiyadeniya mountain ranges. Anyone purchasing<br>
-                                        this beautiful property can collaborate and design<br>
-                                        their home with Shakticola.
-                                    </div>
                                 </div>
-
                             </div>
                             <div class="card-col-switch-last hidden"></div>
                         </div>
                     </div>
 
+                    <div class="limit-w-absolute absolute z-50 w-full h-fit">
+                        <div class=" grid grid-cols-1 gap-0">
+                            <!-- web-header -->
+                            <div class="w-full h-fit grid grid-cols-3 justify-between mt-5 animation-content-1 ">
+                                <div class="relative flex items-center ">
+                                    <a href="contact.html" class="web-contact oncardtoggle ">Lets Talk <span
+                                            class="opacity-0 pointer-events-none">some random text</span></a>
+                                    <a class="opacity-0 pointer-events-none card-close absolute" id="card-close"
+                                        onclick="closeCard()" href="javascript:void(0)">Back
+                                        to the Map</a>
+                                </div>
+                                <a class="h-fit" href="index.html"><img class="logo-web" src="./images/sedonalogo.png"
+                                        alt="" /></a>
+                                <a onclick="openMenu()"
+                                    class="h-fit menu-icon-web-link self-center justify-self-end flex"
+                                    href="javascript:void(0)">Open
+                                    Menu<img class="menu-icon-web self-center ml-3" src="./images/Group 25.png"
+                                        alt="" /></a>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
 
                     <!-- web lines -->
-                    <div class="web-lines absolute z-10 w-full h-full grid grid-cols-4">
+                    <div class="web-lines absolute z-30 w-full h-full grid grid-cols-4">
                         <div class="lot-b-1 border-x border-white border-opacity-10 border-r-0"></div>
                         <div class="lot-b-2 border-x border-white border-opacity-10 border-r-0"></div>
                         <div class="lot-b-3 border-x border-white border-opacity-10 border-r-0"></div>
                         <div class="lot-b-4 border-x border-white border-opacity-10"></div>
                     </div>
+
 
                     <!-- web-text -->
                     <div onmousemove="webmapmoveonmouse(event)"
@@ -305,8 +334,14 @@
                         <div class="nintypercent">
                             <div class="web-text-first-half grid grid-cols-1 gap-0">
                                 <!-- web-header -->
-                                <div class="w-full h-fit grid grid-cols-3 justify-between mt-5 animation-content-1 ">
-                                    <a href="contact.html" class="web-contact">Lets Talk</a>
+                                <div
+                                    class="w-full h-fit grid grid-cols-3 justify-between mt-5 animation-content-1 opacity-0 pointer-events-none ">
+                                    <div class="relative">
+                                        <a href="contact.html" class="web-contact ">Lets Talk <span
+                                                class="opacity-0 pointer-events-none">some random text</span></a>
+                                        <a class="opacity-0 card-close absolute" onclick="closeCard()"
+                                            href="javascript:void(0)"><img src="./images/Group 31.png" alt=""></a>
+                                    </div>
                                     <a class="h-fit" href="index.html"><img class="logo-web"
                                             src="./images/sedonalogo.png" alt="" /></a>
                                     <a onclick="openMenu()"
@@ -320,16 +355,16 @@
                                 <div class="lots-web w-full h-full grid grid-cols-4  animation-content-2">
                                     <a onclick="openCard(1)" onmouseover="changeMap1()"
                                         class="lot-link w-full h-full flex flex-col items-center justify-start mt-20"
-                                        href="javascript:void(0)">LoT 02 <img src="images/Group 30.png" alt=""></a>
+                                        href="javascript:void(0)">LOT 02 </a>
                                     <a onclick="openCard(2)" onmouseover="changeMap2()"
                                         class="lot-link w-full h-full flex flex-col items-center justify-start mt-20"
-                                        href="javascript:void(0)">LoT 06 <img src="images/Group 30.png" alt=""></a>
+                                        href="javascript:void(0)">LOT 06 </a>
                                     <a onclick="openCard(3)" onmouseover="changeMap3()"
                                         class="lot-link w-full h-full flex flex-col items-center justify-start mt-20"
-                                        href="javascript:void(0)">LoT 07 <img src="images/Group 30.png" alt=""></a>
+                                        href="javascript:void(0)">LOT 07 </a>
                                     <a onclick="openCard(4)" onmouseover="changeMap4()"
                                         class="lot-link w-full h-full flex flex-col items-center justify-start mt-20"
-                                        href="javascript:void(0)">LoT 08 <img src="images/Group 30.png" alt=""></a>
+                                        href="javascript:void(0)">LOT 08 </a>
                                 </div>
 
 
@@ -436,7 +471,7 @@
 
                         <div class="flex items-start padding-x-5 pt-5">
                             <div class="hidden appear-w-e opacity-0 justify-between w-full h-fit mb-5 items-center">
-                                <a class="mobile-inquire" href="javascript:void(0)">Inquire now</a>
+                                <a class="mobile-inquire" href="contact.html">Inquire now</a>
                                 <a class="closebtn card-close-mobile" onclick="mobileClosecard()"
                                     href="javascript:void(0)"><img src="./images/Group 31.png" alt=""></a>
                             </div>
@@ -531,7 +566,7 @@
                             <div class="flex items-end ">
                                 <div
                                     class="hidden appear-w-e-tab opacity-0 justify-between w-full h-fit mb-5 padding-x-5 items-center">
-                                    <a class="mobile-inquire" href="javascript:void(0)">Inquire now</a>
+                                    <a class="mobile-inquire" href="contact.html">Inquire now</a>
                                     <a class="closebtn close-card-tab" onclick="tabClosecard()"
                                         href="javascript:void(0)"><img src="./images/Group 31.png" alt=""></a>
                                 </div>

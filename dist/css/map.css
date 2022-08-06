@@ -400,11 +400,11 @@ map {
 
 .card {
   width: 50%;
-  height: 400px;
-  background-color: black;
+  height: 100%;
+
   color: white;
 
-  transform: translateY(100%);
+  /* transform: translateY(100%); */
 }
 
 .card-lines {
@@ -424,7 +424,8 @@ map {
 }
 
 .card-close {
-  width: 3.681vw;
+  /* width: 3.681vw; */
+  /* margin-bottom: 29%; */
 }
 
 .card-close-mobile {
@@ -488,8 +489,8 @@ map {
     line-height: 25px;
   }
   .card-close {
-    width: 53px;
-    height: 53px;
+    /* width: 53px;
+    height: 53px; */
   }
 }
 

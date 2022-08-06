@@ -8,6 +8,7 @@ body {
   font-family: "Roboto";
   transition: opacity 1s ease;
   opacity: 0;
+  font-size: 1.3vw;
 }
 
 .web-navigation a:hover .number {
@@ -409,6 +410,11 @@ body {
 .limit-w {
   max-width: 90%;
   margin: 0 auto;
+}
+
+.limit-w-absolute {
+  max-width: 90%;
+  left: 5%;
 }
 
 .section-1 {

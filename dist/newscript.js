@@ -12,6 +12,8 @@ const menuLink = gsap.timeline();
 const mobiletabcard = gsap.timeline();
 const webmapmove = gsap.timeline();
 const mobiletabmapmove = gsap.timeline();
+const oncardtoggle = gsap.timeline();
+const closeCardtl = gsap.timeline();
 
 // variables
 let load = false;
@@ -93,7 +95,7 @@ function webmapmoveonmouse(event) {
   var x = -((event.pageX * -0.1) / 15);
   var y = -((event.pageY * -0.1) / 15);
 
-  webmapmoveonmouseinner(x, enable);
+  // webmapmoveonmouseinner(x, enable);
 }
 
 function webmapmoveonmouseinner(x, enable) {
@@ -120,6 +122,22 @@ function changeMap1() {
   //   .to(".lot2", { duration: 1, objectPosition: "0% 50%" }, "<")
   //   .to(".lot3", { duration: 1, objectPosition: "0% 50%" }, "<")
   //   .to(".lot4", { duration: 1, objectPosition: "0% 50%" }, "<");
+  gsap.to(".lot1", {
+    duration: 2,
+    objectPosition: "16.080729166666664% 50%",
+  });
+  gsap.to(".lot2", {
+    duration: 2,
+    objectPosition: "16.080729166666664% 50%",
+  });
+  gsap.to(".lot3", {
+    duration: 2,
+    objectPosition: "16.080729166666664% 50%",
+  });
+  gsap.to(".lot4", {
+    duration: 2,
+    objectPosition: "16.080729166666664% 50%",
+  });
 
   document.querySelector(".lot1").style.opacity = 1;
   document.querySelector(".lot0").style.opacity = 0;
@@ -134,6 +152,22 @@ function changeMap2() {
   //   .to(".lot2", { duration: 1, objectPosition: "45% 50%" }, "<")
   //   .to(".lot3", { duration: 1, objectPosition: "45% 50%" }, "<")
   //   .to(".lot4", { duration: 1, objectPosition: "45% 50%" }, "<");
+  gsap.to(".lot1", {
+    duration: 2,
+    objectPosition: "70% 50%",
+  });
+  gsap.to(".lot2", {
+    duration: 2,
+    objectPosition: "70% 50%",
+  });
+  gsap.to(".lot3", {
+    duration: 2,
+    objectPosition: "70% 50%",
+  });
+  gsap.to(".lot4", {
+    duration: 2,
+    objectPosition: "70% 50%",
+  });
 
   document.querySelector(".lot2").style.opacity = 1;
   document.querySelector(".lot0").style.opacity = 0;
@@ -148,6 +182,22 @@ function changeMap3() {
   //   .to(".lot2", { duration: 1, objectPosition: "75% 50%" }, "<")
   //   .to(".lot3", { duration: 1, objectPosition: "75% 50%" }, "<")
   //   .to(".lot4", { duration: 1, objectPosition: "75% 50%" }, "<");
+  gsap.to(".lot1", {
+    duration: 2,
+    objectPosition: "60% 50%",
+  });
+  gsap.to(".lot2", {
+    duration: 2,
+    objectPosition: "60% 50%",
+  });
+  gsap.to(".lot3", {
+    duration: 2,
+    objectPosition: "60% 50%",
+  });
+  gsap.to(".lot4", {
+    duration: 2,
+    objectPosition: "60% 50%",
+  });
 
   document.querySelector(".lot3").style.opacity = 1;
   document.querySelector(".lot0").style.opacity = 0;
@@ -162,6 +212,23 @@ function changeMap4() {
   //   .to(".lot2", { duration: 1, objectPosition: "90% 30%" }, "<")
   //   .to(".lot3", { duration: 1, objectPosition: "90% 30%" }, "<")
   //   .to(".lot4", { duration: 1, objectPosition: "90% 30%" }, "<");
+
+  gsap.to(".lot1", {
+    duration: 2,
+    objectPosition: "65% 50%",
+  });
+  gsap.to(".lot2", {
+    duration: 2,
+    objectPosition: "65% 50%",
+  });
+  gsap.to(".lot3", {
+    duration: 2,
+    objectPosition: "65% 50%",
+  });
+  gsap.to(".lot4", {
+    duration: 2,
+    objectPosition: "65% 50%",
+  });
 
   document.querySelector(".lot4").style.opacity = 1;
   document.querySelector(".lot0").style.opacity = 0;
@@ -192,6 +259,7 @@ function enableClick() {
 function openCard(x) {
   enable = false;
   document.querySelector(".banner").style.opacity = 0;
+
   lotLinks.forEach((lotLink) => {
     lotLink.style.pointerEvents = "none";
   });
@@ -201,22 +269,36 @@ function openCard(x) {
 
     if (x == 1) {
       document.querySelector(".card-heading").innerHTML = "LOT 02";
-
       document.querySelector(".card-lines").style.gridTemplateColumns =
-        "1fr 1fr 10%";
+        "10% 1fr 1fr";
 
       document.querySelector(".card-text").style.gridTemplateColumns =
-        "1fr 10%";
+        "10% 1fr";
 
-      document.querySelector(".card-col-switch-first").style.display = "none";
+      document.querySelector(".card-col-switch-first").style.display = "block";
 
-      document.querySelector(".card-col-switch-last").style.display = "block";
+      document.querySelector(".card-col-switch-last").style.display = "none";
+
+      // document.querySelector(".card-lines").style.gridTemplateColumns =
+      //   "1fr 1fr 10%";
+
+      // document.querySelector(".card-text").style.gridTemplateColumns =
+      //   "1fr 10%";
+
+      // document.querySelector(".card-col-switch-first").style.display = "none";
+
+      // document.querySelector(".card-col-switch-last").style.display = "block";
 
       cardanimation
+        .to(".oncardtoggle", { opacity: 0 })
+        .to(".oncardtoggle", { pointerEvents: "none" }, "<")
         .to(".animation-content-2", { opacity: 0 }, "<")
-        .to(".card", { x: "0" }, "<")
-        .to(".card", { y: 0 })
+        .to(".card", { x: "-100%" }, "<")
+        .to(".card", { display: "block" }, "<")
+        .to(".card-lines", { opacity: 1, stagger: 0.1 })
         .add(changetextto1)
+        .to("#card-close", { opacity: 1, delay: 1 }, "end")
+        .to("#card-close", { pointerEvents: "auto" }, "end")
         .to(".card-heading", { opacity: 1, delay: 1 }, "end")
         .to(".card-p", { opacity: 1, delay: 1 }, "end")
         .to(".card-close", { opacity: 1, delay: 1 }, "end")
@@ -243,22 +325,36 @@ function openCard(x) {
 
     if (x == 2) {
       document.querySelector(".card-heading").innerHTML = "LOT 06";
-
       document.querySelector(".card-lines").style.gridTemplateColumns =
-        "1fr 1fr 10%";
+        "10% 1fr 1fr";
 
       document.querySelector(".card-text").style.gridTemplateColumns =
-        "1fr 10%";
+        "10% 1fr";
 
-      document.querySelector(".card-col-switch-first").style.display = "none";
+      document.querySelector(".card-col-switch-first").style.display = "block";
 
-      document.querySelector(".card-col-switch-last").style.display = "block";
+      document.querySelector(".card-col-switch-last").style.display = "none";
+
+      // document.querySelector(".card-lines").style.gridTemplateColumns =
+      //   "1fr 1fr 10%";
+
+      // document.querySelector(".card-text").style.gridTemplateColumns =
+      //   "1fr 10%";
+
+      // document.querySelector(".card-col-switch-first").style.display = "none";
+
+      // document.querySelector(".card-col-switch-last").style.display = "block";
 
       cardanimation
+        .to(".oncardtoggle", { opacity: 0 })
+        .to(".oncardtoggle", { pointerEvents: "none" }, "<")
         .to(".animation-content-2", { opacity: 0 }, "<")
-        .to(".card", { x: "0" }, "<")
-        .to(".card", { y: 0 })
+        .to(".card", { x: "-100%" }, "<")
+        .to(".card", { display: "block" }, "<")
+        .to(".card-lines", { opacity: 1, stagger: 0.1 })
         .add(changetextto2)
+        .to("#card-close", { opacity: 1, delay: 1 }, "end")
+        .to("#card-close", { pointerEvents: "auto" }, "end")
         .to(".card-heading", { opacity: 1, delay: 1 }, "end")
         .to(".card-p", { opacity: 1, delay: 1 }, "end")
         .to(".card-close", { opacity: 1, delay: 1 }, "end")
@@ -297,10 +393,15 @@ function openCard(x) {
       document.querySelector(".card-col-switch-last").style.display = "none";
 
       cardanimation
+        .to(".oncardtoggle", { opacity: 0 })
+        .to(".oncardtoggle", { pointerEvents: "none" }, "<")
         .to(".animation-content-2", { opacity: 0 }, "<")
         .to(".card", { x: "-100%" }, "<")
-        .to(".card", { y: 0 })
+        .to(".card", { display: "block" }, "<")
+        .to(".card-lines", { opacity: 1, stagger: 0.1 })
         .add(changetextto3)
+        .to("#card-close", { opacity: 1, delay: 1 }, "end")
+        .to("#card-close", { pointerEvents: "auto" }, "end")
         .to(".card-heading", { opacity: 1, delay: 1 }, "end")
         .to(".card-p", { opacity: 1, delay: 1 }, "end")
         .to(".card-close", { opacity: 1, delay: 1 }, "end")
@@ -338,10 +439,15 @@ function openCard(x) {
       document.querySelector(".card-col-switch-last").style.display = "none";
 
       cardanimation
+        .to(".oncardtoggle", { opacity: 0 })
+        .to(".oncardtoggle", { pointerEvents: "none" }, "<")
         .to(".animation-content-2", { opacity: 0 }, "<")
         .to(".card", { x: "-100%" }, "<")
-        .to(".card", { y: 0 })
+        .to(".card", { display: "block" }, "<")
+        .to(".card-lines", { opacity: 1, stagger: 0.1 })
         .add(changetextto4)
+        .to("#card-close", { opacity: 1, delay: 1 }, "end")
+        .to("#card-close", { pointerEvents: "auto" }, "end")
         .to(".card-heading", { opacity: 1, delay: 1 }, "end")
         .to(".card-p", { opacity: 1, delay: 1 }, "end")
         .to(".card-close", { opacity: 1, delay: 1 }, "end")
@@ -368,27 +474,37 @@ function openCard(x) {
   } else {
     if (x == 1) {
       cardanimation
+        .to(".oncardtoggle", { opacity: 0 })
+        .to(".oncardtoggle", { pointerEvents: "none" }, "<")
+        .to(".card-lines", { opacity: 0, stagger: -0.1 }, "<")
         .to(".animation-content-2", { opacity: 0 }, "<")
+        .to(".card", { display: "block" }, "<")
         .to(".card-heading", { opacity: 0 }, "<")
         .to(".card-p", { opacity: 0 }, "<")
         .to(".card-close", { opacity: 0 }, "<")
         .to(".card-inquire", { opacity: 0 }, "<")
-        .to(".card", {
-          y: "100%",
-        })
-        .to(".card", {
-          x: 0,
-        })
+        .to("#card-close", { opacity: 0 }, "<")
+        .to("#card-close", { pointerEvents: "none" }, "<")
+        .to(".card", { display: "none" })
+
+        .to(
+          ".card",
+          {
+            x: "-100%",
+          },
+          "<"
+        )
         .add(checksideleft)
-        .to(".card", {
-          y: 0,
-          ease: Circ.easeOut,
-        })
+
         .add(changetextto1)
+        .to(".card", { display: "block" })
+        .to(".card-lines", { opacity: 1, stagger: 0.1 }, "<")
         .to(".card-heading", { opacity: 1 })
         .to(".card-p", { opacity: 1 }, "<")
         .to(".card-close", { opacity: 1 }, "<")
         .to(".card-inquire", { opacity: 1 }, "<")
+        .to("#card-close", { opacity: 1 }, "<")
+        .to("#card-close", { pointerEvents: "auto" }, "<")
         .add(enableClick);
       gsap.to(".lot1", {
         duration: 2,
@@ -410,27 +526,37 @@ function openCard(x) {
 
     if (x == 2) {
       cardanimation
+        .to(".oncardtoggle", { opacity: 0 })
+        .to(".oncardtoggle", { pointerEvents: "none" }, "<")
+        .to(".card-lines", { opacity: 0, stagger: -0.1 }, "<")
         .to(".animation-content-2", { opacity: 0 }, "<")
+        .to(".card", { display: "block" }, "<")
         .to(".card-heading", { opacity: 0 }, "<")
         .to(".card-p", { opacity: 0 }, "<")
         .to(".card-close", { opacity: 0 }, "<")
         .to(".card-inquire", { opacity: 0 }, "<")
-        .to(".card", {
-          y: "100%",
-        })
-        .to(".card", {
-          x: 0,
-        })
+        .to("#card-close", { opacity: 0 }, "<")
+        .to("#card-close", { pointerEvents: "none" }, "<")
+        .to(".card", { display: "none" })
+
+        .to(
+          ".card",
+          {
+            x: "-100%",
+          },
+          "<"
+        )
         .add(checksideleft)
-        .to(".card", {
-          y: 0,
-          ease: Circ.easeOut,
-        })
+
         .add(changetextto2)
+        .to(".card", { display: "block" })
+        .to(".card-lines", { opacity: 1, stagger: 0.1 }, "<")
         .to(".card-heading", { opacity: 1 })
         .to(".card-p", { opacity: 1 }, "<")
         .to(".card-close", { opacity: 1 }, "<")
         .to(".card-inquire", { opacity: 1 }, "<")
+        .to("#card-close", { opacity: 1 }, "<")
+        .to("#card-close", { pointerEvents: "auto" }, "<")
         .add(enableClick);
 
       gsap.to(".lot1", {
@@ -453,27 +579,37 @@ function openCard(x) {
 
     if (x == 3) {
       cardanimation
+        .to(".oncardtoggle", { opacity: 0 })
+        .to(".oncardtoggle", { pointerEvents: "none" }, "<")
+        .to(".card-lines", { opacity: 0, stagger: -0.1 }, "<")
         .to(".animation-content-2", { opacity: 0 }, "<")
+        .to(".card", { display: "block" }, "<")
         .to(".card-heading", { opacity: 0 }, "<")
         .to(".card-p", { opacity: 0 }, "<")
         .to(".card-close", { opacity: 0 }, "<")
         .to(".card-inquire", { opacity: 0 }, "<")
-        .to(".card", {
-          y: "100%",
-        })
-        .to(".card", {
-          x: "-100%",
-        })
+        .to("#card-close", { opacity: 0 }, "<")
+        .to("#card-close", { pointerEvents: "none" }, "<")
+        .to(".card", { display: "none" })
+
+        .to(
+          ".card",
+          {
+            x: "-100%",
+          },
+          "<"
+        )
         .add(checksideright)
-        .to(".card", {
-          y: 0,
-          ease: Circ.easeOut,
-        })
+
         .add(changetextto3)
+        .to(".card", { display: "block" })
+        .to(".card-lines", { opacity: 1, stagger: 0.1 }, "<")
         .to(".card-heading", { opacity: 1 })
         .to(".card-p", { opacity: 1 }, "<")
         .to(".card-close", { opacity: 1 }, "<")
         .to(".card-inquire", { opacity: 1 }, "<")
+        .to("#card-close", { opacity: 1 }, "<")
+        .to("#card-close", { pointerEvents: "auto" }, "<")
         .add(enableClick);
 
       gsap.to(".lot1", {
@@ -496,27 +632,36 @@ function openCard(x) {
 
     if (x == 4) {
       cardanimation
+        .to(".oncardtoggle", { opacity: 0 })
+        .to(".oncardtoggle", { pointerEvents: "none" }, "<")
+        .to(".card-lines", { opacity: 0, stagger: -0.1 }, "<")
         .to(".animation-content-2", { opacity: 0 }, "<")
+
         .to(".card-heading", { opacity: 0 }, "<")
         .to(".card-p", { opacity: 0 }, "<")
         .to(".card-close", { opacity: 0 }, "<")
         .to(".card-inquire", { opacity: 0 }, "<")
-        .to(".card", {
-          y: "100%",
-        })
-        .to(".card", {
-          x: "-100%",
-        })
+        .to("#card-close", { opacity: 0 }, "<")
+        .to("#card-close", { pointerEvents: "none" }, "<")
+        .to(".card", { display: "none" })
+
+        .to(
+          ".card",
+          {
+            x: "-100%",
+          },
+          "<"
+        )
         .add(checksideright)
-        .to(".card", {
-          y: 0,
-          ease: Circ.easeOut,
-        })
         .add(changetextto4)
+        .to(".card", { display: "block" })
+        .to(".card-lines", { opacity: 1, stagger: 0.1 }, "<")
         .to(".card-heading", { opacity: 1 })
         .to(".card-p", { opacity: 1 }, "<")
         .to(".card-close", { opacity: 1 }, "<")
         .to(".card-inquire", { opacity: 1 }, "<")
+        .to("#card-close", { opacity: 1 }, "<")
+        .to("#card-close", { pointerEvents: "auto" }, "<")
         .add(enableClick);
 
       gsap.to(".lot1", {
@@ -540,14 +685,22 @@ function openCard(x) {
 }
 
 function checksideleft() {
+  // document.querySelector(".card-lines").style.gridTemplateColumns =
+  //   "1fr 1fr 10%";
+
+  // document.querySelector(".card-text").style.gridTemplateColumns = "1fr 10%";
+
+  // document.querySelector(".card-col-switch-first").style.display = "none";
+
+  // document.querySelector(".card-col-switch-last").style.display = "block";
   document.querySelector(".card-lines").style.gridTemplateColumns =
-    "1fr 1fr 10%";
+    "10% 1fr 1fr";
 
-  document.querySelector(".card-text").style.gridTemplateColumns = "1fr 10%";
+  document.querySelector(".card-text").style.gridTemplateColumns = "10% 1fr";
 
-  document.querySelector(".card-col-switch-first").style.display = "none";
+  document.querySelector(".card-col-switch-first").style.display = "block";
 
-  document.querySelector(".card-col-switch-last").style.display = "block";
+  document.querySelector(".card-col-switch-last").style.display = "none";
 }
 
 function checksideright() {
@@ -564,17 +717,17 @@ function checksideright() {
 function changetextto1() {
   document.querySelector(".card-close").classList.remove("mr-5");
   document.querySelector(".card-heading").innerHTML =
-    "<h1 class='ml-10'>LOT 02</h1>";
+    "<h1 class=''>LOT 02</h1>";
   document.querySelector(".card-p").innerHTML =
-    "<p class= 'ml-10'>This 1-acre site offers a tranquil and authentic life immersed in nature.<br>With the heritage forest reserve in the back and blessed with a free-flowing<br> stream to the right, this property is a hidden gem for a nature lover.<br> Anyone purchasing this beautiful property can collaborate<br> and design their home with Shakticola.<br></p>";
+    "<p class= ''>This 1-acre site offers a tranquil and authentic life immersed in nature.<br>With the heritage forest reserve in the back and blessed with a free-flowing<br> stream to the right, this property is a hidden gem for a nature lover.<br> Anyone purchasing this beautiful property can collaborate<br> and design their home with Shakticola.<br></p>";
 }
 
 function changetextto2() {
   document.querySelector(".card-close").classList.remove("mr-5");
   document.querySelector(".card-heading").innerHTML =
-    "<h1 class='ml-10'>LOT 06</h1>";
+    "<h1 class=''>LOT 06</h1>";
   document.querySelector(".card-p").innerHTML =
-    "<p class= 'ml-10'>This site, which is just under an acre has views over the forests<br> and the Nakiyadeniya mountain ranges. Anyone purchasing<br> this beautiful property can collaborate and design<br>their home with Shakticola.<br></p>";
+    "<p class= ''>This site, which is just under an acre has views over the forests<br> and the Nakiyadeniya mountain ranges. Anyone purchasing<br> this beautiful property can collaborate and design<br>their home with Shakticola.<br></p>";
 }
 
 function changetextto3() {
@@ -594,8 +747,23 @@ function changetextto4() {
 function closeCard() {
   enable = true;
 
-  gsap.to(".card", { y: "100%" });
-  gsap.to(".animation-content-2", { opacity: 1 }, "<");
+  closeCardtl
+    .to(".lot-link", { pointerEvents: "none" })
+    .to(".card-heading", { opacity: 0 }, "<")
+    .to(".card-p", { opacity: 0 }, "<")
+    .to(".card-close", { opacity: 0 }, "<")
+    .to(".card-inquire", { opacity: 0 }, "<")
+    .to(".card-lines", { opacity: 0, stagger: -0.1 })
+    .to(".animation-content-2", { opacity: 1 }, "<")
+    .to(".card", { display: "none" })
+    .add(() => {
+      oncardtoggle
+        .to("#card-close", { opacity: 0 }, "<")
+        .to("#card-close", { pointerEvents: "none" }, "<")
+        .to(".oncardtoggle", { opacity: 1 })
+        .to(".oncardtoggle", { pointerEvents: "auto" }, "<");
+    })
+    .to(".lot-link", { pointerEvents: "auto" });
 }
 
 // menu
@@ -625,6 +793,7 @@ function openMenu() {
 
 function closeMenu() {
   document.querySelector(".body").style.overflowY = "auto";
+
   menu
     .to(".openMenu", { pointerEvents: "none" })
     .to(".closeMenu", { pointerEvents: "none", opacity: 0 }, "<")
