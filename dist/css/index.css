@@ -7,7 +7,8 @@
 }
 
 .main {
-  background: #294f3c;
+  background: #5a6351;
+  /* #294f3c */
 }
 
 /* dev */
@@ -347,7 +348,8 @@
 
 .navigation {
   color: white;
-  background: linear-gradient(243.18deg, #2b3c1f 0%, #6a7736 100%);
+  background: #5a6351;
+  /* linear-gradient(243.18deg, #2b3c1f 0%, #6a7736 100%); */
 }
 
 .mobile-nav {
@@ -451,10 +453,16 @@
 .map-link-t:hover .bar-t {
   opacity: 1;
 }
+.copyright-tab {
+  opacity: 0.7;
+  font-size: 1.97vw;
+  line-height: 4.056vw;
+}
 
 .copyright {
   opacity: 0.7;
-  font-size: 3.7vw;
+  font-size: 3.6vw;
+  line-height: 6.55vw;
 }
 
 /* Tab nav */

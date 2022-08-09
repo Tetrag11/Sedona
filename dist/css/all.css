@@ -188,7 +188,7 @@ body {
   text-align: right;
 }
 .web-contact {
-  font-size: 1.25vw;
+  font-size: 18px;
   justify-self: start;
   align-self: center;
 }
@@ -199,7 +199,7 @@ body {
   margin: 0 auto;
 }
 .menu-icon-web-link {
-  font-size: 1.3vw;
+  font-size: 18px;
 }
 
 .menu-icon-web {
@@ -276,10 +276,10 @@ body {
   height: 53px; */
   width: 25.408vw;
 }
-
-.copyright {
-  text-align: right;
-  font-size: 1.042vw !important;
+.copyright-web {
+  font-size: 1.3vw;
+  line-height: 2.45vw;
+  opacity: 0.5;
 }
 
 .copyright-tab {
@@ -306,7 +306,7 @@ body {
   font-family: "Federo";
   font-style: normal;
   font-weight: 400;
-  font-size: 2.083333333333333vw;
+  font-size: 30px;
   line-height: 4.861111111111112vw;
 }
 
@@ -314,7 +314,7 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 1.25vw;
+  font-size: 18px;
   line-height: 1.7361111111111112vw;
 }
 
@@ -380,10 +380,15 @@ body {
 
 .credentials {
   color: #a5a5a5 !important;
+  opacity: 0.8;
 }
 
 .footer {
-  background-color: #ededed !important;
+  background-color: #ededed;
+}
+
+.footer * {
+  color: white !important;
 }
 
 .footer-inner {

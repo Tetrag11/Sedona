@@ -124,3 +124,11 @@ body,
 .section-3 i {
   color: white !important;
 }
+
+.footer {
+  background-color: #423119 !important;
+}
+
+.footer * {
+  color: white;
+}

@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./mapresize.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" defer></script>
@@ -133,6 +136,8 @@
                                                 class="pr-2 number">4.</span>PRODUCTION</a>
                                         <a onclick="contact()" class=" py-3" href="javascript:void(0)"><span
                                                 class="pr-2 number">5.</span>CONTACT</a>
+                                        <span class="copyright-web my-5 ">© Sedona Canyon Estate
+                                            2022</span>
                                     </div>
                                 </div>
                             </div>
@@ -179,7 +184,7 @@
                                         <a onclick="production()" class="py-3" href="javascript:void(0)">PRODUCTION</a>
                                         <a onclick="contact()" class="py-3" href="javascript:void(0)">CONTACT</a>
                                     </div>
-                                    <span class="copyright-tab py-10 opacity-50">© Sedona Canyon Estate 2022</span>
+                                    <span class="copyright-tab py-20 opacity-50">© Sedona Canyon Estate 2022</span>
                                 </div>
                             </div>
                         </div>
@@ -223,7 +228,7 @@
                                         <a onclick="production()" class="py-3" href="javascript:void(0)">PRODUCTION</a>
                                         <a onclick="contact()" class="py-3" href="javascript:void(0)">CONTACT</a>
                                     </div>
-                                    <span class="copyright-mobile py-10 opacity-50">© Sedona Canyon Estate 2022</span>
+                                    <span class="copyright-mobile py-20 opacity-50">© Sedona Canyon Estate 2022</span>
                                 </div>
                             </div>
                         </div>
@@ -268,7 +273,7 @@
 
                                     <div class="self-end">
                                         <div class=" card-header card-heading opacity-0 pb-5">LOT 06</div>
-                                        <div class="card-p  opacity-0 col-span-3 self-center pb-5">This site, which is
+                                        <div class="card-p  opacity-0 col-span-3 self-center ">This site, which is
                                             just
                                             under an
                                             acre has
@@ -298,13 +303,15 @@
                                     <a href="contact.html" class="web-contact oncardtoggle ">Lets Talk <span
                                             class="opacity-0 pointer-events-none">some random text</span></a>
                                     <a class="opacity-0 pointer-events-none card-close absolute" id="card-close"
-                                        onclick="closeCard()" href="javascript:void(0)">Back
+                                        onclick="closeCard()" href="javascript:void(0)"><i class="fa fa-angle-left mr-2"
+                                            aria-hidden="true"></i>
+                                        Back
                                         to the Map</a>
                                 </div>
                                 <a class="h-fit" href="index.html"><img class="logo-web" src="./images/sedonalogo.png"
                                         alt="" /></a>
                                 <a onclick="openMenu()"
-                                    class="h-fit menu-icon-web-link self-center justify-self-end flex"
+                                    class="h-fit menu-icon-web-link self-center justify-self-end flex openMenu"
                                     href="javascript:void(0)">Open
                                     Menu<img class="menu-icon-web self-center ml-3" src="./images/Group 25.png"
                                         alt="" /></a>
@@ -345,7 +352,7 @@
                                     <a class="h-fit" href="index.html"><img class="logo-web"
                                             src="./images/sedonalogo.png" alt="" /></a>
                                     <a onclick="openMenu()"
-                                        class="h-fit menu-icon-web-link self-center justify-self-end flex"
+                                        class="h-fit menu-icon-web-link self-center justify-self-end flex openMenu"
                                         href="javascript:void(0)">Open
                                         Menu<img class="menu-icon-web self-center ml-3" src="./images/Group 25.png"
                                             alt="" /></a>
@@ -442,8 +449,8 @@
                         <div class="width-90-mx-auto  flex w-full h-fit justify-between mt-5 ">
                             <a class="h-fit" href="index.html"><img class="logo-mobile" src="./images/sedonalogo2.png"
                                     alt="" /></a>
-                            <a onclick="openMenu()" class="h-fit self-center" href="#"><img class="menu-icon-mobile"
-                                    src="./images/Group 21.png" alt="" /></a>
+                            <a onclick="openMenu()" class="h-fit self-center openMenu" href="#"><img
+                                    class="menu-icon-mobile" src="./images/Group 21.png" alt="" /></a>
                         </div>
 
 
@@ -533,7 +540,7 @@
                             <a class="h-fit" href="index.html"><img class="logo-tab" src="./images/sedonalogo2.png"
                                     alt="" /></a>
                             <a href="contact.html" class="tab-contact">Lets Talk</a>
-                            <a onclick="openMenu()" class="h-fit self-center justify-self-end" href="#"><img
+                            <a onclick="openMenu()" class="h-fit self-center justify-self-end openMenu" href="#"><img
                                     class="menu-icon-tab" src="./images/Group 21.png" alt="" /></a>
                         </div>
 

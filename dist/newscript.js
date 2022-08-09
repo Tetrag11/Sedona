@@ -256,7 +256,10 @@ function enableClick() {
   });
 }
 
+let checkopen = false;
+
 function openCard(x) {
+  checkopen = true;
   enable = false;
   document.querySelector(".banner").style.opacity = 0;
 
@@ -746,7 +749,7 @@ function changetextto4() {
 
 function closeCard() {
   enable = true;
-
+  checkopen = false;
   closeCardtl
     .to(".lot-link", { pointerEvents: "none" })
     .to(".card-heading", { opacity: 0 }, "<")
@@ -777,18 +780,47 @@ function menudisappear() {
 
 function openMenu() {
   document.querySelector(".body").style.overflowY = "hidden";
-  menu
-    .to(".openMenu", { pointerEvents: "none" })
-    .to(".closeMenu", { pointerEvents: "none" }, "<")
-    .to(".animation-content-2", { opacity: 0 }, "<")
-    .to(".openMenu", { opacity: 0 }, "<")
-    .to(".closeMenu", { opacity: 0 }, "<")
-    .to(".menu", { display: "block" }, "<")
-    .to(".menu-line-items", { opacity: 1, stagger: -0.1 }, "<")
-    .to(".closeMenu", { opacity: 1 })
-    .to(".menu-tab-mob-appear", { opacity: 1 }, "< 0.2")
-    .to(".openMenu", { pointerEvents: "auto" })
-    .to(".closeMenu", { pointerEvents: "auto" }, "<");
+
+  if (checkopen == true) {
+    menu
+      .to(".card-heading", { opacity: 0 }, "<")
+      .to(".card-p", { opacity: 0 }, "<")
+      .to(".card-close", { opacity: 0 }, "<")
+      .to(".card-inquire", { opacity: 0 }, "<")
+      .to(".card-lines", { opacity: 0, stagger: -0.1 })
+      .to(".card", { display: "none" })
+      .add(() => {
+        oncardtoggle
+          .to("#card-close", { opacity: 0 }, "<")
+          .to("#card-close", { pointerEvents: "none" }, "<")
+          .to(".oncardtoggle", { opacity: 1 })
+          .to(".oncardtoggle", { pointerEvents: "auto" }, "<");
+      })
+      .to(".openMenu", { pointerEvents: "none" })
+      .to(".closeMenu", { pointerEvents: "none" }, "<")
+      .to(".animation-content-2", { opacity: 0 }, "<")
+      .to(".openMenu", { opacity: 0 }, "<")
+      .to(".closeMenu", { opacity: 0 }, "<")
+      .to(".menu", { display: "block" }, "<")
+      .to(".menu-line-items", { opacity: 1, stagger: -0.1 }, "<")
+      .to(".closeMenu", { opacity: 1 })
+      .to(".menu-tab-mob-appear", { opacity: 1 }, "< 0.2")
+      .to(".openMenu", { pointerEvents: "auto" })
+      .to(".closeMenu", { pointerEvents: "auto" }, "<");
+  } else {
+    menu
+      .to(".openMenu", { pointerEvents: "none" })
+      .to(".closeMenu", { pointerEvents: "none" }, "<")
+      .to(".animation-content-2", { opacity: 0 }, "<")
+      .to(".openMenu", { opacity: 0 }, "<")
+      .to(".closeMenu", { opacity: 0 }, "<")
+      .to(".menu", { display: "block" }, "<")
+      .to(".menu-line-items", { opacity: 1, stagger: -0.1 }, "<")
+      .to(".closeMenu", { opacity: 1 })
+      .to(".menu-tab-mob-appear", { opacity: 1 }, "< 0.2")
+      .to(".openMenu", { pointerEvents: "auto" })
+      .to(".closeMenu", { pointerEvents: "auto" }, "<");
+  }
 }
 
 function closeMenu() {

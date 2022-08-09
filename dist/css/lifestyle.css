@@ -85,3 +85,11 @@ body,
 .section-6 {
   background-color: #055c62;
 }
+
+.footer {
+  background-color: #055c62 !important;
+}
+
+.footer * {
+  color: white;
+}

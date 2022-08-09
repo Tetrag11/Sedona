@@ -54,6 +54,7 @@ function loaderdestroy() {
   document.querySelector(".body").style.overflowY = "visible";
 
   const scrolls = document.querySelectorAll(".c");
+  const stubbornscrolls = document.querySelectorAll(".cd");
   gsap.registerPlugin(ScrollTrigger);
 
   scrolls.forEach((scroll) => {
@@ -62,8 +63,19 @@ function loaderdestroy() {
         trigger: scroll,
       },
       opacity: 0,
+      delay: 1,
+      duration: 1,
+    });
+  });
 
-      duration: 2,
+  stubbornscrolls.forEach((scroll) => {
+    gsap.to(scroll, {
+      scrollTrigger: {
+        trigger: scroll,
+      },
+      opacity: 1,
+      delay: 1,
+      duration: 1,
     });
   });
 }
