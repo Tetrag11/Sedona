@@ -78,6 +78,9 @@ function loaderdestroy() {
       duration: 1,
     });
   });
+  $(function () {
+    $("body").niceScroll();
+  });
 }
 
 // menu
