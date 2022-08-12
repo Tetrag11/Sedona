@@ -330,18 +330,18 @@ body {
 }
 
 .tab-paragraph {
-  grid-template-columns: 2.5fr 1fr;
+  grid-template-columns: 2.5fr 0.5fr;
 }
 
 .tab-paragraph h1 {
-  font-size: 6.7vw;
-  line-height: 10vw;
+  font-size: 35px;
+  line-height: 60px;
   font-family: "Federo";
 }
 
 .tab-paragraph p {
-  font-size: 1.97vw;
-  line-height: 4.056vw;
+  font-size: 15px;
+  line-height: 26px;
 }
 
 .tab-paragraph .erlp {
@@ -358,7 +358,7 @@ body {
 }
 
 .mobile-paragraph p {
-  font-size: 3.6vw;
+  font-size: 3vw;
   line-height: 6.55vw;
 }
 
@@ -414,7 +414,8 @@ body {
 
 .limit-w {
   max-width: 90%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .limit-w-absolute {
@@ -472,7 +473,7 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 3.497vw;
+  font-size: 3.397vw;
   line-height: 6.061vw;
   color: #2f2f2f;
 }
@@ -523,7 +524,7 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 26px;
-  color: #2f2f2f;
+  color: white !important;
 }
 
 .tab-p-adjust {
@@ -580,10 +581,6 @@ body {
     line-height: 60px;
   }
 
-  .tab-paragraph p {
-    font-size: 15px;
-    line-height: 26px;
-  }
   .tab-contact {
     font-size: 13px;
     line-height: 25px;
@@ -595,5 +592,17 @@ body {
   .menu-icon-tab {
     width: 33px;
     height: 9px;
+  }
+}
+
+@media (min-width: 500px) {
+  .mobile-paragraph h1 {
+    font-size: 35px;
+    line-height: 60px;
+  }
+
+  .mobile-paragraph p {
+    font-size: 15px;
+    line-height: 26px;
   }
 }

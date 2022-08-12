@@ -33,6 +33,19 @@ body,
 .section-2 .section-p-web {
   color: white !important;
 }
+
+.section-3 .section-p-tab-alternate {
+  color: #2f2f2f !important;
+}
+
+.section-1 .section-p-tab-alternate {
+  color: #2f2f2f !important;
+}
+
+.section-5 .section-p-tab-alternate {
+  color: #2f2f2f !important;
+}
+
 .section-4 .section-heading,
 .section-4 .section-sub-heading,
 .section-4 .section-heading-tab,

@@ -4,6 +4,34 @@ const menu = gsap.timeline();
 const menuLink = gsap.timeline();
 const sectionscroll = gsap.timeline();
 
+// width and height
+var viewportwidth;
+var viewportheight;
+
+// the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+
+if (typeof window.innerWidth != "undefined") {
+  (viewportwidth = window.innerWidth), (viewportheight = window.innerHeight);
+}
+
+// IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+else if (
+  typeof document.documentElement != "undefined" &&
+  typeof document.documentElement.clientWidth != "undefined" &&
+  document.documentElement.clientWidth != 0
+) {
+  (viewportwidth = document.documentElement.clientWidth),
+    (viewportheight = document.documentElement.clientHeight);
+}
+
+// older versions of IE
+else {
+  (viewportwidth = document.getElementsByTagName("body")[0].clientWidth),
+    (viewportheight = document.getElementsByTagName("body")[0].clientHeight);
+}
+
+//-->
+
 // loader related
 
 // loader first animation
@@ -31,12 +59,9 @@ function increment() {
     timeline
       .to(".load-centered-logo", { opacity: 0, duration: 0.5 })
       .to(".loader-lines", { opacity: 0, stagger: 0.2 })
+      .to(".animation-content-1", { opacity: 1 }, "< 0.8")
       .to(".loader", { display: "none" })
-      .from(".animation-content-1", { opacity: 0 }, "<")
-      .from(".animate-2", { opacity: 0 })
-      .from(".animate-3", { opacity: 0 })
-      .add(loaderdestroy)
-      .add(hamBtn);
+      .add(loaderdestroy);
 
     clearInterval(secondscalc);
   }
@@ -50,7 +75,6 @@ function hamBtn() {
 }
 
 function loaderdestroy() {
-  document.querySelector(".loader").style.display = "none";
   document.querySelector(".body").style.overflowY = "visible";
 
   const scrolls = document.querySelectorAll(".c");
@@ -78,9 +102,11 @@ function loaderdestroy() {
       duration: 1,
     });
   });
-  $(function () {
-    $("body").niceScroll();
-  });
+  if (viewportwidth > 1024) {
+    $(function () {
+      $("body").niceScroll();
+    });
+  }
 }
 
 // menu

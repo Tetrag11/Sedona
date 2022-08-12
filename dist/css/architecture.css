@@ -26,7 +26,8 @@ body,
 
 .limit-w {
   max-width: 90%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-1 {
@@ -87,8 +88,6 @@ body,
 .section-2 .content-3 .section-heading-tab-alternate,
 .section-2 .content-3 .section-heading-web,
 .section-2 .content-3 .section-p-web,
-.section-2 .content-3 .section-p-alternate,
-.section-2 .content-3 .section-p-tab-alternate,
 .section-2 .content-3 i,
 .section-2 .content-3 .section-p-tab,
 .section-2 .content-3 .section-p {
@@ -114,8 +113,9 @@ body,
 }
 .section-2-half .section-heading-alternate,
 .section-2-half .section-heading-tab-alternate,
+.section-2-half .section-p-tab-alternate,
 .section-2-half .section-heading-web {
-  color: #423119;
+  color: #423119 !important;
 }
 
 .section-3 h1,

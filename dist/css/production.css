@@ -36,17 +36,20 @@ body,
 }
 
 .section-2 {
-  background-color: #000000;
+  background-color: white;
 }
-
-.section-2 p,
-.section-2 h1,
-.section-2 a {
-  color: white !important;
+.section-1 * {
+  color: black !important;
+}
+.section-2 * {
+  color: black !important;
 }
 
 .section-3 {
-  background-color: white;
+  background-color: black;
+}
+.section-3 * {
+  color: white !important;
 }
 
 .section-4 {

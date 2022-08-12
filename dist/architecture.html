@@ -84,7 +84,7 @@
           <div class="nintypercent">
             <div class="grid grid-cols-1 h-full">
               <!-- web-header -->
-              <div class="w-full h-fit grid grid-cols-3 justify-between mt-5 animation-content-1 ">
+              <div class="w-full h-fit grid grid-cols-3 justify-between mt-5 ">
                 <a href="contact.html" class="web-contact">Lets Talk</a>
                 <a class="h-fit" href="index.html"><img class="logo-web" src="./images/sedonalogo.png" alt="" /></a>
                 <a class="h-fit menu-icon-web-link self-center justify-self-end flex closeMenu opacity-0"
@@ -221,7 +221,7 @@
 
 
   <!-- body content -->
-  <div class="body-content" style="display: none">
+  <div class="body-content absolute z-30 " style="display: none">
     <!-- Background Image -->
     <div class="cover-vid absolute z-0" style="
      height: 100vh;
@@ -263,7 +263,7 @@
         </video>
       </div> -->
       <!-- Content -->
-      <div class="absolute z-40" style="width: 100%; height: 100vh">
+      <div class="absolute z-40 animation-content-1 opacity-0" style="width: 100%; height: 100vh">
 
         <!-- web -->
         <div class="w-full h-full main-content hidden lg:grid " style="grid-template-rows: 1fr 2fr 1fr;">
@@ -276,8 +276,7 @@
                   height: auto;
                 ">
               <!-- web-header -->
-              <div
-                class="w-full h-fit grid grid-cols-3 justify-between mt-5 animation-content-1 openmenudisaappear animate-1">
+              <div class="w-full h-fit grid grid-cols-3 justify-between mt-5 openmenudisaappear animate-1 ">
                 <a href="contact.html" class="web-contact">Lets Talk</a>
                 <a class="h-fit" href="index.html"><img class="logo-web" src="./images/sedonalogo.png" alt="" /></a>
                 <a onclick="openMenu()" class="h-fit menu-icon-web-link self-center justify-self-end flex openMenu"
@@ -300,7 +299,7 @@
                 ">
               <div></div>
               <div>
-                <div class="animate-2 text-white" style="
+                <div class=" text-white" style="
                   
                       font-family: 'Federo', sans-serif;
                       font-size: 4.167vw;
@@ -319,7 +318,7 @@
           <div class="self-end">
             <!-- Third section -->
             <!-- web -->
-            <div class="animate-3 animation-content-2  pb-10 nav-rel hidden sm:grid text-white" style="
+            <div class=" animation-content-2  pb-10 nav-rel hidden sm:grid text-white" style="
                
                   opacity: 1;
                   width: 100%;
@@ -341,7 +340,7 @@
         </div>
 
         <!-- tab -->
-        <div class="tab-content animation-content absolute z-30 w-full h-full  hidden sm:grid lg:hidden cover-page">
+        <div class="tab-content absolute  z-30 w-full h-full  hidden sm:grid lg:hidden cover-page">
           <!-- tab-content-wrapper -->
           <div class=" relative w-full h-full">
 
@@ -350,7 +349,7 @@
             <div class="tab-text w-full h-full absolute z-20 grid grid-cols-1">
 
               <!-- tab-header -->
-              <div class="w-full h-fit grid grid-cols-3 justify-between mt-5 animation-content-1 openmenudisaappear ">
+              <div class="w-full h-fit grid grid-cols-3 justify-between mt-5 openmenudisaappear ">
                 <a class="h-fit" href="index.html"><img class="logo-tab" src="./images/sedonalogo2.png" alt="" /></a>
                 <a href="contact.html" class="tab-contact">Lets Talk</a>
                 <a onclick="openMenu()" class="h-fit self-center justify-self-end openMenu" href="#"><img
@@ -361,8 +360,8 @@
               <!-- Tab-paragraph -->
               <div class="tab-paragraph w-full grid self-end">
                 <div class="animation-content-2 ">
-                  <h1 class="mb-5 animate-2">A FUTURE<br>TO BUILD</h1>
-                  <p class="mb-5 animate-3">
+                  <h1 class="mb-5 ">A FUTURE<br>TO BUILD</h1>
+                  <p class="mb-5 ">
 
                     Clean architectural lines. Stunning finishing materials.<br> Well-defined construction standards.
                     Here,
@@ -371,7 +370,7 @@
                     harmonious environment when the time is right.
                   </p>
                   <a class="map-link-t pointer-events-none">
-                    <p class="flex mb-5 animate-3">
+                    <p class="flex mb-5 ">
                       Scroll to Explore
                     </p>
                   </a>
@@ -393,7 +392,7 @@
             width: 100%;
             height: auto;
           ">
-              <div class="flex w-full h-fit justify-between mt-5 animation-content-1 openmenudisaappear ">
+              <div class="flex w-full h-fit justify-between mt-5 openmenudisaappear ">
                 <a class="h-fit" href="index.html"><img class="logo-mobile" src="./images/sedonalogo2.png" alt="" /></a>
                 <a onclick="openMenu()" class="h-fit self-center openMenu" href="#"><img class="menu-icon-mobile"
                     src="./images/Group 21.png" alt="" /></a>
@@ -402,15 +401,15 @@
 
 
             <div class="mobile-paragraph w-full h-fit self-end animation-content-2 ">
-              <h1 class="mb-5 animate-2">A FUTURE<br>TO BUILD</h1>
-              <p class="mb-5 animate-3">
+              <h1 class="mb-5 ">A FUTURE<br>TO BUILD</h1>
+              <p class="mb-5 ">
 
                 Clean architectural lines. Stunning finishing materials. Well-defined construction standards. Here,
                 there is no rush to build; everything is designed to allow you to express your personality in a
                 harmonious environment when the time is right.
               </p>
               <a class="map-link-t pointer-events-none">
-                <p class="flex mb-20 animate-3 ">
+                <p class="flex mb-20">
                   Scroll to Explore
                 </p>
               </a>
@@ -457,8 +456,8 @@
       <div class="hidden sm:grid lg:hidden w-full h-screen items-center section-height-control relative tab-max-width">
         <!-- lines -->
         <div class="absolute w-full h-full grid grid-cols-2">
+          <div class=""></div>
           <div class="border-x border-black border-opacity-10 border-r-0"></div>
-          <div class="border-x border-black border-opacity-10"></div>
         </div>
         <!-- content -->
         <div class="grid grid-rows-4 ">
@@ -543,9 +542,9 @@
           </div>
 
           <!-- text -->
-          <div class="w-full h-full grid items-center bg-white content-3">
+          <div class="w-full h-full grid items-center  content-3">
             <div class="w-full h-full m-5-percent  border-x border-black border-opacity-10">
-              <p class="my-14 section-p-alternate text-black cd opacity-0">
+              <p class="my-14 section-p-alternate text-white cd opacity-0">
                 You have a busy life, and we understand this, especially
                 if you are an overseas investor. That is why we offer to
                 take charge of the Project Management of your new home,
@@ -559,7 +558,7 @@
       <!-- tab -->
       <div class="hidden sm:grid lg:hidden w-full h-full  relative">
         <!-- lines -->
-        <div class="absolute w-full h-full grid grid-cols-2 tab-max-width-absolute">
+        <div class="absolute w-full h-full grid grid-cols-2 limit-w-absolute">
           <div class="border-x border-white border-opacity-10 border-r-0"></div>
           <div class="border-x border-white border-l-0 border-opacity-10"></div>
         </div>
@@ -572,7 +571,7 @@
         </div>
         <!-- content -->
         <div class="w-full h-screen section-height-control absolute ">
-          <div class="w-full h-full grid section-2-content-tab tab-max-width">
+          <div class="w-full h-full grid section-2-content-tab limit-w">
             <div class="grid">
               <p class="section-p-tab-alternate mt-5 cd opacity-0">Turnkey Options</p>
             </div>
@@ -581,7 +580,7 @@
         </div>
         <!-- content-2 -->
         <div class="w-full h-screen section-height-control  absolute ">
-          <div class="w-full h-full grid section-2-content-tab tab-max-width">
+          <div class="w-full h-full grid section-2-content-tab limit-w">
             <div class="grid">
               <h1 class="section-heading-tab-alternate self-center cd opacity-0">BUILD YOUR DREAM<br> WITH YOUR MIND AT
                 PEACE
@@ -592,15 +591,15 @@
         </div>
 
         <!-- content-3 -->
-        <div class="w-full h-full bg-white content-3">
+        <div class="w-full h-full text-white content-3">
           <!-- lines -->
-          <div class="absolute w-full h-full grid grid-cols-2 tab-max-width-absolute">
+          <div class="absolute w-full h-full grid grid-cols-2 limit-w-absolute">
             <div class="border-x border-black border-opacity-10 border-r-0"></div>
             <div class="border-x border-black  border-opacity-10"></div>
           </div>
 
-          <div class="my-40 tab-max-width">
-            <p class="section-p-tab-alternate text-black cd opacity-0">
+          <div class="my-40 limit-w">
+            <p class="section-p-tab-alternate text-white cd opacity-0">
               You have a busy life, and we understand this, especially,<br>
               if you are an overseas investor. That is why we offer to take charge<br>
               of the Project Management of your new home, from 0 to 100%<br>
@@ -669,7 +668,7 @@
               or spa retreat.
             </h1>
 
-            <p class="section-p-alternate pt-20 cd opacity-0">The Estate will have a entrance gate, which will lead <br>
+            <p class="section-p-alternate pt-5 cd opacity-0">The Estate will have a entrance gate, which will lead <br>
               up to your own private driveway up to your property. </p>
           </div>
         </div>
@@ -680,8 +679,8 @@
         class="hidden sm:grid lg:hidden w-full h-screen items-center section-height-control relative limit-w tab-max-width">
         <!-- lines -->
         <div class="absolute w-full h-full grid grid-cols-2 tab-max-width-absolute">
+          <div class=""></div>
           <div class="border-x border-black border-opacity-10 border-r-0"></div>
-          <div class="border-x border-black border-opacity-10"></div>
         </div>
         <!-- content -->
         <div class="grid">
@@ -693,7 +692,7 @@
               or spa retreat.
             </h1>
 
-            <p class="section-p-tab-alternate pt-20 cd opacity-0">The Estate will have a entrance gate, which will lead
+            <p class="section-p-tab-alternate pt-5 cd opacity-0">The Estate will have a entrance gate, which will lead
               <br>
               up to your own private driveway up to your property. </p>
           </div>
@@ -721,7 +720,7 @@
           </div>
           <div class="col-span-2"></div>
           <div class="col-span-2">
-            <p class="section-p-web pt-40 cd opacity-0">The Estate will have a entrance gate, which will lead <br>
+            <p class="section-p-web pt-5 cd opacity-0">The Estate will have a entrance gate, which will lead <br>
               up to your own private driveway up to your property. </p>
           </div>
         </div>
@@ -755,10 +754,9 @@
       </div>
 
       <!-- tab -->
-      <div
-        class="hidden sm:grid lg:hidden w-full h-screen items-center section-height-control relative limit-w tab-max-width">
+      <div class="hidden sm:grid lg:hidden w-full h-screen items-center section-height-control relative limit-w">
         <!-- lines -->
-        <div class="absolute w-full h-full grid grid-cols-2 tab-max-width-absolute ">
+        <div class="absolute w-full h-full grid grid-cols-2  ">
           <div class="border-x border-white border-opacity-10 border-r-0"></div>
           <div class="border-x border-white border-opacity-10"></div>
         </div>
@@ -856,10 +854,9 @@
       </div>
 
       <!-- tab -->
-      <div
-        class="hidden sm:grid lg:hidden w-full h-screen items-center section-height-control relative limit-w tab-max-width">
+      <div class="hidden sm:grid lg:hidden w-full h-screen items-center section-height-control relative  limit-w">
         <!-- lines -->
-        <div class="absolute w-full h-full grid grid-cols-2 z-0 tab-max-width-absolute">
+        <div class="absolute w-full h-full grid grid-cols-2 z-0 ">
           <div class="border-x border-white border-opacity-10 border-r-0"></div>
           <div class="border-x border-white border-opacity-10"></div>
         </div>
@@ -929,15 +926,15 @@
           </div>
         </div>
       </div>
-
-
     </div>
 
+  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./jquery.nicescroll.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./jquery.nicescroll.js"></script>
 
 </body>
 
