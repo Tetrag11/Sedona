@@ -132,3 +132,8 @@ body,
 .footer * {
   color: white;
 }
+
+.architecturestylevid {
+  height: 100%;
+  object-fit: cover;
+}

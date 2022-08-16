@@ -19,6 +19,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" defer></script>
   <script src="script.js" defer></script>
+  <script src="lifestyle.js" defer></script>
 
   <title>Lifestyle</title>
 </head>
@@ -232,7 +233,7 @@
     filter: brightness(70%);
   ">
       <video autoplay loop muted playsinline>
-        <source src="./images/lifestyle-video.mp4" type="video/mp4">
+        <source src="./images/lifestyle-video-1.mp4" type="video/mp4">
       </video>
     </div>
     <!-- Header -->
@@ -509,7 +510,9 @@
       <div class="sm:hidden grid w-full h-screen section-height-control relative">
         <!-- image -->
         <div class="section-2-img w-full h-full absolute z-0 ">
-          <img src="./images/morgan-sessions-k5zv-Hv4Kpc-unsplash 1.png" alt="">
+          <video autoplay loop muted playsinline class="lifestylevid">
+            <source class="source" src="./images/production-ID-4536500.mp4" type="video/mp4">
+          </video>
         </div>
         <!-- content -->
         <div class="absolute z-10 w-full h-full m-5-percent border-x border-white border-opacity-10">
@@ -534,7 +537,9 @@
         <div class="w-full h-screen section-height-control grid grid-cols-2">
           <div></div>
           <div class="w-full  section-2-img">
-            <img src="images/morgan-sessions-k5zv-Hv4Kpc-unsplash 1-tab.png" alt="">
+            <video autoplay loop muted playsinline class="lifestylevid">
+              <source class="source" src="./images/production-ID-4536500.mp4" type="video/mp4">
+            </video>
           </div>
         </div>
         <!-- content -->
@@ -555,7 +560,9 @@
           <div class="border-x border-white border-opacity-10 border-r-0"></div>
           <div class="border-x border-white border-opacity-10 border-r-0"></div>
           <div class="w-full h-screen section-height-control  section-2-img">
-            <img class="section-2-img-web" src="images/morgan-sessions-k5zv-Hv4Kpc-unsplash 1-web.png" alt="">
+            <video autoplay loop muted playsinline class="lifestylevid">
+              <source class="source" src="./images/production-ID-4536500.mp4" type="video/mp4">
+            </video>
           </div>
           <div class="border-x border-white border-opacity-10 border-l-0"></div>
         </div>
@@ -686,18 +693,33 @@
           <!-- img -->
           <div class="relative">
             <div class="section-2-img w-full h-full absolute z-0">
-              <img src="./images/morgan-sessions-k5zv-Hv4Kpc-unsplash 1.png" alt="">
+              <div class="w-full h-full relative">
+                <img class="section-2-img-web absolute exp-1  w-full h-full"
+                  src="images/morgan-sessions-k5zv-Hv4Kpc-unsplash 1-web.png" alt="">
+                <img class="section-2-img-web absolute exp-2 z-20 w-full h-full opacity-0"
+                  src="images/chathura-indika-LAj-XlHP6Rs-unsplash(6)(2).jpg" alt="">
+                <img class="section-2-img-web absolute exp-3 z-20 w-full h-full opacity-0"
+                  src="images/shainee-fernando-RdZ6t41NmE0-unsplash(2).jpg" alt="">
+                <img class="section-2-img-web absolute exp-4 z-20 w-full h-full opacity-0"
+                  src="images/eirik-skarstein-7CsKioF9O6g-unsplash(1)(1).jpg" alt="">
+                <img class="section-2-img-web absolute exp-5 z-20 w-full h-full opacity-0"
+                  src="images/apostolos-vamvouras-k9x2sIOrbf4-unsplash(1).jpg" alt="">
+                <img class="section-2-img-web absolute exp-6 z-20 w-full h-full opacity-0"
+                  src="images/deleece-cook-JnfFsMBwe2A-unsplash(1).jpg" alt="">
+              </div>
             </div>
             <div
               class="w-full h-full grid m-5-percent items-end absolute z-10 border-x border-white border-opacity-10 ">
-              <p class="section-p-alternate pb-10 c">30 minutes to Heritage Galle Fort, an eclectic fusion <br>
+              <p class="section-p-alternate pb-10 c exploretextswitch">30 minutes to Heritage Galle Fort, an eclectic
+                fusion <br>
                 of history and modern life with a hint of nostalgia <br>
                 of an era gone by.</p>
             </div>
           </div>
 
           <!-- explore more -->
-          <a href="map.html" class="section-p-alternate py-5 p-5-percent text-right c">Explore more</a>
+          <a href="javascript:void(0)" onclick="textSwitch()"
+            class="section-p-alternate py-5 p-5-percent text-right c">Explore more</a>
         </div>
       </div>
 
@@ -709,22 +731,34 @@
           <div class="border-x border-white border-l-0 border-opacity-10"></div>
         </div>
         <!-- lay-out -->
-        <div class="w-full h-screen section-height-control grid grid-cols-2">
+        <div class="w-full h-screen section-height-control grid grid-cols-2 ">
           <div></div>
-          <div class="w-full relative section-2-img">
-            <img class="absolute" src="images/morgan-sessions-k5zv-Hv4Kpc-unsplash 1-tab.png" alt="">
-            <div class="w-full h-full grid m-5-percent items-center justify-center absolute z-10 ">
-              <a href="map.html" class="section-p-tab-alternate c">Explore More</a>
+          <div class="w-full relative section-2-img ">
+            <img class="section-2-img-web absolute exp-1  w-full h-full"
+              src="images/morgan-sessions-k5zv-Hv4Kpc-unsplash 1-web.png" alt="">
+            <img class="section-2-img-web absolute exp-2 z-20 w-full h-full opacity-0"
+              src="images/chathura-indika-LAj-XlHP6Rs-unsplash(6)(2).jpg" alt="">
+            <img class="section-2-img-web absolute exp-3 z-20 w-full h-full opacity-0"
+              src="images/shainee-fernando-RdZ6t41NmE0-unsplash(2).jpg" alt="">
+            <img class="section-2-img-web absolute exp-4 z-20 w-full h-full opacity-0"
+              src="images/eirik-skarstein-7CsKioF9O6g-unsplash(1)(1).jpg" alt="">
+            <img class="section-2-img-web absolute exp-5 z-20 w-full h-full opacity-0"
+              src="images/apostolos-vamvouras-k9x2sIOrbf4-unsplash(1).jpg" alt="">
+            <img class="section-2-img-web absolute exp-6 z-20 w-full h-full opacity-0"
+              src="images/deleece-cook-JnfFsMBwe2A-unsplash(1).jpg" alt="">
+            <div class="w-full h-full grid m-5-percent items-center justify-center absolute z-50 ">
+              <a href="javascript:void(0)" onclick="textSwitch()" class="section-p-tab-alternate c">Explore More</a>
             </div>
           </div>
         </div>
         <!-- content -->
-        <div class="w-full h-screen section-height-control absolute limit-w-absolute ">
+        <div class="w-full h-screen section-height-control absolute limit-w-absolute z-40 ">
           <div class="w-full h-full grid section-2-content-tab ">
 
             <h1 class="section-heading-tab-alternate mt-10 c ">BUILD YOUR DREAM<br> WITH YOUR MIND AT PEACE
             </h1>
-            <p class="section-p-tab-alternate mb-10 self-end c">30 minutes to Heritage Galle Fort, an eclectic fusion
+            <p class="section-p-tab-alternate mb-10 self-end c exploretextswitch">30 minutes to Heritage Galle Fort, an
+              eclectic fusion
               <br>
               of history and modern life with a hint of nostalgia<br>
               of an era gone by. </p>
@@ -740,8 +774,19 @@
         <div class="w-full h-full section-2-web-layout grid grid-cols-4">
           <div class="border-x border-white border-opacity-10 border-r-0"></div>
           <div class="border-x border-white border-opacity-10 border-r-0"></div>
-          <div class="w-full h-screen section-height-control  section-2-img">
-            <img class="section-2-img-web" src="images/morgan-sessions-k5zv-Hv4Kpc-unsplash 1-web.png" alt="">
+          <div class="w-full h-screen section-height-control relative  section-2-img">
+            <img class="section-2-img-web absolute exp-1  w-full h-full"
+              src="images/morgan-sessions-k5zv-Hv4Kpc-unsplash 1-web.png" alt="">
+            <img class="section-2-img-web absolute exp-2 z-20 w-full h-full opacity-0"
+              src="images/chathura-indika-LAj-XlHP6Rs-unsplash(6)(2).jpg" alt="">
+            <img class="section-2-img-web absolute exp-3 z-20 w-full h-full opacity-0"
+              src="images/shainee-fernando-RdZ6t41NmE0-unsplash(2).jpg" alt="">
+            <img class="section-2-img-web absolute exp-4 z-20 w-full h-full opacity-0"
+              src="images/eirik-skarstein-7CsKioF9O6g-unsplash(1)(1).jpg" alt="">
+            <img class="section-2-img-web absolute exp-5 z-20 w-full h-full opacity-0"
+              src="images/apostolos-vamvouras-k9x2sIOrbf4-unsplash(1).jpg" alt="">
+            <img class="section-2-img-web absolute exp-6 z-20 w-full h-full opacity-0"
+              src="images/deleece-cook-JnfFsMBwe2A-unsplash(1).jpg" alt="">
           </div>
           <div class="border-x border-white border-opacity-10 border-l-0"></div>
         </div>
@@ -755,10 +800,12 @@
               <div class="w-full grid grid-cols-4 self-center">
                 <div class="col-span-3"></div>
                 <div class="text-center">
-                  <a href="map.html" class="section-p-web c">Explore More</a>
+                  <a href="javascript:void(0)" onclick="textSwitch()" class="section-p-web c">Explore More</a>
                 </div>
               </div>
-              <p class="section-p-web mb-10  self-end c">30 minutes to Heritage Galle Fort, an eclectic fusion <br>
+              <p class="section-p-web mb-10  self-end c exploretextswitch"><br><br>30 minutes to Heritage Galle
+                Fort, an
+                eclectic fusion <br>
                 of history and modern life with a hint of nostalgia <br>
                 of an era gone by. </p>
             </div>

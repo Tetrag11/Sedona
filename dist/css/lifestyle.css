@@ -106,3 +106,8 @@ body,
 .footer * {
   color: white;
 }
+
+.lifestylevid {
+  height: 100%;
+  object-fit: cover;
+}
