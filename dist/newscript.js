@@ -19,6 +19,31 @@ const closeCardtl = gsap.timeline();
 let load = false;
 let seconds = 0;
 
+var viewportwidth;
+var viewportheight;
+
+// the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+
+if (typeof window.innerWidth != "undefined") {
+  (viewportwidth = window.innerWidth), (viewportheight = window.innerHeight);
+}
+
+// IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+else if (
+  typeof document.documentElement != "undefined" &&
+  typeof document.documentElement.clientWidth != "undefined" &&
+  document.documentElement.clientWidth != 0
+) {
+  (viewportwidth = document.documentElement.clientWidth),
+    (viewportheight = document.documentElement.clientHeight);
+}
+
+// older versions of IE
+else {
+  (viewportwidth = document.getElementsByTagName("body")[0].clientWidth),
+    (viewportheight = document.getElementsByTagName("body")[0].clientHeight);
+}
+
 // check if loadedconst loaderpreload = gsap.timeline();
 loaderpreload
   .to(".load-centered-logo", { opacity: 1 })
@@ -44,13 +69,21 @@ function increment() {
     // document.querySelector(".loader").style.display = "none";
 
     // document.querySelector(".body-content").style.display = "block";
+    if (viewportwidth >= 1024) {
+      timeline
+        .to(".load-centered-logo", { opacity: 0, duration: 0.5 })
+        .to(".loader-lines", { opacity: 0, stagger: 0.2 })
+        .to(".loader", { display: "none" });
 
-    timeline
-      .to(".load-centered-logo", { opacity: 0, duration: 0.5 })
-      .to(".loader-lines", { opacity: 0, stagger: 0.2 })
-      .to(".loader", { display: "none" });
+      clearInterval(secondscalc);
+    } else {
+      timeline
+        .to(".load-centered-logo", { opacity: 0, duration: 0.5 })
+        .to(".loader-lines", { opacity: 0 })
+        .to(".loader", { display: "none" });
 
-    clearInterval(secondscalc);
+      clearInterval(secondscalc);
+    }
   }
 }
 
@@ -60,31 +93,6 @@ function loaderdestroy() {
 }
 
 function chechpos(event) {
-  var viewportwidth;
-  var viewportheight;
-
-  // the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
-
-  if (typeof window.innerWidth != "undefined") {
-    (viewportwidth = window.innerWidth), (viewportheight = window.innerHeight);
-  }
-
-  // IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
-  else if (
-    typeof document.documentElement != "undefined" &&
-    typeof document.documentElement.clientWidth != "undefined" &&
-    document.documentElement.clientWidth != 0
-  ) {
-    (viewportwidth = document.documentElement.clientWidth),
-      (viewportheight = document.documentElement.clientHeight);
-  }
-
-  // older versions of IE
-  else {
-    (viewportwidth = document.getElementsByTagName("body")[0].clientWidth),
-      (viewportheight = document.getElementsByTagName("body")[0].clientHeight);
-  }
-
   var x = event.clientX;
   var y = event.clientY;
   var coords = (x / viewportwidth) * 100;
@@ -780,33 +788,48 @@ function menudisappear() {
 
 function openMenu() {
   document.querySelector(".body").style.overflowY = "hidden";
-
-  if (checkopen == true) {
-    menu
-      .to(".card-heading", { opacity: 0 }, "<")
-      .to(".card-p", { opacity: 0 }, "<")
-      .to(".card-close", { opacity: 0 }, "<")
-      .to(".card-inquire", { opacity: 0 }, "<")
-      .to(".card-lines", { opacity: 0, stagger: -0.1 })
-      .to(".card", { display: "none" })
-      .add(() => {
-        oncardtoggle
-          .to("#card-close", { opacity: 0 }, "<")
-          .to("#card-close", { pointerEvents: "none" }, "<")
-          .to(".oncardtoggle", { opacity: 1 })
-          .to(".oncardtoggle", { pointerEvents: "auto" }, "<");
-      })
-      .to(".openMenu", { pointerEvents: "none" })
-      .to(".closeMenu", { pointerEvents: "none" }, "<")
-      .to(".animation-content-2", { opacity: 0 }, "<")
-      .to(".openMenu", { opacity: 0 }, "<")
-      .to(".closeMenu", { opacity: 0 }, "<")
-      .to(".menu", { display: "block" }, "<")
-      .to(".menu-line-items", { opacity: 1, stagger: -0.1 }, "<")
-      .to(".closeMenu", { opacity: 1 })
-      .to(".menu-tab-mob-appear", { opacity: 1 }, "< 0.2")
-      .to(".openMenu", { pointerEvents: "auto" })
-      .to(".closeMenu", { pointerEvents: "auto" }, "<");
+  if (viewportwidth >= 1024) {
+    console.log(viewportwidth);
+    if (checkopen == true) {
+      menu
+        .to(".card-heading", { opacity: 0 }, "<")
+        .to(".card-p", { opacity: 0 }, "<")
+        .to(".card-close", { opacity: 0 }, "<")
+        .to(".card-inquire", { opacity: 0 }, "<")
+        .to(".card-lines", { opacity: 0, stagger: -0.1 })
+        .to(".card", { display: "none" })
+        .add(() => {
+          oncardtoggle
+            .to("#card-close", { opacity: 0 }, "<")
+            .to("#card-close", { pointerEvents: "none" }, "<")
+            .to(".oncardtoggle", { opacity: 1 })
+            .to(".oncardtoggle", { pointerEvents: "auto" }, "<");
+        })
+        .to(".openMenu", { pointerEvents: "none" })
+        .to(".closeMenu", { pointerEvents: "none" }, "<")
+        .to(".animation-content-2", { opacity: 0 }, "<")
+        .to(".openMenu", { opacity: 0 }, "<")
+        .to(".closeMenu", { opacity: 0 }, "<")
+        .to(".menu", { display: "block" }, "<")
+        .to(".menu-line-items", { opacity: 1, stagger: -0.1 }, "<")
+        .to(".closeMenu", { opacity: 1 })
+        .to(".menu-tab-mob-appear", { opacity: 1 }, "< 0.2")
+        .to(".openMenu", { pointerEvents: "auto" })
+        .to(".closeMenu", { pointerEvents: "auto" }, "<");
+    } else {
+      menu
+        .to(".openMenu", { pointerEvents: "none" })
+        .to(".closeMenu", { pointerEvents: "none" }, "<")
+        .to(".animation-content-2", { opacity: 0 }, "<")
+        .to(".openMenu", { opacity: 0 }, "<")
+        .to(".closeMenu", { opacity: 0 }, "<")
+        .to(".menu", { display: "block" }, "<")
+        .to(".menu-line-items", { opacity: 1, stagger: -0.1 }, "<")
+        .to(".closeMenu", { opacity: 1 })
+        .to(".menu-tab-mob-appear", { opacity: 1 }, "< 0.2")
+        .to(".openMenu", { pointerEvents: "auto" })
+        .to(".closeMenu", { pointerEvents: "auto" }, "<");
+    }
   } else {
     menu
       .to(".openMenu", { pointerEvents: "none" })
@@ -815,9 +838,9 @@ function openMenu() {
       .to(".openMenu", { opacity: 0 }, "<")
       .to(".closeMenu", { opacity: 0 }, "<")
       .to(".menu", { display: "block" }, "<")
-      .to(".menu-line-items", { opacity: 1, stagger: -0.1 }, "<")
+      .to(".menu-line-items", { opacity: 1 }, "<")
       .to(".closeMenu", { opacity: 1 })
-      .to(".menu-tab-mob-appear", { opacity: 1 }, "< 0.2")
+      .to(".menu-tab-mob-appear", { opacity: 1 }, "<")
       .to(".openMenu", { pointerEvents: "auto" })
       .to(".closeMenu", { pointerEvents: "auto" }, "<");
   }
@@ -825,16 +848,27 @@ function openMenu() {
 
 function closeMenu() {
   document.querySelector(".body").style.overflowY = "auto";
-
-  menu
-    .to(".openMenu", { pointerEvents: "none" })
-    .to(".closeMenu", { pointerEvents: "none", opacity: 0 }, "<")
-    .to(".menu-tab-mob-appear", { opacity: 0 }, "<")
-    .to(".menu-line-items", { opacity: 0, stagger: 0.2 }, "<")
-    .add(menudisappear)
-    .to(".animation-content-2", { opacity: 1 })
-    .to(".openMenu", { pointerEvents: "auto", opacity: 1 })
-    .to(".closeMenu", { pointerEvents: "auto" }, "<");
+  if (viewportwidth >= 1024) {
+    menu
+      .to(".openMenu", { pointerEvents: "none" })
+      .to(".closeMenu", { pointerEvents: "none", opacity: 0 }, "<")
+      .to(".menu-tab-mob-appear", { opacity: 0 }, "<")
+      .to(".menu-line-items", { opacity: 0, stagger: 0.2 }, "<")
+      .add(menudisappear)
+      .to(".animation-content-2", { opacity: 1 })
+      .to(".openMenu", { pointerEvents: "auto", opacity: 1 })
+      .to(".closeMenu", { pointerEvents: "auto" }, "<");
+  } else {
+    menu
+      .to(".openMenu", { pointerEvents: "none" })
+      .to(".closeMenu", { pointerEvents: "none", opacity: 0 }, "<")
+      .to(".menu-tab-mob-appear", { opacity: 0 }, "<")
+      .to(".menu-line-items", { opacity: 0 }, "<")
+      .add(menudisappear)
+      .to(".animation-content-2", { opacity: 1 })
+      .to(".openMenu", { pointerEvents: "auto", opacity: 1 })
+      .to(".closeMenu", { pointerEvents: "auto" }, "<");
+  }
 }
 
 function project() {

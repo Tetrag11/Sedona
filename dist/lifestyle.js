@@ -1,9 +1,12 @@
 const explore = gsap.timeline();
 
+const inner = gsap.timeline();
+
 let tabcount = 1;
 
 function textSwitch() {
-  if (tabcount <= 5) {
+  gsap.to("#explore", { pointerEvents: "none" });
+  if (tabcount <= 3) {
     tabcount++;
     console.log(tabcount);
     nextSlide(tabcount);
@@ -25,7 +28,8 @@ function nextSlide(tabcount) {
         .to(".exp-4", { opacity: 0 }, "<")
         .to(".exp-5", { opacity: 0 }, "<")
         .to(".exp-6", { opacity: 0 }, "<")
-        .add(changeText(1));
+        .add(changeText(1))
+        .to("#explore", { pointerEvents: "auto" });
       break;
 
     case 2:
@@ -36,7 +40,8 @@ function nextSlide(tabcount) {
         .to(".exp-4", { opacity: 0 }, "<")
         .to(".exp-5", { opacity: 0 }, "<")
         .to(".exp-6", { opacity: 0 }, "<")
-        .add(changeText(2));
+        .add(changeText(2))
+        .to("#explore", { pointerEvents: "auto" });
       break;
     case 3:
       explore
@@ -46,7 +51,8 @@ function nextSlide(tabcount) {
         .to(".exp-4", { opacity: 0 }, "<")
         .to(".exp-5", { opacity: 0 }, "<")
         .to(".exp-6", { opacity: 0 }, "<")
-        .add(changeText(3));
+        .add(changeText(3))
+        .to("#explore", { pointerEvents: "auto" });
       break;
     case 4:
       explore
@@ -56,7 +62,8 @@ function nextSlide(tabcount) {
         .to(".exp-4", { opacity: 1 }, "<")
         .to(".exp-5", { opacity: 0 }, "<")
         .to(".exp-6", { opacity: 0 }, "<")
-        .add(changeText(4));
+        .add(changeText(4))
+        .to("#explore", { pointerEvents: "auto" });
       break;
     case 5:
       explore
@@ -66,7 +73,8 @@ function nextSlide(tabcount) {
         .to(".exp-4", { opacity: 0 }, "<")
         .to(".exp-5", { opacity: 1 }, "<")
         .to(".exp-6", { opacity: 0 }, "<")
-        .add(changeText(5));
+        .add(changeText(5))
+        .to("#explore", { pointerEvents: "auto" });
       break;
     case 6:
       explore
@@ -76,7 +84,8 @@ function nextSlide(tabcount) {
         .to(".exp-4", { opacity: 0 }, "<")
         .to(".exp-5", { opacity: 0 }, "<")
         .to(".exp-6", { opacity: 1 }, "<")
-        .add(changeText(5));
+        .add(changeText(5))
+        .to("#explore", { pointerEvents: "auto" });
       break;
 
     default:

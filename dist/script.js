@@ -55,15 +55,25 @@ function increment() {
     // document.querySelector(".loader").style.display = "none";
 
     document.querySelector(".body-content").style.display = "block";
+    if (viewportwidth >= 1024) {
+      timeline
+        .to(".load-centered-logo", { opacity: 0, duration: 0.5 })
+        .to(".loader-lines", { opacity: 0, stagger: 0.2 })
+        .to(".animation-content-1", { opacity: 1 }, "< 0.8")
+        .to(".loader", { display: "none" })
+        .add(loaderdestroy);
 
-    timeline
-      .to(".load-centered-logo", { opacity: 0, duration: 0.5 })
-      .to(".loader-lines", { opacity: 0, stagger: 0.2 })
-      .to(".animation-content-1", { opacity: 1 }, "< 0.8")
-      .to(".loader", { display: "none" })
-      .add(loaderdestroy);
+      clearInterval(secondscalc);
+    } else {
+      timeline
+        .to(".load-centered-logo", { opacity: 0, duration: 0.5 })
+        .to(".loader-lines", { opacity: 0 })
+        .to(".animation-content-1", { opacity: 1 }, "<")
+        .to(".loader", { display: "none" })
+        .add(loaderdestroy);
 
-    clearInterval(secondscalc);
+      clearInterval(secondscalc);
+    }
   }
 }
 let secondscalc = setInterval(increment, 1000);
@@ -128,33 +138,63 @@ function hide() {
 }
 
 function openMenu() {
-  menu
-    .add(hide)
-    .to(".openMenu", { pointerEvents: "none" })
-    .to(".menu-kill", { display: "none" }, "<")
-    .to(".closeMenu", { pointerEvents: "none" }, "<")
-    .to(".animation-content-2", { opacity: 0 }, "<")
-    .to(".openMenu", { opacity: 0 }, "<")
-    .to(".closeMenu", { opacity: 0 }, "<")
-    .to(".menu", { display: "block" }, "<")
-    .to(".menu-line-items", { opacity: 1, stagger: -0.1 }, "<")
-    .to(".closeMenu", { opacity: 1 })
-    .to(".menu-tab-mob-appear", { opacity: 1 }, "< 0.2")
-    .to(".openMenu", { pointerEvents: "auto" })
-    .to(".closeMenu", { pointerEvents: "auto" }, "<");
+  if (viewportwidth >= 1024) {
+    menu
+      .add(hide)
+      .to(".openMenu", { pointerEvents: "none" })
+      .to(".menu-kill", { display: "none" }, "<")
+      .to(".closeMenu", { pointerEvents: "none" }, "<")
+      .to(".animation-content-2", { opacity: 0 }, "<")
+      .to(".openMenu", { opacity: 0 }, "<")
+      .to(".closeMenu", { opacity: 0 }, "<")
+      .to(".menu", { display: "block" }, "<")
+      .to(".menu-line-items", { opacity: 1, stagger: -0.1 }, "<")
+      .to(".closeMenu", { opacity: 1 })
+      .to(".menu-tab-mob-appear", { opacity: 1 }, "< 0.2")
+      .to(".openMenu", { pointerEvents: "auto" })
+      .to(".closeMenu", { pointerEvents: "auto" }, "<");
+  } else {
+    menu
+      .add(hide)
+      .to(".openMenu", { pointerEvents: "none" })
+      .to(".menu-kill", { display: "none" }, "<")
+      .to(".closeMenu", { pointerEvents: "none" }, "<")
+      .to(".animation-content-2", { opacity: 0 }, "<")
+      .to(".openMenu", { opacity: 0 }, "<")
+      .to(".closeMenu", { opacity: 0 }, "<")
+      .to(".menu", { display: "block" }, "<")
+      .to(".menu-line-items", { opacity: 1 }, "<")
+      .to(".closeMenu", { opacity: 1 })
+      .to(".menu-tab-mob-appear", { opacity: 1 }, "< ")
+      .to(".openMenu", { pointerEvents: "auto" })
+      .to(".closeMenu", { pointerEvents: "auto" }, "<");
+  }
 }
 
 function closeMenu() {
-  menu
-    .to(".openMenu", { pointerEvents: "none" })
-    .to(".closeMenu", { pointerEvents: "none", opacity: 0 }, "<")
-    .to(".menu-tab-mob-appear", { opacity: 0 }, "<")
-    .to(".menu-line-items", { opacity: 0, stagger: 0.2 }, "<")
-    .add(menudisappear)
-    .to(".animation-content-2", { opacity: 1 })
-    .to(".openMenu", { pointerEvents: "auto", opacity: 1 })
-    .to(".menu-kill", { display: "block" }, "<")
-    .to(".closeMenu", { pointerEvents: "auto" }, "<");
+  if (viewportwidth >= 1024) {
+    menu
+      .to(".openMenu", { pointerEvents: "none" })
+      .to(".closeMenu", { pointerEvents: "none", opacity: 0 }, "<")
+      .to(".menu-tab-mob-appear", { opacity: 0 }, "<")
+      .to(".menu-line-items", { opacity: 0, stagger: 0.2 }, "<")
+      .add(menudisappear)
+      .to(".animation-content-2", { opacity: 1 })
+      .to(".openMenu", { pointerEvents: "auto", opacity: 1 })
+      .to(".menu-kill", { display: "block" }, "<")
+      .to(".closeMenu", { pointerEvents: "auto" }, "<");
+  } else {
+    menu
+      .to(".openMenu", { pointerEvents: "none" })
+      .to(".closeMenu", { pointerEvents: "none", opacity: 0 }, "<")
+      .to(".menu-tab-mob-appear", { opacity: 0 }, "<")
+      .to(".menu-line-items", { opacity: 0 }, "<")
+      .add(menudisappear)
+      .to(".animation-content-2", { opacity: 1 })
+      .to(".openMenu", { pointerEvents: "auto", opacity: 1 })
+      .to(".menu-kill", { display: "block" }, "<")
+      .to(".closeMenu", { pointerEvents: "auto" }, "<");
+  }
 }
 
 function project() {
