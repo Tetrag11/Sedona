@@ -30,7 +30,7 @@
   }
 }
 
-@media only screen and (max-height: 650px) {
+@media only screen and (max-height: 500px) {
   .header,
   .header-back-image,
   .navbar-lines,
