@@ -1,0 +1,148 @@
+body,
+.nav-line-left,
+.nav-line-right {
+  background-color: #1a1e10 !important;
+}
+
+.loader {
+  max-width: 100vw !important;
+  left: 0;
+  /* background: linear-gradient(243.18deg, #2b3c1f 0%, #6a7736 100%) !important; */
+}
+.loader-lines {
+  background: #5a6351 !important;
+}
+
+.section-heading,
+.section-sub-heading,
+.section-heading-tab,
+.section-sub-heading-tab,
+.section-heading-alternate,
+.section-heading-tab-alternate,
+.section-heading-web {
+  color: #1a1e10 !important;
+}
+.section-1 .section-p-tab-alternate,
+.section-4 .section-p-tab-alternate {
+  color: #2f2f2f !important;
+}
+
+.section-2,
+.section-3,
+.section-4,
+.section-5,
+.section-5-half {
+  background-color: white !important;
+}
+
+.section-3 .section-p-web,
+.section-4 .section-p-web,
+.section-5 .section-p-web,
+.section-5-half .section-p-web {
+  color: #2f2f2f !important;
+}
+
+/* map */
+
+.map {
+  height: 100vh;
+  width: 100%;
+}
+
+.lot-text {
+  font-size: 30px;
+  line-height: 70px;
+  font-weight: 400;
+  font-family: Federo;
+}
+
+.map-images img {
+  width: 110vw;
+  height: 100vh;
+  max-width: 110vw !important;
+  object-fit: cover;
+  object-position: center center;
+}
+.tab-showing-text {
+  display: none;
+}
+
+.hover-1:hover .map-images img {
+  display: none;
+}
+.banner {
+  width: 90vw !important;
+  height: 100px;
+  background-color: black;
+  grid-template-columns: 1fr 2fr;
+  color: white;
+  transition: opacity 3s ease;
+}
+.map-mobile-tab-ac {
+  display: none;
+}
+.map-mobile-tab-ac a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 25px;
+}
+.padding-x-5 {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.section-6 .section-heading,
+.section-6 .section-sub-heading,
+.section-6 .section-heading-tab,
+.section-6 .section-sub-heading-tab,
+.section-6 .section-heading-alternate,
+.section-6 .section-heading-tab-alternate,
+.section-6 .section-heading-web,
+.section-6 .section-p-web,
+.section-6 .section-p-alternate,
+.section-6 .section-p-tab-alternate,
+.section-6 i,
+.section-6 .section-p-tab,
+.section-6 .section-p {
+  color: white !important;
+}
+
+.section-6 {
+  background-color: #1a1e10;
+}
+
+.footer {
+  background-color: #1a1e10 !important;
+}
+
+.footer * {
+  color: white;
+}
+
+.lifestylevid {
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .map-mobile-tab-ac {
+    display: block;
+  }
+  .map-images img {
+    object-position: left center;
+  }
+  .web-showing-text {
+    display: none;
+  }
+  .tab-showing-text {
+    display: block;
+  }
+
+  .tab-modify {
+    justify-content: start;
+    align-items: center;
+    margin-left: 10%;
+  }
+}

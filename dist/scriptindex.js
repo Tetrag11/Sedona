@@ -126,7 +126,7 @@ function exitAnimation() {
 }
 
 function redirect() {
-  location.replace("./map.html");
+  location.replace("./project.html");
 }
 
 // menu
@@ -202,7 +202,7 @@ function closeMenu() {
 
 function project(x) {
   function projectL() {
-    location.replace("./map.html");
+    location.replace("./project.html");
   }
   if (x == 0) {
     if (viewportwidth >= 1024) {

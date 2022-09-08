@@ -1043,7 +1043,7 @@ function nextLotTab() {
   if (tabcount < 4) {
     tabcount++;
     direction = "forwards";
-    nextMap(tabcount, direction);
+    nextMap(tabcount);
   }
 }
 
@@ -1051,11 +1051,11 @@ function prevLotTab() {
   if (tabcount > 1) {
     tabcount = tabcount - 1;
     direction = "backwards";
-    nextMap(tabcount, direction);
+    nextMap(tabcount);
   }
 }
 
-function nextMap(tabcount, direction) {
+function nextMap(tabcount) {
   switch (tabcount) {
     case 1:
       mobiletabmapmove

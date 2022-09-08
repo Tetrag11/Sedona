@@ -93,8 +93,32 @@ body,
 
 .section-5 {
   background-color: white;
+  overflow: hidden;
 }
 
+.section-5 img {
+  width: 322px;
+  position: relative;
+  z-index: 1;
+}
+
+.section-5 .colorchange {
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+}
+.section-5 .colorchange div {
+  background-color: #055c62;
+  translate: 0 50%;
+  z-index: 0;
+}
+.section-5 .tab-image .color {
+  background-color: #055c62;
+  translate: 0 50%;
+}
+.web-5-img {
+  width: 100% !important;
+}
 .section-6 {
   background-color: #055c62;
 }

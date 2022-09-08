@@ -117,6 +117,16 @@ body,
 .section-2-half .section-heading-web {
   color: #423119 !important;
 }
+.section-3-before .section-heading-alternate,
+.section-3-before .section-heading-tab-alternate,
+.section-3-before .section-p-tab-alternate,
+.section-3-before .section-heading-web {
+  color: #423119 !important;
+}
+
+.section-3-before {
+  background-color: white !important;
+}
 
 .section-3 h1,
 .section-3 p,

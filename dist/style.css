@@ -514,10 +514,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
-.top-0 {
-  top: 0px;
-}
-
 .z-40 {
   z-index: 40;
 }
@@ -625,20 +621,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.75rem;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
 .mt-10 {
   margin-top: 2.5rem;
 }
 
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .mt-2 {
@@ -783,10 +779,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   overflow-x: hidden;
 }
 
-.overflow-y-hidden {
-  overflow-y: hidden;
-}
-
 .border-x {
   border-left-width: 1px;
   border-right-width: 1px;
@@ -866,6 +858,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.py-40 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .pr-2 {
@@ -974,6 +971,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:grid {
     display: grid;
   }

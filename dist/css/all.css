@@ -574,6 +574,10 @@ body {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+.fc-img {
+  max-height: 800px !important;
+  width: 100%;
+}
 
 @media (min-width: 700px) {
   .tab-paragraph h1 {

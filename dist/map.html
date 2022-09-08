@@ -23,7 +23,9 @@
     <title>Map</title>
 </head>
 
-<body class="body w-full h-full overflow-x-hidden overflow-y-hidden">
+</head>
+
+<body class="body w-full h-full overflow-x-hidden ">
 
     <!-- layer parent -->
     <div class="layer-parent w-full h-full relative">
@@ -246,12 +248,13 @@
         <!-- content -->
         <div class="content absolute w-full  z-20">
 
+
             <!-- Content-wrapper -->
             <div class="content-wrapper relative w-full h-full">
 
 
                 <!-- web -->
-                <div class="web-content relative w-full h-full  lg:grid grid-cols-1 hidden overflow-y-hidden">
+                <div class="web-content relative w-full h-full  lg:grid grid-cols-1 hidden ">
 
                     <!-- card -->
                     <div class="card self-end justify-self-end z-50 absolute hidden">
@@ -435,7 +438,7 @@
                 </div>
 
                 <!-- Mobile -->
-                <div class="mobile-content relative w-full h-full  grid grid-cols-1 sm:hidden overflow-y-hidden">
+                <div class="mobile-content relative w-full h-full  grid grid-cols-1 sm:hidden ">
 
                     <!-- mobilelines -->
                     <div class="mobile-lines absolute z-40 w-full h-full grid grid-cols-1">
@@ -524,7 +527,7 @@
                 </div>
 
                 <!-- tab -->
-                <div class="tab-content relative w-full h-full hidden sm:block lg:hidden overflow-y-hidden">
+                <div class="tab-content relative w-full h-full hidden sm:block lg:hidden ">
 
                     <!-- tab lines -->
                     <div class="tab-lines absolute z-40 w-full h-full grid grid-cols-2">
@@ -578,11 +581,12 @@
                                         href="javascript:void(0)"><img src="./images/Group 31.png" alt=""></a>
                                 </div>
                                 <div class="flex appear-w-c-tab justify-between w-full h-fit mb-5 padding-x-5">
+                                    <a class="lotbtn-tab next" onclick="nextLotTab()" href="javascript:void(0)">Next
+                                        Lot</a>
                                     <a class="lotbtn-tab opacity-0 pointer-events-none prev" onclick="prevLotTab()"
                                         href="javascript:void(0)">Previous
                                         Lot</a>
-                                    <a class="lotbtn-tab next" onclick="nextLotTab()" href="javascript:void(0)">Next
-                                        Lot</a>
+
                                 </div>
                             </div>
 
@@ -623,9 +627,330 @@
 
 
 
+                <!-- section-4 -->
+                <div class="section-4 w-full h-full relative  menu-kill">
 
+                    <!-- mobile -->
+                    <div class="sm:hidden grid w-full h-screen section-height-control relative">
+                        <div class="absolute w-full h-full -z-10 border-x border-white border-opacity-10 m-5-percent">
+                        </div>
+                        <!-- content parent -->
+                        <div class="w-full h-full grid section-4-mobile-grid">
+
+                            <!-- blue-section -->
+                            <div class="w-full h-full grid items-center">
+                                <div>
+                                    <h1 class="section-heading-alternate p-5-percent c">AN EXCESS OF TREATS <br>
+                                        AWAITS YOU CLOSE BY</h1>
+                                </div>
+                            </div>
+
+                            <!-- img -->
+                            <div class="relative">
+                                <div class="section-2-img w-full h-full absolute z-0">
+                                    <div class="w-full h-full relative">
+
+                                        <img class="section-2-img-web absolute exp-1 z-20 w-full h-full "
+                                            src="images/shainee-fernando-RdZ6t41NmE0-unsplash(2).jpg" alt="">
+                                        <img class="section-2-img-web absolute exp-2 z-20 w-full h-full opacity-0"
+                                            src="images/eirik-skarstein-7CsKioF9O6g-unsplash(1)(1).jpg" alt="">
+                                        <img class="section-2-img-web absolute exp-3 z-20 w-full h-full opacity-0"
+                                            src="images/apostolos-vamvouras-k9x2sIOrbf4-unsplash(1).jpg" alt="">
+                                        <img class="section-2-img-web absolute exp-4 z-20 w-full h-full opacity-0"
+                                            src="images/deleece-cook-JnfFsMBwe2A-unsplash(1).jpg" alt="">
+                                    </div>
+                                </div>
+                                <div
+                                    class="w-full h-full grid m-5-percent items-end absolute z-10 border-x border-white border-opacity-10 ">
+                                    <p class="section-p-alternate pb-10 c exploretextswitch">30 minutes to Heritage
+                                        Galle Fort, an eclectic
+                                        fusion <br>
+                                        of history and modern life with a hint of nostalgia <br>
+                                        of an era gone by.</p>
+                                </div>
+                            </div>
+
+                            <!-- explore more -->
+                            <a href="javascript:void(0)" onclick="textSwitch()" id="explore"
+                                class="section-p-alternate py-5 p-5-percent text-right c">Explore more</a>
+                        </div>
+                    </div>
+
+                    <!-- tab -->
+                    <div class="hidden sm:grid lg:hidden w-full h-full  relative">
+                        <!-- lines -->
+                        <div class="absolute w-full h-full grid grid-cols-2 limit-w-absolute">
+                            <div class="border-x border-white border-opacity-10 border-r-0"></div>
+                            <div class="border-x border-white border-l-0 border-opacity-10"></div>
+                        </div>
+                        <!-- lay-out -->
+                        <div class="w-full h-screen section-height-control grid grid-cols-2 ">
+                            <div></div>
+                            <div class="w-full relative section-2-img ">
+                                <img class="section-2-img-web absolute exp-1 z-20 w-full h-full "
+                                    src="images/shainee-fernando-RdZ6t41NmE0-unsplash(2).jpg" alt="">
+                                <img class="section-2-img-web absolute exp-2 z-20 w-full h-full opacity-0"
+                                    src="images/eirik-skarstein-7CsKioF9O6g-unsplash(1)(1).jpg" alt="">
+                                <img class="section-2-img-web absolute exp-3 z-20 w-full h-full opacity-0"
+                                    src="images/apostolos-vamvouras-k9x2sIOrbf4-unsplash(1).jpg" alt="">
+                                <img class="section-2-img-web absolute exp-4 z-20 w-full h-full opacity-0"
+                                    src="images/deleece-cook-JnfFsMBwe2A-unsplash(1).jpg" alt="">
+                                <div class="w-full h-full grid m-5-percent items-center justify-center absolute z-50 ">
+                                    <a href="javascript:void(0)" onclick="textSwitch()" id="explore"
+                                        class="section-p-tab-alternate c">Explore
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- content -->
+                        <div class="w-full h-screen section-height-control absolute limit-w-absolute z-40 ">
+                            <div class="w-full h-full grid section-2-content-tab ">
+
+                                <h1 class="section-heading-tab-alternate mt-10 c ">BUILD YOUR DREAM<br> WITH YOUR MIND
+                                    AT PEACE
+                                </h1>
+                                <p class="section-p-tab-alternate mb-10 self-end c exploretextswitch">30 minutes to
+                                    Heritage Galle Fort, an
+                                    eclectic fusion
+                                    <br>
+                                    of history and modern life with a hint of nostalgia<br>
+                                    of an era gone by. </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- web -->
+                    <div class="hidden lg:grid  w-full h-screen section-height-control relative limit-w ">
+                        <!-- lay-out -->
+                        <div class="w-full h-full section-2-web-layout grid grid-cols-4">
+                            <div class="border-x border-white border-opacity-10 border-r-0"></div>
+                            <div class="border-x border-white border-opacity-10 border-r-0"></div>
+                            <div class="w-full h-screen section-height-control relative  section-2-img">
+                                <img class="section-2-img-web absolute exp-1 z-20 w-full h-full "
+                                    src="images/shainee-fernando-RdZ6t41NmE0-unsplash(2).jpg" alt="">
+                                <img class="section-2-img-web absolute exp-2 z-20 w-full h-full opacity-0"
+                                    src="images/eirik-skarstein-7CsKioF9O6g-unsplash(1)(1).jpg" alt="">
+                                <img class="section-2-img-web absolute exp-3 z-20 w-full h-full opacity-0"
+                                    src="images/apostolos-vamvouras-k9x2sIOrbf4-unsplash(1).jpg" alt="">
+                                <img class="section-2-img-web absolute exp-4 z-20 w-full h-full opacity-0"
+                                    src="images/deleece-cook-JnfFsMBwe2A-unsplash(1).jpg" alt="">
+                            </div>
+                            <div class="border-x border-white border-opacity-10 border-l-0"></div>
+                        </div>
+                        <!-- content -->
+                        <div class="w-full h-full  absolute ">
+                            <div class="w-full h-full grid section-2-content-web">
+                                <div class="grid">
+                                    <p class="section-heading-web mt-10 c">AN EXCESS OF TREATS <br>
+                                        AWAITS YOU CLOSE BY
+                                    </p>
+                                    <div class="w-full grid grid-cols-4 self-center">
+                                        <div class="col-span-3"></div>
+                                        <div class="text-center">
+                                            <a href="javascript:void(0)" onclick="textSwitch()" id="explore"
+                                                class="section-p-web c">Explore
+                                                More</a>
+                                        </div>
+                                    </div>
+                                    <p class="section-p-web mb-10  self-end c exploretextswitch"><br><br>30 minutes to
+                                        Heritage Galle
+                                        Fort, an
+                                        eclectic fusion <br>
+                                        of history and modern life with a hint of nostalgia <br>
+                                        of an era gone by. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
+
+        </div>
+        <!-- section-1 -->
+        <div class="section-1 w-full h-full relative menu-kill">
+
+            <!-- mobile -->
+            <div class="sm:hidden grid w-full  items-center  limit-w border-x border-black border-opacity-10">
+                <div class="grid ">
+                    <div class="mt-20 grid cd opacity-0">
+                        <h1 class="section-heading-alternate">
+                            AN IDEA BROUGHT TO LIFE
+                        </h1>
+
+                        <p class="section-p-alternate pt-5">During her time in Southern California, Carlita Weerasinha
+                            was
+                            part of the team which successfully secured approval for a $500 million resort through the
+                            implementaion of a public relations plan, including development of publicity material, for
+                            the
+                            California Mirage Resorts Monarch Bay Club and Monarch Beach Golf Links, to the St. Regis
+                            Monarch
+                            Beach Resort.
+                        </p>
+                        <p class="section-p-alternate mt-5">She subsequently moved to Australia, living in Queensland
+                            and then
+                            Tasmania, where she stayed and worked for over 20 years as a Liaison person for the
+                            Directors of
+                            one of the largest property developers in Tasmania. She managed special projects including
+                            the
+                            management of six shopping centers which were located in Tasmania and Newcastle</p>
+                        <p class="section-p-alternate mt-5">Among her significant achievements included the organising
+                            of an
+                            event in honour of Fred Chaney, the former Deputy Leader of the Liberal Party of Australia,
+                            managing the opening of McDonald’s in New Norfolk, Tasmania and annually oversaw and managed
+                            the
+                            famed Christmas Lights Switch-On at Waratah Village in Newcastle which had a budget of over
+                            $3
+                            million, for one of New South Wales’ best performing shopping centers. </p>
+                        <p class="section-p-alternate mt-5">Carlita’s ensuing and transient move from Australia to Sri
+                            Lanka,
+                            resulted in a significant change to her professional outlook, as she saw the prospect for
+                            growth,
+                            expansion and investment in the local property sector. Being involved in a completely
+                            different and
+                            challenging business environment will augment her already extensive experience in the
+                            Property
+                            Development Sector, when she returns to Australia. </p>
+                        <p class="section-p-alternate mt-5">The opportunity that was presented was transformed into the
+                            6-acre
+                            Sedona Canyon Estate, which was fittingly named after her fondness for the beauiful Sedona
+                            in
+                            Arizona, USA. The first home that is being built on Sedona Canyon Estate is Phoenix
+                            Residence,
+                            which is due for completion on in November of 2022. Her decision to join with Shak*cola was
+                            to work
+                            with the best of the best Project Management and Design company in Sri Lanka.</p>
+
+                        <img src="./images/carlita-bio-image.png" class="bio-img-mobile my-20 justify-self-center "
+                            alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- tab -->
+            <div class="hidden sm:grid lg:hidden w-full items-center  relative limit-w tab-max-width">
+                <!-- lines -->
+                <div class="absolute w-full h-full grid grid-cols-2">
+                    <div class=""></div>
+                    <div class="border-x border-black border-opacity-10 border-r-0"></div>
+                </div>
+                <!-- content -->
+                <div class="grid">
+                    <div class="grid grid-cols-4 mt-20">
+                        <h1 class="section-heading-tab-alternate col-span-4 cd opacity-0">
+                            AN IDEA BROUGHT TO LIFE
+                        </h1>
+                        <p class="section-p-tab-alternate pt-5 col-span-4 cd opacity-0">During her time in Southern
+                            California, Carlita
+                            Weerasinha was part of the team which successfully secured approval for a $500 million
+                            resort
+                            through the implementaion of a public relations plan, including development of publicity
+                            material,
+                            for the California Mirage Resorts Monarch Bay Club and Monarch Beach Golf Links, to the St.
+                            Regis
+                            Monarch Beach Resort. She subsequently moved to Australia, living in Queensland and then
+                            Tasmania,
+                            where she stayed and worked for over 20 years as a Liaison person for the Directors of one
+                            of the
+                            largest property developers in Tasmania. She managed special projects including the
+                            management of
+                            six shopping centers which were located in Tasmania and Newcastle. Among her significant
+                            achievements included the organising of an event in honour of Fred Chaney, the former Deputy
+                            Leader
+                            of the Liberal Party of Australia, managing the opening of McDonald’s in New Norfolk,
+                            Tasmania and
+                            annually oversaw and managed the famed Christmas Lights Switch-On at Waratah Village in
+                            Newcastle
+                            which had a budget of over $3 million, for one of New South Wales’ best performing shopping
+                            centers. Carlita’s ensuing and transient move from Australia to Sri Lanka, resulted in a
+                            significant change to her professional outlook, as she saw the prospect for growth,
+                            expansion and
+                            investment in the local property sector. Being involved in a completely different and
+                            challenging
+                            business environment will augment her already extensive experience in the Property
+                            Development
+                            Sector, when she returns to Australia. The opportunity that was presented was transformed
+                            into the
+                            6-acre Sedona Canyon Estate, which was fittingly named after her fondness for the beauiful
+                            Sedona
+                            in Arizona, USA. The first home that is being built on Sedona Canyon Estate is Phoenix
+                            Residence,
+                            which is due for completion on in November of 2022. Her decision to join with Shak*cola was
+                            to work
+                            with the best of the best Project Management and Design company in Sri Lanka.</p>
+                        <img src="./images/carlita-bio-image.png" class="bio-img-tab my-20 " alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- web -->
+            <div class="hidden lg:grid w-full items-center  relative limit-w">
+                <!-- lines -->
+                <div class="absolute w-full h-full grid grid-cols-4">
+                    <div class="border-x border-black border-opacity-10 border-r-0"></div>
+                    <div class="border-x border-black border-opacity-10 border-r-0"></div>
+                    <div class="border-x border-black border-opacity-10 border-r-0"></div>
+                    <div class="border-x border-black border-opacity-10"></div>
+                </div>
+                <!-- content -->
+                <div class="grid w-full grid-cols-4 mt-40">
+                    <div></div>
+                    <div class="col-span-3 ">
+                        <h1 class="section-heading-web cd opacity-0">
+                            AN IDEA BROUGHT TO LIFE
+                        </h1>
+                        <p class="section-p-web pt-5 cd opacity-0"> During her time in Southern California, Carlita
+                            Weerasinha was part
+                            of
+                            the team which successfully secured approval for a $500 million resort through the
+                            implementaion of
+                            a public relations plan, including development of publicity material, for the California
+                            Mirage
+                            Resorts Monarch Bay Club and Monarch Beach Golf Links, to the St. Regis Monarch Beach
+                            Resort. She
+                            subsequently moved to Australia, living in Queensland and then Tasmania, where she stayed
+                            and
+                            worked for over 20 years as a Liaison person for the Directors of one of the largest
+                            property
+                            developers in Tasmania. She managed special projects including the management of six
+                            shopping
+                            centers which were located in Tasmania and Newcastle. Among her significant achievements
+                            included
+                            the organising of an event in honour of Fred Chaney, the former Deputy Leader of the Liberal
+                            Party
+                            of Australia, managing the opening of McDonald’s in New Norfolk, Tasmania and annually
+                            oversaw and
+                            managed the famed Christmas Lights Switch-On at Waratah Village in Newcastle which had a
+                            budget of
+                            over $3 million, for one of New South Wales’ best performing shopping centers. Carlita’s
+                            ensuing
+                            and transient move from Australia to
+                            Sri Lanka, resulted in a significant change to her professional outlook, as she saw the
+                            prospect
+                            for growth, expansion and investment in the local property sector. Being involved in a
+                            completely
+                            different and challenging business environment will augment her already extensive experience
+                            in the
+                            Property Development Sector, when she returns to Australia. The opportunity that was
+                            presented was
+                            transformed into the 6-acre Sedona Canyon Estate, which was fittingly named after her
+                            fondness for
+                            the beauiful Sedona in Arizona, USA. The first home that is being built on Sedona Canyon
+                            Estate is
+                            Phoenix Residence, which is due for completion on in November of 2022. Her decision to join
+                            with
+                            Shak*cola was to work with the best of the best Project Management and Design company in Sri
+                            Lanka.
+                        </p>
+                        <img src="./images/carlita-bio-image.png" class="bio-img-web mt-20 mb-40 " alt="">
+                    </div>
+                </div>
+            </div>
+
 
         </div>
 
