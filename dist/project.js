@@ -66,9 +66,9 @@ function nextMap(tabcount) {
       mobiletabmapmove
         .to(".prev", { opacity: 1, pointerEvents: "auto" })
         .to(".next", { opacity: 0, pointerEvents: "none" }, "<")
-        .to(".lot0", { objectPosition: "100% 50%", duration: 1 }, "<")
-        .to(".lot1", { objectPosition: "100% 50%", duration: 1 }, "<")
-        .to(".lot2", { objectPosition: "100% 50%", duration: 1 }, "<")
+        .to(".lot0", { objectPosition: "70% 50%", duration: 1 }, "<")
+        .to(".lot1", { objectPosition: "70% 50%", duration: 1 }, "<")
+        .to(".lot2", { objectPosition: "70% 50%", duration: 1 }, "<")
         .add(changetext2);
 
       document.querySelector(".lot0").style.opacity = 0;

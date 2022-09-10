@@ -30,7 +30,8 @@ body,
 .section-2 .section-heading-alternate,
 .section-2 .section-heading-tab-alternate,
 .section-2 .section-heading-web,
-.section-2 .section-p-web {
+.section-2 .section-p-web,
+.section-2 .section-p-alternate {
   color: white !important;
 }
 
