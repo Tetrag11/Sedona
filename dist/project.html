@@ -22,7 +22,7 @@
     <script src="project.js" defer></script>
 
 
-    <title>Lifestyle</title>
+    <title>Project</title>
 </head>
 
 <body class="body overflow-x-hidden">
@@ -448,73 +448,38 @@
             </div>
         </div>
 
-        <!-- map -->
-        <div class="map w-full h-full relative overflow-hidden menu-kill">
-            <div class="hover w-full h-full absolute z-40 grid grid-cols-2 web-showing-text"
-                onmouseenter="killBanner()">
-                <div onmouseover="movemap1()"></div>
-                <div onmouseover="movemap2()"></div>
-            </div>
-            <!-- text -->
-            <div class="map-text w-full h-full absolute z-30">
-                <div class="w-full h-full grid grid-cols-2">
-                    <div
-                        class="flex justify-center lines border-x border-white border-opacity-10 border-l-0 tab-modify">
-                        <h1 class="mt-20 lot-text web-showing-text">LOT 02</h1>
-                        <h1 class="mt-20 lot-text tab-showing-text">LOT 02</h1>
-                    </div>
-                    <div class="flex justify-center">
-                        <h1 class="mt-20 lot-text web-showing-text">LOT 07</h1>
-
-                    </div>
+        <!-- section-2 -->
+        <div class="section-2 w-full h-full relative menu-kill ">
+            <!-- mobile -->
+            <!-- <div class="sm:hidden  w-full h-full limit-w border-x border-black border-opacity-10">
+                <div class="w-full flex justify-end ">
+                    <h3 class="c section-p py-3">A bird eye view of the property</h3>
                 </div>
-            </div>
-            <!-- images -->
-            <div class="map-images w-full h-full absolute z-10">
-                <div class="relative w-full h-full">
-                    <img src="images/MAPFINAL(2)(1).jpg" class="absolute z-40 lot0">
-                    <img src="images/MAPLOT2(1).jpg" class=" opacity-0 absolute z-30 lot1">
-                    <img src="images/MAPLOT4(1).jpg" class=" opacity-0 absolute z-10 lot2">
-                </div>
-            </div>
-
-
-            <!-- web-banner -->
-            <div class="map-web-banner w-full h-full absolute z-20 web-showing-text">
-                <div class="grid w-full h-full justify-center items-end pb-20">
-                    <div class="banner grid">
-                        <div class="grid items-center">
-                            <h1 class="heading ml-5">EXPLORE</h1>
-                        </div>
-                        <div class="grid items-center justify-end mr-5">
-                            <p class="text">Hover above to locate the last two remaining land plots</p>
-                        </div>
-
+            </div> -->
+            <!-- tab -->
+            <!-- <div class="hidden sm:block lg:hidden w-full h-full limit-w tab-max-width">
+                <div class="grid grid-cols-2 w-full h-full">
+                    <div>
+                        <h3 class="c section-p-tab py-3">A bird eye view of the property</h3>
                     </div>
+                    <div class="border-x border-black border-opacity-10 border-r-0"></div>
                 </div>
-            </div>
-
-            <!-- tab-mobile-action-control -->
-            <div class="map-mobile-tab-ac w-full h-full absolute z-50  ">
-                <div class="flex w-full h-full  items-end ">
-
-
-                    <div class="grid grid-cols-2 w-full bg-black padding-x-5">
-
-
-                        <div class="lines border-x border-white border-opacity-10 border-r-0 py-10">
-
-                            <a href="javascript:void(0)" class="prev opacity-0" onclick="prevLotTab()">Previous Lot</a>
-                        </div>
-                        <div class="lines border-x border-white border-opacity-10 flex justify-end py-10">
-                            <a href="javascript:void(0)" class="next" onclick="nextLotTab()">Next Lot</a>
-                        </div>
+            </div> -->
+            <!-- web -->
+            <!-- <div class="hidden lg:grid w-full h-full limit-w ">
+                <div class="grid grid-cols-4 w-full h-full">
+                    <div class="border-x border-black border-opacity-10 border-r-0">
+                        <h3 class="c section-p-web py-3">A bird eye view of the property</h3>
                     </div>
-
+                    <div class="border-x border-black border-opacity-10 border-r-0"></div>
+                    <div class="border-x border-black border-opacity-10 border-r-0"></div>
+                    <div class="border-x border-black border-opacity-10"></div>
                 </div>
-            </div>
-
+            </div> -->
+            <img src="./images/Sedona view by DC(1)(5) 3.png" alt="" class="w-full fc-img">
         </div>
+
+
         <!-- section-1 -->
         <div class="section-1 w-full h-full relative menu-kill">
 
@@ -601,36 +566,7 @@
 
         </div>
 
-        <!-- section-2 -->
-        <div class="section-2 w-full h-full relative menu-kill ">
-            <!-- mobile -->
-            <div class="sm:hidden  w-full h-full limit-w border-x border-black border-opacity-10">
-                <div class="w-full flex justify-end ">
-                    <h3 class="c section-p py-3">A bird eye view of the property</h3>
-                </div>
-            </div>
-            <!-- tab -->
-            <div class="hidden sm:block lg:hidden w-full h-full limit-w tab-max-width">
-                <div class="grid grid-cols-2 w-full h-full">
-                    <div>
-                        <h3 class="c section-p-tab py-3">A bird eye view of the property</h3>
-                    </div>
-                    <div class="border-x border-black border-opacity-10 border-r-0"></div>
-                </div>
-            </div>
-            <!-- web -->
-            <div class="hidden lg:grid w-full h-full limit-w ">
-                <div class="grid grid-cols-4 w-full h-full">
-                    <div class="border-x border-black border-opacity-10 border-r-0">
-                        <h3 class="c section-p-web py-3">A bird eye view of the property</h3>
-                    </div>
-                    <div class="border-x border-black border-opacity-10 border-r-0"></div>
-                    <div class="border-x border-black border-opacity-10 border-r-0"></div>
-                    <div class="border-x border-black border-opacity-10"></div>
-                </div>
-            </div>
-            <img src="./images/Sedona view by DC(1)(5) 3.png" alt="" class="w-full fc-img">
-        </div>
+
 
         <!-- section-3 -->
         <div class="section-3 w-full h-full relative menu-kill ">
@@ -932,8 +868,8 @@
                     <!-- mt-20 -->
                     <div class="col-span-2 grid items-end ">
                         <div class="">
-                            <p class="section-p credentials">© Sedona Canyon Estate 2021</p>
-                            <p class="mt-2 section-p credentials">Website by ZETKYA</p>
+                            <p class="section-p credentials">© Sedona Canyon Estate</p>
+                            <p class="mt-2 section-p credentials">Website by Saytoo Media</p>
                         </div>
                     </div>
                 </div>
@@ -970,8 +906,8 @@
                     <!-- mt-20 -->
                     <div class="col-span-2 grid items-end ">
                         <div class="">
-                            <p class="section-p-tab credentials">© Sedona Canyon Estate 2021</p>
-                            <p class="mt-2 section-p-tab credentials">Website by ZETKYA</p>
+                            <p class="section-p-tab credentials">© Sedona Canyon Estate</p>
+                            <p class="mt-2 section-p-tab credentials">Website by Saytoo Media</p>
                         </div>
                     </div>
                 </div>
@@ -1007,8 +943,8 @@
                     </div>
                     <div>
                         <div class="">
-                            <p class="section-p-web credentials">© Sedona Canyon Estate 2021</p>
-                            <p class="mt-2 section-p-web credentials">Website by ZETKYA</p>
+                            <p class="section-p-web credentials">© Sedona Canyon Estate</p>
+                            <p class="mt-2 section-p-web credentials">Website by Saytoo Media</p>
                         </div>
                     </div>
                 </div>

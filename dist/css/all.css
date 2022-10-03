@@ -577,6 +577,8 @@ body {
 .fc-img {
   max-height: 800px !important;
   width: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 
 @media (min-width: 700px) {
