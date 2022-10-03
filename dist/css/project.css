@@ -1,7 +1,7 @@
 body,
 .nav-line-left,
 .nav-line-right {
-  background-color: #1a1e10 !important;
+  background-color: #294f3c !important;
 }
 
 .loader {
@@ -20,7 +20,7 @@ body,
 .section-heading-alternate,
 .section-heading-tab-alternate,
 .section-heading-web {
-  color: #1a1e10 !important;
+  color: #294f3c !important;
 }
 .section-1 .section-p-tab-alternate,
 .section-4 .section-p-tab-alternate {
@@ -110,11 +110,11 @@ body,
 }
 
 .section-6 {
-  background-color: #1a1e10;
+  background-color: #294f3c;
 }
 
 .footer {
-  background-color: #1a1e10 !important;
+  background-color: #294f3c !important;
 }
 
 .footer * {

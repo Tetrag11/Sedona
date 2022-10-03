@@ -591,6 +591,9 @@ body {
 .mw6 {
   max-width: 60%;
 }
+.mw7 {
+  max-width: 70%;
+}
 
 @media (min-width: 700px) {
   .tab-paragraph h1 {
