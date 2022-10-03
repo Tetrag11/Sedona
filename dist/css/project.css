@@ -126,6 +126,8 @@ body,
   object-fit: cover;
 }
 
+img {
+}
 @media (max-width: 1024px) {
   .map-mobile-tab-ac {
     display: block;

@@ -575,10 +575,21 @@ body {
   transform: translateX(-50%);
 }
 .fc-img {
-  max-height: 800px !important;
+  /* max-height: 800px !important; */
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center center;
+}
+
+.max-width-400 {
+  max-width: 400px;
+}
+.mw5 {
+  max-width: 50%;
+}
+
+.mw6 {
+  max-width: 60%;
 }
 
 @media (min-width: 700px) {
