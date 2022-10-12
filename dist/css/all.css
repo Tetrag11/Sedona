@@ -73,8 +73,20 @@ body {
 
 /* The centered logo in load */
 .load-centered-logo {
-  width: 276px;
-  height: 91px;
+  width: 300px;
+  height: 100px;
+}
+
+@media (max-width: 1024px) {
+  .load-centered-logo {
+    width: 276px;
+    height: 91px;
+  }
+}
+
+.load-centered-logo-web {
+  width: 300px;
+  height: 100px;
 }
 
 /* loader-lines */
